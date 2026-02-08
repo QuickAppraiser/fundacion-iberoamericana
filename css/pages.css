@@ -687,3 +687,195 @@
         gap: 8px;
     }
 }
+
+/* ========================= */
+/* COURSE DETAIL PAGE        */
+/* ========================= */
+
+.course-detail-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+.course-detail-back:hover {
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.course-detail-content {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+}
+
+.course-detail-meta {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+.course-detail-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+.course-detail-meta-item i {
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.course-detail-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 40px;
+    padding: 24px;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.course-detail-section-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.course-detail-section-title i {
+    color: var(--teal);
+}
+
+.course-module-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s;
+}
+.course-module-card:hover {
+    border-color: var(--teal);
+    box-shadow: var(--shadow);
+}
+.course-module-number {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: white;
+    flex-shrink: 0;
+}
+.course-module-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+}
+.course-module-info span {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.course-requirements-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.course-requirements-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 0.95rem;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+}
+.course-requirements-list li:last-child { border-bottom: none; }
+.course-requirements-list li i {
+    color: var(--teal);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.course-cta-section {
+    text-align: center;
+    padding: 40px;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin-top: 40px;
+}
+.course-cta-section h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+.course-cta-section p {
+    color: var(--text-light);
+    margin-bottom: 24px;
+}
+.course-cta-section .btn {
+    font-size: 1rem;
+    padding: 14px 32px;
+}
+
+.course-not-found {
+    text-align: center;
+    padding: 80px 24px;
+}
+.course-not-found i {
+    font-size: 3rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+.course-not-found h2 {
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+.course-not-found p {
+    color: var(--text-light);
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .course-detail-meta {
+        gap: 12px;
+    }
+    .course-detail-meta-item {
+        font-size: 0.85rem;
+    }
+    .course-module-card {
+        padding: 16px;
+    }
+    .course-cta-section {
+        padding: 24px;
+    }
+}

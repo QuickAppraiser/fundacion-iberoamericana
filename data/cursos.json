@@ -933,5 +933,80 @@
     "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
     "kahootUrl": "https://kahoot.it/challenge/XXXXX",
     "estado": "proximamente"
+  },
+  {
+    "id": "ingles-general",
+    "titulo": "Inglés General (A1-B2)",
+    "categoria": "idiomas",
+    "categoriaLabel": "Idiomas",
+    "nivel": "Básico → Intermedio",
+    "nivelClase": "basico",
+    "duracion": "30 horas",
+    "modulosTotales": 6,
+    "quizzesTotales": 12,
+    "icono": "fa-language",
+    "iconoColor": "#E91E63",
+    "color": "#E91E63",
+    "descripcionCorta": "Aprende inglés desde cero hasta nivel intermedio. Gramática, vocabulario, conversación y comprensión auditiva.",
+    "descripcionCompleta": "Curso integral de inglés que te lleva desde nivel principiante (A1) hasta intermedio (B2). Incluye gramática estructurada, vocabulario práctico, ejercicios de conversación, comprensión auditiva con materiales reales, y práctica de escritura. Ideal para profesionales que necesitan inglés en el ámbito laboral.",
+    "requisitos": ["No se requiere conocimiento previo de inglés", "Computadora con micrófono (para ejercicios de pronunciación)", "Acceso a internet"],
+    "modulos": [
+      {
+        "id": "eng-m1", "titulo": "A1 — Fundamentos: Saludos, Presentaciones y Vocabulario Básico", "orden": 1, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Greetings & Introductions — Saludos y presentaciones", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "The Alphabet & Numbers — Abecedario y números", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Basic Vocabulary — Colores, días, meses, familia", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Práctica: Diálogos básicos de presentación", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "eng-m2", "titulo": "A1-A2 — Gramática Esencial: Presente Simple, Artículos, Pronombres", "orden": 2, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Subject Pronouns & Verb To Be", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Present Simple — Affirmative, Negative, Questions", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Articles (a, an, the) & Demonstratives", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Práctica: Ejercicios de gramática básica", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "eng-m3", "titulo": "A2 — Vida Cotidiana: Compras, Direcciones, Rutinas", "orden": 3, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Daily Routines — Describir tu día", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Shopping & Ordering Food — En la tienda y restaurante", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Giving Directions — Preguntar y dar direcciones", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Role-play de situaciones cotidianas", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "eng-m4", "titulo": "A2-B1 — Gramática Intermedia: Tiempos Verbales, Condicionales", "orden": 4, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Past Simple & Past Continuous", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Present Perfect & Future (will/going to)", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Conditionals (0, 1, 2) & Modal Verbs", "tipo": "lectura", "duracion": "25 min" },
+          { "titulo": "Práctica: Ejercicios de tiempos verbales", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "eng-m5", "titulo": "B1 — Conversación y Comprensión: Diálogos, Listening, Speaking", "orden": 5, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Listening Comprehension — Audios y podcasts", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Speaking Practice — Expresar opiniones y debatir", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Reading Comprehension — Artículos y noticias", "tipo": "lectura", "duracion": "25 min" },
+          { "titulo": "Práctica: Conversación guiada sobre temas actuales", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "eng-m6", "titulo": "B1-B2 — Inglés Profesional: Emails, Presentaciones, Vocabulario Técnico", "orden": 6, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Business Emails — Escribir correos profesionales", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Presentations — Estructurar una presentación en inglés", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Technical Vocabulary — Términos de TI, negocios y finanzas", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Proyecto Final: Presentación profesional en inglés", "tipo": "practica", "duracion": "60 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "estado": "activo"
   }
 ]
