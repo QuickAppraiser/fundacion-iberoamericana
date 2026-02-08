@@ -1,6 +1,6 @@
 /**
  * quizzes.js — Motor de Quizzes Interactivos
- * Coordinadora Paola Ferrer
+ * Fundación Iberoamericana
  *
  * Funcionalidades:
  * - Cargar quizzes desde JSON

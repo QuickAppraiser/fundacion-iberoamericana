@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de Certificados | Coordinadora Paola Ferrer</title>
+    <title>Generador de Certificados | Fundación Iberoamericana</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -15,14 +15,16 @@
 <nav class="navbar">
     <div class="navbar-inner">
         <a href="index.html" class="logo">
-            <div class="logo-icon">PF</div>
-            <div class="logo-text">Coordinadora <span>Paola Ferrer</span></div>
+            <div class="logo-icon">FI</div>
+            <div class="logo-text">Fundación <span>Iberoamericana</span></div>
         </a>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="index.html#cursos">Cursos</a></li>
             <li><a href="dashboard.html">Mi Aula</a></li>
-            <li><a href="teacher.html">Panel Profesor</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="labs.html">Labs</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
             <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
         </ul>
         <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
@@ -80,7 +82,7 @@
 
             <div class="form-group">
                 <label for="certInstructor">Nombre del instructor</label>
-                <input type="text" id="certInstructor" placeholder="Coordinadora Paola Ferrer" value="Coordinadora Paola Ferrer">
+                <input type="text" id="certInstructor" placeholder="Dr. Mauricio Rodríguez, PhD" value="Dr. Mauricio Rodríguez, PhD">
             </div>
 
             <div class="form-actions">
@@ -99,7 +101,7 @@
         </h2>
 
         <div id="certificado">
-            <div class="cert-logo">PF</div>
+            <div class="cert-logo">FI</div>
             <div class="cert-title">Certificado de Finalización</div>
             <div class="cert-to">Se otorga el presente certificado a</div>
             <div class="cert-name" id="certPreviewNombre">Nombre del Estudiante</div>
@@ -113,14 +115,45 @@
                 </div>
                 <div class="cert-footer-item">
                     <div class="line"></div>
-                    <p id="certPreviewInstructor">Coordinadora Paola Ferrer</p>
+                    <p id="certPreviewInstructor">Dr. Mauricio Rodríguez, PhD</p>
                 </div>
             </div>
-            <div class="cert-id" id="certId">CPF-2026-000000</div>
+            <div class="cert-id" id="certId">FI-2026-000000</div>
         </div>
 
     </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="index.html" class="logo" style="margin-bottom:16px;">
+                <div class="logo-icon">FI</div>
+                <div class="logo-text">Fundación <span>Iberoamericana</span></div>
+            </a>
+            <p>Plataforma de formación técnica y profesional.</p>
+        </div>
+        <div>
+            <h4>Plataforma</h4>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="dashboard.html">Mi Aula</a>
+            <a href="quizzes.html">Quizzes</a>
+            <a href="labs.html">Labs</a>
+        </div>
+        <div>
+            <h4>Más</h4>
+            <a href="recursos.html">Recursos</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="certificados.html">Certificados</a>
+            <a href="teacher.html">Panel Profesor</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Fundación Iberoamericana. Todos los derechos reservados.
+        <br><small style="opacity:0.7;">Coordinación Académica: Dr. Mauricio Rodríguez, PhD Education</small>
+    </div>
+</footer>
 
 <script src="js/i18n.js"></script>
 <script src="js/certificados.js"></script>

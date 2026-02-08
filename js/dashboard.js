@@ -1,6 +1,6 @@
 /**
  * dashboard.js — Lógica del Dashboard de Estudiante
- * Coordinadora Paola Ferrer
+ * Fundación Iberoamericana
  *
  * Gestiona:
  * - Onboarding (nombre del estudiante)

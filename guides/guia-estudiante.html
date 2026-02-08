@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía del Estudiante | Fundación Iberoamericana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        .guide-content { max-width: 800px; margin: 0 auto; padding: 0 24px 60px; }
+        .guide-step { background: var(--bg-card); border-radius: var(--radius); border: 1px solid var(--border); padding: 28px; margin-bottom: 20px; display: flex; gap: 20px; align-items: flex-start; }
+        .guide-step-number { width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, var(--teal), var(--teal-dark)); color: white; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.2rem; flex-shrink: 0; }
+        .guide-step-content h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+        .guide-step-content p { color: var(--text-light); font-size: 0.92rem; line-height: 1.7; }
+        .guide-step-content a { color: var(--teal); font-weight: 600; }
+        .guide-tip { background: rgba(255,184,0,0.08); border-left: 4px solid var(--gold); padding: 16px 20px; border-radius: 0 10px 10px 0; margin-top: 10px; font-size: 0.88rem; color: var(--text); }
+        .guide-tip strong { color: var(--gold); }
+        .guide-faq { margin-top: 48px; }
+        .guide-faq-item { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 20px; margin-bottom: 12px; }
+        .guide-faq-item h4 { font-size: 1rem; color: var(--navy); margin-bottom: 6px; }
+        .guide-faq-item p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="../index.html" class="logo">
+            <div class="logo-icon">FI</div>
+            <div class="logo-text">Fundación <span>Iberoamericana</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../dashboard.html">Mi Aula</a></li>
+            <li><a href="../labs.html">Labs</a></li>
+            <li><a href="../recursos.html">Recursos</a></li>
+            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
+        </ul>
+        <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+    <div class="page-hero-content">
+        <div class="hero-badge"><i class="fas fa-graduation-cap"></i> Onboarding</div>
+        <h1><i class="fas fa-map-signs"></i> Guía del Estudiante</h1>
+        <p>Todo lo que necesitas saber para comenzar tu formación en la plataforma de Fundación Iberoamericana.</p>
+    </div>
+</section>
+
+<!-- CONTENIDO -->
+<section class="section">
+    <div class="guide-content">
+
+        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.6rem;font-weight:800;color:var(--navy);margin-bottom:24px;">
+            Primeros Pasos
+        </h2>
+
+        <!-- Paso 1 -->
+        <div class="guide-step">
+            <div class="guide-step-number">1</div>
+            <div class="guide-step-content">
+                <h3>Crea tu cuenta de Google</h3>
+                <p>Si no tienes una cuenta de Gmail, créala en <a href="https://accounts.google.com/signup" target="_blank">accounts.google.com</a>. La usarás para acceder a Google Classroom, Drive, Forms y todas las herramientas de la plataforma.</p>
+                <div class="guide-tip"><strong>Tip:</strong> Usa un correo profesional (nombre.apellido@gmail.com) — te servirá también para tu CV.</div>
+            </div>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="guide-step">
+            <div class="guide-step-number">2</div>
+            <div class="guide-step-content">
+                <h3>Explora el Portal Web</h3>
+                <p>Visita nuestra <a href="../index.html">página principal</a> para ver todos los cursos disponibles. Haz clic en cualquier curso para ver los módulos, duración y requisitos.</p>
+            </div>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="guide-step">
+            <div class="guide-step-number">3</div>
+            <div class="guide-step-content">
+                <h3>Inscríbete en Google Classroom</h3>
+                <p>Al elegir un curso, haz clic en "Inscribirme en Google Classroom". Usa el código de clase proporcionado por tu instructor o haz clic en el enlace directo de inscripción.</p>
+                <div class="guide-tip"><strong>Tip:</strong> Activa las notificaciones de Classroom para no perderte entregas ni anuncios.</div>
+            </div>
+        </div>
+
+        <!-- Paso 4 -->
+        <div class="guide-step">
+            <div class="guide-step-number">4</div>
+            <div class="guide-step-content">
+                <h3>Configura tu Dashboard</h3>
+                <p>Accede a <a href="../dashboard.html">Mi Aula</a> e ingresa tu nombre. Tu dashboard mostrará tu progreso, cursos activos, calificaciones y certificados.</p>
+            </div>
+        </div>
+
+        <!-- Paso 5 -->
+        <div class="guide-step">
+            <div class="guide-step-number">5</div>
+            <div class="guide-step-content">
+                <h3>Mira las Video Lecciones</h3>
+                <p>Cada módulo incluye videos en YouTube (o Edpuzzle con preguntas integradas). Puedes verlos a tu ritmo, pausar, retroceder y tomar notas.</p>
+            </div>
+        </div>
+
+        <!-- Paso 6 -->
+        <div class="guide-step">
+            <div class="guide-step-number">6</div>
+            <div class="guide-step-content">
+                <h3>Practica en los Laboratorios</h3>
+                <p>Ve a <a href="../labs.html">Labs</a> para practicar con ejercicios interactivos: código en Replit/CodePen, hojas de cálculo en Google Sheets, consultas SQL y más.</p>
+            </div>
+        </div>
+
+        <!-- Paso 7 -->
+        <div class="guide-step">
+            <div class="guide-step-number">7</div>
+            <div class="guide-step-content">
+                <h3>Toma Quizzes y Exámenes</h3>
+                <p>En el <a href="../quizzes.html">Centro de Quizzes</a> encontrarás práctica (sin límite de tiempo) y exámenes formales. También hay quizzes divertidos en Kahoot.</p>
+                <div class="guide-tip"><strong>Tip:</strong> Toma los quizzes de práctica antes de intentar los exámenes formales.</div>
+            </div>
+        </div>
+
+        <!-- Paso 8 -->
+        <div class="guide-step">
+            <div class="guide-step-number">8</div>
+            <div class="guide-step-content">
+                <h3>Obtén tu Certificado</h3>
+                <p>Al completar todos los módulos y aprobar el examen final (70%+), podrás descargar tu certificado digital con código verificable desde la sección de <a href="../certificados.html">Certificados</a>.</p>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="guide-faq">
+            <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:20px;">
+                <i class="fas fa-question-circle" style="color:var(--gold);"></i> Preguntas Frecuentes
+            </h2>
+
+            <div class="guide-faq-item">
+                <h4>¿Los cursos tienen costo?</h4>
+                <p>No. Actualmente todos los cursos son gratuitos. En el futuro podremos ofrecer cursos premium con contenido adicional.</p>
+            </div>
+            <div class="guide-faq-item">
+                <h4>¿Necesito instalar algo?</h4>
+                <p>No. Todo funciona desde el navegador web. Solo necesitas una computadora o teléfono con acceso a internet.</p>
+            </div>
+            <div class="guide-faq-item">
+                <h4>¿Puedo tomar varios cursos al mismo tiempo?</h4>
+                <p>Sí. Te recomendamos empezar con 1-2 cursos y agregar más conforme avances.</p>
+            </div>
+            <div class="guide-faq-item">
+                <h4>¿Cómo contacto al profesor?</h4>
+                <p>A través de los anuncios en Google Classroom, por WhatsApp (enlace en la página principal), o en nuestra página de Facebook.</p>
+            </div>
+            <div class="guide-faq-item">
+                <h4>¿El certificado tiene validez oficial?</h4>
+                <p>Es un certificado de participación y finalización emitido por Fundación Iberoamericana. Cada certificado tiene un código único verificable.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        &copy; 2026 Fundación Iberoamericana. Todos los derechos reservados.
+        <br><small style="opacity:0.7;">Coordinación Académica: Dr. Mauricio Rodríguez, PhD Education</small>
+    </div>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        if (typeof inicializarI18n === 'function') inicializarI18n();
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+        }
+    });
+</script>
+</body>
+</html>

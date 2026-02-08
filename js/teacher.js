@@ -1,6 +1,6 @@
 /**
  * teacher.js — Panel del Profesor
- * Coordinadora Paola Ferrer
+ * Fundación Iberoamericana
  */
 
 // =========================
@@ -26,10 +26,10 @@ const estudiantesDemo = [
 ];
 
 const plantillas = {
-    recordatorio: "¡Hola estudiantes! 📝\n\nLes recuerdo que la fecha límite para entregar la tarea del módulo actual es este viernes.\n\nPor favor revisen los materiales en Google Classroom y no duden en contactarme si tienen preguntas.\n\n¡Éxito!\nCoordinadora Paola Ferrer",
-    material: "¡Hola! 📚\n\nSe ha subido nuevo material al curso:\n\n📌 [Nombre del material]\n📁 Disponible en Google Classroom\n\nLes recomiendo revisarlo antes de la próxima clase.\n\n¡Nos vemos pronto!\nCoordinadora Paola Ferrer",
-    resultados: "¡Hola estudiantes! 📊\n\nYa están disponibles los resultados del último quiz:\n\n✅ Promedio del grupo: [X]%\n🏆 Puntaje más alto: [X]%\n\nPueden revisar sus respuestas en la plataforma. Si tienen dudas, estoy disponible.\n\n¡Sigan así!\nCoordinadora Paola Ferrer",
-    clase: "¡Hola! 🎓\n\nLes recuerdo nuestra próxima clase:\n\n📅 Fecha: [día y hora]\n📌 Tema: [tema de la clase]\n💻 Plataforma: [Google Meet / presencial]\n\nPor favor lleguen a tiempo y tengan listos sus materiales.\n\n¡Los espero!\nCoordinadora Paola Ferrer"
+    recordatorio: "¡Hola estudiantes! 📝\n\nLes recuerdo que la fecha límite para entregar la tarea del módulo actual es este viernes.\n\nPor favor revisen los materiales en Google Classroom y no duden en contactarme si tienen preguntas.\n\n¡Éxito!\nFundación Iberoamericana",
+    material: "¡Hola! 📚\n\nSe ha subido nuevo material al curso:\n\n📌 [Nombre del material]\n📁 Disponible en Google Classroom\n\nLes recomiendo revisarlo antes de la próxima clase.\n\n¡Nos vemos pronto!\nFundación Iberoamericana",
+    resultados: "¡Hola estudiantes! 📊\n\nYa están disponibles los resultados del último quiz:\n\n✅ Promedio del grupo: [X]%\n🏆 Puntaje más alto: [X]%\n\nPueden revisar sus respuestas en la plataforma. Si tienen dudas, estoy disponible.\n\n¡Sigan así!\nFundación Iberoamericana",
+    clase: "¡Hola! 🎓\n\nLes recuerdo nuestra próxima clase:\n\n📅 Fecha: [día y hora]\n📌 Tema: [tema de la clase]\n💻 Plataforma: [Google Meet / presencial]\n\nPor favor lleguen a tiempo y tengan listos sus materiales.\n\n¡Los espero!\nFundación Iberoamericana"
 };
 
 let estudiantesActuales = [...estudiantesDemo];
@@ -70,7 +70,7 @@ function verificarAuth() {
 
 window.autenticarProfesor = function() {
     const pass = document.getElementById('passInput')?.value;
-    if (pass === 'profe2026') {
+    if (pass === 'admin2026') {
         localStorage.setItem('teacher_auth', 'true');
         mostrarPanel();
     } else {

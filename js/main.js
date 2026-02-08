@@ -1,6 +1,6 @@
 /**
  * main.js — JavaScript Principal
- * Coordinadora Paola Ferrer — Portal de Aprendizaje
+ * Fundación Iberoamericana — Portal de Aprendizaje
  *
  * Funcionalidades:
  * - Navegación (hamburguesa, scroll suave, header sticky)

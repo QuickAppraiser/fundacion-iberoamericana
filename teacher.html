@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel del Profesor | Coordinadora Paola Ferrer</title>
+    <title>Panel del Profesor | Fundación Iberoamericana</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -16,15 +16,16 @@
 <nav class="navbar">
     <div class="navbar-inner">
         <a href="index.html" class="logo">
-            <div class="logo-icon">PF</div>
-            <div class="logo-text">Coordinadora <span>Paola Ferrer</span></div>
+            <div class="logo-icon">FI</div>
+            <div class="logo-text">Fundación <span>Iberoamericana</span></div>
         </a>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="index.html#cursos">Cursos</a></li>
             <li><a href="dashboard.html">Mi Aula</a></li>
             <li><a href="quizzes.html">Quizzes</a></li>
-            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="labs.html">Labs</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
             <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
         </ul>
         <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
@@ -34,7 +35,7 @@
 <!-- PASSWORD GATE -->
 <div class="password-overlay" id="passwordOverlay">
     <div class="password-card">
-        <div class="logo-icon" style="width:56px;height:56px;font-size:24px;margin:0 auto 20px;">PF</div>
+        <div class="logo-icon" style="width:56px;height:56px;font-size:24px;margin:0 auto 20px;">FI</div>
         <h2>Panel del Profesor</h2>
         <p>Ingresa la contraseña de acceso</p>
         <div class="password-error" id="passError">Contraseña incorrecta</div>
@@ -49,9 +50,9 @@
 <div class="dash-layout" id="teacherLayout" style="display:none;">
     <aside class="sidebar">
         <div class="sidebar-profile">
-            <div class="sidebar-avatar" style="background:linear-gradient(135deg,var(--gold),#FF9800);">PF</div>
-            <div class="sidebar-name">Paola Ferrer</div>
-            <div class="sidebar-role">Profesora</div>
+            <div class="sidebar-avatar" style="background:linear-gradient(135deg,var(--gold),#FF9800);">MR</div>
+            <div class="sidebar-name">Dr. Mauricio Rodríguez</div>
+            <div class="sidebar-role">PhD Education · Coordinador</div>
         </div>
         <ul class="sidebar-menu">
             <li><a href="#" class="active" onclick="cambiarSeccionT('resumen',this,event)"><i class="fas fa-chart-pie"></i> <span class="menu-text">Resumen</span></a></li>

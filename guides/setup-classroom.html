@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar Google Classroom | Fundación Iberoamericana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        .guide-content { max-width: 800px; margin: 0 auto; padding: 0 24px 60px; }
+        .setup-card { background: var(--bg-card); border-radius: var(--radius); border: 1px solid var(--border); padding: 28px; margin-bottom: 20px; }
+        .setup-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+        .setup-card h3 .step-badge { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 8px; background: var(--teal); color: white; font-size: 0.85rem; font-weight: 800; flex-shrink: 0; }
+        .setup-card p { color: var(--text-light); font-size: 0.92rem; line-height: 1.7; margin-bottom: 12px; }
+        .setup-card ol { padding-left: 20px; color: var(--text-light); font-size: 0.9rem; line-height: 2; }
+        .setup-card a { color: var(--teal); font-weight: 600; }
+        .setup-card code { background: rgba(27,42,74,0.06); padding: 2px 8px; border-radius: 4px; font-size: 0.88rem; color: var(--navy); }
+        .course-setup { background: var(--bg); border-radius: var(--radius-sm); padding: 20px; margin-top: 16px; }
+        .course-setup h4 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+        .course-setup ul { padding-left: 18px; color: var(--text-light); font-size: 0.88rem; line-height: 1.8; }
+        .guide-tip { background: rgba(255,184,0,0.08); border-left: 4px solid var(--gold); padding: 14px 18px; border-radius: 0 10px 10px 0; margin-top: 12px; font-size: 0.88rem; color: var(--text); }
+        .guide-tip strong { color: var(--gold); }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="../index.html" class="logo">
+            <div class="logo-icon">FI</div>
+            <div class="logo-text">Fundación <span>Iberoamericana</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../teacher.html">Panel Profesor</a></li>
+            <li><a href="guia-profesor.html">Guía Profesor</a></li>
+            <li><a href="guia-estudiante.html">Guía Estudiante</a></li>
+            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
+        </ul>
+        <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<section class="page-hero">
+    <div class="page-hero-content">
+        <div class="hero-badge"><i class="fas fa-cog"></i> Setup</div>
+        <h1><i class="fab fa-google"></i> Configurar Google Classroom</h1>
+        <p>Guía paso a paso para configurar cada curso en Google Classroom como parte del ecosistema de la academia.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="guide-content">
+
+        <!-- Paso 1: Cuenta -->
+        <div class="setup-card">
+            <h3><span class="step-badge">1</span> Preparar tu Cuenta de Google</h3>
+            <p>Asegúrate de usar la cuenta de Google designada para la academia.</p>
+            <ol>
+                <li>Inicia sesión en <a href="https://accounts.google.com" target="_blank">accounts.google.com</a>.</li>
+                <li>Si usas Google Workspace for Education, configura el dominio de la academia.</li>
+                <li>Si usas Gmail personal, funciona igual — solo tendrás el límite de clases gratis (máx. 30 por cuenta).</li>
+            </ol>
+        </div>
+
+        <!-- Paso 2: Crear clase -->
+        <div class="setup-card">
+            <h3><span class="step-badge">2</span> Crear la Clase</h3>
+            <ol>
+                <li>Ve a <a href="https://classroom.google.com" target="_blank">classroom.google.com</a>.</li>
+                <li>Clic en <code>+</code> → "Crear una clase".</li>
+                <li>Completa los campos:
+                    <ul style="margin-top:8px;">
+                        <li><strong>Nombre:</strong> "Excel Básico a Avanzado — FI 2026"</li>
+                        <li><strong>Sección:</strong> "Fundación Iberoamericana"</li>
+                        <li><strong>Asunto:</strong> "Office & Productividad"</li>
+                        <li><strong>Aula:</strong> "Virtual"</li>
+                    </ul>
+                </li>
+                <li>Clic en "Crear".</li>
+            </ol>
+            <div class="guide-tip"><strong>Convención de nombres:</strong> Siempre usa el formato: <code>[Nombre Curso] — FI [Año]</code></div>
+        </div>
+
+        <!-- Paso 3: Estructura de temas -->
+        <div class="setup-card">
+            <h3><span class="step-badge">3</span> Crear la Estructura de Módulos</h3>
+            <p>Usa "Temas" en Google Classroom para organizar cada módulo del curso.</p>
+            <ol>
+                <li>Ve a "Trabajo de clase" → "Crear" → "Tema".</li>
+                <li>Crea un tema por cada módulo del curso.</li>
+            </ol>
+
+            <div class="course-setup">
+                <h4>Ejemplo: Excel Básico a Avanzado</h4>
+                <ul>
+                    <li>Módulo 1 — Fundamentos y Navegación</li>
+                    <li>Módulo 2 — Fórmulas y Funciones Esenciales</li>
+                    <li>Módulo 3 — Tablas Dinámicas y Gráficos</li>
+                    <li>Módulo 4 — Funciones Avanzadas</li>
+                    <li>Módulo 5 — Macros y Automatización VBA</li>
+                    <li>Módulo 6 — Dashboards y Reportes Profesionales</li>
+                    <li>Recursos Adicionales</li>
+                    <li>Exámenes Finales</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Paso 4: Subir contenido -->
+        <div class="setup-card">
+            <h3><span class="step-badge">4</span> Subir Contenido por Módulo</h3>
+            <p>Para cada módulo, sube estos tipos de contenido:</p>
+            <ol>
+                <li><strong>Material:</strong> PDF de la lección, presentación (Slides), enlaces útiles.</li>
+                <li><strong>Video:</strong> Enlace de YouTube (o Edpuzzle) con la lección grabada.</li>
+                <li><strong>Tarea:</strong> Ejercicio práctico con fecha de entrega y archivo base.</li>
+                <li><strong>Quiz:</strong> Enlace al quiz de práctica en el portal o Google Forms.</li>
+            </ol>
+            <div class="guide-tip"><strong>Tip:</strong> Sube todo el material a Google Drive primero, luego enlázalo desde Classroom. Así mantienes una biblioteca organizada.</div>
+        </div>
+
+        <!-- Paso 5: Configurar calificaciones -->
+        <div class="setup-card">
+            <h3><span class="step-badge">5</span> Configurar Sistema de Calificaciones</h3>
+            <ol>
+                <li>Ve a "Configuración" de la clase (engranaje arriba derecha).</li>
+                <li>En "Calificación": selecciona "Ponderación por categorías".</li>
+                <li>Crea categorías:
+                    <ul style="margin-top:8px;">
+                        <li>Tareas y Labs: 30%</li>
+                        <li>Quizzes de Práctica: 20%</li>
+                        <li>Exámenes Formales: 40%</li>
+                        <li>Participación: 10%</li>
+                    </ul>
+                </li>
+                <li>Asigna cada tarea a su categoría al crearla.</li>
+            </ol>
+        </div>
+
+        <!-- Paso 6: Invitar estudiantes -->
+        <div class="setup-card">
+            <h3><span class="step-badge">6</span> Invitar Estudiantes</h3>
+            <ol>
+                <li>En la clase, ve a "Personas".</li>
+                <li>Opción 1: Comparte el <strong>código de clase</strong> (visible en la página principal de la clase).</li>
+                <li>Opción 2: Haz clic en "Invitar" e ingresa los correos de los estudiantes.</li>
+                <li>Opción 3: Comparte el <strong>enlace de invitación</strong> por WhatsApp o redes sociales.</li>
+            </ol>
+            <div class="guide-tip"><strong>Tip:</strong> Publica el enlace de invitación en la <a href="../index.html">página principal</a> del portal. Así los estudiantes se inscriben directamente al hacer clic en "Inscribirme".</div>
+        </div>
+
+        <!-- Cursos a configurar -->
+        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.4rem;font-weight:700;color:var(--navy);margin:48px 0 20px;">
+            <i class="fas fa-list-check" style="color:var(--teal);"></i> Cursos a Configurar
+        </h2>
+
+        <div class="setup-card">
+            <h3 style="color:var(--teal);">Checklist por Curso</h3>
+            <p>Repite los pasos 2-6 para cada curso de la academia:</p>
+            <ol>
+                <li>Excel Básico a Avanzado (6 módulos)</li>
+                <li>Google Workspace Completo (5 módulos)</li>
+                <li>Microsoft Office 365 (5 módulos)</li>
+                <li>Power BI — Visualización de Datos (4 módulos)</li>
+                <li>Desarrollo Web: HTML, CSS, JS (5 módulos)</li>
+                <li>Python desde Cero (5 módulos)</li>
+                <li>SQL y Bases de Datos (5 módulos)</li>
+                <li>Fundamentos de Programación (4 módulos)</li>
+                <li>Analítica de Datos (5 módulos)</li>
+                <li>Business Intelligence Empresarial (4 módulos)</li>
+                <li>IA y Machine Learning — Fundamentos (4 módulos)</li>
+                <li>Gestión de Proyectos con Scrum (4 módulos)</li>
+                <li>Liderazgo y Gestión de Equipos (4 módulos)</li>
+                <li>Transformación Digital para Empresas (4 módulos)</li>
+            </ol>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        &copy; 2026 Fundación Iberoamericana. Todos los derechos reservados.
+        <br><small style="opacity:0.7;">Coordinación Académica: Dr. Mauricio Rodríguez, PhD Education</small>
+    </div>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        if (typeof inicializarI18n === 'function') inicializarI18n();
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+        }
+    });
+</script>
+</body>
+</html>

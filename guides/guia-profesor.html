@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía del Profesor | Fundación Iberoamericana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        .guide-content { max-width: 800px; margin: 0 auto; padding: 0 24px 60px; }
+        .guide-section { margin-bottom: 48px; }
+        .guide-section h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+        .guide-section h2 i { color: var(--teal); }
+        .guide-section > p { color: var(--text-light); margin-bottom: 24px; }
+        .guide-tool-card { background: var(--bg-card); border-radius: var(--radius); border: 1px solid var(--border); padding: 24px; margin-bottom: 16px; }
+        .guide-tool-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+        .guide-tool-card h3 i { font-size: 1.2rem; }
+        .guide-tool-card p { color: var(--text-light); font-size: 0.92rem; margin-bottom: 12px; line-height: 1.6; }
+        .guide-tool-card ol, .guide-tool-card ul { padding-left: 20px; color: var(--text-light); font-size: 0.9rem; line-height: 1.9; }
+        .guide-tool-card a { color: var(--teal); font-weight: 600; }
+        .guide-tip { background: rgba(255,184,0,0.08); border-left: 4px solid var(--gold); padding: 14px 18px; border-radius: 0 10px 10px 0; margin-top: 12px; font-size: 0.88rem; color: var(--text); }
+        .guide-tip strong { color: var(--gold); }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="../index.html" class="logo">
+            <div class="logo-icon">FI</div>
+            <div class="logo-text">Fundación <span>Iberoamericana</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../teacher.html">Panel Profesor</a></li>
+            <li><a href="../certificados.html">Certificados</a></li>
+            <li><a href="../recursos.html">Recursos</a></li>
+            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
+        </ul>
+        <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<section class="page-hero">
+    <div class="page-hero-content">
+        <div class="hero-badge"><i class="fas fa-chalkboard-teacher"></i> Para Profesores</div>
+        <h1><i class="fas fa-user-tie"></i> Guía del Profesor</h1>
+        <p>Cómo usar cada herramienta del ecosistema para gestionar cursos, crear evaluaciones y dar seguimiento a estudiantes.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="guide-content">
+
+        <!-- GOOGLE CLASSROOM -->
+        <div class="guide-section">
+            <h2><i class="fas fa-chalkboard"></i> Google Classroom</h2>
+            <p>Es el hub central de tu curso. Aquí subes materiales, asignas tareas, y te comunicas con estudiantes.</p>
+
+            <div class="guide-tool-card">
+                <h3><i class="fas fa-plus-circle" style="color:var(--teal);"></i> Crear un Nuevo Curso</h3>
+                <ol>
+                    <li>Ve a <a href="https://classroom.google.com" target="_blank">classroom.google.com</a> e inicia sesión.</li>
+                    <li>Haz clic en "+" → "Crear una clase".</li>
+                    <li>Nombre: usa el formato "Excel Básico a Avanzado — FI 2026".</li>
+                    <li>Sección: "Fundación Iberoamericana".</li>
+                    <li>Copia el código de clase y compártelo con los estudiantes.</li>
+                </ol>
+            </div>
+
+            <div class="guide-tool-card">
+                <h3><i class="fas fa-upload" style="color:#2196F3;"></i> Subir Material</h3>
+                <ol>
+                    <li>En la clase, ve a "Trabajo de clase" → "Crear" → "Material".</li>
+                    <li>Agrega título descriptivo: "Módulo 2 — Fórmulas Esenciales".</li>
+                    <li>Adjunta archivos (PDF, video YouTube, enlace de Drive).</li>
+                    <li>Selecciona el tema/módulo al que pertenece.</li>
+                </ol>
+            </div>
+
+            <div class="guide-tool-card">
+                <h3><i class="fas fa-tasks" style="color:#FF9800;"></i> Crear Tareas</h3>
+                <ol>
+                    <li>"Trabajo de clase" → "Crear" → "Tarea".</li>
+                    <li>Agrega instrucciones claras y fecha de entrega.</li>
+                    <li>Adjunta la plantilla o archivo base.</li>
+                    <li>Configura puntuación (0-100) para la calificación.</li>
+                </ol>
+                <div class="guide-tip"><strong>Tip:</strong> Usa la opción "Crear una copia para cada estudiante" para que cada uno tenga su propio archivo editable.</div>
+            </div>
+        </div>
+
+        <!-- KAHOOT -->
+        <div class="guide-section">
+            <h2><i class="fas fa-gamepad"></i> Kahoot — Quizzes Gamificados</h2>
+            <p>Ideal para repasos rápidos y sesiones en vivo. Los estudiantes compiten en tiempo real.</p>
+
+            <div class="guide-tool-card">
+                <h3><i class="fas fa-plus-circle" style="color:#9C27B0;"></i> Crear un Quiz en Kahoot</h3>
+                <ol>
+                    <li>Ve a <a href="https://create.kahoot.it" target="_blank">create.kahoot.it</a>.</li>
+                    <li>"Crear" → "Quiz" → Agrega título y descripción.</li>
+                    <li>Para cada pregunta: escribe el texto, las 4 opciones y marca la correcta.</li>
+                    <li>Ajusta el tiempo por pregunta (20-30 seg para opción múltiple).</li>
+                    <li>Publica y comparte el PIN con los estudiantes en la clase en vivo.</li>
+                </ol>
+                <div class="guide-tip"><strong>Tip:</strong> Revisa los reportes de Kahoot después — muestran qué preguntas tuvieron más errores.</div>
+            </div>
+        </div>
+
+        <!-- GOOGLE FORMS -->
+        <div class="guide-section">
+            <h2><i class="fab fa-google"></i> Google Forms — Exámenes Formales</h2>
+            <p>Para evaluaciones con auto-calificación, registro de respuestas y análisis de resultados.</p>
+
+            <div class="guide-tool-card">
+                <h3><i class="fas fa-file-alt" style="color:#4285F4;"></i> Crear un Examen Auto-calificado</h3>
+                <ol>
+                    <li>Ve a <a href="https://forms.google.com" target="_blank">forms.google.com</a> → "Examen en blanco".</li>
+                    <li>Activa "Convertir en cuestionario" en Configuración.</li>
+                    <li>Para cada pregunta: agrega opciones, marca la respuesta correcta y asigna puntos.</li>
+                    <li>En "Respuestas": activa "Recopilar direcciones de correo electrónico".</li>
+                    <li>Configura: "Publicar calificaciones" → "Inmediatamente después de enviar".</li>
+                    <li>Comparte el enlace en Google Classroom como tarea.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- PANEL DEL PROFESOR -->
+        <div class="guide-section">
+            <h2><i class="fas fa-chart-line"></i> Panel del Profesor (Portal Web)</h2>
+            <p>Tu dashboard interno para monitorear rendimiento y comunicarte con estudiantes.</p>
+
+            <div class="guide-tool-card">
+                <h3><i class="fas fa-key" style="color:var(--gold);"></i> Acceso al Panel</h3>
+                <ol>
+                    <li>Ve a <a href="../teacher.html">Panel del Profesor</a>.</li>
+                    <li>Ingresa la contraseña: proporcionada por la coordinación.</li>
+                    <li>Navega entre las secciones: Resumen, Estudiantes, Comunicación, Accesos.</li>
+                </ol>
+            </div>
+
+            <div class="guide-tool-card">
+                <h3><i class="fas fa-users" style="color:var(--teal);"></i> Monitorear Estudiantes</h3>
+                <p>En la sección "Estudiantes" puedes:</p>
+                <ul>
+                    <li>Ver la tabla completa de estudiantes con sus promedios y estado.</li>
+                    <li>Filtrar por curso y buscar estudiantes específicos.</li>
+                    <li>Ordenar por nombre, promedio o estado.</li>
+                    <li>Exportar la tabla a CSV para análisis en Excel.</li>
+                    <li>Identificar estudiantes en riesgo (promedio &lt; 60%).</li>
+                </ul>
+            </div>
+
+            <div class="guide-tool-card">
+                <h3><i class="fas fa-certificate" style="color:var(--gold);"></i> Generar Certificados</h3>
+                <ol>
+                    <li>Ve a <a href="../certificados.html">Certificados</a>.</li>
+                    <li>Ingresa el nombre del estudiante, curso y calificación.</li>
+                    <li>Haz clic en "Vista Previa" para verificar.</li>
+                    <li>Haz clic en "Descargar PDF" para generar el certificado.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- FLUJO SEMANAL -->
+        <div class="guide-section">
+            <h2><i class="fas fa-calendar-week"></i> Flujo Semanal Recomendado</h2>
+
+            <div class="guide-tool-card">
+                <h3>Lunes — Preparación</h3>
+                <p>Sube el material del módulo de la semana a Google Classroom. Programa la tarea con fecha de entrega.</p>
+            </div>
+            <div class="guide-tool-card">
+                <h3>Miércoles — Clase en Vivo</h3>
+                <p>Imparte la sesión (Google Meet/Zoom). Al final, lanza un Kahoot de repaso rápido.</p>
+            </div>
+            <div class="guide-tool-card">
+                <h3>Viernes — Evaluación</h3>
+                <p>Publica un quiz de práctica en el portal. Revisa entregas pendientes y da retroalimentación.</p>
+            </div>
+            <div class="guide-tool-card">
+                <h3>Domingo — Seguimiento</h3>
+                <p>Revisa el Panel del Profesor. Identifica estudiantes en riesgo y envía mensajes de apoyo.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        &copy; 2026 Fundación Iberoamericana. Todos los derechos reservados.
+        <br><small style="opacity:0.7;">Coordinación Académica: Dr. Mauricio Rodríguez, PhD Education</small>
+    </div>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        if (typeof inicializarI18n === 'function') inicializarI18n();
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+        }
+    });
+</script>
+</body>
+</html>

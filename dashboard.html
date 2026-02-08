@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Aula | Coordinadora Paola Ferrer</title>
+    <title>Mi Aula | Fundación Iberoamericana</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -15,15 +15,16 @@
 <nav class="navbar">
     <div class="navbar-inner">
         <a href="index.html" class="logo">
-            <div class="logo-icon">PF</div>
-            <div class="logo-text">Coordinadora <span>Paola Ferrer</span></div>
+            <div class="logo-icon">FI</div>
+            <div class="logo-text">Fundación <span>Iberoamericana</span></div>
         </a>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="index.html#cursos">Cursos</a></li>
             <li><a href="dashboard.html" class="active">Mi Aula</a></li>
             <li><a href="quizzes.html">Quizzes</a></li>
-            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="labs.html">Labs</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
             <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
         </ul>
         <button class="hamburger" aria-label="Abrir menú">
@@ -35,7 +36,7 @@
 <!-- ONBOARDING (se muestra si no hay nombre guardado) -->
 <div class="onboarding-overlay" id="onboarding" style="display:none;">
     <div class="onboarding-card">
-        <div class="logo-icon" style="width:56px;height:56px;font-size:24px;margin:0 auto 20px;">PF</div>
+        <div class="logo-icon" style="width:56px;height:56px;font-size:24px;margin:0 auto 20px;">FI</div>
         <h2 data-i18n="onboard.titulo">¡Bienvenido a la plataforma!</h2>
         <p data-i18n="onboard.nombre">¿Cómo te llamas?</p>
         <input type="text" id="onboardName" data-i18n="onboard.placeholder" data-i18n-attr="placeholder" placeholder="Tu nombre completo" autocomplete="name">

@@ -1,6 +1,6 @@
 /**
  * i18n.js — Sistema de internacionalización (ES/EN)
- * Coordinadora Paola Ferrer — Portal de Aprendizaje
+ * Fundación Iberoamericana — Portal de Aprendizaje
  *
  * Permite cambiar entre español e inglés en toda la plataforma.
  * El idioma seleccionado se guarda en localStorage.
@@ -93,7 +93,7 @@ const traducciones = {
         "footer.guia": "Guía del Estudiante",
         "footer.contactarProfesor": "Contactar Profesor",
         "footer.feedback": "Feedback",
-        "footer.copy": "© 2026 Coordinadora Paola Ferrer. Todos los derechos reservados. Plataforma MVP.",
+        "footer.copy": "© 2026 Fundación Iberoamericana. Todos los derechos reservados. Plataforma MVP.",
 
         // Dashboard
         "dash.bienvenida": "¡Hola, {nombre}! Continúa donde te quedaste",
@@ -224,7 +224,7 @@ const traducciones = {
         "footer.guia": "Student Guide",
         "footer.contactarProfesor": "Contact Teacher",
         "footer.feedback": "Feedback",
-        "footer.copy": "© 2026 Coordinadora Paola Ferrer. All rights reserved. MVP Platform.",
+        "footer.copy": "© 2026 Fundación Iberoamericana. All rights reserved. MVP Platform.",
 
         // Dashboard
         "dash.bienvenida": "Hi, {nombre}! Pick up where you left off",

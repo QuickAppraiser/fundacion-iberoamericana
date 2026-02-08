@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario y Horarios | Fundación Iberoamericana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">FI</div>
+            <div class="logo-text">Fundación <span>Iberoamericana</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#cursos">Cursos</a></li>
+            <li><a href="dashboard.html">Mi Aula</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="labs.html">Labs</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="calendario.html" class="active">Calendario</a></li>
+            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
+        </ul>
+        <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<!-- HERO BANNER -->
+<section class="page-hero">
+    <div class="page-hero-content">
+        <div class="hero-badge"><i class="fas fa-calendar-alt"></i> Organización</div>
+        <h1><i class="fas fa-calendar-days"></i> Calendario y Horarios</h1>
+        <p>Mantente al día con clases en vivo, fechas de entrega, exámenes y eventos de la academia.</p>
+    </div>
+</section>
+
+<!-- CONTENIDO PRINCIPAL -->
+<section class="section">
+
+    <div class="calendario-layout">
+
+        <!-- COLUMNA IZQUIERDA: Calendario -->
+        <div class="calendario-main">
+
+            <!-- Navegación del mes -->
+            <div class="cal-nav">
+                <button class="cal-nav-btn" onclick="mesAnterior()"><i class="fas fa-chevron-left"></i></button>
+                <h2 class="cal-month-title" id="calMonthTitle">Febrero 2026</h2>
+                <button class="cal-nav-btn" onclick="mesSiguiente()"><i class="fas fa-chevron-right"></i></button>
+                <button class="btn btn-outline" onclick="irAHoy()" style="margin-left:auto;padding:8px 16px;font-size:0.85rem;">
+                    <i class="fas fa-crosshairs"></i> Hoy
+                </button>
+            </div>
+
+            <!-- Grid del Calendario -->
+            <div class="cal-grid">
+                <div class="cal-header-row">
+                    <div class="cal-day-header">Dom</div>
+                    <div class="cal-day-header">Lun</div>
+                    <div class="cal-day-header">Mar</div>
+                    <div class="cal-day-header">Mié</div>
+                    <div class="cal-day-header">Jue</div>
+                    <div class="cal-day-header">Vie</div>
+                    <div class="cal-day-header">Sáb</div>
+                </div>
+                <div class="cal-body" id="calBody">
+                    <!-- Generado por JS -->
+                </div>
+            </div>
+
+            <!-- Leyenda -->
+            <div class="cal-legend">
+                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--teal);"></span> Clase en vivo</div>
+                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:#F44336;"></span> Fecha de entrega</div>
+                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--gold);"></span> Examen</div>
+                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:#9C27B0;"></span> Evento especial</div>
+            </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: Próximos eventos -->
+        <div class="calendario-sidebar">
+            <h3><i class="fas fa-clock" style="color:var(--teal);"></i> Próximos Eventos</h3>
+            <div class="events-list" id="eventsList">
+                <!-- Generado por JS -->
+            </div>
+
+            <!-- Google Calendar embed link -->
+            <div class="cal-external-card">
+                <div class="cal-ext-icon">
+                    <i class="fab fa-google" style="color:#4285F4;font-size:24px;"></i>
+                </div>
+                <h4>Google Calendar</h4>
+                <p>Sincroniza todas las fechas con tu calendario personal.</p>
+                <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;padding:10px 16px;font-size:0.85rem;">
+                    <i class="fas fa-plus"></i> Agregar a mi calendario
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="index.html" class="logo" style="margin-bottom:16px;">
+                <div class="logo-icon">FI</div>
+                <div class="logo-text">Fundación <span>Iberoamericana</span></div>
+            </a>
+            <p>Plataforma de formación técnica y profesional.</p>
+        </div>
+        <div>
+            <h4>Plataforma</h4>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="dashboard.html">Mi Aula</a>
+            <a href="quizzes.html">Quizzes</a>
+            <a href="labs.html">Labs</a>
+        </div>
+        <div>
+            <h4>Más</h4>
+            <a href="recursos.html">Recursos</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="certificados.html">Certificados</a>
+            <a href="teacher.html">Panel Profesor</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Fundación Iberoamericana. Todos los derechos reservados.
+        <br><small style="opacity:0.7;">Coordinación Académica: Dr. Mauricio Rodríguez, PhD Education</small>
+    </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/calendario.js"></script>
+</body>
+</html>

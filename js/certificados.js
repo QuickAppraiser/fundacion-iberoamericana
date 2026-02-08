@@ -1,6 +1,6 @@
 /**
  * certificados.js — Generador de Certificados
- * Coordinadora Paola Ferrer
+ * Fundación Iberoamericana
  *
  * Funcionalidades:
  * - Formulario con validación
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function generarIdCertificado() {
     const year = new Date().getFullYear();
     const random = Math.floor(100000 + Math.random() * 900000);
-    const id = `CPF-${year}-${random}`;
+    const id = `FI-${year}-${random}`;
     const el = document.getElementById('certId');
     if (el) el.textContent = id;
     return id;
@@ -64,7 +64,7 @@ function actualizarVistaPrevia() {
     const curso = document.getElementById('certCurso')?.value || 'Nombre del Curso';
     const fecha = document.getElementById('certFecha')?.value || new Date().toISOString().split('T')[0];
     const calificacion = document.getElementById('certCalificacion')?.value || '0';
-    const instructor = document.getElementById('certInstructor')?.value || 'Coordinadora Paola Ferrer';
+    const instructor = document.getElementById('certInstructor')?.value || 'Dr. Mauricio Rodríguez, PhD';
 
     // Formatear fecha
     const fechaObj = new Date(fecha + 'T12:00:00');
