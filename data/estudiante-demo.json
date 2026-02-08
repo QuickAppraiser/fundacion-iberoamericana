@@ -1,0 +1,44 @@
+{
+  "nombre": "Carlos Mendoza",
+  "email": "carlos.mendoza@email.com",
+  "avatar": "CM",
+  "fechaRegistro": "2026-01-15",
+  "cursosInscritos": ["excel-basico-avanzado", "sql-bases-datos", "power-bi", "python-basico"],
+  "progreso": {
+    "excel-basico-avanzado": {
+      "modulosCompletados": ["excel-m1", "excel-m2", "excel-m3", "excel-m4"],
+      "leccionActual": "Grabar macros: automatiza tareas repetitivas",
+      "porcentaje": 67,
+      "ultimoAcceso": "2026-02-07"
+    },
+    "sql-bases-datos": {
+      "modulosCompletados": ["sql-m1", "sql-m2"],
+      "leccionActual": "INNER JOIN: combinar datos de dos tablas",
+      "porcentaje": 40,
+      "ultimoAcceso": "2026-02-06"
+    },
+    "power-bi": {
+      "modulosCompletados": ["pbi-m1"],
+      "leccionActual": "Modelo estrella: tablas de hechos y dimensiones",
+      "porcentaje": 25,
+      "ultimoAcceso": "2026-02-05"
+    },
+    "python-basico": {
+      "modulosCompletados": [],
+      "leccionActual": "Instalar Python y configurar VS Code (o usar Replit)",
+      "porcentaje": 10,
+      "ultimoAcceso": "2026-02-03"
+    }
+  },
+  "quizResultados": [
+    { "quizId": "quiz-excel-m2", "puntaje": 88, "fecha": "2026-01-28", "cursoId": "excel-basico-avanzado" },
+    { "quizId": "quiz-excel-m3", "puntaje": 73, "fecha": "2026-02-01", "cursoId": "excel-basico-avanzado" },
+    { "quizId": "quiz-web-m1", "puntaje": 95, "fecha": "2026-02-04", "cursoId": "desarrollo-web" }
+  ],
+  "logros": [
+    { "id": "first-quiz", "titulo": "Primer Quiz", "descripcion": "Completaste tu primer quiz", "icono": "fa-star", "fecha": "2026-01-28" },
+    { "id": "excel-warrior", "titulo": "Guerrero de Excel", "descripcion": "Aprobaste 2 quizzes de Excel", "icono": "fa-file-excel", "fecha": "2026-02-01" },
+    { "id": "on-fire", "titulo": "En Racha", "descripcion": "3 días consecutivos de estudio", "icono": "fa-fire", "fecha": "2026-02-06" }
+  ],
+  "certificados": []
+}

@@ -1,0 +1,38 @@
+{
+  "academia": {
+    "nombre": "Coordinadora Paola Ferrer",
+    "tagline": "Tu centro de formación técnica y profesional",
+    "facebook": "https://www.facebook.com/coordinadorapaolaferrer",
+    "whatsapp": "https://wa.me/52XXXXXXXXXX",
+    "email": "contacto@coordinadorapaolaferrer.com",
+    "anio": 2026
+  },
+  "estadisticas": {
+    "cursosActivos": 12,
+    "estudiantes": 500,
+    "satisfaccion": 95,
+    "certificadosEmitidos": 200
+  },
+  "herramientas": {
+    "googleClassroom": "https://classroom.google.com",
+    "kahoot": "https://kahoot.com",
+    "kahootCreator": "https://create.kahoot.it",
+    "googleForms": "https://forms.google.com",
+    "edpuzzle": "https://edpuzzle.com",
+    "youtube": "https://youtube.com",
+    "youtubeStudio": "https://studio.youtube.com",
+    "replit": "https://replit.com",
+    "googleSheets": "https://sheets.google.com",
+    "googleDrive": "https://drive.google.com",
+    "canva": "https://canva.com",
+    "discord": "https://discord.gg/XXXXX"
+  },
+  "colores": {
+    "primario": "#1B2A4A",
+    "secundario": "#00BFA6",
+    "acento": "#FFB800",
+    "fondo": "#F5F6FA",
+    "texto": "#2D3436"
+  },
+  "profesorPassword": "profe2026"
+}

@@ -1,0 +1,937 @@
+[
+  {
+    "id": "excel-basico-avanzado",
+    "titulo": "Excel Básico a Avanzado",
+    "categoria": "office",
+    "categoriaLabel": "Office & Productividad",
+    "nivel": "Básico → Avanzado",
+    "nivelClase": "basico",
+    "duracion": "40 horas",
+    "modulosTotales": 6,
+    "quizzesTotales": 12,
+    "icono": "fa-file-excel",
+    "iconoColor": "#4CAF50",
+    "color": "#4CAF50",
+    "descripcionCorta": "Domina hojas de cálculo, fórmulas, tablas dinámicas, macros y dashboards profesionales.",
+    "descripcionCompleta": "Curso integral de Microsoft Excel que te lleva desde los fundamentos básicos hasta técnicas avanzadas de análisis de datos. Aprenderás a crear fórmulas complejas, tablas dinámicas, gráficos profesionales, automatización con macros VBA, y dashboards interactivos para reportes empresariales. Ideal para profesionales que necesitan dominar la herramienta más utilizada en el mundo corporativo.",
+    "requisitos": ["Computadora con Excel 2016 o superior (o Google Sheets)", "Conocimientos básicos de computación"],
+    "modulos": [
+      {
+        "id": "excel-m1",
+        "titulo": "Fundamentos y Navegación",
+        "orden": 1,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Interfaz de Excel y personalización del entorno", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Tipos de datos: texto, números, fechas y formatos", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Navegación eficiente con atajos de teclado", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Práctica: Crear y formatear tu primera hoja de cálculo", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "excel-m2",
+        "titulo": "Fórmulas y Funciones Esenciales",
+        "orden": 2,
+        "duracion": "8 horas",
+        "lecciones": [
+          { "titulo": "SUMA, PROMEDIO, CONTAR, MAX, MIN", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "SI, SI.CONJUNTO, Y, O — Lógica condicional", "tipo": "video", "duracion": "40 min" },
+          { "titulo": "BUSCARV, BUSCARH, INDICE+COINCIDIR", "tipo": "video", "duracion": "45 min" },
+          { "titulo": "Referencias absolutas vs relativas ($A$1 vs A1)", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Práctica: Nómina con cálculos automáticos", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "excel-m3",
+        "titulo": "Tablas Dinámicas y Gráficos",
+        "orden": 3,
+        "duracion": "8 horas",
+        "lecciones": [
+          { "titulo": "Crear y configurar tablas dinámicas desde cero", "tipo": "video", "duracion": "40 min" },
+          { "titulo": "Segmentadores, filtros y campos calculados", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Gráficos dinámicos: barras, líneas, combinados", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Análisis de ventas con tablas dinámicas", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "excel-m4",
+        "titulo": "Funciones Avanzadas",
+        "orden": 4,
+        "duracion": "7 horas",
+        "lecciones": [
+          { "titulo": "SUMAR.SI.CONJUNTO y CONTAR.SI.CONJUNTO", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Funciones de texto: CONCATENAR, IZQUIERDA, EXTRAE", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Funciones de fecha: HOY, DIAS.LAB, SIFECHA", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Validación de datos y listas desplegables", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Sistema de inventario con validaciones", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "excel-m5",
+        "titulo": "Macros y Automatización VBA",
+        "orden": 5,
+        "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Grabar macros: automatiza tareas repetitivas", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Introducción a VBA: variables, bucles, condicionales", "tipo": "video", "duracion": "45 min" },
+          { "titulo": "Crear formularios de entrada (UserForms)", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Práctica: Macro para generar reportes automáticos", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "excel-m6",
+        "titulo": "Dashboards y Reportes Profesionales",
+        "orden": 6,
+        "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Diseño de dashboards: layout, colores, tipografía", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Gráficos avanzados: termómetro, waffle, KPIs", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Formato condicional avanzado con íconos y barras", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Proyecto Final: Dashboard de ventas interactivo", "tipo": "practica", "duracion": "90 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "google-workspace",
+    "titulo": "Google Workspace Completo",
+    "categoria": "office",
+    "categoriaLabel": "Office & Productividad",
+    "nivel": "Básico",
+    "nivelClase": "basico",
+    "duracion": "20 horas",
+    "modulosTotales": 5,
+    "quizzesTotales": 8,
+    "icono": "fab fa-google",
+    "iconoColor": "#2196F3",
+    "color": "#2196F3",
+    "descripcionCorta": "Docs, Sheets, Slides, Forms, Calendar y Drive para productividad personal y empresarial.",
+    "descripcionCompleta": "Domina todas las herramientas de Google Workspace para trabajar de forma colaborativa y eficiente. Desde la creación de documentos profesionales en Google Docs, hojas de cálculo en Sheets, presentaciones impactantes en Slides, hasta la automatización de encuestas con Forms y la organización con Calendar y Drive.",
+    "requisitos": ["Cuenta de Google (Gmail)", "Navegador web actualizado"],
+    "modulos": [
+      {
+        "id": "gw-m1",
+        "titulo": "Google Docs — Documentos Profesionales",
+        "orden": 1,
+        "duracion": "4 horas",
+        "lecciones": [
+          { "titulo": "Crear, formatear y organizar documentos", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Colaboración en tiempo real y comentarios", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Plantillas, estilos y tabla de contenidos", "tipo": "practica", "duracion": "40 min" }
+        ]
+      },
+      {
+        "id": "gw-m2",
+        "titulo": "Google Sheets — Hojas de Cálculo",
+        "orden": 2,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Fórmulas esenciales y formato de datos", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Gráficos y tablas dinámicas en Sheets", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Presupuesto personal automatizado", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "gw-m3",
+        "titulo": "Google Slides — Presentaciones Impactantes",
+        "orden": 3,
+        "duracion": "3 horas",
+        "lecciones": [
+          { "titulo": "Diseño de slides con principios visuales", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Animaciones, transiciones y modo presentador", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Pitch deck de 10 slides", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "gw-m4",
+        "titulo": "Google Forms — Encuestas y Evaluaciones",
+        "orden": 4,
+        "duracion": "3 horas",
+        "lecciones": [
+          { "titulo": "Crear formularios con lógica condicional", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Auto-calificación para quizzes educativos", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Análisis de respuestas con Sheets", "tipo": "practica", "duracion": "30 min" }
+        ]
+      },
+      {
+        "id": "gw-m5",
+        "titulo": "Drive, Calendar y Productividad",
+        "orden": 5,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Organización de archivos y permisos en Drive", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Google Calendar: eventos, recordatorios y agenda", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Flujos de trabajo integrados entre herramientas", "tipo": "practica", "duracion": "40 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "power-bi",
+    "titulo": "Power BI — Visualización de Datos",
+    "categoria": "datos",
+    "categoriaLabel": "Datos & BI",
+    "nivel": "Intermedio",
+    "nivelClase": "intermedio",
+    "duracion": "20 horas",
+    "modulosTotales": 4,
+    "quizzesTotales": 8,
+    "icono": "fa-chart-pie",
+    "iconoColor": "#FFB800",
+    "color": "#FFB800",
+    "descripcionCorta": "Crea dashboards interactivos y reportes de inteligencia de negocios con Power BI Desktop.",
+    "descripcionCompleta": "Aprende a transformar datos crudos en visualizaciones interactivas y reportes de negocio con Microsoft Power BI. Desde la conexión a fuentes de datos, limpieza con Power Query, modelado de datos, hasta la creación de dashboards profesionales con DAX y publicación en Power BI Service.",
+    "requisitos": ["Conocimientos de Excel intermedio", "Computadora con Windows (Power BI Desktop es solo Windows)", "Pensamiento analítico básico"],
+    "modulos": [
+      {
+        "id": "pbi-m1",
+        "titulo": "Introducción y Conexión de Datos",
+        "orden": 1,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Instalación de Power BI Desktop y tour de la interfaz", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Conectar fuentes: Excel, CSV, bases de datos, web", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Power Query: limpiar y transformar datos", "tipo": "video", "duracion": "40 min" },
+          { "titulo": "Práctica: Importar y limpiar dataset de ventas", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "pbi-m2",
+        "titulo": "Modelado de Datos y Relaciones",
+        "orden": 2,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Modelo estrella: tablas de hechos y dimensiones", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Crear relaciones entre tablas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Columnas calculadas y medidas con DAX básico", "tipo": "video", "duracion": "40 min" },
+          { "titulo": "Práctica: Modelar datos de e-commerce", "tipo": "practica", "duracion": "50 min" }
+        ]
+      },
+      {
+        "id": "pbi-m3",
+        "titulo": "Visualizaciones y Dashboards",
+        "orden": 3,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Gráficos nativos: barras, líneas, mapas, treemaps", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "KPIs, tarjetas y formato condicional", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Filtros, segmentadores e interacción entre visuales", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Dashboard de ventas interactivo", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "pbi-m4",
+        "titulo": "DAX Avanzado y Publicación",
+        "orden": 4,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Funciones DAX: CALCULATE, FILTER, ALL, RELATED", "tipo": "video", "duracion": "40 min" },
+          { "titulo": "Time intelligence: YTD, MTD, comparaciones", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Publicar en Power BI Service y compartir", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Proyecto Final: Dashboard ejecutivo completo", "tipo": "practica", "duracion": "90 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "desarrollo-web",
+    "titulo": "Desarrollo Web (HTML, CSS, JavaScript)",
+    "categoria": "programacion",
+    "categoriaLabel": "Programación",
+    "nivel": "Básico → Intermedio",
+    "nivelClase": "basico",
+    "duracion": "35 horas",
+    "modulosTotales": 5,
+    "quizzesTotales": 10,
+    "icono": "fa-code",
+    "iconoColor": "#FF5722",
+    "color": "#FF5722",
+    "descripcionCorta": "Crea sitios web desde cero con HTML5, CSS3 y JavaScript moderno. Tu primera página en la primera clase.",
+    "descripcionCompleta": "Curso práctico de desarrollo web front-end donde construirás sitios web reales desde cero. Comenzarás con la estructura HTML5, le darás estilo con CSS3 (incluyendo Flexbox y Grid), y agregarás interactividad con JavaScript moderno. Al terminar, tendrás un portafolio web publicado en internet.",
+    "requisitos": ["Computadora con navegador web moderno (Chrome o Firefox)", "Editor de código (VS Code, gratuito)", "No se requiere experiencia previa en programación"],
+    "modulos": [
+      {
+        "id": "web-m1",
+        "titulo": "HTML5 — Estructura y Semántica",
+        "orden": 1,
+        "duracion": "7 horas",
+        "lecciones": [
+          { "titulo": "Tu primera página web: estructura HTML básica", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Etiquetas semánticas: header, nav, main, footer, article", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Formularios: inputs, selects, validación HTML5", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Imágenes, enlaces, listas y tablas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Crear un CV en HTML puro", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "web-m2",
+        "titulo": "CSS3 — Diseño y Layout",
+        "orden": 2,
+        "duracion": "8 horas",
+        "lecciones": [
+          { "titulo": "Selectores, propiedades, cascada y especificidad", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Box model, margin, padding, border", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Flexbox: alinear y distribuir elementos", "tipo": "video", "duracion": "40 min" },
+          { "titulo": "CSS Grid: layouts de dos dimensiones", "tipo": "video", "duracion": "40 min" },
+          { "titulo": "Responsive design con media queries", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Landing page responsive", "tipo": "practica", "duracion": "90 min" }
+        ]
+      },
+      {
+        "id": "web-m3",
+        "titulo": "JavaScript — Fundamentos",
+        "orden": 3,
+        "duracion": "8 horas",
+        "lecciones": [
+          { "titulo": "Variables, tipos de datos y operadores", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Condicionales (if/else) y bucles (for, while)", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Funciones: declaración, parámetros, arrow functions", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Arrays y objetos: métodos esenciales", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Práctica: Calculadora funcional en JavaScript", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "web-m4",
+        "titulo": "JavaScript y el DOM",
+        "orden": 4,
+        "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Seleccionar y modificar elementos del DOM", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Eventos: click, submit, keyup, scroll", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Crear elementos dinámicamente y manipular clases", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "localStorage: guardar datos en el navegador", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: App de lista de tareas (To-Do)", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "web-m5",
+        "titulo": "Proyecto Final y Publicación",
+        "orden": 5,
+        "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "APIs: fetch, JSON, consumir datos externos", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Git y GitHub: control de versiones básico", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Publicar en GitHub Pages gratis", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Proyecto Final: Portafolio web personal", "tipo": "practica", "duracion": "120 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "python-basico",
+    "titulo": "Python desde Cero",
+    "categoria": "programacion",
+    "categoriaLabel": "Programación",
+    "nivel": "Básico",
+    "nivelClase": "basico",
+    "duracion": "25 horas",
+    "modulosTotales": 5,
+    "quizzesTotales": 10,
+    "icono": "fab fa-python",
+    "iconoColor": "#3776AB",
+    "color": "#3776AB",
+    "descripcionCorta": "Aprende el lenguaje más demandado del mercado. Desde variables hasta automatización de tareas reales.",
+    "descripcionCompleta": "Curso introductorio de Python orientado a principiantes absolutos. Aprenderás los fundamentos de la programación: variables, condicionales, bucles, funciones, listas y diccionarios. Luego aplicarás estos conocimientos en proyectos prácticos como automatización de archivos, web scraping básico y análisis de datos con pandas.",
+    "requisitos": ["Computadora con acceso a internet", "No se requiere experiencia previa en programación", "Ganas de aprender y practicar"],
+    "modulos": [
+      {
+        "id": "py-m1",
+        "titulo": "Primeros Pasos con Python",
+        "orden": 1,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Instalar Python y configurar VS Code (o usar Replit)", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Tu primer programa: print(), input(), variables", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Tipos de datos: int, float, str, bool", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Operadores aritméticos y de comparación", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Calculadora de propinas", "tipo": "practica", "duracion": "40 min" }
+        ]
+      },
+      {
+        "id": "py-m2",
+        "titulo": "Control de Flujo",
+        "orden": 2,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "if, elif, else — Tomar decisiones en código", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Bucle for: iterar sobre secuencias", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Bucle while: repetir hasta una condición", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Juego de adivinanza de números", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "py-m3",
+        "titulo": "Estructuras de Datos",
+        "orden": 3,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Listas: crear, modificar, métodos (append, sort, slice)", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Diccionarios: key-value, acceso, iteración", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Tuplas y sets: cuándo usar cada uno", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "List comprehensions: código Pythónico", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Sistema de contactos (CRUD)", "tipo": "practica", "duracion": "50 min" }
+        ]
+      },
+      {
+        "id": "py-m4",
+        "titulo": "Funciones y Módulos",
+        "orden": 4,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Definir funciones: def, parámetros, return", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Scope de variables: local vs global", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Módulos: import, from, paquetes estándar", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Manejo de archivos: leer y escribir .txt y .csv", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Analizador de archivo CSV de ventas", "tipo": "practica", "duracion": "50 min" }
+        ]
+      },
+      {
+        "id": "py-m5",
+        "titulo": "Proyectos Prácticos",
+        "orden": 5,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Introducción a pandas: DataFrames y análisis", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Automatización: renombrar archivos, enviar emails", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Web scraping básico con requests + BeautifulSoup", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Proyecto Final: Dashboard de datos con Python", "tipo": "practica", "duracion": "90 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "sql-bases-datos",
+    "titulo": "SQL y Bases de Datos",
+    "categoria": "programacion",
+    "categoriaLabel": "Programación",
+    "nivel": "Básico → Intermedio",
+    "nivelClase": "basico",
+    "duracion": "25 horas",
+    "modulosTotales": 5,
+    "quizzesTotales": 10,
+    "icono": "fa-database",
+    "iconoColor": "#2196F3",
+    "color": "#2196F3",
+    "descripcionCorta": "Consulta, filtra y analiza datos con SQL. La habilidad más pedida en análisis de datos.",
+    "descripcionCompleta": "Aprende a consultar y manipular bases de datos relacionales con SQL. Desde SELECT básico hasta JOINs complejos, subconsultas, funciones de agregación y diseño de esquemas. Usarás MySQL/PostgreSQL en ejercicios prácticos con datasets reales de negocios.",
+    "requisitos": ["Computadora con acceso a internet", "Conocimiento básico de Excel o hojas de cálculo"],
+    "modulos": [
+      {
+        "id": "sql-m1",
+        "titulo": "Fundamentos de Bases de Datos",
+        "orden": 1,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "¿Qué es una base de datos relacional? Tablas, filas, columnas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Instalar y configurar el entorno (o usar DB online)", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "SELECT, FROM, WHERE — Tu primera consulta", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Consultar una base de datos de empleados", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "sql-m2",
+        "titulo": "Filtrado y Ordenamiento",
+        "orden": 2,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "WHERE con operadores: AND, OR, BETWEEN, LIKE, IN", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "ORDER BY, LIMIT, DISTINCT, alias", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Funciones de agregación: COUNT, SUM, AVG, MAX, MIN", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "GROUP BY y HAVING", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Análisis de ventas por región y producto", "tipo": "practica", "duracion": "50 min" }
+        ]
+      },
+      {
+        "id": "sql-m3",
+        "titulo": "JOINs — Unir Tablas",
+        "orden": 3,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "INNER JOIN: combinar datos de dos tablas", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "LEFT JOIN, RIGHT JOIN, FULL JOIN", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Múltiples JOINs y self-joins", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Reporte de pedidos con clientes y productos", "tipo": "practica", "duracion": "50 min" }
+        ]
+      },
+      {
+        "id": "sql-m4",
+        "titulo": "Subconsultas y Funciones",
+        "orden": 4,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Subconsultas en WHERE, FROM y SELECT", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Funciones de texto, fecha y numéricas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "CASE WHEN: lógica condicional en SQL", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Window Functions: ROW_NUMBER, RANK, particiones", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Ranking de vendedores por trimestre", "tipo": "practica", "duracion": "50 min" }
+        ]
+      },
+      {
+        "id": "sql-m5",
+        "titulo": "Diseño y Manipulación de Datos",
+        "orden": 5,
+        "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "CREATE TABLE, tipos de datos, restricciones", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "INSERT, UPDATE, DELETE — Manipular datos", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Llaves primarias, foráneas y normalización", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Proyecto Final: Diseñar y consultar una BD de tienda", "tipo": "practica", "duracion": "60 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "office-365",
+    "titulo": "Microsoft Office 365",
+    "categoria": "office",
+    "categoriaLabel": "Office & Productividad",
+    "nivel": "Básico → Intermedio",
+    "nivelClase": "basico",
+    "duracion": "24 horas",
+    "modulosTotales": 4,
+    "quizzesTotales": 8,
+    "icono": "fab fa-microsoft",
+    "iconoColor": "#0078D4",
+    "color": "#0078D4",
+    "descripcionCorta": "Word, PowerPoint, Outlook y Teams para productividad profesional en la nube.",
+    "descripcionCompleta": "Domina las herramientas clave de Microsoft 365: Word para documentos profesionales, PowerPoint para presentaciones impactantes, Outlook para gestión de email y calendario, y Teams para colaboración y reuniones. Aprende a trabajar en la nube con OneDrive y co-autoría en tiempo real.",
+    "requisitos": ["Cuenta de Microsoft 365 (licencia educativa o empresarial)", "Computadora con Windows o macOS"],
+    "modulos": [
+      {
+        "id": "o365-m1", "titulo": "Word — Documentos Profesionales", "orden": 1, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Formato avanzado: estilos, secciones, encabezados", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Tablas, imágenes y diseño de página", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Combinar correspondencia (mail merge)", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Crear un informe corporativo profesional", "tipo": "practica", "duracion": "50 min" }
+        ]
+      },
+      {
+        "id": "o365-m2", "titulo": "PowerPoint — Presentaciones Efectivas", "orden": 2, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Principios de diseño visual para slides", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Animaciones y transiciones con propósito", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Presentación ejecutiva de 15 slides", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "o365-m3", "titulo": "Outlook y Teams — Comunicación", "orden": 3, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Outlook: reglas, categorías, calendario compartido", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Teams: canales, reuniones, integración con Office", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Organizar un proyecto en Teams con canales", "tipo": "practica", "duracion": "40 min" }
+        ]
+      },
+      {
+        "id": "o365-m4", "titulo": "OneDrive y Colaboración en la Nube", "orden": 4, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "OneDrive: sincronización, compartir, versiones", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Co-autoría en tiempo real en Word, Excel, PowerPoint", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Proyecto Final: Flujo de trabajo colaborativo completo", "tipo": "practica", "duracion": "60 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "analitica-datos",
+    "titulo": "Analítica de Datos",
+    "categoria": "datos",
+    "categoriaLabel": "Datos & BI",
+    "nivel": "Intermedio",
+    "nivelClase": "intermedio",
+    "duracion": "30 horas",
+    "modulosTotales": 5,
+    "quizzesTotales": 10,
+    "icono": "fa-chart-line",
+    "iconoColor": "#E91E63",
+    "color": "#E91E63",
+    "descripcionCorta": "Aprende a tomar decisiones basadas en datos: recolección, limpieza, análisis y visualización.",
+    "descripcionCompleta": "Curso integral de análisis de datos que cubre todo el proceso analítico: desde la formulación de preguntas de negocio, recolección y limpieza de datos, hasta el análisis estadístico y la presentación de resultados con visualizaciones. Usarás Excel, Google Sheets, y herramientas de BI.",
+    "requisitos": ["Excel intermedio o Google Sheets", "Pensamiento lógico y analítico"],
+    "modulos": [
+      {
+        "id": "ad-m1", "titulo": "Fundamentos del Análisis de Datos", "orden": 1, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Tipos de datos, métricas y KPIs de negocio", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "El proceso analítico: pregunta → datos → análisis → acción", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Definir KPIs para un caso de negocio real", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "ad-m2", "titulo": "Limpieza y Preparación de Datos", "orden": 2, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Identificar datos sucios: duplicados, nulos, inconsistencias", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Técnicas de limpieza en Excel/Sheets", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Práctica: Limpiar un dataset real con 5 tipos de errores", "tipo": "practica", "duracion": "50 min" }
+        ]
+      },
+      {
+        "id": "ad-m3", "titulo": "Análisis Exploratorio (EDA)", "orden": 3, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Estadística descriptiva: media, mediana, desviación", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Distribuciones, correlaciones y outliers", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: EDA completo de dataset de ventas", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "ad-m4", "titulo": "Visualización de Datos", "orden": 4, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Principios de visualización: qué gráfico para qué dato", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Storytelling con datos: narrativa visual", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Crear 5 visualizaciones que cuenten una historia", "tipo": "practica", "duracion": "50 min" }
+        ]
+      },
+      {
+        "id": "ad-m5", "titulo": "Proyecto Final: Caso de Negocio", "orden": 5, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Briefing: analizar datos de una empresa real", "tipo": "lectura", "duracion": "15 min" },
+          { "titulo": "Proyecto: Análisis completo con recomendaciones", "tipo": "practica", "duracion": "120 min" },
+          { "titulo": "Presentación: comunicar hallazgos a stakeholders", "tipo": "practica", "duracion": "45 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "fundamentos-programacion",
+    "titulo": "Fundamentos de Programación",
+    "categoria": "programacion",
+    "categoriaLabel": "Programación",
+    "nivel": "Básico",
+    "nivelClase": "basico",
+    "duracion": "20 horas",
+    "modulosTotales": 4,
+    "quizzesTotales": 8,
+    "icono": "fa-laptop-code",
+    "iconoColor": "#009688",
+    "color": "#009688",
+    "descripcionCorta": "Aprende a pensar como programador. Lógica, algoritmos y resolución de problemas para principiantes.",
+    "descripcionCompleta": "Curso introductorio que enseña los conceptos universales de la programación sin atarse a un lenguaje específico. Aprenderás lógica de programación, algoritmos, diagramas de flujo, pseudocódigo y resolución de problemas paso a paso. La base perfecta antes de aprender cualquier lenguaje.",
+    "requisitos": ["Ninguno — curso para principiantes absolutos", "Computadora con acceso a internet"],
+    "modulos": [
+      {
+        "id": "fp-m1", "titulo": "Pensamiento Computacional", "orden": 1, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "¿Qué es programar? Del problema a la solución", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Descomposición, abstracción y patrones", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Resolver 5 problemas lógicos sin código", "tipo": "practica", "duracion": "40 min" }
+        ]
+      },
+      {
+        "id": "fp-m2", "titulo": "Algoritmos y Diagramas de Flujo", "orden": 2, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Algoritmos secuenciales, condicionales y repetitivos", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Diagramas de flujo: simbología y construcción", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Pseudocódigo: escribir lógica en español", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Diseñar algoritmo de cajero automático", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "fp-m3", "titulo": "Variables, Datos y Operaciones", "orden": 3, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Variables y tipos de datos: enteros, texto, booleanos", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Operaciones aritméticas y lógicas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Entrada/salida de datos", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Programar una calculadora en pseudocódigo", "tipo": "practica", "duracion": "40 min" }
+        ]
+      },
+      {
+        "id": "fp-m4", "titulo": "Tu Primer Programa Real", "orden": 4, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "De pseudocódigo a código real (Python/JavaScript)", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Depuración: encontrar y corregir errores", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Proyecto Final: Mini-programa funcional a tu elección", "tipo": "practica", "duracion": "60 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "business-intelligence",
+    "titulo": "Business Intelligence",
+    "categoria": "datos",
+    "categoriaLabel": "Datos & BI",
+    "nivel": "Intermedio",
+    "nivelClase": "intermedio",
+    "duracion": "25 horas",
+    "modulosTotales": 4,
+    "quizzesTotales": 8,
+    "icono": "fa-briefcase",
+    "iconoColor": "#673AB7",
+    "color": "#673AB7",
+    "descripcionCorta": "Transforma datos en decisiones estratégicas. ETL, reportes y cultura data-driven.",
+    "descripcionCompleta": "Curso de Business Intelligence enfocado en el proceso completo: desde la extracción de datos de múltiples fuentes (ETL), pasando por el modelado y almacenamiento, hasta la creación de reportes y dashboards que impulsan la toma de decisiones empresariales.",
+    "requisitos": ["Excel intermedio", "Conceptos básicos de bases de datos (recomendado)"],
+    "modulos": [
+      {
+        "id": "bi-m1", "titulo": "Fundamentos de BI", "orden": 1, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "¿Qué es BI? De datos a decisiones de negocio", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Arquitectura BI: fuentes, ETL, warehouse, reportes", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "KPIs y métricas por industria", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Definir la estrategia BI de una empresa", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "bi-m2", "titulo": "ETL y Preparación de Datos", "orden": 2, "duracion": "7 horas",
+        "lecciones": [
+          { "titulo": "Extracción de datos de múltiples fuentes", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Transformación: limpieza, estandarización, enriquecimiento", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Carga: modelos dimensionales y data warehouse", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Proceso ETL completo con Excel/Power Query", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "bi-m3", "titulo": "Reportes y Dashboards de BI", "orden": 3, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Diseño de reportes efectivos para gerencia", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Dashboards operativos vs estratégicos vs analíticos", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Crear un dashboard gerencial de ventas", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "bi-m4", "titulo": "BI en la Práctica", "orden": 4, "duracion": "6 horas",
+        "lecciones": [
+          { "titulo": "Self-service BI: empoderar usuarios de negocio", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Cultura data-driven: implementar BI en una organización", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Proyecto Final: Solución BI completa para un caso real", "tipo": "practica", "duracion": "90 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "gestion-proyectos-scrum",
+    "titulo": "Gestión de Proyectos / Scrum / Agile",
+    "categoria": "gestion",
+    "categoriaLabel": "Gestión & PM",
+    "nivel": "Básico → Intermedio",
+    "nivelClase": "basico",
+    "duracion": "15 horas",
+    "modulosTotales": 4,
+    "quizzesTotales": 8,
+    "icono": "fa-diagram-project",
+    "iconoColor": "#FF9800",
+    "color": "#FF9800",
+    "descripcionCorta": "Lidera proyectos con metodologías ágiles. Scrum, Kanban y herramientas de gestión modernas.",
+    "descripcionCompleta": "Aprende a gestionar proyectos con metodologías ágiles y tradicionales. Domina Scrum (roles, eventos, artefactos), Kanban, y herramientas como Trello y Jira. Ideal para líderes de equipo, project managers y cualquier profesional que necesite organizar trabajo colaborativo de forma eficiente.",
+    "requisitos": ["Experiencia laboral básica (cualquier industria)", "Ganas de mejorar cómo organizas tu trabajo"],
+    "modulos": [
+      {
+        "id": "pm-m1", "titulo": "Fundamentos de Gestión de Proyectos", "orden": 1, "duracion": "4 horas",
+        "lecciones": [
+          { "titulo": "¿Qué es un proyecto? Alcance, tiempo, costo", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Cascada vs Ágil: cuándo usar cada enfoque", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Definir el acta de un proyecto real", "tipo": "practica", "duracion": "40 min" }
+        ]
+      },
+      {
+        "id": "pm-m2", "titulo": "Scrum: El Framework Ágil", "orden": 2, "duracion": "4 horas",
+        "lecciones": [
+          { "titulo": "Roles: Product Owner, Scrum Master, Dev Team", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Eventos: Sprint, Planning, Daily, Review, Retro", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Artefactos: Product Backlog, Sprint Backlog, Incremento", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Simular un Sprint Planning completo", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "pm-m3", "titulo": "Kanban y Herramientas", "orden": 3, "duracion": "3 horas",
+        "lecciones": [
+          { "titulo": "Kanban: tableros, WIP limits, flujo continuo", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Herramientas: Trello, Jira, Asana — tour práctico", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Configurar un tablero Kanban en Trello", "tipo": "practica", "duracion": "30 min" }
+        ]
+      },
+      {
+        "id": "pm-m4", "titulo": "Liderazgo y Proyecto Final", "orden": 4, "duracion": "4 horas",
+        "lecciones": [
+          { "titulo": "Comunicación efectiva y gestión de stakeholders", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Métricas ágiles: velocity, burndown, lead time", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Proyecto Final: Plan de proyecto ágil completo", "tipo": "practica", "duracion": "60 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "ia-machine-learning",
+    "titulo": "Fundamentos de IA y Machine Learning",
+    "categoria": "datos",
+    "categoriaLabel": "Datos & BI",
+    "nivel": "Intermedio",
+    "nivelClase": "intermedio",
+    "duracion": "20 horas",
+    "modulosTotales": 4,
+    "quizzesTotales": 8,
+    "icono": "fa-robot",
+    "iconoColor": "#F44336",
+    "color": "#F44336",
+    "descripcionCorta": "Entiende cómo funciona la IA, el machine learning y cómo aplicarlos en el mundo real.",
+    "descripcionCompleta": "Curso introductorio que desmitifica la inteligencia artificial y el machine learning. Aprenderás los conceptos fundamentales: tipos de aprendizaje, algoritmos principales, redes neuronales, y aplicaciones prácticas. No requiere programación avanzada — usaremos herramientas visuales y Python básico.",
+    "requisitos": ["Conocimiento básico de Python (recomendado)", "Conocimiento básico de estadística", "Curiosidad por la tecnología"],
+    "modulos": [
+      {
+        "id": "ia-m1", "titulo": "¿Qué es la Inteligencia Artificial?", "orden": 1, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Historia y estado actual de la IA", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Tipos de IA: estrecha, general, superinteligencia", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Machine Learning, Deep Learning, NLP — el mapa completo", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Identificar IA en tu vida cotidiana", "tipo": "practica", "duracion": "30 min" }
+        ]
+      },
+      {
+        "id": "ia-m2", "titulo": "Machine Learning en Práctica", "orden": 2, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Aprendizaje supervisado: clasificación y regresión", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Aprendizaje no supervisado: clustering y reducción", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Entrenar un modelo de predicción con Teachable Machine", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "ia-m3", "titulo": "IA Generativa y Herramientas", "orden": 3, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "ChatGPT, Claude, Gemini: cómo funcionan los LLMs", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Prompt engineering: obtener mejores resultados", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Herramientas de IA para productividad profesional", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Automatizar tareas reales con IA generativa", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "ia-m4", "titulo": "Ética, Impacto y Proyecto Final", "orden": 4, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Sesgos en IA, privacidad y regulación", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "IA en LATAM: oportunidades y desafíos", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Proyecto Final: Propuesta de solución con IA para un problema real", "tipo": "practica", "duracion": "60 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "proximamente"
+  },
+  {
+    "id": "liderazgo-equipos",
+    "titulo": "Liderazgo y Gestión de Equipos",
+    "categoria": "gestion",
+    "categoriaLabel": "Gestión & PM",
+    "nivel": "Intermedio",
+    "nivelClase": "intermedio",
+    "duracion": "12 horas",
+    "modulosTotales": 3,
+    "quizzesTotales": 6,
+    "icono": "fa-users-gear",
+    "iconoColor": "#795548",
+    "color": "#795548",
+    "descripcionCorta": "Desarrolla habilidades de liderazgo, comunicación y gestión de equipos de alto rendimiento.",
+    "descripcionCompleta": "Curso práctico de habilidades de liderazgo para profesionales que gestionan o aspiran a gestionar equipos. Cubre estilos de liderazgo, comunicación efectiva, resolución de conflictos, motivación, delegación y gestión del cambio. Basado en casos reales del entorno corporativo LATAM.",
+    "requisitos": ["Experiencia laboral mínima de 1 año", "Interés en roles de liderazgo o gestión"],
+    "modulos": [
+      {
+        "id": "lid-m1", "titulo": "Fundamentos del Liderazgo", "orden": 1, "duracion": "4 horas",
+        "lecciones": [
+          { "titulo": "Estilos de liderazgo: situacional, transformacional, servicial", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Autoconocimiento: tu perfil como líder (assessment)", "tipo": "practica", "duracion": "30 min" },
+          { "titulo": "Comunicación asertiva y escucha activa", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Role-play de conversaciones difíciles", "tipo": "practica", "duracion": "40 min" }
+        ]
+      },
+      {
+        "id": "lid-m2", "titulo": "Gestión de Equipos", "orden": 2, "duracion": "4 horas",
+        "lecciones": [
+          { "titulo": "Formar y desarrollar equipos de alto rendimiento", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Delegación efectiva y accountability", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Resolución de conflictos: mediación y negociación", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Plan de desarrollo para un equipo ficticio", "tipo": "practica", "duracion": "40 min" }
+        ]
+      },
+      {
+        "id": "lid-m3", "titulo": "Liderazgo en la Práctica", "orden": 3, "duracion": "4 horas",
+        "lecciones": [
+          { "titulo": "Feedback efectivo: el modelo SBI", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Gestión del cambio y resiliencia organizacional", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Proyecto Final: Plan de liderazgo personal a 90 días", "tipo": "practica", "duracion": "60 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "activo"
+  },
+  {
+    "id": "transformacion-digital",
+    "titulo": "Transformación Digital",
+    "categoria": "gestion",
+    "categoriaLabel": "Gestión & PM",
+    "nivel": "Intermedio",
+    "nivelClase": "intermedio",
+    "duracion": "15 horas",
+    "modulosTotales": 3,
+    "quizzesTotales": 6,
+    "icono": "fa-microchip",
+    "iconoColor": "#00BCD4",
+    "color": "#00BCD4",
+    "descripcionCorta": "Lidera la transformación digital de tu organización. Estrategia, herramientas y cultura digital.",
+    "descripcionCompleta": "Curso que prepara a profesionales y líderes para comprender y ejecutar procesos de transformación digital en sus organizaciones. Cubre estrategia digital, automatización de procesos, cultura de innovación, herramientas tecnológicas y gestión del cambio en el contexto latinoamericano.",
+    "requisitos": ["Experiencia profesional de 2+ años", "Conocimiento básico de tecnología"],
+    "modulos": [
+      {
+        "id": "td-m1", "titulo": "Estrategia Digital", "orden": 1, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "¿Qué es la transformación digital? Más allá de la tecnología", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Madurez digital: diagnóstico de tu organización", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Roadmap de transformación: priorizar iniciativas", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Práctica: Diagnóstico digital de un caso de estudio", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "td-m2", "titulo": "Herramientas y Automatización", "orden": 2, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Ecosistema de herramientas digitales por área", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Automatización de procesos con herramientas no-code", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "IA y datos como motor de transformación", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Automatizar un proceso de negocio con Zapier/Make", "tipo": "practica", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "td-m3", "titulo": "Cultura Digital y Cambio", "orden": 3, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Cultura de innovación y mindset digital", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Gestión del cambio: resistencia y adopción", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Proyecto Final: Plan de transformación digital para una PYME", "tipo": "practica", "duracion": "60 min" }
+        ]
+      }
+    ],
+    "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
+    "estado": "proximamente"
+  }
+]

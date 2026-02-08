@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinadora Paola Ferrer | Plataforma de Aprendizaje</title>
+    <meta name="description" content="Tu centro de formación técnica y profesional. Cursos de Excel, Programación, Datos, Project Management y más.">
+    <meta property="og:title" content="Coordinadora Paola Ferrer — Plataforma de Aprendizaje">
+    <meta property="og:description" content="Cursos prácticos con quizzes interactivos, laboratorios hands-on y certificados.">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">PF</div>
+            <div class="logo-text">Coordinadora <span>Paola Ferrer</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#cursos" class="active">Cursos</a></li>
+            <li><a href="#herramientas">Herramientas</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="dashboard.html" class="nav-cta"><i class="fas fa-graduation-cap"></i> Acceder</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="hero-badge">
+                <i class="fas fa-rocket"></i> Plataforma MVP 2026
+            </div>
+            <h1>Tu centro de <span class="highlight">formación técnica</span> y profesional</h1>
+            <p class="hero-subtitle">
+                Cursos prácticos con quizzes interactivos, laboratorios hands-on, certificados y seguimiento de progreso. Todo en un solo lugar para estudiantes y profesores.
+            </p>
+            <div class="hero-buttons">
+                <a href="#cursos" class="btn btn-primary">
+                    <i class="fas fa-play"></i> Explorar Cursos
+                </a>
+                <a href="teacher.html" class="btn btn-secondary">
+                    <i class="fas fa-chalkboard-teacher"></i> Soy Profesor
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">12<span>+</span></div>
+                    <div class="stat-label">Cursos Activos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">500<span>+</span></div>
+                    <div class="stat-label">Estudiantes</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">95<span>%</span></div>
+                    <div class="stat-label">Satisfacción</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <div class="hero-card-header">
+                    <div class="hero-card-dot dot-red"></div>
+                    <div class="hero-card-dot dot-yellow"></div>
+                    <div class="hero-card-dot dot-green"></div>
+                    <span style="color:rgba(255,255,255,0.3);font-size:0.8rem;margin-left:auto;">Mi Progreso</span>
+                </div>
+                <div class="mini-course">
+                    <div class="mini-icon" style="background:rgba(76,175,80,0.15);color:#4CAF50;">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <div class="mini-course-info">
+                        <h4>Excel Avanzado</h4>
+                        <p>Módulo 4 de 6</p>
+                    </div>
+                    <div class="mini-progress">
+                        <svg><circle class="progress-bg" cx="24" cy="24" r="20"/><circle class="progress-fill" cx="24" cy="24" r="20" stroke-dasharray="125.6" stroke-dashoffset="42"/></svg>
+                        <span class="mini-progress-text">67%</span>
+                    </div>
+                </div>
+                <div class="mini-course">
+                    <div class="mini-icon" style="background:rgba(33,150,243,0.15);color:#2196F3;">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="mini-course-info">
+                        <h4>SQL & Bases de Datos</h4>
+                        <p>Módulo 2 de 5</p>
+                    </div>
+                    <div class="mini-progress">
+                        <svg><circle class="progress-bg" cx="24" cy="24" r="20"/><circle class="progress-fill" cx="24" cy="24" r="20" stroke-dasharray="125.6" stroke-dashoffset="75"/></svg>
+                        <span class="mini-progress-text">40%</span>
+                    </div>
+                </div>
+                <div class="mini-course">
+                    <div class="mini-icon" style="background:rgba(255,184,0,0.15);color:#FFB800;">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="mini-course-info">
+                        <h4>Power BI</h4>
+                        <p>Módulo 1 de 4</p>
+                    </div>
+                    <div class="mini-progress">
+                        <svg><circle class="progress-bg" cx="24" cy="24" r="20"/><circle class="progress-fill" cx="24" cy="24" r="20" stroke-dasharray="125.6" stroke-dashoffset="94"/></svg>
+                        <span class="mini-progress-text">25%</span>
+                    </div>
+                </div>
+                <div class="mini-course">
+                    <div class="mini-icon" style="background:rgba(156,39,176,0.15);color:#9C27B0;">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="mini-course-info">
+                        <h4>Python Básico</h4>
+                        <p>Quiz pendiente</p>
+                    </div>
+                    <div class="mini-progress">
+                        <svg><circle class="progress-bg" cx="24" cy="24" r="20"/><circle class="progress-fill" cx="24" cy="24" r="20" stroke-dasharray="125.6" stroke-dashoffset="113"/></svg>
+                        <span class="mini-progress-text">10%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COURSES -->
+<section class="section" id="cursos">
+    <div class="animate-on-scroll">
+        <div class="section-label"><i class="fas fa-book-open"></i> Catálogo</div>
+        <h2 class="section-title">Nuestros Cursos</h2>
+        <p class="section-subtitle">Formación práctica con quizzes, laboratorios y certificación. Elige tu próximo paso profesional.</p>
+    </div>
+
+    <!-- Búsqueda -->
+    <div class="search-container animate-on-scroll">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchCursos" placeholder="Buscar curso por nombre...">
+    </div>
+
+    <div class="tab-nav animate-on-scroll">
+        <button class="tab-btn active" onclick="filterCourses('all')">Todos</button>
+        <button class="tab-btn" onclick="filterCourses('office')">Office & Productividad</button>
+        <button class="tab-btn" onclick="filterCourses('programacion')">Programación</button>
+        <button class="tab-btn" onclick="filterCourses('datos')">Datos & BI</button>
+        <button class="tab-btn" onclick="filterCourses('gestion')">Gestión & PM</button>
+    </div>
+
+    <div class="courses-grid animate-on-scroll" id="coursesGrid">
+        <!-- Tarjetas de cursos generadas por JS -->
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="herramientas">
+    <div class="animate-on-scroll">
+        <div class="section-label"><i class="fas fa-wand-magic-sparkles"></i> Funcionalidades</div>
+        <h2 class="section-title">Qué incluye la plataforma</h2>
+        <p class="section-subtitle">Herramientas diseñadas tanto para estudiantes como para profesores.</p>
+    </div>
+
+    <div class="features-grid animate-on-scroll">
+        <div class="feature-card">
+            <div class="feature-icon" style="background:rgba(0,191,166,0.1);color:var(--teal);">
+                <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h3>Quizzes con Auto-calificación</h3>
+            <p>Exámenes interactivos con retroalimentación instantánea. Kahoot para práctica gamificada y Google Forms para evaluaciones formales.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon" style="background:rgba(33,150,243,0.1);color:#2196F3;">
+                <i class="fas fa-flask"></i>
+            </div>
+            <h3>Laboratorios Prácticos</h3>
+            <p>Ejercicios hands-on en sandboxes reales. Practica Excel, SQL, Python y más en entornos seguros sin instalar nada.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon" style="background:rgba(255,184,0,0.1);color:var(--gold);">
+                <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Certificados Digitales</h3>
+            <p>Al completar un curso recibe tu certificado descargable con código verificable. Compártelo en LinkedIn.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon" style="background:rgba(156,39,176,0.1);color:#9C27B0;">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Seguimiento de Progreso</h3>
+            <p>Dashboard visual con porcentaje de avance, calificaciones, badges y tu historial completo de aprendizaje.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon" style="background:rgba(76,175,80,0.1);color:#4CAF50;">
+                <i class="fas fa-video"></i>
+            </div>
+            <h3>Video Lecciones Interactivas</h3>
+            <p>Videos con preguntas integradas (Edpuzzle), timestamps y notas. Aprende a tu ritmo con contenido multimedia.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon" style="background:rgba(244,67,54,0.1);color:#F44336;">
+                <i class="fas fa-robot"></i>
+            </div>
+            <h3>Asistente AI (Próximamente)</h3>
+            <p>Chatbot inteligente que responde dudas sobre el contenido del curso 24/7. Tu tutor personal con IA.</p>
+        </div>
+    </div>
+
+    <!-- Tools Ecosystem -->
+    <div class="tools-container animate-on-scroll">
+        <h2>Ecosistema de Herramientas Gratuitas</h2>
+        <p>Integramos las mejores herramientas gratuitas en una experiencia unificada</p>
+        <div class="tools-grid">
+            <div class="tool-item">
+                <div class="tool-icon" style="background:rgba(76,175,80,0.15);color:#4CAF50;"><i class="fas fa-chalkboard"></i></div>
+                <div class="tool-info"><h4>Google Classroom</h4><p>Hub central de cursos</p></div>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon" style="background:rgba(156,39,176,0.15);color:#9C27B0;"><i class="fas fa-gamepad"></i></div>
+                <div class="tool-info"><h4>Kahoot</h4><p>Quizzes gamificados</p></div>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon" style="background:rgba(33,150,243,0.15);color:#2196F3;"><i class="fab fa-google"></i></div>
+                <div class="tool-info"><h4>Google Forms</h4><p>Exámenes formales</p></div>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon" style="background:rgba(255,87,34,0.15);color:#FF5722;"><i class="fas fa-play-circle"></i></div>
+                <div class="tool-info"><h4>Edpuzzle</h4><p>Video interactivo</p></div>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon" style="background:rgba(244,67,54,0.15);color:#F44336;"><i class="fab fa-youtube"></i></div>
+                <div class="tool-info"><h4>YouTube</h4><p>Video lecciones</p></div>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon" style="background:rgba(0,150,136,0.15);color:#009688;"><i class="fas fa-code"></i></div>
+                <div class="tool-info"><h4>Replit</h4><p>Labs de código</p></div>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon" style="background:rgba(76,175,80,0.15);color:#4CAF50;"><i class="fas fa-table"></i></div>
+                <div class="tool-info"><h4>Google Sheets</h4><p>Práctica de Excel</p></div>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon" style="background:rgba(0,188,212,0.15);color:#00BCD4;"><i class="fas fa-paint-brush"></i></div>
+                <div class="tool-info"><h4>Canva</h4><p>Certificados</p></div>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon" style="background:rgba(255,184,0,0.15);color:#FFB800;"><i class="fas fa-hard-drive"></i></div>
+                <div class="tool-info"><h4>Google Drive</h4><p>Biblioteca de archivos</p></div>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon" style="background:rgba(114,137,218,0.15);color:#7289DA;"><i class="fab fa-discord"></i></div>
+                <div class="tool-info"><h4>Discord</h4><p>Comunidad</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DASHBOARD PREVIEW -->
+<section class="section" id="dashboard">
+    <div class="animate-on-scroll">
+        <div class="section-label"><i class="fas fa-gauge-high"></i> Vista Previa</div>
+        <h2 class="section-title">Dashboard del Estudiante</h2>
+        <p class="section-subtitle">Visualiza tu progreso, calificaciones y próximos pasos en un solo lugar.</p>
+    </div>
+
+    <div class="dashboard-preview animate-on-scroll">
+        <div class="dashboard-topbar">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+            <span style="color:rgba(255,255,255,0.4);font-size:0.85rem;margin-left:16px;">
+                <i class="fas fa-user-circle"></i> &nbsp;Mi Dashboard — Estudiante
+            </span>
+        </div>
+        <div class="dashboard-body">
+            <div class="dash-widget">
+                <h4><i class="fas fa-book"></i> Cursos Activos</h4>
+                <div class="dash-big-number" style="color:var(--teal);">4</div>
+            </div>
+            <div class="dash-widget">
+                <h4><i class="fas fa-trophy"></i> Promedio General</h4>
+                <div class="dash-big-number" style="color:var(--gold);">87<span style="font-size:1.2rem;">%</span></div>
+            </div>
+            <div class="dash-widget" style="grid-column: span 2;">
+                <h4><i class="fas fa-chart-bar"></i> Progreso por Curso</h4>
+                <div class="dash-bar-row">
+                    <span class="dash-bar-label">Excel Avanzado</span>
+                    <div class="dash-bar-track"><div class="dash-bar-fill" style="width:67%;background:var(--teal);"></div></div>
+                    <span class="dash-bar-pct">67%</span>
+                </div>
+                <div class="dash-bar-row">
+                    <span class="dash-bar-label">SQL & DB</span>
+                    <div class="dash-bar-track"><div class="dash-bar-fill" style="width:40%;background:#2196F3;"></div></div>
+                    <span class="dash-bar-pct">40%</span>
+                </div>
+                <div class="dash-bar-row">
+                    <span class="dash-bar-label">Power BI</span>
+                    <div class="dash-bar-track"><div class="dash-bar-fill" style="width:25%;background:var(--gold);"></div></div>
+                    <span class="dash-bar-pct">25%</span>
+                </div>
+                <div class="dash-bar-row">
+                    <span class="dash-bar-label">Python</span>
+                    <div class="dash-bar-track"><div class="dash-bar-fill" style="width:10%;background:#9C27B0;"></div></div>
+                    <span class="dash-bar-pct">10%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="section" id="roadmap">
+    <div class="animate-on-scroll">
+        <div class="section-label"><i class="fas fa-road"></i> Hoja de Ruta</div>
+        <h2 class="section-title">Roadmap de Crecimiento</h2>
+        <p class="section-subtitle">Plan evolutivo: comenzamos con herramientas gratuitas y escalamos hacia una plataforma completa.</p>
+    </div>
+
+    <div class="roadmap animate-on-scroll">
+        <div class="roadmap-card active">
+            <div class="roadmap-phase" style="background:#E8F5E9;color:#2E7D32;">Fase 1 — Ahora</div>
+            <h3>MVP Gratuito</h3>
+            <ul class="roadmap-list">
+                <li><i class="fas fa-check-circle"></i> Google Classroom como LMS</li>
+                <li><i class="fas fa-check-circle"></i> Kahoot + Google Forms para quizzes</li>
+                <li><i class="fas fa-check-circle"></i> Portal web personalizado</li>
+                <li><i class="fas fa-check-circle"></i> Certificados con Canva</li>
+                <li><i class="fas fa-check-circle"></i> Hosting gratis (GitHub Pages)</li>
+            </ul>
+        </div>
+        <div class="roadmap-card">
+            <div class="roadmap-phase" style="background:#E3F2FD;color:#1565C0;">Fase 2 — 3-6 meses</div>
+            <h3>MVP Mejorado</h3>
+            <ul class="roadmap-list">
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Edpuzzle para video interactivo</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Replit labs integrados</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Certificados automáticos</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Chatbot AI integrado</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Comunidad Discord</li>
+            </ul>
+        </div>
+        <div class="roadmap-card">
+            <div class="roadmap-phase" style="background:#FFF3E0;color:#E65100;">Fase 3 — 6-12 meses</div>
+            <h3>LMS de Pago</h3>
+            <ul class="roadmap-list">
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Migrar a TalentLMS o Teachable</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Pagos integrados</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> App móvil (PWA)</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Certificados profesionales</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Analytics avanzados</li>
+            </ul>
+        </div>
+        <div class="roadmap-card">
+            <div class="roadmap-phase" style="background:#FCE4EC;color:#C62828;">Fase 4 — 12+ meses</div>
+            <h3>Plataforma Completa</h3>
+            <ul class="roadmap-list">
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> LMS enterprise (CYPHER/Moodle)</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> IA adaptativa</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Training corporativo</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Multi-instructor</li>
+                <li><i class="fas fa-circle" style="font-size:6px;"></i> Marca propia completa</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section animate-on-scroll" id="contacto">
+    <h2>¿Listo para transformar tu aprendizaje?</h2>
+    <p>Únete a nuestra comunidad de estudiantes y comienza tu formación técnica hoy.</p>
+    <div class="cta-buttons">
+        <a href="https://www.facebook.com/coordinadorapaolaferrer" target="_blank" class="btn btn-primary">
+            <i class="fab fa-facebook"></i> Visítanos en Facebook
+        </a>
+        <a href="#" class="btn btn-secondary" style="border-color:rgba(255,255,255,0.25);">
+            <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="index.html" class="logo" style="margin-bottom:16px;">
+                <div class="logo-icon">PF</div>
+                <div class="logo-text">Coordinadora <span>Paola Ferrer</span></div>
+            </a>
+            <p>Plataforma de formación técnica y profesional. Cursos prácticos para impulsar tu carrera.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/coordinadorapaolaferrer" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div>
+            <h4>Cursos</h4>
+            <a href="#cursos">Excel Avanzado</a>
+            <a href="#cursos">SQL & Bases de Datos</a>
+            <a href="#cursos">Power BI</a>
+            <a href="#cursos">Python</a>
+            <a href="#cursos">Project Management</a>
+        </div>
+        <div>
+            <h4>Plataforma</h4>
+            <a href="dashboard.html">Mi Aula</a>
+            <a href="quizzes.html">Quizzes</a>
+            <a href="teacher.html">Panel Profesor</a>
+            <a href="certificados.html">Certificados</a>
+        </div>
+        <div>
+            <h4>Soporte</h4>
+            <a href="#contacto">Preguntas Frecuentes</a>
+            <a href="#contacto">Guía del Estudiante</a>
+            <a href="#contacto">Contactar Profesor</a>
+            <a href="#contacto">Feedback</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Coordinadora Paola Ferrer. Todos los derechos reservados. Plataforma MVP.
+    </div>
+</footer>
+
+<!-- MODAL DE DETALLE DE CURSO -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modalContent">
+        <!-- Contenido generado dinámicamente por JS -->
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

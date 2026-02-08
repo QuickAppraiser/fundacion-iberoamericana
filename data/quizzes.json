@@ -1,0 +1,342 @@
+[
+  {
+    "id": "quiz-excel-m2",
+    "cursoId": "excel-basico-avanzado",
+    "moduloId": "excel-m2",
+    "titulo": "Fórmulas y Funciones Esenciales",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "q1",
+        "pregunta": "¿Cuál es la fórmula correcta para sumar las celdas A1 a A10 en Excel?",
+        "tipo": "opcion-multiple",
+        "opciones": ["=SUMA(A1:A10)", "=SUM(A1-A10)", "=SUMAR(A1:A10)", "=ADD(A1:A10)"],
+        "respuestaCorrecta": 0,
+        "explicacion": "SUMA() es la función en español de Excel. En inglés es SUM(). El rango se indica con dos puntos (:), no con guión.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q2",
+        "pregunta": "¿Qué resultado devuelve =SI(10>5, \"Mayor\", \"Menor\")?",
+        "tipo": "opcion-multiple",
+        "opciones": ["10", "Mayor", "Menor", "VERDADERO"],
+        "respuestaCorrecta": 1,
+        "explicacion": "La función SI evalúa la condición 10>5 (que es VERDADERO), así que devuelve el valor_si_verdadero: \"Mayor\".",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q3",
+        "pregunta": "En la fórmula =BUSCARV(A2, B:D, 3, FALSO), ¿qué significa el número 3?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Busca en la fila 3", "Devuelve el valor de la tercera columna del rango", "Busca los primeros 3 resultados", "Indica que hay 3 criterios de búsqueda"],
+        "respuestaCorrecta": 1,
+        "explicacion": "El tercer argumento de BUSCARV es el número de columna dentro del rango de búsqueda (B:D) de la cual queremos obtener el resultado. Columna 3 del rango sería la columna D.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "q4",
+        "pregunta": "Si la celda A1 contiene la fórmula =$B$1+C1 y la copias a A2, ¿cuál será la fórmula en A2?",
+        "tipo": "opcion-multiple",
+        "opciones": ["=$B$1+C1", "=$B$1+C2", "=$B$2+C2", "=$B$2+C1"],
+        "respuestaCorrecta": 1,
+        "explicacion": "$B$1 es una referencia absoluta (no cambia al copiar). C1 es relativa, así que al copiar una fila abajo se convierte en C2. Resultado: =$B$1+C2.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "q5",
+        "pregunta": "¿Cuál es la diferencia entre BUSCARV y la combinación INDICE+COINCIDIR?",
+        "tipo": "opcion-multiple",
+        "opciones": ["No hay diferencia, hacen lo mismo", "BUSCARV solo busca hacia la derecha; INDICE+COINCIDIR busca en cualquier dirección", "INDICE+COINCIDIR es más lento", "BUSCARV funciona con texto e INDICE+COINCIDIR solo con números"],
+        "respuestaCorrecta": 1,
+        "explicacion": "BUSCARV busca el valor en la primera columna del rango y devuelve una columna a la derecha. INDICE+COINCIDIR no tiene esta limitación y puede buscar en cualquier dirección, lo que lo hace más flexible.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "q6",
+        "pregunta": "¿Qué resultado da =PROMEDIO(10, 20, 30)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["60", "20", "30", "10"],
+        "respuestaCorrecta": 1,
+        "explicacion": "PROMEDIO calcula la media aritmética: (10+20+30)/3 = 60/3 = 20.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q7",
+        "pregunta": "¿Para qué sirve la función CONTAR.SI en Excel?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Cuenta todas las celdas de un rango", "Cuenta las celdas que cumplen un criterio específico", "Suma las celdas que cumplen un criterio", "Cuenta solo las celdas con números"],
+        "respuestaCorrecta": 1,
+        "explicacion": "CONTAR.SI cuenta las celdas dentro de un rango que cumplen una condición. Para sumar con condición se usa SUMAR.SI, y para contar cualquier celda con datos se usa CONTARA.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q8",
+        "pregunta": "Tienes ventas por mes en B2:B13 y quieres sumar solo las de enero y marzo. ¿Qué función usas?",
+        "tipo": "opcion-multiple",
+        "opciones": ["=SUMA(B2,B4)", "=SUMAR.SI.CONJUNTO()", "=SUMAR.SI(A2:A13,\"Enero\",B2:B13)+SUMAR.SI(A2:A13,\"Marzo\",B2:B13)", "Las opciones A y C son correctas"],
+        "respuestaCorrecta": 3,
+        "explicacion": "Ambas funcionan: puedes sumar celdas individuales directamente, o usar SUMAR.SI para cada mes. En la práctica, SUMAR.SI es mejor porque funciona aunque el orden de los meses cambie.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-excel-m3",
+    "cursoId": "excel-basico-avanzado",
+    "moduloId": "excel-m3",
+    "titulo": "Tablas Dinámicas y Gráficos",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "q9",
+        "pregunta": "¿Cuál es el primer paso para crear una tabla dinámica en Excel?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Seleccionar los datos y luego Insertar → Tabla Dinámica", "Ir a Datos → Filtro Avanzado", "Crear primero el gráfico y luego la tabla", "Seleccionar una celda vacía y escribir =TABLA.DINAMICA()"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Para crear una tabla dinámica: selecciona el rango de datos (o una celda dentro de los datos), ve a la pestaña Insertar y haz clic en Tabla Dinámica.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q10",
+        "pregunta": "En una tabla dinámica, ¿qué área usas para definir los cálculos (como sumas o promedios)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Filas", "Columnas", "Filtros", "Valores"],
+        "respuestaCorrecta": 3,
+        "explicacion": "El área de Valores es donde se colocan los campos numéricos que quieres calcular (suma, promedio, contar, etc.). Las filas y columnas definen cómo se organizan los datos.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q11",
+        "pregunta": "¿Qué es un segmentador (slicer) en Excel?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Una herramienta para dividir celdas", "Un filtro visual interactivo para tablas dinámicas", "Una función para cortar texto", "Un tipo de gráfico"],
+        "respuestaCorrecta": 1,
+        "explicacion": "Los segmentadores son botones visuales que permiten filtrar tablas dinámicas de forma interactiva. Son más intuitivos que los filtros del menú desplegable y mejoran la experiencia del usuario en dashboards.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-web-m1",
+    "cursoId": "desarrollo-web",
+    "moduloId": "web-m1",
+    "titulo": "HTML5 — Estructura y Semántica",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "q12",
+        "pregunta": "¿Cuál de estas es la estructura básica correcta de un documento HTML5?",
+        "tipo": "opcion-multiple",
+        "opciones": [
+          "<!DOCTYPE html><html><head><title>Mi Página</title></head><body></body></html>",
+          "<html><header><title>Mi Página</title></header><content></content></html>",
+          "<!DOCTYPE html5><html><head></head><body></body></html>",
+          "<html5><head><title>Mi Página</title></head><body></body></html5>"
+        ],
+        "respuestaCorrecta": 0,
+        "explicacion": "La estructura correcta de HTML5 empieza con <!DOCTYPE html> (sin número de versión), seguido de <html>, <head> con <title>, y <body>. La opción B usa etiquetas que no existen (<header> no va donde <head>).",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q13",
+        "pregunta": "¿Cuál es la diferencia entre las etiquetas <div> y <section>?",
+        "tipo": "opcion-multiple",
+        "opciones": ["No hay diferencia, son intercambiables", "<section> es semántica y representa una sección temática; <div> es un contenedor genérico sin significado", "<div> es para texto y <section> para imágenes", "<section> es una versión más nueva de <div>"],
+        "respuestaCorrecta": 1,
+        "explicacion": "<section> es una etiqueta semántica de HTML5 que indica una sección temática del contenido (con su propio encabezado). <div> es un contenedor genérico sin significado semántico. Usar etiquetas semánticas mejora la accesibilidad y el SEO.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "q14",
+        "pregunta": "¿Qué atributo HTML5 permite validar que un campo de formulario no se envíe vacío?",
+        "tipo": "opcion-multiple",
+        "opciones": ["validate", "required", "mandatory", "notempty"],
+        "respuestaCorrecta": 1,
+        "explicacion": "El atributo 'required' es nativo de HTML5 y evita que el formulario se envíe si el campo está vacío. El navegador muestra automáticamente un mensaje de error sin necesidad de JavaScript.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q15",
+        "pregunta": "¿Cuál de estas etiquetas NO es semántica en HTML5?",
+        "tipo": "opcion-multiple",
+        "opciones": ["<article>", "<nav>", "<div>", "<footer>"],
+        "respuestaCorrecta": 2,
+        "explicacion": "<div> es un contenedor genérico sin significado semántico. Las demás (<article>, <nav>, <footer>) son etiquetas semánticas de HTML5 que describen el propósito de su contenido.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q16",
+        "pregunta": "¿Cuál es la forma correcta de incluir una imagen con texto alternativo?",
+        "tipo": "opcion-multiple",
+        "opciones": [
+          "<img src=\"foto.jpg\" alt=\"Descripción de la imagen\">",
+          "<image href=\"foto.jpg\" text=\"Descripción\">",
+          "<img src=\"foto.jpg\" title=\"Descripción\">",
+          "<img link=\"foto.jpg\" alt=\"Descripción\">"
+        ],
+        "respuestaCorrecta": 0,
+        "explicacion": "La etiqueta <img> usa 'src' para la ruta de la imagen y 'alt' para el texto alternativo (importante para accesibilidad y SEO). 'title' muestra un tooltip pero no reemplaza al 'alt'.",
+        "dificultad": "facil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-web-m3",
+    "cursoId": "desarrollo-web",
+    "moduloId": "web-m3",
+    "titulo": "JavaScript — Fundamentos",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "q17",
+        "pregunta": "¿Cuál es la diferencia entre let, const y var en JavaScript?",
+        "tipo": "opcion-multiple",
+        "opciones": ["No hay diferencia, son sinónimos", "var tiene scope de función; let y const tienen scope de bloque. const no se puede reasignar", "let es para números, const para texto, var para ambos", "const es más rápido que let y var"],
+        "respuestaCorrecta": 1,
+        "explicacion": "'var' tiene scope de función y permite redeclaración (puede causar bugs). 'let' tiene scope de bloque y permite reasignación. 'const' tiene scope de bloque y NO permite reasignación. En código moderno, usa const por defecto y let cuando necesites reasignar.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "q18",
+        "pregunta": "¿Qué imprime este código?\n\nconsole.log(typeof null);",
+        "tipo": "opcion-multiple",
+        "opciones": ["\"null\"", "\"undefined\"", "\"object\"", "Error"],
+        "respuestaCorrecta": 2,
+        "explicacion": "Esto es un bug histórico de JavaScript: typeof null devuelve \"object\" en vez de \"null\". Se mantiene por compatibilidad hacia atrás. Es una pregunta común en entrevistas técnicas.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "q19",
+        "pregunta": "¿Cuál es la forma correcta de declarar una arrow function que suma dos números?",
+        "tipo": "opcion-multiple",
+        "opciones": ["const sumar = (a, b) => a + b;", "function sumar => (a, b) { return a + b }", "const sumar = arrow(a, b) { a + b }", "let sumar = (a, b) -> a + b;"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Las arrow functions usan la sintaxis '=>'. Cuando el cuerpo es una sola expresión, se puede omitir el return y las llaves. La opción D usa '->' que es sintaxis de otros lenguajes (Java, PHP), no de JavaScript.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "q20",
+        "pregunta": "¿Qué método de array usas para crear un nuevo array con solo los elementos que cumplen una condición?",
+        "tipo": "opcion-multiple",
+        "opciones": ["map()", "filter()", "find()", "reduce()"],
+        "respuestaCorrecta": 1,
+        "explicacion": "filter() crea un nuevo array con todos los elementos que pasan la condición. map() transforma cada elemento. find() devuelve solo el primer elemento que cumple la condición (no un array). reduce() acumula valores en un resultado.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-python-m1",
+    "cursoId": "python-basico",
+    "moduloId": "py-m1",
+    "titulo": "Primeros Pasos con Python",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "q21",
+        "pregunta": "¿Qué imprime este código?\n\nx = 10\ny = 3\nprint(x // y)",
+        "tipo": "opcion-multiple",
+        "opciones": ["3.33", "3", "3.0", "Error"],
+        "respuestaCorrecta": 1,
+        "explicacion": "El operador // en Python es la división entera (floor division). 10 // 3 = 3 (descarta el decimal). Para obtener 3.33 usarías el operador / normal: 10 / 3.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q22",
+        "pregunta": "¿Cuál es la forma correcta de pedir un número al usuario en Python?",
+        "tipo": "opcion-multiple",
+        "opciones": ["numero = input(\"Ingresa un número: \")", "numero = int(input(\"Ingresa un número: \"))", "numero = read(\"Ingresa un número: \")", "numero = scanf(\"Ingresa un número: \")"],
+        "respuestaCorrecta": 1,
+        "explicacion": "input() siempre devuelve un string en Python 3. Para obtener un número entero debes envolver con int(). La opción A guardaría el texto \"5\" en vez del número 5, lo que causaría errores al hacer operaciones matemáticas.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "q23",
+        "pregunta": "¿Cuál es el resultado de:\n\nnombre = \"Python\"\nprint(nombre[0] + nombre[-1])",
+        "tipo": "opcion-multiple",
+        "opciones": ["Python", "Pn", "Po", "Error: índice negativo"],
+        "respuestaCorrecta": 1,
+        "explicacion": "nombre[0] es 'P' (primer carácter). nombre[-1] es 'n' (último carácter — los índices negativos cuentan desde el final). La concatenación da 'Pn'.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "q24",
+        "pregunta": "¿Qué tipo de dato es True en Python?",
+        "tipo": "opcion-multiple",
+        "opciones": ["str", "int", "bool", "NoneType"],
+        "respuestaCorrecta": 2,
+        "explicacion": "True y False son valores del tipo bool (booleano) en Python. Dato curioso: bool es una subclase de int en Python, por lo que True == 1 y False == 0.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q25",
+        "pregunta": "¿Cuál es la forma correcta de crear un comentario en Python?",
+        "tipo": "opcion-multiple",
+        "opciones": ["// Este es un comentario", "/* Este es un comentario */", "# Este es un comentario", "<!-- Este es un comentario -->"],
+        "respuestaCorrecta": 2,
+        "explicacion": "En Python, los comentarios de una línea comienzan con #. Las opciones A y B son sintaxis de C/JavaScript, y D es sintaxis de HTML. Python no tiene comentarios multi-línea oficiales, pero se usan strings con triple comillas ('''...''').",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q26",
+        "pregunta": "¿Qué imprime este código?\n\nfor i in range(3):\n    print(i, end=\" \")",
+        "tipo": "opcion-multiple",
+        "opciones": ["1 2 3 ", "0 1 2 ", "0 1 2 3 ", "3 2 1 "],
+        "respuestaCorrecta": 1,
+        "explicacion": "range(3) genera los números 0, 1, 2 (empieza en 0 y excluye el 3). El parámetro end=\" \" hace que print use un espacio en lugar de salto de línea.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-python-m3",
+    "cursoId": "python-basico",
+    "moduloId": "py-m3",
+    "titulo": "Estructuras de Datos en Python",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "q27",
+        "pregunta": "¿Cuál es la diferencia entre una lista y una tupla en Python?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Las listas usan [] y las tuplas usan (); las listas son mutables y las tuplas inmutables", "No hay diferencia", "Las tuplas son más rápidas pero solo guardan números", "Las listas guardan texto y las tuplas guardan números"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Las listas ([]) son mutables: puedes agregar, quitar y modificar elementos. Las tuplas (()) son inmutables: una vez creadas no se pueden modificar. Las tuplas son ligeramente más rápidas y se usan cuando los datos no deben cambiar.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "q28",
+        "pregunta": "¿Qué devuelve este código?\n\nfrutas = [\"manzana\", \"banana\", \"cereza\"]\nfrutas.append(\"durazno\")\nprint(len(frutas))",
+        "tipo": "opcion-multiple",
+        "opciones": ["3", "4", "Error", "durazno"],
+        "respuestaCorrecta": 1,
+        "explicacion": "La lista empieza con 3 elementos. append() agrega \"durazno\" al final, quedando 4 elementos. len() cuenta los elementos y devuelve 4.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "q29",
+        "pregunta": "¿Qué resultado da esta list comprehension?\n\n[x**2 for x in range(5) if x % 2 == 0]",
+        "tipo": "opcion-multiple",
+        "opciones": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[1, 9, 25]", "[4, 16]"],
+        "respuestaCorrecta": 1,
+        "explicacion": "range(5) genera 0,1,2,3,4. El filtro 'if x % 2 == 0' selecciona solo los pares: 0, 2, 4. Luego x**2 los eleva al cuadrado: 0²=0, 2²=4, 4²=16. Resultado: [0, 4, 16].",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "q30",
+        "pregunta": "¿Cómo accedes al valor \"México\" en este diccionario?\n\npersona = {\"nombre\": \"Ana\", \"pais\": \"México\", \"edad\": 25}",
+        "tipo": "opcion-multiple",
+        "opciones": ["persona[1]", "persona[\"pais\"]", "persona.pais", "persona->pais"],
+        "respuestaCorrecta": 1,
+        "explicacion": "En Python, los diccionarios se acceden con la clave entre corchetes: persona[\"pais\"]. También funciona persona.get(\"pais\"). La opción A usaría índice numérico (que es para listas). La opción C es sintaxis de JavaScript y D de PHP/C++.",
+        "dificultad": "facil"
+      }
+    ]
+  }
+]
