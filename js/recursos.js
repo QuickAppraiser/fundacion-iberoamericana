@@ -286,6 +286,7 @@ function renderizarRecursos() {
     }
 
     grid.innerHTML = filtrados.map(r => crearTarjetaRecurso(r)).join('');
+    if (typeof refreshStaggerGrids === 'function') refreshStaggerGrids();
 }
 
 function crearTarjetaRecurso(recurso) {

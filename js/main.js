@@ -186,7 +186,7 @@ function init() {
     if (typeof inicializarI18n === 'function') inicializarI18n();
     cargarCursos();
     inicializarNavegacion();
-    inicializarAnimaciones();
+
     inicializarModal();
     inicializarBusqueda();
 }
@@ -243,6 +243,7 @@ function renderizarCursos() {
     }
 
     grid.innerHTML = cursosFiltrados.map(curso => crearTarjetaCurso(curso)).join('');
+    if (typeof refreshStaggerGrids === 'function') refreshStaggerGrids();
 }
 
 function crearTarjetaCurso(curso) {
@@ -443,26 +444,3 @@ function inicializarNavegacion() {
     });
 }
 
-// =========================
-// ANIMACIONES AL SCROLL
-// =========================
-
-function inicializarAnimaciones() {
-    const elementos = document.querySelectorAll('.animate-on-scroll');
-
-    if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        elementos.forEach(el => observer.observe(el));
-    } else {
-        // Fallback: mostrar todo si no hay IntersectionObserver
-        elementos.forEach(el => el.classList.add('visible'));
-    }
-}

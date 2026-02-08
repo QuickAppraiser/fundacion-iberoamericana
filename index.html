@@ -30,6 +30,7 @@
             <li><a href="recursos.html">Recursos</a></li>
             <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
             <li><a href="dashboard.html" class="nav-cta"><i class="fas fa-graduation-cap"></i> <span data-i18n="nav.acceder">Acceder</span></a></li>
+            <li><button id="darkModeToggle" onclick="toggleDarkMode()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:1rem;" title="Modo oscuro"><i class="fas fa-moon"></i></button></li>
             <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
         </ul>
         <button class="hamburger" aria-label="Abrir menú">
@@ -59,15 +60,15 @@
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <div class="stat-number">12<span>+</span></div>
+                    <div class="stat-number" data-counter>12<span>+</span></div>
                     <div class="stat-label">Cursos Activos</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">500<span>+</span></div>
+                    <div class="stat-number" data-counter>500<span>+</span></div>
                     <div class="stat-label">Estudiantes</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">95<span>%</span></div>
+                    <div class="stat-number" data-counter>95<span>%</span></div>
                     <div class="stat-label">Satisfacción</div>
                 </div>
             </div>
@@ -159,7 +160,7 @@
         <button class="tab-btn" onclick="filterCourses('gestion', event)">Gestión & PM</button>
     </div>
 
-    <div class="courses-grid animate-on-scroll" id="coursesGrid">
+    <div class="courses-grid stagger-grid animate-on-scroll" id="coursesGrid">
         <!-- Tarjetas de cursos generadas por JS -->
     </div>
 </section>
@@ -172,7 +173,7 @@
         <p class="section-subtitle">Herramientas diseñadas tanto para estudiantes como para profesores.</p>
     </div>
 
-    <div class="features-grid animate-on-scroll">
+    <div class="features-grid stagger-grid animate-on-scroll">
         <div class="feature-card">
             <div class="feature-icon" style="background:rgba(0,191,166,0.1);color:var(--teal);">
                 <i class="fas fa-clipboard-check"></i>
@@ -327,7 +328,7 @@
         <p class="section-subtitle">Plan evolutivo: comenzamos con herramientas gratuitas y escalamos hacia una plataforma completa.</p>
     </div>
 
-    <div class="roadmap animate-on-scroll">
+    <div class="roadmap stagger-grid animate-on-scroll">
         <div class="roadmap-card active">
             <div class="roadmap-phase" style="background:#E8F5E9;color:#2E7D32;">Fase 1 — Ahora</div>
             <h3>MVP Gratuito</h3>
@@ -445,6 +446,7 @@
 </div>
 
 <script src="js/i18n.js"></script>
+<script src="js/animations.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

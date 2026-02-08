@@ -338,6 +338,9 @@ function mostrarResultados(puntaje, correctas, total) {
     document.getElementById('quizPlayView').style.display = 'none';
     document.getElementById('quizResultsView').style.display = 'block';
 
+    // Confetti for good scores
+    if (puntaje >= 80 && typeof triggerConfetti === 'function') triggerConfetti();
+
     const scoreClass = puntaje >= 80 ? 'good' : puntaje >= 60 ? 'ok' : 'bad';
     const mensaje = puntaje >= 80 ? '🎉 ¡Excelente trabajo!' : puntaje >= 60 ? '👍 ¡Buen esfuerzo!' : '📚 Sigue practicando';
 

@@ -243,11 +243,16 @@ window.copiarMensaje = function() {
     const textarea = document.getElementById('mensajeTexto');
     if (!textarea?.value) return;
 
-    navigator.clipboard.writeText(textarea.value).then(() => {
-        const success = document.getElementById('copySuccess');
-        if (success) {
-            success.style.display = 'inline';
-            setTimeout(() => { success.style.display = 'none'; }, 2000);
-        }
-    });
+    const btn = document.querySelector('[onclick="copiarMensaje()"]');
+    if (btn && typeof copyWithFeedback === 'function') {
+        copyWithFeedback(textarea.value, btn);
+    } else {
+        navigator.clipboard.writeText(textarea.value).then(() => {
+            const success = document.getElementById('copySuccess');
+            if (success) {
+                success.style.display = 'inline';
+                setTimeout(() => { success.style.display = 'none'; }, 2000);
+            }
+        });
+    }
 };

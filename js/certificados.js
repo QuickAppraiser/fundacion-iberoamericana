@@ -95,18 +95,27 @@ function validarFormulario() {
     const calificacion = parseInt(document.getElementById('certCalificacion')?.value);
 
     if (!nombre) {
-        alert('Por favor ingresa el nombre del estudiante.');
-        document.getElementById('certNombre')?.focus();
+        const el = document.getElementById('certNombre');
+        el.classList.add('shake-error');
+        el.addEventListener('animationend', () => el.classList.remove('shake-error'), { once: true });
+        el.focus();
+        if (typeof showToast === 'function') showToast('Ingresa el nombre del estudiante', 'error');
         return false;
     }
     if (!curso) {
-        alert('Por favor selecciona un curso.');
-        document.getElementById('certCurso')?.focus();
+        const el = document.getElementById('certCurso');
+        el.classList.add('shake-error');
+        el.addEventListener('animationend', () => el.classList.remove('shake-error'), { once: true });
+        el.focus();
+        if (typeof showToast === 'function') showToast('Selecciona un curso', 'error');
         return false;
     }
     if (isNaN(calificacion) || calificacion < 0 || calificacion > 100) {
-        alert('La calificación debe ser un número entre 0 y 100.');
-        document.getElementById('certCalificacion')?.focus();
+        const el = document.getElementById('certCalificacion');
+        el.classList.add('shake-error');
+        el.addEventListener('animationend', () => el.classList.remove('shake-error'), { once: true });
+        el.focus();
+        if (typeof showToast === 'function') showToast('La calificación debe ser entre 0 y 100', 'error');
         return false;
     }
     return true;
@@ -123,10 +132,14 @@ window.descargarCertificado = function() {
     generarIdCertificado();
     actualizarVistaPrevia();
 
+    // Confetti + toast
+    if (typeof triggerConfetti === 'function') triggerConfetti();
+    if (typeof showToast === 'function') showToast('Certificado generado exitosamente', 'success');
+
     // Pequeño delay para que se actualice el DOM
     setTimeout(() => {
         window.print();
-    }, 100);
+    }, 300);
 };
 
 // =========================

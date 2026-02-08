@@ -273,6 +273,7 @@ function renderizarLabs() {
     }
 
     grid.innerHTML = labsFiltrados.map(lab => crearTarjetaLab(lab)).join('');
+    if (typeof refreshStaggerGrids === 'function') refreshStaggerGrids();
 }
 
 function crearTarjetaLab(lab) {
@@ -337,8 +338,14 @@ window.abrirLab = function(labId) {
         <ol>${instrHTML}</ol>
     `;
 
-    // Iframe
-    document.getElementById('labIframe').src = lab.url;
+    // Iframe with loading state
+    const embedContainer = document.querySelector('.lab-embed-container');
+    if (embedContainer) embedContainer.classList.add('loading');
+    const iframe = document.getElementById('labIframe');
+    iframe.onload = function() {
+        if (embedContainer) embedContainer.classList.remove('loading');
+    };
+    iframe.src = lab.url;
 
     // Scroll arriba
     window.scrollTo({ top: 0, behavior: 'smooth' });
