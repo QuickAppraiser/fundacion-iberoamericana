@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Certificados | Coordinadora Paola Ferrer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/teacher.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">PF</div>
+            <div class="logo-text">Coordinadora <span>Paola Ferrer</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#cursos">Cursos</a></li>
+            <li><a href="dashboard.html">Mi Aula</a></li>
+            <li><a href="teacher.html">Panel Profesor</a></li>
+            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
+        </ul>
+        <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<!-- CONTENIDO PRINCIPAL -->
+<section style="padding-top:120px;padding-bottom:60px;min-height:100vh;background:var(--bg);">
+    <div style="max-width:900px;margin:0 auto;padding:0 24px;">
+
+        <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:2rem;font-weight:800;color:var(--navy);margin-bottom:8px;">
+            <i class="fas fa-certificate" style="color:var(--gold);"></i> Generador de Certificados
+        </h1>
+        <p style="color:var(--text-light);margin-bottom:32px;">Completa los datos del estudiante para generar un certificado profesional de finalización de curso.</p>
+
+        <!-- FORMULARIO -->
+        <div class="cert-form-card">
+            <h2><i class="fas fa-edit"></i> Datos del Certificado</h2>
+
+            <div class="form-group">
+                <label for="certNombre">Nombre completo del estudiante *</label>
+                <input type="text" id="certNombre" placeholder="Ej: María García López">
+            </div>
+
+            <div class="form-group">
+                <label for="certCurso">Curso completado *</label>
+                <select id="certCurso">
+                    <option value="">— Seleccionar curso —</option>
+                    <option value="Excel Básico a Avanzado">Excel Básico a Avanzado</option>
+                    <option value="Google Workspace para Profesionales">Google Workspace para Profesionales</option>
+                    <option value="Power BI: Visualización de Datos">Power BI: Visualización de Datos</option>
+                    <option value="Desarrollo Web: HTML, CSS y JavaScript">Desarrollo Web: HTML, CSS y JavaScript</option>
+                    <option value="Python desde Cero">Python desde Cero</option>
+                    <option value="SQL y Bases de Datos">SQL y Bases de Datos</option>
+                    <option value="Microsoft Office 365">Microsoft Office 365</option>
+                    <option value="Analítica de Datos con Excel y Power BI">Analítica de Datos con Excel y Power BI</option>
+                    <option value="Fundamentos de Programación">Fundamentos de Programación</option>
+                    <option value="Business Intelligence Empresarial">Business Intelligence Empresarial</option>
+                    <option value="Gestión de Proyectos con Scrum">Gestión de Proyectos con Scrum</option>
+                    <option value="Liderazgo y Gestión de Equipos">Liderazgo y Gestión de Equipos</option>
+                    <option value="Transformación Digital para Empresas">Transformación Digital para Empresas</option>
+                </select>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+                <div class="form-group">
+                    <label for="certFecha">Fecha de emisión</label>
+                    <input type="date" id="certFecha">
+                </div>
+                <div class="form-group">
+                    <label for="certCalificacion">Calificación final (0-100) *</label>
+                    <input type="number" id="certCalificacion" min="0" max="100" placeholder="Ej: 92">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="certInstructor">Nombre del instructor</label>
+                <input type="text" id="certInstructor" placeholder="Coordinadora Paola Ferrer" value="Coordinadora Paola Ferrer">
+            </div>
+
+            <div class="form-actions">
+                <button class="btn btn-primary" onclick="vistaPrevia()">
+                    <i class="fas fa-eye"></i> Vista Previa
+                </button>
+                <button class="btn btn-primary" onclick="descargarCertificado()" style="background:var(--gold);color:var(--navy);">
+                    <i class="fas fa-download"></i> Descargar PDF
+                </button>
+            </div>
+        </div>
+
+        <!-- VISTA PREVIA DEL CERTIFICADO -->
+        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:16px;">
+            <i class="fas fa-file-certificate"></i> Vista Previa
+        </h2>
+
+        <div id="certificado">
+            <div class="cert-logo">PF</div>
+            <div class="cert-title">Certificado de Finalización</div>
+            <div class="cert-to">Se otorga el presente certificado a</div>
+            <div class="cert-name" id="certPreviewNombre">Nombre del Estudiante</div>
+            <div class="cert-course-label">Por haber completado satisfactoriamente el curso</div>
+            <div class="cert-course" id="certPreviewCurso">Nombre del Curso</div>
+            <div class="cert-score" id="certPreviewCalif">0%</div>
+            <div class="cert-footer">
+                <div class="cert-footer-item">
+                    <div class="line"></div>
+                    <p id="certPreviewFecha">Fecha de emisión</p>
+                </div>
+                <div class="cert-footer-item">
+                    <div class="line"></div>
+                    <p id="certPreviewInstructor">Coordinadora Paola Ferrer</p>
+                </div>
+            </div>
+            <div class="cert-id" id="certId">CPF-2026-000000</div>
+        </div>
+
+    </div>
+</section>
+
+<script src="js/i18n.js"></script>
+<script src="js/certificados.js"></script>
+</body>
+</html>

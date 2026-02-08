@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Profesor | Coordinadora Paola Ferrer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/teacher.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">PF</div>
+            <div class="logo-text">Coordinadora <span>Paola Ferrer</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#cursos">Cursos</a></li>
+            <li><a href="dashboard.html">Mi Aula</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
+        </ul>
+        <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<!-- PASSWORD GATE -->
+<div class="password-overlay" id="passwordOverlay">
+    <div class="password-card">
+        <div class="logo-icon" style="width:56px;height:56px;font-size:24px;margin:0 auto 20px;">PF</div>
+        <h2>Panel del Profesor</h2>
+        <p>Ingresa la contraseña de acceso</p>
+        <div class="password-error" id="passError">Contraseña incorrecta</div>
+        <input type="password" id="passInput" placeholder="Contraseña" autocomplete="current-password">
+        <button class="btn btn-primary" onclick="autenticarProfesor()" style="width:100%;justify-content:center;">
+            <i class="fas fa-lock-open"></i> Acceder
+        </button>
+    </div>
+</div>
+
+<!-- LAYOUT PRINCIPAL -->
+<div class="dash-layout" id="teacherLayout" style="display:none;">
+    <aside class="sidebar">
+        <div class="sidebar-profile">
+            <div class="sidebar-avatar" style="background:linear-gradient(135deg,var(--gold),#FF9800);">PF</div>
+            <div class="sidebar-name">Paola Ferrer</div>
+            <div class="sidebar-role">Profesora</div>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#" class="active" onclick="cambiarSeccionT('resumen',this,event)"><i class="fas fa-chart-pie"></i> <span class="menu-text">Resumen</span></a></li>
+            <li><a href="#" onclick="cambiarSeccionT('estudiantes',this,event)"><i class="fas fa-users"></i> <span class="menu-text">Estudiantes</span></a></li>
+            <li><a href="#" onclick="cambiarSeccionT('comunicacion',this,event)"><i class="fas fa-bullhorn"></i> <span class="menu-text">Comunicación</span></a></li>
+            <li><a href="#" onclick="cambiarSeccionT('accesos',this,event)"><i class="fas fa-grid-2"></i> <span class="menu-text">Herramientas</span></a></li>
+        </ul>
+        <div class="sidebar-spacer"></div>
+        <div class="sidebar-footer">
+            <button onclick="cerrarSesionProfesor()"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
+        </div>
+    </aside>
+
+    <main class="dash-main">
+        <!-- RESUMEN -->
+        <div class="dash-section active" id="seccion-resumen">
+            <h2 class="section-title" style="font-size:1.6rem;margin-bottom:24px;">Resumen General</h2>
+            <div class="stats-row" id="teacherStats"></div>
+
+            <h3 class="dash-section-title"><i class="fas fa-chart-bar"></i> Calificación Promedio por Curso</h3>
+            <div class="bar-chart" id="barChart"></div>
+
+            <h3 class="dash-section-title" style="color:#F44336;"><i class="fas fa-exclamation-triangle"></i> Estudiantes en Riesgo (&lt;60%)</h3>
+            <div class="risk-list" id="riskList"></div>
+        </div>
+
+        <!-- ESTUDIANTES -->
+        <div class="dash-section" id="seccion-estudiantes">
+            <h2 class="section-title" style="font-size:1.6rem;margin-bottom:24px;">Estudiantes</h2>
+            <div class="table-controls">
+                <select id="filtroEstudiantes" onchange="filtrarEstudiantes()">
+                    <option value="all">Todos los cursos</option>
+                    <option value="Excel">Excel</option>
+                    <option value="SQL">SQL</option>
+                    <option value="Power BI">Power BI</option>
+                    <option value="Python">Python</option>
+                    <option value="Web">Desarrollo Web</option>
+                    <option value="Scrum">Scrum</option>
+                </select>
+                <button class="btn btn-primary" onclick="exportarCSV()" style="padding:10px 20px;font-size:0.85rem;">
+                    <i class="fas fa-download"></i> Exportar CSV
+                </button>
+            </div>
+            <div class="responsive-table-wrapper">
+                <table class="data-table" id="tablaEstudiantes">
+                    <thead>
+                        <tr>
+                            <th onclick="ordenarTabla('nombre')">Nombre <i class="fas fa-sort"></i></th>
+                            <th onclick="ordenarTabla('email')">Email <i class="fas fa-sort"></i></th>
+                            <th onclick="ordenarTabla('curso')">Curso <i class="fas fa-sort"></i></th>
+                            <th onclick="ordenarTabla('promedio')">Promedio <i class="fas fa-sort"></i></th>
+                            <th onclick="ordenarTabla('acceso')">Último Acceso <i class="fas fa-sort"></i></th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- COMUNICACIÓN -->
+        <div class="dash-section" id="seccion-comunicacion">
+            <h2 class="section-title" style="font-size:1.6rem;margin-bottom:24px;">Comunicación</h2>
+            <div class="comm-card">
+                <h4><i class="fas fa-paper-plane"></i> Enviar Anuncio</h4>
+                <select id="plantillaSelect" onchange="cargarPlantilla()">
+                    <option value="">— Seleccionar plantilla —</option>
+                    <option value="recordatorio">Recordatorio de tarea</option>
+                    <option value="material">Nuevo material disponible</option>
+                    <option value="resultados">Resultados de quiz</option>
+                    <option value="clase">Próxima clase</option>
+                </select>
+                <textarea id="mensajeTexto" placeholder="Escribe tu mensaje o selecciona una plantilla..."></textarea>
+                <div style="display:flex;align-items:center;">
+                    <button class="btn btn-primary" onclick="copiarMensaje()" style="padding:10px 20px;font-size:0.85rem;">
+                        <i class="fas fa-copy"></i> Copiar al portapapeles
+                    </button>
+                    <span class="copy-success" id="copySuccess"><i class="fas fa-check"></i> Copiado</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACCESOS RÁPIDOS -->
+        <div class="dash-section" id="seccion-accesos">
+            <h2 class="section-title" style="font-size:1.6rem;margin-bottom:24px;">Herramientas y Accesos Rápidos</h2>
+            <div class="quick-access-grid">
+                <a href="https://classroom.google.com" target="_blank" class="quick-access-btn">
+                    <div class="qa-icon" style="background:rgba(76,175,80,0.1);color:#4CAF50;"><i class="fas fa-chalkboard"></i></div>
+                    <h4>Google Classroom</h4><p>Gestionar cursos</p>
+                </a>
+                <a href="https://create.kahoot.it" target="_blank" class="quick-access-btn">
+                    <div class="qa-icon" style="background:rgba(156,39,176,0.1);color:#9C27B0;"><i class="fas fa-gamepad"></i></div>
+                    <h4>Kahoot Creator</h4><p>Crear quizzes</p>
+                </a>
+                <a href="https://forms.google.com" target="_blank" class="quick-access-btn">
+                    <div class="qa-icon" style="background:rgba(33,150,243,0.1);color:#2196F3;"><i class="fab fa-google"></i></div>
+                    <h4>Google Forms</h4><p>Crear exámenes</p>
+                </a>
+                <a href="https://edpuzzle.com" target="_blank" class="quick-access-btn">
+                    <div class="qa-icon" style="background:rgba(255,87,34,0.1);color:#FF5722;"><i class="fas fa-play-circle"></i></div>
+                    <h4>Edpuzzle</h4><p>Video interactivo</p>
+                </a>
+                <a href="https://studio.youtube.com" target="_blank" class="quick-access-btn">
+                    <div class="qa-icon" style="background:rgba(244,67,54,0.1);color:#F44336;"><i class="fab fa-youtube"></i></div>
+                    <h4>YouTube Studio</h4><p>Subir videos</p>
+                </a>
+                <a href="https://drive.google.com" target="_blank" class="quick-access-btn">
+                    <div class="qa-icon" style="background:rgba(255,184,0,0.1);color:#FFB800;"><i class="fas fa-hard-drive"></i></div>
+                    <h4>Google Drive</h4><p>Materiales</p>
+                </a>
+                <a href="https://sheets.google.com" target="_blank" class="quick-access-btn">
+                    <div class="qa-icon" style="background:rgba(76,175,80,0.1);color:#4CAF50;"><i class="fas fa-table"></i></div>
+                    <h4>Google Sheets</h4><p>Analytics</p>
+                </a>
+                <a href="https://canva.com" target="_blank" class="quick-access-btn">
+                    <div class="qa-icon" style="background:rgba(0,188,212,0.1);color:#00BCD4;"><i class="fas fa-paint-brush"></i></div>
+                    <h4>Canva</h4><p>Diseño y certificados</p>
+                </a>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/teacher.js"></script>
+</body>
+</html>
