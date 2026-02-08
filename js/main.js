@@ -183,6 +183,7 @@ let busquedaActiva = '';
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
+    if (typeof inicializarI18n === 'function') inicializarI18n();
     cargarCursos();
     inicializarNavegacion();
     inicializarAnimaciones();
@@ -280,14 +281,14 @@ function crearTarjetaCurso(curso) {
 // =========================
 
 // Función global para los botones de tab
-window.filterCourses = function(categoria) {
+window.filterCourses = function(categoria, e) {
     categoriaActiva = categoria;
 
     // Actualizar tabs activos
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.classList.remove('active');
     });
-    event.target.classList.add('active');
+    if (e && e.target) e.target.classList.add('active');
 
     renderizarCursos();
 };

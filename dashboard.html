@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aula | Coordinadora Paola Ferrer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">PF</div>
+            <div class="logo-text">Coordinadora <span>Paola Ferrer</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#cursos">Cursos</a></li>
+            <li><a href="dashboard.html" class="active">Mi Aula</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
+        </ul>
+        <button class="hamburger" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ONBOARDING (se muestra si no hay nombre guardado) -->
+<div class="onboarding-overlay" id="onboarding" style="display:none;">
+    <div class="onboarding-card">
+        <div class="logo-icon" style="width:56px;height:56px;font-size:24px;margin:0 auto 20px;">PF</div>
+        <h2 data-i18n="onboard.titulo">¡Bienvenido a la plataforma!</h2>
+        <p data-i18n="onboard.nombre">¿Cómo te llamas?</p>
+        <input type="text" id="onboardName" data-i18n="onboard.placeholder" data-i18n-attr="placeholder" placeholder="Tu nombre completo" autocomplete="name">
+        <button class="btn btn-primary" onclick="completarOnboarding()" style="width:100%;justify-content:center;">
+            <i class="fas fa-arrow-right"></i> <span data-i18n="onboard.comenzar">Comenzar</span>
+        </button>
+    </div>
+</div>
+
+<!-- LAYOUT PRINCIPAL -->
+<div class="dash-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-profile">
+            <div class="sidebar-avatar" id="sidebarAvatar">CM</div>
+            <div class="sidebar-name" id="sidebarName">Estudiante</div>
+            <div class="sidebar-role">Estudiante</div>
+        </div>
+
+        <ul class="sidebar-menu">
+            <li><a href="#" class="active" onclick="cambiarSeccion('resumen', this, event)"><i class="fas fa-home"></i> <span class="menu-text" data-i18n="dash.resumen">Resumen</span></a></li>
+            <li><a href="#" onclick="cambiarSeccion('cursos', this, event)"><i class="fas fa-book"></i> <span class="menu-text" data-i18n="dash.misCursos">Mis Cursos</span></a></li>
+            <li><a href="quizzes.html"><i class="fas fa-clipboard-check"></i> <span class="menu-text" data-i18n="dash.misQuizzes">Quizzes</span></a></li>
+            <li><a href="#" onclick="cambiarSeccion('certificados', this, event)"><i class="fas fa-certificate"></i> <span class="menu-text" data-i18n="dash.certificados">Certificados</span></a></li>
+            <li><a href="#" onclick="cambiarSeccion('logros', this, event)"><i class="fas fa-trophy"></i> <span class="menu-text">Logros</span></a></li>
+        </ul>
+
+        <div class="sidebar-spacer"></div>
+
+        <div class="sidebar-footer">
+            <button onclick="cerrarSesionEstudiante()">
+                <i class="fas fa-sign-out-alt"></i> <span data-i18n="dash.cerrarSesion">Cerrar Sesión</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="dash-main">
+
+        <!-- SECCIÓN: RESUMEN -->
+        <div class="dash-section active" id="seccion-resumen">
+            <div class="welcome-card">
+                <h2 id="welcomeMsg">¡Hola! Continúa donde te quedaste</h2>
+                <p>Tu progreso de esta semana se ve increíble. Sigue así.</p>
+                <a href="quizzes.html" class="btn btn-primary"><i class="fas fa-play"></i> Tomar un Quiz</a>
+            </div>
+
+            <div class="stats-row" id="statsRow">
+                <!-- Generado por JS -->
+            </div>
+
+            <h3 class="dash-section-title"><i class="fas fa-book-open"></i> <span data-i18n="dash.misCursos">Mis Cursos</span></h3>
+            <div class="course-progress-list" id="courseProgressList">
+                <!-- Generado por JS -->
+            </div>
+
+            <div class="dash-two-cols">
+                <div>
+                    <h3 class="dash-section-title"><i class="fas fa-clock-rotate-left"></i> <span data-i18n="dash.actividadReciente">Actividad Reciente</span></h3>
+                    <div class="activity-list" id="activityList">
+                        <!-- Generado por JS -->
+                    </div>
+                </div>
+                <div>
+                    <h3 class="dash-section-title"><i class="fas fa-calendar-days"></i> <span data-i18n="dash.proximasFechas">Próximas Fechas</span></h3>
+                    <div class="activity-list" id="datesList">
+                        <!-- Generado por JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN: MIS CURSOS -->
+        <div class="dash-section" id="seccion-cursos">
+            <h2 class="section-title" style="font-size:1.6rem;margin-bottom:24px;" data-i18n="dash.misCursos">Mis Cursos</h2>
+            <div class="course-progress-list" id="fullCourseList">
+                <!-- Generado por JS -->
+            </div>
+        </div>
+
+        <!-- SECCIÓN: CERTIFICADOS -->
+        <div class="dash-section" id="seccion-certificados">
+            <h2 class="section-title" style="font-size:1.6rem;margin-bottom:24px;" data-i18n="dash.certificados">Certificados</h2>
+            <div class="cert-grid" id="certGrid">
+                <!-- Generado por JS -->
+            </div>
+        </div>
+
+        <!-- SECCIÓN: LOGROS -->
+        <div class="dash-section" id="seccion-logros">
+            <h2 class="section-title" style="font-size:1.6rem;margin-bottom:24px;">Logros y Badges</h2>
+            <div class="badges-grid" id="badgesGrid">
+                <!-- Generado por JS -->
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<!-- Botón demo -->
+<button class="demo-btn" onclick="cargarDatosDemo()" data-i18n="dash.cargarDemo">
+    <i class="fas fa-database"></i> Cargar datos de demostración
+</button>
+
+<script src="js/i18n.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

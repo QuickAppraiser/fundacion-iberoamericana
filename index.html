@@ -26,8 +26,9 @@
             <li><a href="#herramientas">Herramientas</a></li>
             <li><a href="#dashboard">Dashboard</a></li>
             <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="dashboard.html" class="nav-cta"><i class="fas fa-graduation-cap"></i> Acceder</a></li>
+            <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
+            <li><a href="dashboard.html" class="nav-cta"><i class="fas fa-graduation-cap"></i> <span data-i18n="nav.acceder">Acceder</span></a></li>
+            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
         </ul>
         <button class="hamburger" aria-label="Abrir menú">
             <span></span><span></span><span></span>
@@ -149,11 +150,11 @@
     </div>
 
     <div class="tab-nav animate-on-scroll">
-        <button class="tab-btn active" onclick="filterCourses('all')">Todos</button>
-        <button class="tab-btn" onclick="filterCourses('office')">Office & Productividad</button>
-        <button class="tab-btn" onclick="filterCourses('programacion')">Programación</button>
-        <button class="tab-btn" onclick="filterCourses('datos')">Datos & BI</button>
-        <button class="tab-btn" onclick="filterCourses('gestion')">Gestión & PM</button>
+        <button class="tab-btn active" onclick="filterCourses('all', event)">Todos</button>
+        <button class="tab-btn" onclick="filterCourses('office', event)">Office & Productividad</button>
+        <button class="tab-btn" onclick="filterCourses('programacion', event)">Programación</button>
+        <button class="tab-btn" onclick="filterCourses('datos', event)">Datos & BI</button>
+        <button class="tab-btn" onclick="filterCourses('gestion', event)">Gestión & PM</button>
     </div>
 
     <div class="courses-grid animate-on-scroll" id="coursesGrid">
@@ -437,6 +438,7 @@
     </div>
 </div>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
