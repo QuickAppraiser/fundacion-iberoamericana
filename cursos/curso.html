@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso | Fundación Iberoamericana</title>
+    <meta name="description" content="Detalle del curso en Fundación Iberoamericana. Módulos, requisitos e inscripción.">
+    <meta name="theme-color" content="#00BFA6">
+    <link rel="icon" type="image/svg+xml" href="../icons/icon-192.svg">
+    <link rel="apple-touch-icon" href="../icons/icon-192.svg">
+    <link rel="manifest" href="../manifest.json">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -51,6 +56,17 @@
     </div>
 </section>
 
+<!-- POMODORO TIMER -->
+<div class="pomo-fab" id="pomodoroFab">
+    <div class="pomo-window" id="pomodoroWindow">
+        <div id="pomodoroBody"></div>
+    </div>
+    <button class="pomo-toggle" onclick="togglePomodoro()" title="Pomodoro Timer">
+        <span class="pomo-pulse"></span>
+        <i class="fas fa-stopwatch"></i>
+    </button>
+</div>
+
 <footer class="footer">
     <div class="footer-bottom">
         &copy; 2026 Fundación Iberoamericana. Todos los derechos reservados.
@@ -62,5 +78,11 @@
 <script src="../js/animations.js"></script>
 <script src="../js/curso-detalle.js"></script>
 <script src="../js/extras.js"></script>
+<script src="../js/gamification.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('../sw.js').catch(() => {});
+}
+</script>
 </body>
 </html>

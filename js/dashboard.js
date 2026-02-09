@@ -116,6 +116,10 @@ window.cerrarSesionEstudiante = function() {
     localStorage.removeItem('progreso');
     localStorage.removeItem('quiz_resultados');
     localStorage.removeItem('logros');
+    localStorage.removeItem('fi_xp');
+    localStorage.removeItem('fi_streak');
+    localStorage.removeItem('fi_last_activity');
+    localStorage.removeItem('fi_last_login');
     window.location.href = 'index.html';
 };
 
@@ -130,8 +134,19 @@ window.cargarDatosDemo = function() {
     localStorage.setItem('quiz_resultados', JSON.stringify(datosDemo.quizResultados));
     localStorage.setItem('logros', JSON.stringify(datosDemo.logros));
 
+    // Gamification demo data
+    localStorage.setItem('fi_xp', '780');
+    localStorage.setItem('fi_streak', '5');
+    localStorage.setItem('fi_last_activity', new Date().toDateString());
+    localStorage.setItem('fi_last_login', new Date().toDateString());
+
     document.getElementById('onboarding').style.display = 'none';
     renderizarDashboard();
+
+    // Re-render gamification widgets
+    if (typeof renderGamificationWidget === 'function') renderGamificationWidget();
+    if (typeof renderGamificationSidebar === 'function') renderGamificationSidebar();
+    if (typeof renderLearningPath === 'function') renderLearningPath();
 };
 
 // =========================

@@ -8,6 +8,19 @@
     <meta property="og:title" content="Fundación Iberoamericana — Plataforma de Aprendizaje">
     <meta property="og:description" content="Cursos prácticos con quizzes interactivos, laboratorios hands-on y certificados.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://quickappraiser.github.io/fundacion-iberoamericana/icons/icon-512.svg">
+    <meta property="og:url" content="https://quickappraiser.github.io/fundacion-iberoamericana/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fundación Iberoamericana — Plataforma de Aprendizaje">
+    <meta name="twitter:description" content="Cursos prácticos con quizzes interactivos, laboratorios hands-on y certificados.">
+    <meta name="twitter:image" content="https://quickappraiser.github.io/fundacion-iberoamericana/icons/icon-512.svg">
+    <meta name="theme-color" content="#00BFA6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="FI Aprende">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+    <link rel="apple-touch-icon" href="icons/icon-192.svg">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -550,6 +563,19 @@
     </div>
 </div>
 
+<!-- POMODORO TIMER -->
+<div class="pomo-fab" id="pomodoroFab">
+    <div class="pomo-window" id="pomodoroWindow">
+        <div id="pomodoroBody">
+            <!-- Rendered by gamification.js -->
+        </div>
+    </div>
+    <button class="pomo-toggle" onclick="togglePomodoro()" title="Pomodoro Timer">
+        <span class="pomo-pulse"></span>
+        <i class="fas fa-stopwatch"></i>
+    </button>
+</div>
+
 <!-- FLOATING CHATBOT -->
 <div class="chatbot-fab" id="chatbotFab" style="display:none;">
     <div class="chatbot-window" id="chatbotWindow">
@@ -580,5 +606,11 @@
 <script src="js/animations.js"></script>
 <script src="js/main.js"></script>
 <script src="js/extras.js"></script>
+<script src="js/gamification.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+}
+</script>
 </body>
 </html>

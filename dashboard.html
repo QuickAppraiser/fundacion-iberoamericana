@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Aula | Fundación Iberoamericana</title>
+    <meta name="description" content="Dashboard de estudiante. Visualiza tu progreso, XP, racha y ruta de aprendizaje.">
+    <meta name="theme-color" content="#00BFA6">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+    <link rel="apple-touch-icon" href="icons/icon-192.svg">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/extras.css">
 </head>
 <body>
 
@@ -56,6 +62,7 @@
             <div class="sidebar-avatar" id="sidebarAvatar">CM</div>
             <div class="sidebar-name" id="sidebarName">Estudiante</div>
             <div class="sidebar-role">Estudiante</div>
+            <div class="sidebar-level" id="sidebarLevel" style="margin-top:8px;font-size:0.78rem;color:var(--teal);font-weight:600;"></div>
         </div>
 
         <ul class="sidebar-menu">
@@ -86,6 +93,11 @@
                 <a href="quizzes.html" class="btn btn-primary"><i class="fas fa-play"></i> Tomar un Quiz</a>
             </div>
 
+            <!-- Gamification Widget -->
+            <div id="gamificationWidget">
+                <!-- Rendered by gamification.js -->
+            </div>
+
             <div class="stats-row" id="statsRow">
                 <!-- Generado por JS -->
             </div>
@@ -93,6 +105,12 @@
             <h3 class="dash-section-title"><i class="fas fa-book-open"></i> <span data-i18n="dash.misCursos">Mis Cursos</span></h3>
             <div class="course-progress-list" id="courseProgressList">
                 <!-- Generado por JS -->
+            </div>
+
+            <!-- Learning Path -->
+            <h3 class="dash-section-title"><i class="fas fa-map"></i> Ruta de Aprendizaje</h3>
+            <div id="learningPathContent">
+                <!-- Rendered by gamification.js -->
             </div>
 
             <div class="dash-two-cols">
@@ -146,5 +164,6 @@
 <script src="js/i18n.js"></script>
 <script src="js/animations.js"></script>
 <script src="js/dashboard.js"></script>
+<script src="js/gamification.js"></script>
 </body>
 </html>
