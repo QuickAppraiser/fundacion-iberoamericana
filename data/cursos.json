@@ -936,19 +936,19 @@
   },
   {
     "id": "ingles-general",
-    "titulo": "Inglés General (A1-B2)",
+    "titulo": "Inglés General (A1-C1)",
     "categoria": "idiomas",
     "categoriaLabel": "Idiomas",
-    "nivel": "Básico → Intermedio",
+    "nivel": "Básico → Avanzado",
     "nivelClase": "basico",
-    "duracion": "30 horas",
-    "modulosTotales": 6,
-    "quizzesTotales": 12,
+    "duracion": "40 horas",
+    "modulosTotales": 8,
+    "quizzesTotales": 16,
     "icono": "fa-language",
     "iconoColor": "#E91E63",
     "color": "#E91E63",
-    "descripcionCorta": "Aprende inglés desde cero hasta nivel intermedio. Gramática, vocabulario, conversación y comprensión auditiva.",
-    "descripcionCompleta": "Curso integral de inglés que te lleva desde nivel principiante (A1) hasta intermedio (B2). Incluye gramática estructurada, vocabulario práctico, ejercicios de conversación, comprensión auditiva con materiales reales, y práctica de escritura. Ideal para profesionales que necesitan inglés en el ámbito laboral.",
+    "descripcionCorta": "Aprende inglés desde cero hasta nivel avanzado. Gramática, vocabulario, conversación, comprensión auditiva y fluidez profesional.",
+    "descripcionCompleta": "Curso integral de inglés que te lleva desde nivel principiante (A1) hasta avanzado (C1). Incluye gramática estructurada, vocabulario práctico, ejercicios de conversación, comprensión auditiva con materiales reales, escritura formal, y desarrollo de fluidez para contextos académicos y profesionales. Ideal para quienes buscan dominar el inglés a nivel competitivo.",
     "requisitos": ["No se requiere conocimiento previo de inglés", "Computadora con micrófono (para ejercicios de pronunciación)", "Acceso a internet"],
     "modulos": [
       {
@@ -1003,6 +1003,24 @@
           { "titulo": "Presentations — Estructurar una presentación en inglés", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Technical Vocabulary — Términos de TI, negocios y finanzas", "tipo": "lectura", "duracion": "20 min" },
           { "titulo": "Proyecto Final: Presentación profesional en inglés", "tipo": "practica", "duracion": "60 min" }
+        ]
+      },
+      {
+        "id": "eng-m7", "titulo": "B2 — Fluidez Avanzada: Debates, Escritura Formal, Idioms", "orden": 7, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Advanced Writing — Ensayos, reportes y escritura formal", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Idioms & Phrasal Verbs — Expresiones del inglés real", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Debate & Argumentation — Defender ideas con estructura", "tipo": "lectura", "duracion": "25 min" },
+          { "titulo": "Práctica: Debate estructurado sobre un tema polémico", "tipo": "practica", "duracion": "50 min" }
+        ]
+      },
+      {
+        "id": "eng-m8", "titulo": "B2-C1 — Dominio: Académico, Negociación y Expresión Nativa", "orden": 8, "duracion": "5 horas",
+        "lecciones": [
+          { "titulo": "Academic English — Vocabulario universitario y de investigación", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Negotiation & Persuasion — Técnicas de negociación en inglés", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Native Expressions — Slang, humor y cultura anglosajona", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Proyecto Final: Simulación de entrevista de trabajo en inglés", "tipo": "practica", "duracion": "55 min" }
         ]
       }
     ],

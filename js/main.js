@@ -171,13 +171,13 @@ const cursosFallback = [
         estado: "activo"
     },
     {
-        id: "ingles-general", titulo: "Inglés General (A1-B2)",
+        id: "ingles-general", titulo: "Inglés General (A1-C1)",
         categoria: "idiomas", categoriaLabel: "Idiomas",
-        nivel: "Básico → Intermedio", nivelClase: "basico",
-        duracion: "30 horas", modulosTotales: 6, quizzesTotales: 12,
+        nivel: "Básico → Avanzado", nivelClase: "basico",
+        duracion: "40 horas", modulosTotales: 8, quizzesTotales: 16,
         icono: "fa-language", iconoColor: "#E91E63", color: "#E91E63",
-        descripcionCorta: "Aprende inglés desde cero hasta nivel intermedio. Gramática, vocabulario, conversación y comprensión auditiva.",
-        descripcionCompleta: "Curso integral de inglés que te lleva desde nivel principiante (A1) hasta intermedio (B2). Incluye gramática estructurada, vocabulario práctico, ejercicios de conversación, comprensión auditiva con materiales reales, y práctica de escritura. Ideal para profesionales que necesitan inglés en el ámbito laboral.",
+        descripcionCorta: "Aprende inglés desde cero hasta nivel avanzado. Gramática, vocabulario, conversación, comprensión auditiva y fluidez profesional.",
+        descripcionCompleta: "Curso integral de inglés que te lleva desde nivel principiante (A1) hasta avanzado (C1). Incluye gramática estructurada, vocabulario práctico, ejercicios de conversación, comprensión auditiva con materiales reales, escritura formal, y desarrollo de fluidez para contextos académicos y profesionales. Ideal para quienes buscan dominar el inglés a nivel competitivo.",
         requisitos: ["No se requiere conocimiento previo de inglés", "Computadora con micrófono (para ejercicios de pronunciación)", "Acceso a internet"],
         modulos: [
             { titulo: "A1 — Fundamentos: Saludos, Presentaciones y Vocabulario Básico", duracion: "5 horas" },
@@ -185,7 +185,9 @@ const cursosFallback = [
             { titulo: "A2 — Vida Cotidiana: Compras, Direcciones, Rutinas", duracion: "5 horas" },
             { titulo: "A2-B1 — Gramática Intermedia: Tiempos Verbales, Condicionales", duracion: "5 horas" },
             { titulo: "B1 — Conversación y Comprensión: Diálogos, Listening, Speaking", duracion: "5 horas" },
-            { titulo: "B1-B2 — Inglés Profesional: Emails, Presentaciones, Vocabulario Técnico", duracion: "5 horas" }
+            { titulo: "B1-B2 — Inglés Profesional: Emails, Presentaciones, Vocabulario Técnico", duracion: "5 horas" },
+            { titulo: "B2 — Fluidez Avanzada: Debates, Escritura Formal, Idioms", duracion: "5 horas" },
+            { titulo: "B2-C1 — Dominio: Académico, Negociación y Expresión Nativa", duracion: "5 horas" }
         ],
         googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
         estado: "activo"
