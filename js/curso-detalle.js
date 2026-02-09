@@ -333,7 +333,25 @@ function renderizarCurso(curso) {
                 <i class="fas fa-graduation-cap"></i> Inscribirme en Google Classroom
             </a>
         </div>
+
+        <div class="cert-preview-section">
+            <h3 class="course-detail-section-title">
+                <i class="fas fa-certificate"></i> Tu Certificado
+            </h3>
+            <p style="color:var(--text-light);margin-bottom:20px;font-size:0.92rem;">Al completar este curso recibirás un certificado digital verificable. Escribe tu nombre para ver cómo se verá:</p>
+            <div class="cert-preview-card">
+                <div class="cert-badge"><i class="fas fa-award"></i> Certificado</div>
+                <div class="cert-preview-logo">FUNDACIÓN IBEROAMERICANA</div>
+                <div class="cert-preview-title">Certifica que</div>
+                <div class="cert-preview-name" id="certPreviewName">Tu Nombre Aquí</div>
+                <div class="cert-preview-course">ha completado exitosamente el curso<br><strong>${curso.titulo}</strong><br>(${curso.duracion} — ${curso.modulosTotales} módulos)</div>
+                <input type="text" class="cert-preview-input" id="certPreviewInput" placeholder="Escribe tu nombre..." maxlength="40">
+            </div>
+        </div>
     `;
+
+    // Initialize cert preview after DOM elements exist
+    if (typeof initCertPreview === 'function') initCertPreview();
 }
 
 function renderizarNoEncontrado() {

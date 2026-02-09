@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/extras.css">
 </head>
 <body>
 
@@ -71,6 +72,11 @@
                     <div class="stat-number" data-counter>95<span>%</span></div>
                     <div class="stat-label">Satisfacción</div>
                 </div>
+            </div>
+            <!-- Countdown Timer -->
+            <div class="countdown-strip" id="countdownTimer">
+                <i class="fas fa-fire"></i>
+                <span class="cd-label">Cargando...</span>
             </div>
         </div>
         <div class="hero-visual">
@@ -268,6 +274,104 @@
     </div>
 </section>
 
+<!-- QUIZ FINDER -->
+<section class="section" id="quiz-finder">
+    <div class="animate-on-scroll">
+        <div class="section-label"><i class="fas fa-compass"></i> Descubre</div>
+        <h2 class="section-title">¿Qué curso es para ti?</h2>
+        <p class="section-subtitle">Responde 4 preguntas rápidas y te recomendamos el curso perfecto según tu perfil.</p>
+    </div>
+    <div class="quiz-finder animate-on-scroll">
+        <div class="quiz-finder-card" id="quizFinderContent">
+            <!-- Rendered by extras.js -->
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonios">
+    <div class="animate-on-scroll">
+        <div class="section-label"><i class="fas fa-star"></i> Historias</div>
+        <h2 class="section-title">Lo que dicen nuestros estudiantes</h2>
+        <p class="section-subtitle">Más de 500 estudiantes ya están transformando sus carreras con nosotros.</p>
+    </div>
+    <div class="testimonials-track animate-on-scroll">
+        <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">Gracias a la Fundación conseguí un ascenso en mi trabajo. El curso de Excel me dio las herramientas que necesitaba para crear reportes profesionales.</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar" style="background:#4CAF50;">MC</div>
+                <div class="testimonial-info"><h4>María C.</h4><span>Excel Básico a Avanzado</span></div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">Empecé sin saber nada de programación y ahora tengo mi propio portafolio web. Los laboratorios prácticos son increíbles.</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar" style="background:#FF5722;">JR</div>
+                <div class="testimonial-info"><h4>Juan R.</h4><span>Desarrollo Web (HTML, CSS, JS)</span></div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <p class="testimonial-text">El curso de Power BI cambió completamente cómo presento datos en mi empresa. Mis jefes quedaron impresionados con los dashboards.</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar" style="background:#FFB800;">AL</div>
+                <div class="testimonial-info"><h4>Ana L.</h4><span>Power BI — Visualización</span></div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">Python desde Cero fue exactamente lo que necesitaba. Ahora automatizo tareas en mi trabajo y ahorro horas cada semana.</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar" style="background:#3776AB;">CP</div>
+                <div class="testimonial-info"><h4>Carlos P.</h4><span>Python desde Cero</span></div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">El inglés me abrió puertas que no imaginaba. Pasé de no entender nada a tener reuniones en inglés con clientes internacionales.</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar" style="background:#E91E63;">LG</div>
+                <div class="testimonial-info"><h4>Laura G.</h4><span>Inglés General (A1-C1)</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="section">
+    <div class="animate-on-scroll">
+        <div class="section-label"><i class="fas fa-exchange-alt"></i> Transformación</div>
+        <h2 class="section-title">El cambio es real</h2>
+        <p class="section-subtitle">Así se ve la transformación de nuestros estudiantes después de completar un curso.</p>
+    </div>
+    <div class="before-after-grid animate-on-scroll">
+        <div class="ba-card before">
+            <div class="ba-tag"><i class="fas fa-times-circle"></i> Antes</div>
+            <h4>Sin formación técnica</h4>
+            <ul class="ba-list">
+                <li><i class="fas fa-circle"></i> Hojas de cálculo desorganizadas</li>
+                <li><i class="fas fa-circle"></i> Reportes manuales que toman horas</li>
+                <li><i class="fas fa-circle"></i> Sin habilidades de programación</li>
+                <li><i class="fas fa-circle"></i> Datos sin análisis ni visualización</li>
+                <li><i class="fas fa-circle"></i> CV sin certificaciones técnicas</li>
+            </ul>
+        </div>
+        <div class="ba-card after">
+            <div class="ba-tag"><i class="fas fa-check-circle"></i> Después</div>
+            <h4>Profesional certificado</h4>
+            <ul class="ba-list">
+                <li><i class="fas fa-check-circle"></i> Dashboards profesionales en minutos</li>
+                <li><i class="fas fa-check-circle"></i> Automatización con macros y Python</li>
+                <li><i class="fas fa-check-circle"></i> Portafolio web propio publicado</li>
+                <li><i class="fas fa-check-circle"></i> Insights de datos para decisiones</li>
+                <li><i class="fas fa-check-circle"></i> Certificados verificables en LinkedIn</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 <!-- DASHBOARD PREVIEW -->
 <section class="section" id="dashboard">
     <div class="animate-on-scroll">
@@ -446,8 +550,35 @@
     </div>
 </div>
 
+<!-- FLOATING CHATBOT -->
+<div class="chatbot-fab" id="chatbotFab" style="display:none;">
+    <div class="chatbot-window" id="chatbotWindow">
+        <div class="chatbot-header">
+            <div class="chatbot-header-avatar">FI</div>
+            <div class="chatbot-header-info">
+                <h4>Asistente FI</h4>
+                <span>En línea</span>
+            </div>
+        </div>
+        <div class="chatbot-body" id="chatbotBody">
+            <div class="chat-bubble">Hola, soy el asistente de Fundación Iberoamericana. ¿En qué te puedo ayudar?</div>
+            <div class="chat-options">
+                <button class="chat-option-btn" onclick="chatOption('inscribir')"><i class="fas fa-graduation-cap"></i> Quiero inscribirme</button>
+                <button class="chat-option-btn" onclick="chatOption('nosaber')"><i class="fas fa-compass"></i> No sé qué estudiar</button>
+                <button class="chat-option-btn" onclick="chatOption('duda')"><i class="fas fa-question-circle"></i> Tengo una duda</button>
+                <button class="chat-option-btn" onclick="chatOption('profesor')"><i class="fas fa-chalkboard-teacher"></i> Soy profesor</button>
+            </div>
+        </div>
+    </div>
+    <button class="chatbot-toggle" onclick="toggleChatbot()">
+        <span class="pulse-ring"></span>
+        <i class="fas fa-comment-dots"></i>
+    </button>
+</div>
+
 <script src="js/i18n.js"></script>
 <script src="js/animations.js"></script>
 <script src="js/main.js"></script>
+<script src="js/extras.js"></script>
 </body>
 </html>

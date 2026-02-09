@@ -1,0 +1,571 @@
+/* ========================= */
+/* EXTRAS — PREMIUM FEATURES */
+/* Testimonials, Quiz, Chat,  */
+/* Countdown, Before/After    */
+/* ========================= */
+
+/* ========================= */
+/* COUNTDOWN TIMER            */
+/* ========================= */
+.countdown-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+    padding: 12px 20px;
+    background: rgba(255,184,0,0.12);
+    border: 1px solid rgba(255,184,0,0.25);
+    border-radius: 14px;
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.85);
+    animation: fadeInUp 0.6s ease-out 0.8s both;
+}
+.countdown-strip i { color: var(--gold); }
+.countdown-strip .cd-label { font-weight: 600; color: var(--gold); }
+.countdown-boxes {
+    display: flex;
+    gap: 6px;
+    margin-left: 6px;
+}
+.cd-box {
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 4px 10px;
+    text-align: center;
+    min-width: 44px;
+}
+.cd-box .cd-num {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: white;
+    display: block;
+    line-height: 1.2;
+}
+.cd-box .cd-unit {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+}
+
+/* ========================= */
+/* QUICK QUIZ                 */
+/* ========================= */
+.quiz-finder {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+}
+.quiz-finder-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.quiz-finder-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--teal), var(--gold), #E91E63);
+}
+.quiz-progress {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+.quiz-progress-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    transition: all 0.3s;
+}
+.quiz-progress-dot.active {
+    background: var(--teal);
+    transform: scale(1.3);
+}
+.quiz-progress-dot.done {
+    background: var(--gold);
+}
+.quiz-question {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 24px;
+}
+[data-theme="dark"] .quiz-question { color: var(--text); }
+.quiz-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.quiz-option {
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.92rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.quiz-option:hover {
+    border-color: var(--teal);
+    background: rgba(0,191,166,0.06);
+}
+.quiz-option.selected {
+    border-color: var(--teal);
+    background: rgba(0,191,166,0.1);
+    font-weight: 600;
+}
+.quiz-option i { font-size: 1.2rem; color: var(--teal); }
+
+/* Quiz Result */
+.quiz-result {
+    text-align: center;
+    padding: 20px 0;
+}
+.quiz-result-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 2rem;
+    color: white;
+}
+.quiz-result h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+[data-theme="dark"] .quiz-result h3 { color: var(--text); }
+.quiz-result p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* ========================= */
+/* TESTIMONIALS               */
+/* ========================= */
+.testimonials-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 0 20px;
+    scrollbar-width: none;
+}
+.testimonials-track::-webkit-scrollbar { display: none; }
+.testimonial-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    min-width: 320px;
+    max-width: 360px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    transition: var(--transition);
+    position: relative;
+}
+.testimonial-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+.testimonial-card::before {
+    content: '\201C';
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 3rem;
+    font-family: Georgia, serif;
+    color: var(--teal);
+    opacity: 0.15;
+    line-height: 1;
+}
+.testimonial-stars {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 12px;
+    color: var(--gold);
+    font-size: 0.85rem;
+}
+.testimonial-text {
+    font-size: 0.92rem;
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.testimonial-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1rem;
+    color: white;
+    flex-shrink: 0;
+}
+.testimonial-info h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+[data-theme="dark"] .testimonial-info h4 { color: var(--text); }
+.testimonial-info span {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+/* ========================= */
+/* BEFORE / AFTER             */
+/* ========================= */
+.before-after-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.ba-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+}
+.ba-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+.ba-card.before::before { background: var(--text-muted); }
+.ba-card.after::before { background: linear-gradient(90deg, var(--teal), var(--gold)); }
+.ba-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+.ba-card.before .ba-tag {
+    background: rgba(178,190,195,0.15);
+    color: var(--text-muted);
+}
+.ba-card.after .ba-tag {
+    background: rgba(0,191,166,0.1);
+    color: var(--teal);
+}
+.ba-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+[data-theme="dark"] .ba-card h4 { color: var(--text); }
+.ba-list {
+    list-style: none;
+    padding: 0;
+}
+.ba-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 6px 0;
+    font-size: 0.88rem;
+    color: var(--text-light);
+}
+.ba-card.before .ba-list li i { color: var(--text-muted); font-size: 0.7rem; margin-top: 5px; }
+.ba-card.after .ba-list li i { color: var(--teal); margin-top: 2px; }
+.ba-arrow {
+    display: none;
+}
+
+/* ========================= */
+/* FLOATING CHATBOT           */
+/* ========================= */
+.chatbot-fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+}
+.chatbot-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0,191,166,0.4);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.chatbot-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 28px rgba(0,191,166,0.5);
+}
+.chatbot-toggle .pulse-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--teal);
+    animation: chatPulse 2s ease-out infinite;
+}
+@keyframes chatPulse {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(1.6); opacity: 0; }
+}
+.chatbot-window {
+    position: absolute;
+    bottom: 72px;
+    right: 0;
+    width: 340px;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: 0 12px 48px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transform: scale(0.8) translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: bottom right;
+}
+.chatbot-window.open {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+.chatbot-header {
+    background: linear-gradient(135deg, var(--navy), var(--navy-light));
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.chatbot-header-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.85rem;
+}
+.chatbot-header-info h4 { font-size: 0.9rem; font-weight: 700; }
+.chatbot-header-info span { font-size: 0.75rem; opacity: 0.7; }
+.chatbot-body {
+    padding: 20px;
+    max-height: 320px;
+    overflow-y: auto;
+}
+.chat-bubble {
+    background: var(--bg);
+    border-radius: 14px 14px 14px 4px;
+    padding: 12px 16px;
+    font-size: 0.88rem;
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.chat-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.chat-option-btn {
+    background: var(--bg);
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'DM Sans', sans-serif;
+}
+.chat-option-btn:hover {
+    border-color: var(--teal);
+    background: rgba(0,191,166,0.06);
+    color: var(--teal);
+}
+.chat-option-btn i {
+    color: var(--teal);
+    font-size: 0.9rem;
+}
+
+/* ========================= */
+/* CERTIFICATE PREVIEW        */
+/* ========================= */
+.cert-preview-section {
+    margin-top: 40px;
+    text-align: center;
+}
+.cert-preview-card {
+    background: linear-gradient(135deg, #FFFDE7, #FFF8E1);
+    border: 2px solid var(--gold);
+    border-radius: var(--radius);
+    padding: 32px;
+    position: relative;
+    max-width: 520px;
+    margin: 0 auto;
+}
+[data-theme="dark"] .cert-preview-card {
+    background: linear-gradient(135deg, rgba(255,184,0,0.08), rgba(255,184,0,0.04));
+}
+.cert-preview-card .cert-badge {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--navy);
+    padding: 4px 16px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.cert-preview-logo {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 0.85rem;
+    color: var(--navy);
+    margin-bottom: 12px;
+    opacity: 0.6;
+}
+.cert-preview-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+.cert-preview-name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 8px;
+    min-height: 2rem;
+}
+[data-theme="dark"] .cert-preview-name { color: var(--text); }
+.cert-preview-course {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 16px;
+}
+.cert-preview-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 16px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    text-align: center;
+    color: var(--text);
+    background: var(--bg-card);
+    transition: all 0.3s;
+    margin-top: 12px;
+}
+.cert-preview-input:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(255,184,0,0.15);
+}
+.cert-preview-input::placeholder {
+    color: var(--text-muted);
+}
+
+/* ========================= */
+/* RESPONSIVE EXTRAS          */
+/* ========================= */
+@media (max-width: 768px) {
+    .countdown-strip {
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+        padding: 10px 14px;
+    }
+    .cd-box { min-width: 38px; padding: 3px 8px; }
+    .cd-box .cd-num { font-size: 0.95rem; }
+
+    .quiz-options {
+        grid-template-columns: 1fr;
+    }
+    .quiz-finder-card {
+        padding: 24px;
+    }
+
+    .testimonial-card {
+        min-width: 280px;
+    }
+
+    .before-after-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chatbot-window {
+        width: 300px;
+        right: -8px;
+    }
+    .chatbot-fab {
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .cert-preview-name {
+        font-size: 1.3rem;
+    }
+}
