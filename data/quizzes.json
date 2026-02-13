@@ -338,5 +338,370 @@
         "dificultad": "facil"
       }
     ]
+  },
+  {
+    "id": "quiz-eng-a1",
+    "cursoId": "ingles-general",
+    "moduloId": "eng-a1-m4",
+    "titulo": "A1 Level — English Foundations",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "eng-q1",
+        "pregunta": "Complete the sentence: She ___ a student at the university.",
+        "tipo": "opcion-multiple",
+        "opciones": ["is", "are", "am", "be"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Is' se usa con he/she/it. 'Am' es para I, y 'are' para you/we/they. 'Be' es la forma base, no se usa conjugado directamente.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "eng-q2",
+        "pregunta": "Choose the correct option: I ___ to school every day.",
+        "tipo": "opcion-multiple",
+        "opciones": ["go", "goes", "going", "went"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Con 'I' en presente simple usamos la forma base del verbo: 'go'. 'Goes' se usa con he/she/it. 'Going' es el gerundio y 'went' es pasado.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "eng-q3",
+        "pregunta": "Which question is correct?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Do you like coffee?", "Does you like coffee?", "Is you like coffee?", "Are you like coffee?"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Para preguntas en presente simple con 'you', usamos 'Do'. 'Does' se usa con he/she/it. 'Is' y 'Are' son para el verbo to be, no para otros verbos.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "eng-q4",
+        "pregunta": "Complete: There ___ three books on the table.",
+        "tipo": "opcion-multiple",
+        "opciones": ["are", "is", "has", "have"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Usamos 'There are' con sustantivos plurales (three books). 'There is' se usa con singulares. 'Has/Have' no se usan con la estructura 'there'.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "eng-q5",
+        "pregunta": "Choose the correct sentence about abilities:",
+        "tipo": "opcion-multiple",
+        "opciones": ["He can play the guitar.", "He is play the guitar.", "He do play the guitar.", "He have play the guitar."],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Can' es el verbo modal para habilidades. Después de 'can' siempre va el verbo en forma base (sin 'to'). Can + verbo base = habilidad.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "eng-q6",
+        "pregunta": "What is the correct plural? One child, two ___",
+        "tipo": "opcion-multiple",
+        "opciones": ["children", "childs", "childrens", "child"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Child' tiene un plural irregular: 'children'. No se le agrega -s como a los sustantivos regulares. Otros plurales irregulares: man→men, woman→women, tooth→teeth.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q7",
+        "pregunta": "Choose the correct preposition: The meeting is ___ Monday ___ 3 PM.",
+        "tipo": "opcion-multiple",
+        "opciones": ["on / at", "in / at", "at / on", "on / in"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Usamos 'on' para días de la semana (on Monday) y 'at' para horas específicas (at 3 PM). 'In' se usa para meses/años/partes del día (in January, in the morning).",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-eng-a2",
+    "cursoId": "ingles-general",
+    "moduloId": "eng-a2-m4",
+    "titulo": "A2 Level — Elementary English",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "eng-q8",
+        "pregunta": "Complete: She ___ to Paris last summer.",
+        "tipo": "opcion-multiple",
+        "opciones": ["went", "go", "goes", "gone"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Went' es el pasado simple de 'go' (verbo irregular). Usamos pasado simple para acciones completadas en un momento específico del pasado ('last summer').",
+        "dificultad": "facil"
+      },
+      {
+        "id": "eng-q9",
+        "pregunta": "Choose the correct comparative: This car is ___ than that one.",
+        "tipo": "opcion-multiple",
+        "opciones": ["bigger", "more big", "biggest", "most big"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Para adjetivos cortos (1 sílaba), formamos el comparativo con -er: big → bigger. Para adjetivos largos (2+ sílabas) usamos 'more + adjetivo'. 'Biggest' es superlativo, no comparativo.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "eng-q10",
+        "pregunta": "Complete: I'm ___ visit my grandmother tomorrow.",
+        "tipo": "opcion-multiple",
+        "opciones": ["going to", "will to", "go to", "going"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Going to' se usa para planes e intenciones futuras. La estructura es: am/is/are + going to + verbo base. 'Will' no lleva 'to' después.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "eng-q11",
+        "pregunta": "First conditional: If it rains tomorrow, I ___ an umbrella.",
+        "tipo": "opcion-multiple",
+        "opciones": ["will take", "take", "took", "would take"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El primer condicional usa: If + presente simple, will + verbo base. Se usa para situaciones reales/probables en el futuro. 'Would take' sería segundo condicional (hipotético).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q12",
+        "pregunta": "Which phrasal verb means 'to stop sleeping'?",
+        "tipo": "opcion-multiple",
+        "opciones": ["wake up", "get up", "turn up", "look up"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Wake up' = dejar de dormir/despertarse. 'Get up' = levantarse de la cama. 'Turn up' = aparecer/subir el volumen. 'Look up' = buscar información.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q13",
+        "pregunta": "Connect the ideas: I was tired ___ I went to bed early.",
+        "tipo": "opcion-multiple",
+        "opciones": ["so", "because", "but", "although"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'So' indica resultado/consecuencia (estaba cansado, por eso me acosté temprano). 'Because' indica causa. 'But' indica contraste. 'Although' indica concesión.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q14",
+        "pregunta": "Choose the correct form: She enjoys ___.",
+        "tipo": "opcion-multiple",
+        "opciones": ["swimming", "to swim", "swim", "swims"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Después de 'enjoy' siempre va gerundio (-ing). Otros verbos que van con gerundio: like, love, hate, finish, avoid, suggest. Verbos con infinitivo: want, need, decide, hope.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-eng-b1",
+    "cursoId": "ingles-general",
+    "moduloId": "eng-b1-m5",
+    "titulo": "B1 Level — Intermediate English",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "eng-q15",
+        "pregunta": "Choose the correct tense: I ___ never been to Japan.",
+        "tipo": "opcion-multiple",
+        "opciones": ["have", "has", "am", "was"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Present perfect: have/has + past participle. Con 'I' usamos 'have'. Se usa con 'never/ever/just/already/yet' para experiencias de vida sin tiempo específico.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "eng-q16",
+        "pregunta": "Second conditional: If I had more time, I ___ learn Japanese.",
+        "tipo": "opcion-multiple",
+        "opciones": ["would", "will", "should", "could have"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Segundo condicional: If + pasado simple, would + verbo base. Se usa para situaciones hipotéticas/irreales en el presente. 'Will' es para primer condicional (real).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q17",
+        "pregunta": "Passive voice: The letter ___ yesterday.",
+        "tipo": "opcion-multiple",
+        "opciones": ["was sent", "sent", "is sent", "has sent"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Voz pasiva en pasado: was/were + participio pasado. 'The letter was sent' = la carta fue enviada. Usamos pasiva cuando el objeto es más importante que el sujeto.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q18",
+        "pregunta": "Reported speech: She said, 'I am tired.' → She told me that she ___ tired.",
+        "tipo": "opcion-multiple",
+        "opciones": ["was", "is", "be", "were"],
+        "respuestaCorrecta": 0,
+        "explicacion": "En reported speech, los tiempos verbales retroceden un paso: presente simple → pasado simple. 'I am' → 'she was'. 'Were' se usaría con plurales.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q19",
+        "pregunta": "Modal for deduction: He ___ be at home. His car is in the driveway.",
+        "tipo": "opcion-multiple",
+        "opciones": ["must", "can", "should", "would"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Must' expresa deducción fuerte/certeza lógica (debe estar en casa porque su carro está ahí). 'Can' = posibilidad. 'Should' = consejo. 'Would' = condicional.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q20",
+        "pregunta": "Present Perfect vs Past Simple: I ___ three books this month. (The month isn't over yet)",
+        "tipo": "opcion-multiple",
+        "opciones": ["have read", "read", "was reading", "had read"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Usamos present perfect ('have read') cuando el período de tiempo no ha terminado ('this month' — el mes aún no termina). Si el mes ya pasó, usaríamos pasado simple.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "eng-q21",
+        "pregunta": "Question tags: You like coffee, ___?",
+        "tipo": "opcion-multiple",
+        "opciones": ["don't you", "do you", "isn't it", "aren't you"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Si la oración es afirmativa, la question tag es negativa. 'You like' (presente simple con 'you') → 'don't you?'. La tag usa el auxiliar de la oración principal.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-eng-b2",
+    "cursoId": "ingles-general",
+    "moduloId": "eng-b2-m5",
+    "titulo": "B2 Level — Upper-Intermediate English",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "eng-q22",
+        "pregunta": "Third conditional: If I had studied harder, I ___ the exam.",
+        "tipo": "opcion-multiple",
+        "opciones": ["would have passed", "would pass", "will pass", "had passed"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Tercer condicional: If + past perfect, would have + participio pasado. Se usa para hablar de situaciones hipotéticas en el pasado que NO ocurrieron.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q23",
+        "pregunta": "Modal perfect: She ___ have told him. Now he knows everything.",
+        "tipo": "opcion-multiple",
+        "opciones": ["must", "should", "would", "could"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Must have + participio' expresa deducción sobre el pasado (certeza lógica). Si él sabe todo, ella debe haberle contado. 'Should have' = arrepentimiento. 'Could have' = posibilidad.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q24",
+        "pregunta": "Causative: I had my car ___ last week.",
+        "tipo": "opcion-multiple",
+        "opciones": ["repaired", "repair", "repairing", "to repair"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Estructura causativa: have + objeto + participio pasado. 'I had my car repaired' = hice que repararan mi carro (alguien más lo hizo). Es diferente de 'I repaired my car' (yo lo reparé).",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "eng-q25",
+        "pregunta": "Choose the correct connector: The project needs more funding. ___, we need additional staff.",
+        "tipo": "opcion-multiple",
+        "opciones": ["Furthermore", "Although", "Despite", "However"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Furthermore' agrega información adicional en la misma dirección. 'Although/Despite' son para contraste. 'However' indica oposición. Aquí sumamos dos necesidades.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q26",
+        "pregunta": "What does the idiom 'break the ice' mean?",
+        "tipo": "opcion-multiple",
+        "opciones": ["To make people feel more comfortable in a social situation", "To break something frozen", "To end a relationship", "To solve a difficult problem"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Break the ice' significa romper el hielo, es decir, hacer que las personas se sientan más cómodas en una situación social, especialmente cuando no se conocen.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "eng-q27",
+        "pregunta": "Mixed conditional: If she had taken the job, she ___ living in London now.",
+        "tipo": "opcion-multiple",
+        "opciones": ["would be", "would have been", "will be", "was"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Condicional mixto: If + past perfect (pasado irreal), would + verbo base (presente irreal). La decisión fue en el pasado pero el resultado afecta el presente.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "eng-q28",
+        "pregunta": "Stative verb: Which sentence is INCORRECT?",
+        "tipo": "opcion-multiple",
+        "opciones": ["I am knowing the answer.", "I know the answer.", "She believes in ghosts.", "He owns two cars."],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Know' es un verbo de estado (stative verb) y normalmente NO se usa en forma continua (-ing). Lo correcto es 'I know the answer'. Otros stative verbs: believe, own, seem, want, need.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-eng-c1",
+    "cursoId": "ingles-general",
+    "moduloId": "eng-c1-m5",
+    "titulo": "C1 Level — Advanced English",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "eng-q29",
+        "pregunta": "Inversion: Never ___ I seen such a beautiful sunset.",
+        "tipo": "opcion-multiple",
+        "opciones": ["have", "had", "did", "was"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Con adverbios negativos al inicio (Never, Seldom, Rarely, Not only), se invierte sujeto y auxiliar: Never + have + I + participio pasado. Es una estructura formal y enfática.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "eng-q30",
+        "pregunta": "Cleft sentence: It was John who ___ the problem first.",
+        "tipo": "opcion-multiple",
+        "opciones": ["identified", "identifying", "identify", "was identified"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Las cleft sentences (oraciones escindidas) dan énfasis: 'It was [X] who [verbo conjugado]'. El verbo mantiene su tiempo normal. 'Was identified' sería pasiva y cambiaría el significado.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "eng-q31",
+        "pregunta": "Choose the correct formal connector: ___ the difficulty of the task, they completed it on time.",
+        "tipo": "opcion-multiple",
+        "opciones": ["Notwithstanding", "Although of", "Despite of", "Because"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Notwithstanding' es un conector formal que significa 'a pesar de' y va seguido de sustantivo. 'Despite' no lleva 'of'. 'Although' va seguido de una cláusula completa.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "eng-q32",
+        "pregunta": "Register: Which sentence is the most formal?",
+        "tipo": "opcion-multiple",
+        "opciones": ["I would be grateful if you could forward the document.", "Can you send me the file?", "Send me the document ASAP.", "Hey, could you pass me that file?"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'I would be grateful if you could...' es la forma más formal y cortés. Usa condicional y lenguaje indirecto. Las otras opciones van de semi-formal a muy informal.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "eng-q33",
+        "pregunta": "Academic vocabulary: The researchers ___ that further investigation is necessary.",
+        "tipo": "opcion-multiple",
+        "opciones": ["contend", "say", "think", "feel"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Contend' es un verbo académico formal que significa argumentar o afirmar con evidencia. 'Say/think/feel' son demasiado informales para escritura académica. Alternativas: assert, posit, maintain.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "eng-q34",
+        "pregunta": "Advanced wish: I wish I ___ to the party last night. It sounds like it was amazing.",
+        "tipo": "opcion-multiple",
+        "opciones": ["had gone", "went", "would go", "have gone"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Wish + past perfect (had gone)' se usa para arrepentimientos sobre el pasado. 'Wish + past simple' es para el presente. 'Wish + would' es para quejas sobre otros.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "eng-q35",
+        "pregunta": "Not only ___ she speak three languages, but she also plays four instruments.",
+        "tipo": "opcion-multiple",
+        "opciones": ["does", "she does", "is", "has"],
+        "respuestaCorrecta": 0,
+        "explicacion": "'Not only' al inicio de la oración requiere inversión: Not only + auxiliar + sujeto + verbo. Como 'speak' es presente simple, el auxiliar es 'does'. La segunda parte usa 'but also' sin inversión.",
+        "dificultad": "dificil"
+      }
+    ]
   }
 ]

@@ -57,10 +57,12 @@ const LEARNING_PATHS = [
     },
     {
         id: 'idiomas',
-        name: 'Idiomas',
+        name: 'Inglés — Marco Común Europeo (CEFR)',
         color: '#E91E63',
         icon: 'fa-language',
-        courses: ['ingles-general']
+        courses: ['ingles-a1', 'ingles-a2', 'ingles-b1', 'ingles-b2', 'ingles-c1'],
+        isCEFR: true,
+        parentCourseId: 'ingles-general'
     }
 ];
 
@@ -73,7 +75,12 @@ const COURSE_NAMES = {
     'power-bi': 'Power BI',
     'analitica-datos': 'Analítica',
     'gestion-proyectos-scrum': 'Scrum',
-    'ingles-general': 'Inglés'
+    'ingles-general': 'Inglés',
+    'ingles-a1': 'A1 Beginner',
+    'ingles-a2': 'A2 Elementary',
+    'ingles-b1': 'B1 Intermediate',
+    'ingles-b2': 'B2 Upper-Int',
+    'ingles-c1': 'C1 Advanced'
 };
 
 // =========================
@@ -232,21 +239,69 @@ function renderGamificationSidebar() {
 // LEARNING PATH RENDERER
 // =========================
 
+// CEFR level colors and badges
+const CEFR_BADGES = {
+    'ingles-a1': { badge: 'A1', label: 'Beginner', color: '#4CAF50' },
+    'ingles-a2': { badge: 'A2', label: 'Elementary', color: '#8BC34A' },
+    'ingles-b1': { badge: 'B1', label: 'Intermediate', color: '#2196F3' },
+    'ingles-b2': { badge: 'B2', label: 'Upper-Intermediate', color: '#9C27B0' },
+    'ingles-c1': { badge: 'C1', label: 'Advanced', color: '#E91E63' }
+};
+
+// Map CEFR sub-levels to module ranges in the ingles-general course
+const CEFR_MODULE_MAP = {
+    'ingles-a1': ['eng-a1-m1', 'eng-a1-m2', 'eng-a1-m3', 'eng-a1-m4'],
+    'ingles-a2': ['eng-a2-m1', 'eng-a2-m2', 'eng-a2-m3', 'eng-a2-m4'],
+    'ingles-b1': ['eng-b1-m1', 'eng-b1-m2', 'eng-b1-m3', 'eng-b1-m4', 'eng-b1-m5'],
+    'ingles-b2': ['eng-b2-m1', 'eng-b2-m2', 'eng-b2-m3', 'eng-b2-m4', 'eng-b2-m5'],
+    'ingles-c1': ['eng-c1-m1', 'eng-c1-m2', 'eng-c1-m3', 'eng-c1-m4', 'eng-c1-m5']
+};
+
 function renderLearningPath() {
     const container = document.getElementById('learningPathContent');
     if (!container) return;
 
     const progreso = JSON.parse(localStorage.getItem('progreso') || '{}');
     const cursosInscritos = JSON.parse(localStorage.getItem('cursos_inscritos') || '[]');
+    const cefrLevel = localStorage.getItem('fi_cefr_level');
 
     container.innerHTML = LEARNING_PATHS.map(path => {
         const nodesHTML = path.courses.map((courseId, idx) => {
-            const isEnrolled = cursosInscritos.includes(courseId);
-            const prog = progreso[courseId];
-            const percent = prog ? prog.porcentaje : 0;
-            const isComplete = percent >= 100;
-            const isActive = isEnrolled && !isComplete;
-            const isLocked = !isEnrolled;
+            let isEnrolled, percent, isComplete, isActive, isLocked, courseLink;
+
+            if (path.isCEFR) {
+                // For CEFR paths, check enrollment on the parent course
+                isEnrolled = cursosInscritos.includes(path.parentCourseId) || cursosInscritos.includes(courseId);
+                const modules = CEFR_MODULE_MAP[courseId] || [];
+                const moduleProgress = modules.map(m => {
+                    const mp = progreso['ingles-general'] && progreso['ingles-general'].modulos && progreso['ingles-general'].modulos[m];
+                    return mp ? mp.porcentaje || 0 : 0;
+                });
+                percent = modules.length > 0 ? Math.round(moduleProgress.reduce((a, b) => a + b, 0) / modules.length) : 0;
+                isComplete = percent >= 100;
+                isActive = isEnrolled && !isComplete;
+                isLocked = !isEnrolled;
+                courseLink = `cursos/curso.html?id=ingles-general`;
+
+                // If user has placement test result, unlock up to their level
+                if (cefrLevel) {
+                    const cefrOrder = ['A1', 'A2', 'B1', 'B2', 'C1'];
+                    const userLevelIdx = cefrOrder.indexOf(cefrLevel);
+                    const thisLevelIdx = cefrOrder.indexOf(CEFR_BADGES[courseId]?.badge);
+                    if (thisLevelIdx <= userLevelIdx) {
+                        isLocked = false;
+                        if (!isComplete) isActive = true;
+                    }
+                }
+            } else {
+                isEnrolled = cursosInscritos.includes(courseId);
+                const prog = progreso[courseId];
+                percent = prog ? prog.porcentaje : 0;
+                isComplete = percent >= 100;
+                isActive = isEnrolled && !isComplete;
+                isLocked = !isEnrolled;
+                courseLink = `cursos/curso.html?id=${courseId}`;
+            }
 
             let nodeClass = 'lp-node';
             if (isComplete) nodeClass += ' complete';
@@ -257,12 +312,16 @@ function renderLearningPath() {
                 ? `<div class="lp-connector ${isComplete ? 'complete' : ''}"></div>`
                 : '';
 
+            // CEFR badge rendering
+            const cefrBadge = CEFR_BADGES[courseId];
+            const circleContent = isComplete ? '<i class="fas fa-check"></i>' :
+                isActive ? (cefrBadge ? `<span class="lp-node-pct" style="font-size:0.65rem;font-weight:800;">${cefrBadge.badge}</span>` : `<span class="lp-node-pct">${percent}%</span>`) :
+                (cefrBadge ? `<span style="font-size:0.55rem;font-weight:700;opacity:0.5;">${cefrBadge.badge}</span>` : '<i class="fas fa-lock" style="font-size:0.7rem;"></i>');
+
             return `
-                <div class="${nodeClass}" style="--path-color:${path.color};" onclick="window.location.href='cursos/curso.html?id=${courseId}'">
+                <div class="${nodeClass}" style="--path-color:${cefrBadge ? cefrBadge.color : path.color};" onclick="window.location.href='${courseLink}'">
                     <div class="lp-node-circle">
-                        ${isComplete ? '<i class="fas fa-check"></i>' :
-                          isActive ? `<span class="lp-node-pct">${percent}%</span>` :
-                          '<i class="fas fa-lock" style="font-size:0.7rem;"></i>'}
+                        ${circleContent}
                     </div>
                     <span class="lp-node-label">${COURSE_NAMES[courseId] || courseId}</span>
                 </div>
@@ -270,11 +329,17 @@ function renderLearningPath() {
             `;
         }).join('');
 
+        // Add placement test link for CEFR paths
+        const cefrTestLink = path.isCEFR && !cefrLevel
+            ? `<a href="placement-test.html" class="lp-cefr-test" style="display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:6px 14px;background:${path.color}15;color:${path.color};border-radius:8px;font-size:0.78rem;font-weight:600;text-decoration:none;border:1px solid ${path.color}30;"><i class="fas fa-clipboard-check"></i> Tomar Test de Nivel CEFR</a>`
+            : (path.isCEFR && cefrLevel ? `<span style="display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:4px 12px;background:${CEFR_BADGES['ingles-' + cefrLevel.toLowerCase()]?.color || path.color}15;color:${CEFR_BADGES['ingles-' + cefrLevel.toLowerCase()]?.color || path.color};border-radius:8px;font-size:0.75rem;font-weight:600;"><i class="fas fa-award"></i> Tu nivel: ${cefrLevel}</span>` : '');
+
         return `
             <div class="lp-path">
                 <div class="lp-path-header" style="color:${path.color};">
                     <i class="fas ${path.icon}"></i>
                     <span>${path.name}</span>
+                    ${cefrTestLink}
                 </div>
                 <div class="lp-path-nodes">
                     ${nodesHTML}

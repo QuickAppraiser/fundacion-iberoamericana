@@ -160,25 +160,43 @@ const cursosFallbackDetalle = [
         estado: "activo"
     },
     {
-        id: "ingles-general", titulo: "Inglés General (A1-C1)",
+        id: "ingles-general", titulo: "Inglés General (A1-C1) — Marco Común Europeo",
         categoria: "idiomas", categoriaLabel: "Idiomas",
-        nivel: "Básico → Avanzado", nivelClase: "basico",
-        duracion: "40 horas", modulosTotales: 8, quizzesTotales: 16,
+        nivel: "Básico → Avanzado (MCER A1-C1)", nivelClase: "basico",
+        duracion: "160 horas", modulosTotales: 23, quizzesTotales: 46,
         icono: "fa-language", iconoColor: "#E91E63", color: "#E91E63",
-        descripcionCorta: "Aprende inglés desde cero hasta nivel avanzado. Gramática, vocabulario, conversación, comprensión auditiva y fluidez profesional.",
-        descripcionCompleta: "Curso integral de inglés que te lleva desde nivel principiante (A1) hasta avanzado (C1). Incluye gramática estructurada, vocabulario práctico, ejercicios de conversación, comprensión auditiva con materiales reales, escritura formal, y desarrollo de fluidez para contextos académicos y profesionales. Ideal para quienes buscan dominar el inglés a nivel competitivo.",
-        requisitos: ["No se requiere conocimiento previo de inglés", "Computadora con micrófono (para ejercicios de pronunciación)", "Acceso a internet"],
+        cefrAligned: true, cefrLevels: ["A1", "A2", "B1", "B2", "C1"],
+        youtubeChannelUrl: "https://www.youtube.com/@UCYXojL0jRuMYpJQk7LVhJhg",
+        descripcionCorta: "Aprende inglés desde cero hasta nivel avanzado (C1) alineado al Marco Común Europeo de Referencia (MCER/CEFR).",
+        descripcionCompleta: "Programa integral de inglés alineado al Marco Común Europeo de Referencia para las Lenguas (MCER/CEFR). Te lleva desde principiante absoluto (A1) hasta nivel avanzado (C1) con 23 módulos estructurados. Incluye test de nivel inicial, quizzes por nivel, y certificación por cada nivel CEFR completado.",
+        requisitos: ["No se requiere conocimiento previo de inglés", "Computadora con micrófono y altavoces", "Acceso a internet", "Recomendado: tomar el Test de Nivel para comenzar en el módulo adecuado"],
         modulos: [
-            { titulo: "A1 — Fundamentos: Saludos, Presentaciones y Vocabulario Básico", duracion: "5 horas" },
-            { titulo: "A1-A2 — Gramática Esencial: Presente Simple, Artículos, Pronombres", duracion: "5 horas" },
-            { titulo: "A2 — Vida Cotidiana: Compras, Direcciones, Rutinas", duracion: "5 horas" },
-            { titulo: "A2-B1 — Gramática Intermedia: Tiempos Verbales, Condicionales", duracion: "5 horas" },
-            { titulo: "B1 — Conversación y Comprensión: Diálogos, Listening, Speaking", duracion: "5 horas" },
-            { titulo: "B1-B2 — Inglés Profesional: Emails, Presentaciones, Vocabulario Técnico", duracion: "5 horas" },
-            { titulo: "B2 — Fluidez Avanzada: Debates, Escritura Formal, Idioms", duracion: "5 horas" },
-            { titulo: "B2-C1 — Dominio: Académico, Negociación y Expresión Nativa", duracion: "5 horas" }
+            { titulo: "A1.1 — Primeros Pasos: Saludos, Abecedario y Números", duracion: "8 horas", cefrLevel: "A1" },
+            { titulo: "A1.2 — Gramática Base: Verb To Be, Pronombres y Artículos", duracion: "8 horas", cefrLevel: "A1" },
+            { titulo: "A1.3 — Presente Simple y Vocabulario Cotidiano", duracion: "8 horas", cefrLevel: "A1" },
+            { titulo: "A1.4 — Supervivencia: Preguntas, Direcciones y Can", duracion: "8 horas", cefrLevel: "A1" },
+            { titulo: "A2.1 — Experiencias Pasadas: Past Simple", duracion: "7 horas", cefrLevel: "A2" },
+            { titulo: "A2.2 — Planes y Comparaciones: Going to", duracion: "7 horas", cefrLevel: "A2" },
+            { titulo: "A2.3 — Vida Social: Compras, Salud, Phrasal Verbs", duracion: "7 horas", cefrLevel: "A2" },
+            { titulo: "A2.4 — Comunicación Conectada: Conjunciones y Escritura", duracion: "7 horas", cefrLevel: "A2" },
+            { titulo: "B1.1 — Tiempos Narrativos: Past Continuous y Past Perfect", duracion: "7 horas", cefrLevel: "B1" },
+            { titulo: "B1.2 — Posibilidades: Present Perfect y Condicionales", duracion: "8 horas", cefrLevel: "B1" },
+            { titulo: "B1.3 — Voz Pasiva, Reported Speech y Conectores", duracion: "7 horas", cefrLevel: "B1" },
+            { titulo: "B1.4 — Habilidades Integradas: Reading, Listening, Speaking", duracion: "7 horas", cefrLevel: "B1" },
+            { titulo: "B1.5 — Introducción Profesional: Emails y Teléfono", duracion: "7 horas", cefrLevel: "B1" },
+            { titulo: "B2.1 — Third Conditional y Mixed Conditionals", duracion: "7 horas", cefrLevel: "B2" },
+            { titulo: "B2.2 — Modales Perfectos y Pasiva Avanzada", duracion: "7 horas", cefrLevel: "B2" },
+            { titulo: "B2.3 — Escritura Académica: Ensayos y Registro Formal", duracion: "7 horas", cefrLevel: "B2" },
+            { titulo: "B2.4 — Inglés Profesional: Presentaciones y Negociación", duracion: "7 horas", cefrLevel: "B2" },
+            { titulo: "B2.5 — Fluidez: Idioms, Debates y Cultura", duracion: "7 horas", cefrLevel: "B2" },
+            { titulo: "C1.1 — Inversión, Cleft Sentences y Wish Avanzado", duracion: "7 horas", cefrLevel: "C1" },
+            { titulo: "C1.2 — Excelencia Académica y Análisis Crítico", duracion: "7 horas", cefrLevel: "C1" },
+            { titulo: "C1.3 — Liderazgo, Persuasión e Interculturalidad", duracion: "7 horas", cefrLevel: "C1" },
+            { titulo: "C1.4 — Nivel Nativo: Humor, Slang y Registro", duracion: "7 horas", cefrLevel: "C1" },
+            { titulo: "C1.5 — Mock Exams, Revisión Total y Proyecto Final", duracion: "8 horas", cefrLevel: "C1" }
         ],
         googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
+        kahootUrl: "https://kahoot.it/challenge/XXXXX",
         estado: "activo"
     }
 ];
@@ -291,18 +309,90 @@ function renderizarCurso(curso) {
         </div>
     `;
 
-    // Modules
-    const modulesHTML = (curso.modulos || []).map((mod, i) => `
-        <div class="course-module-card">
-            <div class="course-module-number" style="background:${curso.color};">
-                ${i + 1}
+    // CEFR level indicator for English course
+    const cefrLevels = curso.cefrLevels || [];
+    let cefrBarHTML = '';
+    if (cefrLevels.length > 0) {
+        const cefrColors = { A1: '#4CAF50', A2: '#8BC34A', B1: '#2196F3', B2: '#9C27B0', C1: '#E91E63' };
+        const cefrDescriptions = {
+            A1: 'Beginner — Puede entender y usar expresiones cotidianas básicas',
+            A2: 'Elementary — Puede comunicarse en situaciones rutinarias simples',
+            B1: 'Intermediate — Puede entender los puntos principales de textos claros',
+            B2: 'Upper-Intermediate — Puede interactuar con fluidez con hablantes nativos',
+            C1: 'Advanced — Puede usar el idioma de forma flexible y eficaz'
+        };
+        const userCefrLevel = localStorage.getItem('fi_cefr_level');
+        cefrBarHTML = `
+            <div style="background:var(--card-bg);border-radius:16px;padding:20px;margin-bottom:24px;border:1px solid var(--border);">
+                <h4 style="margin-bottom:12px;font-size:0.95rem;"><i class="fas fa-layer-group" style="color:${curso.color};"></i> Niveles CEFR del Programa</h4>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;">
+                    ${cefrLevels.map(lvl => `
+                        <div style="padding:8px 16px;border-radius:10px;background:${cefrColors[lvl]}15;color:${cefrColors[lvl]};font-weight:700;font-size:0.85rem;border:1px solid ${cefrColors[lvl]}30;${userCefrLevel === lvl ? 'box-shadow:0 0 0 2px ' + cefrColors[lvl] + ';' : ''}">
+                            ${lvl} ${userCefrLevel === lvl ? '<i class="fas fa-star" style="font-size:0.7rem;"></i>' : ''}
+                        </div>
+                    `).join('')}
+                </div>
+                ${cefrLevels.map(lvl => `<div style="font-size:0.82rem;color:var(--text-light);margin-bottom:4px;"><strong style="color:${cefrColors[lvl]};">${lvl}:</strong> ${cefrDescriptions[lvl]}</div>`).join('')}
+                ${!userCefrLevel ? `<a href="../placement-test.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:8px 18px;background:${curso.color};color:white;border-radius:10px;font-size:0.85rem;font-weight:600;text-decoration:none;"><i class="fas fa-clipboard-check"></i> Tomar Test de Nivel Gratis</a>` : `<div style="margin-top:10px;padding:8px 14px;background:${cefrColors[userCefrLevel]}15;color:${cefrColors[userCefrLevel]};border-radius:10px;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-award"></i> Tu nivel actual: ${userCefrLevel} — ${cefrDescriptions[userCefrLevel]?.split(' — ')[0]}</div>`}
             </div>
-            <div class="course-module-info">
-                <h4>${mod.titulo}</h4>
-                <span><i class="fas fa-clock"></i> ${mod.duracion}</span>
+        `;
+    }
+
+    // YouTube channel link
+    let youtubeHTML = '';
+    if (curso.youtubeChannelUrl) {
+        youtubeHTML = `
+            <div style="background:linear-gradient(135deg,#FF000015,#FF000008);border-radius:16px;padding:16px 20px;margin-bottom:24px;border:1px solid #FF000020;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+                <i class="fab fa-youtube" style="font-size:1.8rem;color:#FF0000;"></i>
+                <div style="flex:1;min-width:200px;">
+                    <h4 style="font-size:0.92rem;margin-bottom:2px;">Canal de YouTube</h4>
+                    <p style="font-size:0.82rem;color:var(--text-light);margin:0;">Videos complementarios, lecciones y práctica de listening.</p>
+                </div>
+                <a href="${curso.youtubeChannelUrl}" target="_blank" style="padding:8px 18px;background:#FF0000;color:white;border-radius:10px;font-size:0.85rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:6px;"><i class="fab fa-youtube"></i> Ver Videos</a>
             </div>
-        </div>
-    `).join('');
+        `;
+    }
+
+    // Modules — with expandable lessons for courses that have them
+    const modulesHTML = (curso.modulos || []).map((mod, i) => {
+        const hasLessons = mod.lecciones && mod.lecciones.length > 0;
+        const cefrBadge = mod.cefrLevel ? `<span style="background:${{'A1':'#4CAF50','A2':'#8BC34A','B1':'#2196F3','B2':'#9C27B0','C1':'#E91E63'}[mod.cefrLevel] || curso.color}15;color:${{'A1':'#4CAF50','A2':'#8BC34A','B1':'#2196F3','B2':'#9C27B0','C1':'#E91E63'}[mod.cefrLevel] || curso.color};padding:2px 8px;border-radius:6px;font-size:0.72rem;font-weight:700;margin-left:8px;">${mod.cefrLevel}</span>` : '';
+        const vocabMeta = mod.vocabularioMeta ? `<div style="font-size:0.78rem;color:var(--teal);margin-top:4px;"><i class="fas fa-book-open" style="font-size:0.7rem;"></i> ${mod.vocabularioMeta}</div>` : '';
+        const canDoMeta = mod.canDo ? `<div style="font-size:0.78rem;color:var(--text-light);margin-top:2px;font-style:italic;"><i class="fas fa-bullseye" style="font-size:0.65rem;color:var(--gold);"></i> ${mod.canDo}</div>` : '';
+
+        let lessonsHTML = '';
+        if (hasLessons) {
+            const lessonTypeIcons = { video: 'fa-play-circle', lectura: 'fa-book', practica: 'fa-laptop-code', quiz: 'fa-clipboard-check' };
+            const lessonTypeColors = { video: '#2196F3', lectura: '#FF9800', practica: '#4CAF50', quiz: '#E91E63' };
+            lessonsHTML = `
+                <div class="module-lessons" id="lessons-${i}" style="display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);">
+                    ${mod.lecciones.map(l => `
+                        <div style="display:flex;align-items:center;gap:10px;padding:6px 0;font-size:0.82rem;">
+                            <i class="fas ${lessonTypeIcons[l.tipo] || 'fa-circle'}" style="color:${lessonTypeColors[l.tipo] || '#999'};width:16px;text-align:center;font-size:0.75rem;"></i>
+                            <span style="flex:1;color:var(--text-main);">${l.titulo}</span>
+                            <span style="color:var(--text-muted);font-size:0.75rem;white-space:nowrap;">${l.duracion}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        return `
+            <div class="course-module-card" ${hasLessons ? `style="cursor:pointer;" onclick="toggleLessons(${i})"` : ''}>
+                <div class="course-module-number" style="background:${mod.cefrLevel ? ({'A1':'#4CAF50','A2':'#8BC34A','B1':'#2196F3','B2':'#9C27B0','C1':'#E91E63'}[mod.cefrLevel] || curso.color) : curso.color};">
+                    ${i + 1}
+                </div>
+                <div class="course-module-info" style="flex:1;">
+                    <h4>${mod.titulo}${cefrBadge}</h4>
+                    <span><i class="fas fa-clock"></i> ${mod.duracion}${hasLessons ? ` — ${mod.lecciones.length} lecciones` : ''}</span>
+                    ${vocabMeta}
+                    ${canDoMeta}
+                    ${lessonsHTML}
+                </div>
+                ${hasLessons ? '<i class="fas fa-chevron-down" style="color:var(--text-muted);font-size:0.8rem;transition:transform 0.3s;"></i>' : ''}
+            </div>
+        `;
+    }).join('');
 
     // Requirements
     const reqHTML = (curso.requisitos || []).map(req => `
@@ -313,9 +403,11 @@ function renderizarCurso(curso) {
     content.innerHTML = `
         ${metaHTML}
         ${descHTML}
+        ${cefrBarHTML}
+        ${youtubeHTML}
 
         <h3 class="course-detail-section-title">
-            <i class="fas fa-list-ol"></i> Módulos del Curso
+            <i class="fas fa-list-ol"></i> Módulos del Curso ${cefrLevels.length > 0 ? `<span style="font-size:0.8rem;color:var(--text-muted);font-weight:400;margin-left:8px;">(${curso.modulos.length} módulos — ${cefrLevels.length} niveles CEFR)</span>` : ''}
         </h3>
         ${modulesHTML}
 
@@ -353,6 +445,22 @@ function renderizarCurso(curso) {
     // Initialize cert preview after DOM elements exist
     if (typeof initCertPreview === 'function') initCertPreview();
 }
+
+// Toggle lesson visibility in module cards
+window.toggleLessons = function(index) {
+    const el = document.getElementById('lessons-' + index);
+    if (!el) return;
+    const isOpen = el.style.display !== 'none';
+    el.style.display = isOpen ? 'none' : 'block';
+    // Rotate chevron
+    const card = el.closest('.course-module-card');
+    if (card) {
+        const chevron = card.querySelector('.fa-chevron-down, .fa-chevron-up');
+        if (chevron) {
+            chevron.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+    }
+};
 
 function renderizarNoEncontrado() {
     // Update title

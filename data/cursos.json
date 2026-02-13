@@ -936,95 +936,465 @@
   },
   {
     "id": "ingles-general",
-    "titulo": "Inglés General (A1-C1)",
+    "titulo": "Inglés General (A1-C1) — Marco Común Europeo",
     "categoria": "idiomas",
     "categoriaLabel": "Idiomas",
-    "nivel": "Básico → Avanzado",
+    "nivel": "Básico → Avanzado (MCER A1-C1)",
     "nivelClase": "basico",
-    "duracion": "40 horas",
-    "modulosTotales": 8,
-    "quizzesTotales": 16,
+    "duracion": "160 horas",
+    "modulosTotales": 23,
+    "quizzesTotales": 46,
     "icono": "fa-language",
     "iconoColor": "#E91E63",
     "color": "#E91E63",
-    "descripcionCorta": "Aprende inglés desde cero hasta nivel avanzado. Gramática, vocabulario, conversación, comprensión auditiva y fluidez profesional.",
-    "descripcionCompleta": "Curso integral de inglés que te lleva desde nivel principiante (A1) hasta avanzado (C1). Incluye gramática estructurada, vocabulario práctico, ejercicios de conversación, comprensión auditiva con materiales reales, escritura formal, y desarrollo de fluidez para contextos académicos y profesionales. Ideal para quienes buscan dominar el inglés a nivel competitivo.",
-    "requisitos": ["No se requiere conocimiento previo de inglés", "Computadora con micrófono (para ejercicios de pronunciación)", "Acceso a internet"],
+    "cefrAligned": true,
+    "cefrLevels": ["A1", "A2", "B1", "B2", "C1"],
+    "youtubeChannelUrl": "https://www.youtube.com/@UCYXojL0jRuMYpJQk7LVhJhg",
+    "descripcionCorta": "Aprende inglés desde cero hasta nivel avanzado (C1) alineado al Marco Común Europeo de Referencia (MCER/CEFR). Gramática, vocabulario, conversación, comprensión auditiva y fluidez profesional.",
+    "descripcionCompleta": "Programa integral de inglés alineado al Marco Común Europeo de Referencia para las Lenguas (MCER/CEFR). Te lleva desde principiante absoluto (A1) hasta nivel avanzado (C1) con 23 módulos estructurados. Cada nivel incluye gramática progresiva, vocabulario temático con metas específicas, comprensión auditiva con materiales reales, práctica de expresión oral, lectura de textos auténticos, y escritura desde mensajes simples hasta ensayos académicos. Incluye test de nivel inicial, quizzes por nivel, ejercicios interactivos y certificación por cada nivel CEFR completado. Vocabulario: de 500 palabras (A1) a 5,000+ (C1).",
+    "requisitos": ["No se requiere conocimiento previo de inglés (comienza desde A1)", "Computadora con micrófono y altavoces (para ejercicios de pronunciación y listening)", "Acceso a internet para videos y ejercicios interactivos", "Recomendado: tomar primero el Test de Nivel para comenzar en el módulo adecuado"],
     "modulos": [
       {
-        "id": "eng-m1", "titulo": "A1 — Fundamentos: Saludos, Presentaciones y Vocabulario Básico", "orden": 1, "duracion": "5 horas",
+        "id": "eng-a1-m1",
+        "titulo": "A1.1 — Primeros Pasos: Saludos, Abecedario y Números",
+        "cefrLevel": "A1",
+        "orden": 1,
+        "duracion": "8 horas",
+        "vocabularioMeta": "~120 palabras: saludos, números 1-100, colores, días, meses",
+        "canDo": "Puede saludar, presentarse y despedirse. Puede deletrear su nombre y decir números de teléfono.",
         "lecciones": [
-          { "titulo": "Greetings & Introductions — Saludos y presentaciones", "tipo": "video", "duracion": "30 min" },
-          { "titulo": "The Alphabet & Numbers — Abecedario y números", "tipo": "video", "duracion": "25 min" },
-          { "titulo": "Basic Vocabulary — Colores, días, meses, familia", "tipo": "lectura", "duracion": "20 min" },
-          { "titulo": "Práctica: Diálogos básicos de presentación", "tipo": "practica", "duracion": "45 min" }
+          { "titulo": "Greetings & Farewells — Hello, Hi, Good morning, Goodbye", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "The English Alphabet — Pronunciación de cada letra + deletreo", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Numbers 1-100 — Conteo, teléfonos, edades, precios", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Colors, Days of the Week & Months — Vocabulario visual", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Introductions — My name is..., I'm from..., I'm ___ years old", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Listening: Comprender presentaciones básicas", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Diálogos de presentación + ejercicios de deletreo", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Quiz A1.1 — Saludos, números y vocabulario básico", "tipo": "quiz", "duracion": "20 min" }
         ]
       },
       {
-        "id": "eng-m2", "titulo": "A1-A2 — Gramática Esencial: Presente Simple, Artículos, Pronombres", "orden": 2, "duracion": "5 horas",
+        "id": "eng-a1-m2",
+        "titulo": "A1.2 — Gramática Base: Verb To Be, Pronombres y Artículos",
+        "cefrLevel": "A1",
+        "orden": 2,
+        "duracion": "8 horas",
+        "vocabularioMeta": "+80 palabras: familia, profesiones, nacionalidades",
+        "canDo": "Puede describir quién es, de dónde es y cuál es su profesión. Forma oraciones simples afirmativas, negativas y preguntas con 'to be'.",
         "lecciones": [
-          { "titulo": "Subject Pronouns & Verb To Be", "tipo": "video", "duracion": "30 min" },
-          { "titulo": "Present Simple — Affirmative, Negative, Questions", "tipo": "video", "duracion": "30 min" },
-          { "titulo": "Articles (a, an, the) & Demonstratives", "tipo": "lectura", "duracion": "20 min" },
-          { "titulo": "Práctica: Ejercicios de gramática básica", "tipo": "practica", "duracion": "45 min" }
+          { "titulo": "Subject Pronouns — I, you, he, she, it, we, they", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Verb To Be — Am/Is/Are: affirmative, negative, questions", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Articles — A, An, The: cuándo usar cada uno", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Possessive Adjectives — My, your, his, her, its, our, their", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Demonstratives — This, that, these, those", "tipo": "lectura", "duracion": "15 min" },
+          { "titulo": "Vocabulary: Family, Jobs & Nationalities", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Listening: Describir personas y familias", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Describir tu familia y completar formularios en inglés", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Quiz A1.2 — Verb to be, pronombres y artículos", "tipo": "quiz", "duracion": "20 min" }
         ]
       },
       {
-        "id": "eng-m3", "titulo": "A2 — Vida Cotidiana: Compras, Direcciones, Rutinas", "orden": 3, "duracion": "5 horas",
+        "id": "eng-a1-m3",
+        "titulo": "A1.3 — Presente Simple y Vocabulario Cotidiano",
+        "cefrLevel": "A1",
+        "orden": 3,
+        "duracion": "8 horas",
+        "vocabularioMeta": "+100 palabras: rutinas diarias, comida, lugares",
+        "canDo": "Puede hablar de rutinas diarias, gustos y hábitos simples. Usa el presente simple correctamente.",
         "lecciones": [
-          { "titulo": "Daily Routines — Describir tu día", "tipo": "video", "duracion": "25 min" },
-          { "titulo": "Shopping & Ordering Food — En la tienda y restaurante", "tipo": "video", "duracion": "25 min" },
-          { "titulo": "Giving Directions — Preguntar y dar direcciones", "tipo": "video", "duracion": "20 min" },
-          { "titulo": "Práctica: Role-play de situaciones cotidianas", "tipo": "practica", "duracion": "45 min" }
+          { "titulo": "Present Simple — Affirmative: I work, He works (regla de la -s)", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Present Simple — Negative & Questions: don't/doesn't, Do/Does", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Adverbs of Frequency — Always, usually, sometimes, never", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Vocabulary: Daily Routines — wake up, have breakfast, go to work...", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Vocabulary: Food & Drinks — Comida, bebidas, pedir en restaurante", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Prepositions of Time — At, in, on (at 9 AM, in January, on Monday)", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Listening: Comprender rutinas y horarios", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Escribir y presentar tu rutina diaria", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Quiz A1.3 — Presente simple y vocabulario cotidiano", "tipo": "quiz", "duracion": "20 min" }
         ]
       },
       {
-        "id": "eng-m4", "titulo": "A2-B1 — Gramática Intermedia: Tiempos Verbales, Condicionales", "orden": 4, "duracion": "5 horas",
+        "id": "eng-a1-m4",
+        "titulo": "A1.4 — Supervivencia: Preguntas, Direcciones y Habilidades (Can)",
+        "cefrLevel": "A1",
+        "orden": 4,
+        "duracion": "8 horas",
+        "vocabularioMeta": "+100 palabras: lugares, transporte, habilidades. Total A1: ~500 palabras",
+        "canDo": "Puede pedir ayuda, preguntar precios, dar/recibir direcciones simples, y hablar de habilidades. Puede completar un examen de nivel A1.",
         "lecciones": [
-          { "titulo": "Past Simple & Past Continuous", "tipo": "video", "duracion": "30 min" },
-          { "titulo": "Present Perfect & Future (will/going to)", "tipo": "video", "duracion": "30 min" },
-          { "titulo": "Conditionals (0, 1, 2) & Modal Verbs", "tipo": "lectura", "duracion": "25 min" },
-          { "titulo": "Práctica: Ejercicios de tiempos verbales", "tipo": "practica", "duracion": "45 min" }
+          { "titulo": "Question Words — What, Where, When, Who, How, How much/many", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "There is / There are — Describir lugares y existencia", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Prepositions of Place — In, on, at, next to, between, behind", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Can / Can't — Habilidades, permisos y peticiones simples", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Imperatives — Instrucciones: Turn left, Open your book, Don't run", "tipo": "lectura", "duracion": "15 min" },
+          { "titulo": "Vocabulary: Places in Town, Transport & Directions", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Listening: Comprender direcciones e instrucciones simples", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Simular pedir direcciones y describir tu ciudad", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "EXAMEN NIVEL A1 — Evaluación integral de gramática, vocabulario, listening y lectura", "tipo": "quiz", "duracion": "30 min" }
         ]
       },
       {
-        "id": "eng-m5", "titulo": "B1 — Conversación y Comprensión: Diálogos, Listening, Speaking", "orden": 5, "duracion": "5 horas",
+        "id": "eng-a2-m1",
+        "titulo": "A2.1 — Experiencias Pasadas: Past Simple y Verbos Irregulares",
+        "cefrLevel": "A2",
+        "orden": 5,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+150 palabras: verbos irregulares comunes, viajes, actividades",
+        "canDo": "Puede hablar de eventos pasados, contar historias simples y describir experiencias de viaje.",
         "lecciones": [
-          { "titulo": "Listening Comprehension — Audios y podcasts", "tipo": "video", "duracion": "30 min" },
-          { "titulo": "Speaking Practice — Expresar opiniones y debatir", "tipo": "video", "duracion": "25 min" },
-          { "titulo": "Reading Comprehension — Artículos y noticias", "tipo": "lectura", "duracion": "25 min" },
-          { "titulo": "Práctica: Conversación guiada sobre temas actuales", "tipo": "practica", "duracion": "45 min" }
+          { "titulo": "Past Simple (Regular Verbs) — worked, played, visited + pronunciación -ed", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Past Simple (Irregular Verbs) — went, had, saw, ate + lista esencial de 50", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Past Simple of 'To Be' — Was/Were + negative & questions", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Past Simple — Questions with Did: Did you go? What did you do?", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Vocabulary: Travel, Holidays & Activities", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Listening: Comprender historias cortas sobre viajes", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Escribir y contar tu último viaje o fin de semana", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Quiz A2.1 — Past simple y vocabulario de viajes", "tipo": "quiz", "duracion": "20 min" }
         ]
       },
       {
-        "id": "eng-m6", "titulo": "B1-B2 — Inglés Profesional: Emails, Presentaciones, Vocabulario Técnico", "orden": 6, "duracion": "5 horas",
+        "id": "eng-a2-m2",
+        "titulo": "A2.2 — Planes y Comparaciones: Going to, Comparativos y Superlativos",
+        "cefrLevel": "A2",
+        "orden": 6,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+120 palabras: ropa, clima, adjetivos descriptivos",
+        "canDo": "Puede hablar de planes futuros, comparar cosas y personas, y describir el clima.",
         "lecciones": [
-          { "titulo": "Business Emails — Escribir correos profesionales", "tipo": "video", "duracion": "25 min" },
-          { "titulo": "Presentations — Estructurar una presentación en inglés", "tipo": "video", "duracion": "25 min" },
-          { "titulo": "Technical Vocabulary — Términos de TI, negocios y finanzas", "tipo": "lectura", "duracion": "20 min" },
-          { "titulo": "Proyecto Final: Presentación profesional en inglés", "tipo": "practica", "duracion": "60 min" }
+          { "titulo": "Going to — Planes y predicciones: I'm going to travel, It's going to rain", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Present Continuous for Future — Arreglos: I'm meeting John tomorrow", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Comparatives — Bigger, more expensive, better: comparar con -er y more", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Superlatives — The biggest, the most expensive, the best", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Vocabulary: Weather, Clothes & Adjectives for Descriptions", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Listening: Pronósticos del clima y descripciones de productos", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Comparar ciudades, productos o personas famosas", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Quiz A2.2 — Futuro con going to y comparativos/superlativos", "tipo": "quiz", "duracion": "20 min" }
         ]
       },
       {
-        "id": "eng-m7", "titulo": "B2 — Fluidez Avanzada: Debates, Escritura Formal, Idioms", "orden": 7, "duracion": "5 horas",
+        "id": "eng-a2-m3",
+        "titulo": "A2.3 — Vida Social: Compras, Restaurantes, Salud y Phrasal Verbs",
+        "cefrLevel": "A2",
+        "orden": 7,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+130 palabras: compras, salud, phrasal verbs comunes",
+        "canDo": "Puede manejar situaciones en tiendas, restaurantes y consultas médicas. Conoce los phrasal verbs más comunes.",
         "lecciones": [
-          { "titulo": "Advanced Writing — Ensayos, reportes y escritura formal", "tipo": "video", "duracion": "30 min" },
-          { "titulo": "Idioms & Phrasal Verbs — Expresiones del inglés real", "tipo": "video", "duracion": "25 min" },
-          { "titulo": "Debate & Argumentation — Defender ideas con estructura", "tipo": "lectura", "duracion": "25 min" },
-          { "titulo": "Práctica: Debate estructurado sobre un tema polémico", "tipo": "practica", "duracion": "50 min" }
+          { "titulo": "Shopping English — Can I try this on? How much is it? Sizes & payments", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "At the Restaurant — I'd like..., Can I have...?, The bill please", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Health & Body — I have a headache, Parts of the body, At the doctor", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Must / Mustn't / Have to — Obligaciones y reglas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Common Phrasal Verbs (I) — get up, wake up, put on, take off, look for, turn on/off", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Listening: Diálogos en tiendas y restaurantes", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Role-play de compras, restaurante y doctor", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Quiz A2.3 — Situaciones sociales y phrasal verbs", "tipo": "quiz", "duracion": "20 min" }
         ]
       },
       {
-        "id": "eng-m8", "titulo": "B2-C1 — Dominio: Académico, Negociación y Expresión Nativa", "orden": 8, "duracion": "5 horas",
+        "id": "eng-a2-m4",
+        "titulo": "A2.4 — Comunicación Conectada: Conjunciones, Gerundios y Escritura",
+        "cefrLevel": "A2",
+        "orden": 8,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+100 palabras: tecnología, hobbies, conectores. Total A2: ~1,500 palabras",
+        "canDo": "Puede escribir emails simples, conectar ideas con conjunciones, y usar gerundios/infinitivos básicos. Puede completar un examen de nivel A2.",
         "lecciones": [
-          { "titulo": "Academic English — Vocabulario universitario y de investigación", "tipo": "video", "duracion": "30 min" },
-          { "titulo": "Negotiation & Persuasion — Técnicas de negociación en inglés", "tipo": "video", "duracion": "25 min" },
-          { "titulo": "Native Expressions — Slang, humor y cultura anglosajona", "tipo": "lectura", "duracion": "20 min" },
-          { "titulo": "Proyecto Final: Simulación de entrevista de trabajo en inglés", "tipo": "practica", "duracion": "55 min" }
+          { "titulo": "Conjunctions — Because, so, but, and, or, although: conectar ideas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Gerunds & Infinitives (Basic) — I like swimming, I want to go", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Reflexive Pronouns — Myself, yourself, himself, herself, ourselves", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "First Conditional — If it rains, I'll take an umbrella", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Writing: Simple Emails & Messages — Informal y semi-formal", "tipo": "lectura", "duracion": "25 min" },
+          { "titulo": "Vocabulary: Technology, Hobbies & Free Time", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Listening: Comprender correos de voz y mensajes", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Escribir un email a un amigo + diálogo sobre hobbies", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "EXAMEN NIVEL A2 — Evaluación integral de gramática, vocabulario, listening, lectura y escritura", "tipo": "quiz", "duracion": "30 min" }
+        ]
+      },
+      {
+        "id": "eng-b1-m1",
+        "titulo": "B1.1 — Tiempos Narrativos: Past Continuous, Past Perfect y Used To",
+        "cefrLevel": "B1",
+        "orden": 9,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+150 palabras: emociones, experiencias, narración",
+        "canDo": "Puede contar historias detalladas usando tiempos narrativos combinados y describir experiencias pasadas.",
+        "lecciones": [
+          { "titulo": "Past Continuous — Was/Were + -ing: acciones en progreso en el pasado", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Past Simple vs Past Continuous — When/While: cuándo usar cada uno", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Past Perfect — Had + past participle: la acción anterior al pasado", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Used To / Would — Hábitos del pasado: I used to play football", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Vocabulary: Emotions, Life Experiences & Storytelling Connectors", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Listening: Historias personales y anécdotas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Contar una anécdota usando todos los tiempos narrativos", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Quiz B1.1 — Tiempos narrativos y vocabulario de experiencias", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-b1-m2",
+        "titulo": "B1.2 — Posibilidades: Present Perfect, Condicionales y Modales",
+        "cefrLevel": "B1",
+        "orden": 10,
+        "duracion": "8 horas",
+        "vocabularioMeta": "+130 palabras: logros, medio ambiente, probabilidad",
+        "canDo": "Puede hablar de experiencias de vida, expresar probabilidad y hacer hipótesis sobre situaciones irreales.",
+        "lecciones": [
+          { "titulo": "Present Perfect — Have/Has + past participle: ever, never, just, already, yet", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Present Perfect vs Past Simple — Cuándo usar cada uno", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Present Perfect Continuous — Have been + -ing: duración de acciones", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Second Conditional — If I had money, I would travel: hipótesis irreales", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Modal Verbs for Probability — May, might, could, must, can't + deducción", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Vocabulary: Achievements, Environment & Probability Expressions", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Listening: Entrevistas sobre experiencias de vida", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Hablar de tus logros + debatir sobre medio ambiente", "tipo": "practica", "duracion": "50 min" },
+          { "titulo": "Quiz B1.2 — Present perfect, condicionales y modales", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-b1-m3",
+        "titulo": "B1.3 — Comunicación Avanzada: Voz Pasiva, Reported Speech y Conectores",
+        "cefrLevel": "B1",
+        "orden": 11,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+120 palabras: noticias, medios, conectores del discurso",
+        "canDo": "Puede reportar lo que otros dijeron, entender noticias, y usar la voz pasiva en contexto.",
+        "lecciones": [
+          { "titulo": "Passive Voice (Basic) — Is made, was built, has been discovered", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Reported Speech — He said that..., She told me that...", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Question Tags — It's cold, isn't it? You like coffee, don't you?", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "-ed vs -ing Adjectives — Bored/Boring, Interested/Interesting", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Discourse Connectors — However, moreover, on the other hand, in addition", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Listening: Noticias y reportajes adaptados", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Reportar una noticia + escribir un párrafo con conectores", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Quiz B1.3 — Pasiva, reported speech y conectores", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-b1-m4",
+        "titulo": "B1.4 — Habilidades Integradas: Lectura, Listening y Expresión Oral",
+        "cefrLevel": "B1",
+        "orden": 12,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+100 palabras: temas actuales, opiniones, debates",
+        "canDo": "Puede entender artículos sencillos, escuchar podcasts, y expresar opiniones con justificación.",
+        "lecciones": [
+          { "titulo": "Reading Skills — Skimming, scanning y comprensión de artículos", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Listening Skills — Estrategias para podcasts y videos", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Speaking: Expressing Opinions — I think, In my opinion, I agree/disagree", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Phrasal Verbs (II) — turn, give, go, get, run: ampliando vocabulario", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Vocabulary: Current Affairs, Society & Opinions", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Listening: Podcast sobre temas sociales actuales", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Debatir en inglés sobre un tema actual con estructura", "tipo": "practica", "duracion": "50 min" },
+          { "titulo": "Quiz B1.4 — Comprensión lectora, auditiva y expresión oral", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-b1-m5",
+        "titulo": "B1.5 — Introducción Profesional: Emails, Teléfono y Procesos",
+        "cefrLevel": "B1",
+        "orden": 13,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+100 palabras: negocios básicos, oficina, procesos. Total B1: ~2,500 palabras",
+        "canDo": "Puede escribir emails profesionales simples, hablar por teléfono, y describir procesos. Puede completar un examen de nivel B1.",
+        "lecciones": [
+          { "titulo": "Business Emails (Intro) — Saludos, cuerpo, cierre: registro semi-formal", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Telephone English — Making calls, leaving messages, confirming", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Describing Processes — First, then, next, finally: secuenciar pasos", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Vocabulary: Office, Jobs & Workplace Expressions", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Listening: Llamadas telefónicas y presentaciones cortas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Escribir un email profesional + simular llamada", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "EXAMEN NIVEL B1 — Evaluación integral: gramática, vocabulario, reading, listening, writing, speaking", "tipo": "quiz", "duracion": "40 min" }
+        ]
+      },
+      {
+        "id": "eng-b2-m1",
+        "titulo": "B2.1 — Tiempos Avanzados: Third Conditional, Mixed Conditionals y Futuro Perfecto",
+        "cefrLevel": "B2",
+        "orden": 14,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+150 palabras: arrepentimientos, predicciones, cambio",
+        "canDo": "Puede expresar arrepentimientos sobre el pasado, hacer hipótesis complejas, y hablar del futuro con precisión.",
+        "lecciones": [
+          { "titulo": "Third Conditional — If I had studied, I would have passed", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Mixed Conditionals — If I had studied medicine, I would be a doctor now", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Future Perfect — By 2030, I will have finished university", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Future Continuous — This time tomorrow, I'll be flying to London", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Wish & If Only — Arrepentimientos: I wish I had traveled more", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Listening: Entrevistas sobre decisiones de vida y arrepentimientos", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Práctica: Escribir sobre arrepentimientos + debatir decisiones hipotéticas", "tipo": "practica", "duracion": "50 min" },
+          { "titulo": "Quiz B2.1 — Condicionales avanzados y tiempos futuros", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-b2-m2",
+        "titulo": "B2.2 — Expresión Matizada: Modales Perfectos, Voz Pasiva Avanzada y Stative Verbs",
+        "cefrLevel": "B2",
+        "orden": 15,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+120 palabras: deducciones, procesos, estados",
+        "canDo": "Puede hacer deducciones sofisticadas sobre el pasado, usar la pasiva en todos los tiempos, y distinguir verbos de estado.",
+        "lecciones": [
+          { "titulo": "Modal Perfects — Must have been, could have done, should have said", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Advanced Passive — Have something done: I had my car repaired", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Passive in All Tenses — Pasiva con present perfect, future, modals", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Stative Verbs — Know, believe, own, seem: verbos que NO van en -ing", "tipo": "video", "duracion": "20 min" },
+          { "titulo": "Vocabulary: Crime, Justice & Social Issues", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Listening: Documentales y reportajes sobre temas sociales", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Analizar un caso y usar modales + pasiva avanzada", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Quiz B2.2 — Modales perfectos, pasiva avanzada y stative verbs", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-b2-m3",
+        "titulo": "B2.3 — Escritura Académica: Ensayos, Registro Formal y Paráfrasis",
+        "cefrLevel": "B2",
+        "orden": 16,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+130 palabras: conectores avanzados, vocabulario académico",
+        "canDo": "Puede escribir ensayos argumentativos, usar registro formal, y parafrasear ideas complejas.",
+        "lecciones": [
+          { "titulo": "Essay Structure — Introduction, body paragraphs, conclusion", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Formal vs Informal Register — Academic writing rules", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Advanced Connectors — Nevertheless, furthermore, consequently, whereas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Paraphrasing & Summarizing — Decir lo mismo con otras palabras", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Reading: Artículos académicos y de opinión", "tipo": "lectura", "duracion": "25 min" },
+          { "titulo": "Listening: Conferencias TED Talks (con subtítulos)", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Escribir un ensayo argumentativo de 250 palabras", "tipo": "practica", "duracion": "50 min" },
+          { "titulo": "Quiz B2.3 — Escritura formal y comprensión de textos académicos", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-b2-m4",
+        "titulo": "B2.4 — Inglés Profesional: Presentaciones, Negociación y Vocabulario Técnico",
+        "cefrLevel": "B2",
+        "orden": 17,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+120 palabras: negocios, finanzas, tecnología, marketing",
+        "canDo": "Puede dar presentaciones profesionales, participar en negociaciones básicas, y usar vocabulario técnico de negocios.",
+        "lecciones": [
+          { "titulo": "Presentations in English — Opening, signposting, closing: estructura profesional", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Negotiation Language — I suggest, Would you consider, Let's compromise", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Technical Vocabulary — IT, Finance, Marketing, HR: términos esenciales", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Business Writing — Reports, proposals, meeting minutes", "tipo": "lectura", "duracion": "25 min" },
+          { "titulo": "Listening: Reuniones de negocios y presentaciones corporativas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Dar una presentación de 5 minutos + simular negociación", "tipo": "practica", "duracion": "55 min" },
+          { "titulo": "Quiz B2.4 — Inglés profesional y vocabulario técnico", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-b2-m5",
+        "titulo": "B2.5 — Fluidez: Idioms, Phrasal Verbs Avanzados, Debates y Cultura",
+        "cefrLevel": "B2",
+        "orden": 18,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+130 palabras: idioms, phrasal verbs avanzados, cultura. Total B2: ~3,750 palabras",
+        "canDo": "Puede debatir con fluidez, usar expresiones idiomáticas, y entender referencias culturales. Puede completar un examen de nivel B2.",
+        "lecciones": [
+          { "titulo": "Idioms & Fixed Expressions — Break the ice, piece of cake, cost an arm and a leg", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Advanced Phrasal Verbs — Come up with, put up with, look forward to, get along with", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Debate & Argumentation — Estructura: claim, evidence, counter-argument, conclusion", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Cultural Awareness — British vs American English, humor, social norms", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Listening: Debates televisivos y podcasts de opinión", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Debate estructurado sobre un tema polémico + quiz de idioms", "tipo": "practica", "duracion": "50 min" },
+          { "titulo": "EXAMEN NIVEL B2 — Evaluación integral: gramática avanzada, writing, reading, listening, speaking", "tipo": "quiz", "duracion": "45 min" }
+        ]
+      },
+      {
+        "id": "eng-c1-m1",
+        "titulo": "C1.1 — Sofisticación Gramatical: Inversión, Cleft Sentences y Wish Avanzado",
+        "cefrLevel": "C1",
+        "orden": 19,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+150 palabras: vocabulario sofisticado, registros formales",
+        "canDo": "Puede usar estructuras gramaticales avanzadas para dar énfasis y expresar matices de significado.",
+        "lecciones": [
+          { "titulo": "Inversion with Negative Adverbials — Never have I, Not only...but also, Seldom do we", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Cleft Sentences — It was John who..., What I need is..., The reason why...", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Advanced Wish & Regret — I wish I hadn't, If only I could have, I'd rather you didn't", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "All Conditional Forms — Revisión completa con matices y mezclas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Vocabulary: Sophisticated Synonyms & Register Switching", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Listening: Discursos formales y conferencias académicas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Reescribir textos usando inversión y cleft sentences", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Quiz C1.1 — Estructuras avanzadas y sofisticación gramatical", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-c1-m2",
+        "titulo": "C1.2 — Excelencia Académica: Escritura de Investigación y Análisis Crítico",
+        "cefrLevel": "C1",
+        "orden": 20,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+120 palabras: vocabulario académico y de investigación",
+        "canDo": "Puede escribir textos académicos complejos, analizar críticamente argumentos, y citar fuentes.",
+        "lecciones": [
+          { "titulo": "Academic Writing Advanced — Thesis statements, literature review, methodology", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Critical Analysis — Evaluate arguments, identify bias, assess evidence", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Academic Vocabulary (AWL) — 50 palabras académicas esenciales de alta frecuencia", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Referencing & Citations — APA, MLA: citar fuentes correctamente", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Reading: Artículos de investigación y journals académicos", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Listening: Conferencias universitarias sin subtítulos", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Escribir un análisis crítico de 400 palabras con citas", "tipo": "practica", "duracion": "55 min" },
+          { "titulo": "Quiz C1.2 — Escritura académica y análisis crítico", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-c1-m3",
+        "titulo": "C1.3 — Dominio Profesional: Liderazgo, Persuasión y Comunicación Intercultural",
+        "cefrLevel": "C1",
+        "orden": 21,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+120 palabras: liderazgo, persuasión, culturas",
+        "canDo": "Puede liderar reuniones en inglés, persuadir con argumentos sofisticados, y navegar diferencias culturales.",
+        "lecciones": [
+          { "titulo": "Leading Meetings — Chairing, facilitating, summarizing, action points", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Persuasion & Rhetoric — Ethos, pathos, logos: técnicas persuasivas", "tipo": "video", "duracion": "30 min" },
+          { "titulo": "Cross-Cultural Communication — Directness, hierarchy, time perception", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Advanced Business Writing — Executive summaries, white papers, strategic docs", "tipo": "lectura", "duracion": "25 min" },
+          { "titulo": "Listening: Entrevistas con líderes empresariales internacionales", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Liderar una reunión simulada + escribir un executive summary", "tipo": "practica", "duracion": "55 min" },
+          { "titulo": "Quiz C1.3 — Comunicación profesional avanzada", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-c1-m4",
+        "titulo": "C1.4 — Nivel Nativo: Humor, Ironía, Slang y Cambio de Registro",
+        "cefrLevel": "C1",
+        "orden": 22,
+        "duracion": "7 horas",
+        "vocabularioMeta": "+120 palabras: slang, humor, expresiones nativas",
+        "canDo": "Puede entender y usar humor, ironía, sarcasmo, slang y cambiar de registro según el contexto.",
+        "lecciones": [
+          { "titulo": "British & American Slang — Common informal expressions by region", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Humor, Irony & Sarcasm — Entender y usar humor en inglés", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Register Switching — Formal ↔ Informal ↔ Casual: adaptar tu inglés al contexto", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Advanced Idioms by Domain — Business, sports, food, weather idioms", "tipo": "lectura", "duracion": "20 min" },
+          { "titulo": "Listening: Stand-up comedy, podcasts informales, entrevistas relajadas", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Reading: Novelas contemporáneas y artículos de The New Yorker / The Guardian", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Práctica: Reescribir un texto en 3 registros diferentes + quiz de slang", "tipo": "practica", "duracion": "50 min" },
+          { "titulo": "Quiz C1.4 — Slang, humor y cambio de registro", "tipo": "quiz", "duracion": "20 min" }
+        ]
+      },
+      {
+        "id": "eng-c1-m5",
+        "titulo": "C1.5 — Integración y Certificación: Mock Exams, Revisión Total y Proyecto Final",
+        "cefrLevel": "C1",
+        "orden": 23,
+        "duracion": "8 horas",
+        "vocabularioMeta": "Consolidación: 5,000+ palabras totales del programa",
+        "canDo": "Puede usar el inglés con flexibilidad y eficacia para fines sociales, académicos y profesionales. Puede completar un examen de nivel C1.",
+        "lecciones": [
+          { "titulo": "Grammar Review — Revisión de todas las estructuras A1-C1 con ejercicios", "tipo": "video", "duracion": "35 min" },
+          { "titulo": "Vocabulary Review — Técnicas de memorización y repaso espaciado", "tipo": "video", "duracion": "25 min" },
+          { "titulo": "Mock Exam: Reading & Use of English — Formato Cambridge C1 Advanced", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Mock Exam: Writing — Task 1 (essay) + Task 2 (report/review/letter)", "tipo": "practica", "duracion": "45 min" },
+          { "titulo": "Mock Exam: Listening — 4 partes con audios auténticos", "tipo": "practica", "duracion": "40 min" },
+          { "titulo": "Mock Exam: Speaking — Entrevista simulada 1-on-1 y colaborativa", "tipo": "practica", "duracion": "30 min" },
+          { "titulo": "Proyecto Final: Presentación académica/profesional de 10 minutos + Q&A en inglés", "tipo": "practica", "duracion": "60 min" },
+          { "titulo": "EXAMEN FINAL NIVEL C1 — Evaluación completa: Grammar, Vocabulary, Reading, Writing, Listening, Speaking", "tipo": "quiz", "duracion": "60 min" }
         ]
       }
     ],
     "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
+    "kahootUrl": "https://kahoot.it/challenge/XXXXX",
     "estado": "activo"
   }
 ]

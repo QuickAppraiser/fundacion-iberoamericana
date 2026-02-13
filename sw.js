@@ -3,7 +3,7 @@
  * Cache-first strategy for static assets, network-first for data.
  */
 
-const CACHE_NAME = 'fi-cache-v1';
+const CACHE_NAME = 'fi-cache-v2';
 const STATIC_ASSETS = [
     './',
     './index.html',
@@ -13,6 +13,7 @@ const STATIC_ASSETS = [
     './recursos.html',
     './certificados.html',
     './calendario.html',
+    './placement-test.html',
     './css/styles.css',
     './css/dashboard.css',
     './css/pages.css',

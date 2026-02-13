@@ -171,25 +171,42 @@ const cursosFallback = [
         estado: "activo"
     },
     {
-        id: "ingles-general", titulo: "Inglés General (A1-C1)",
+        id: "ingles-general", titulo: "Inglés General (A1-C1) — Marco Común Europeo",
         categoria: "idiomas", categoriaLabel: "Idiomas",
-        nivel: "Básico → Avanzado", nivelClase: "basico",
-        duracion: "40 horas", modulosTotales: 8, quizzesTotales: 16,
+        nivel: "Básico → Avanzado (MCER A1-C1)", nivelClase: "basico",
+        duracion: "160 horas", modulosTotales: 23, quizzesTotales: 46,
         icono: "fa-language", iconoColor: "#E91E63", color: "#E91E63",
-        descripcionCorta: "Aprende inglés desde cero hasta nivel avanzado. Gramática, vocabulario, conversación, comprensión auditiva y fluidez profesional.",
-        descripcionCompleta: "Curso integral de inglés que te lleva desde nivel principiante (A1) hasta avanzado (C1). Incluye gramática estructurada, vocabulario práctico, ejercicios de conversación, comprensión auditiva con materiales reales, escritura formal, y desarrollo de fluidez para contextos académicos y profesionales. Ideal para quienes buscan dominar el inglés a nivel competitivo.",
-        requisitos: ["No se requiere conocimiento previo de inglés", "Computadora con micrófono (para ejercicios de pronunciación)", "Acceso a internet"],
+        cefrAligned: true, cefrLevels: ["A1", "A2", "B1", "B2", "C1"],
+        descripcionCorta: "Aprende inglés desde cero hasta nivel avanzado (C1) alineado al Marco Común Europeo de Referencia (MCER/CEFR). 23 módulos, 5 niveles, test de ubicación incluido.",
+        descripcionCompleta: "Programa integral de inglés alineado al Marco Común Europeo de Referencia para las Lenguas (MCER/CEFR). Te lleva desde principiante absoluto (A1) hasta nivel avanzado (C1) con 23 módulos. Incluye test de nivel, quizzes por nivel, y certificación por cada nivel completado. Vocabulario: de 500 palabras (A1) a 5,000+ (C1).",
+        requisitos: ["No se requiere conocimiento previo de inglés", "Computadora con micrófono y altavoces", "Acceso a internet", "Recomendado: tomar el Test de Nivel para comenzar en el módulo adecuado"],
         modulos: [
-            { titulo: "A1 — Fundamentos: Saludos, Presentaciones y Vocabulario Básico", duracion: "5 horas" },
-            { titulo: "A1-A2 — Gramática Esencial: Presente Simple, Artículos, Pronombres", duracion: "5 horas" },
-            { titulo: "A2 — Vida Cotidiana: Compras, Direcciones, Rutinas", duracion: "5 horas" },
-            { titulo: "A2-B1 — Gramática Intermedia: Tiempos Verbales, Condicionales", duracion: "5 horas" },
-            { titulo: "B1 — Conversación y Comprensión: Diálogos, Listening, Speaking", duracion: "5 horas" },
-            { titulo: "B1-B2 — Inglés Profesional: Emails, Presentaciones, Vocabulario Técnico", duracion: "5 horas" },
-            { titulo: "B2 — Fluidez Avanzada: Debates, Escritura Formal, Idioms", duracion: "5 horas" },
-            { titulo: "B2-C1 — Dominio: Académico, Negociación y Expresión Nativa", duracion: "5 horas" }
+            { titulo: "A1.1 — Primeros Pasos", duracion: "8 horas" },
+            { titulo: "A1.2 — Verb To Be y Pronombres", duracion: "8 horas" },
+            { titulo: "A1.3 — Presente Simple", duracion: "8 horas" },
+            { titulo: "A1.4 — Supervivencia", duracion: "8 horas" },
+            { titulo: "A2.1 — Past Simple", duracion: "7 horas" },
+            { titulo: "A2.2 — Going to y Comparativos", duracion: "7 horas" },
+            { titulo: "A2.3 — Vida Social", duracion: "7 horas" },
+            { titulo: "A2.4 — Comunicación Conectada", duracion: "7 horas" },
+            { titulo: "B1.1 — Tiempos Narrativos", duracion: "7 horas" },
+            { titulo: "B1.2 — Present Perfect y Condicionales", duracion: "8 horas" },
+            { titulo: "B1.3 — Pasiva y Reported Speech", duracion: "7 horas" },
+            { titulo: "B1.4 — Skills Integradas", duracion: "7 horas" },
+            { titulo: "B1.5 — Inglés Profesional Intro", duracion: "7 horas" },
+            { titulo: "B2.1 — Condicionales Avanzados", duracion: "7 horas" },
+            { titulo: "B2.2 — Modales Perfectos", duracion: "7 horas" },
+            { titulo: "B2.3 — Escritura Académica", duracion: "7 horas" },
+            { titulo: "B2.4 — Inglés Profesional", duracion: "7 horas" },
+            { titulo: "B2.5 — Fluidez y Debates", duracion: "7 horas" },
+            { titulo: "C1.1 — Inversión y Cleft Sentences", duracion: "7 horas" },
+            { titulo: "C1.2 — Excelencia Académica", duracion: "7 horas" },
+            { titulo: "C1.3 — Liderazgo y Persuasión", duracion: "7 horas" },
+            { titulo: "C1.4 — Nivel Nativo", duracion: "7 horas" },
+            { titulo: "C1.5 — Mock Exams y Certificación", duracion: "8 horas" }
         ],
         googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
+        kahootUrl: "https://kahoot.it/challenge/XXXXX",
         estado: "activo"
     }
 ];
@@ -274,6 +291,18 @@ function crearTarjetaCurso(curso) {
         ? '<span class="level-badge" style="background:#E3F2FD;color:#1565C0;">Próximamente</span>'
         : '';
 
+    // CEFR level badges for English course
+    const cefrColors = { A1: '#4CAF50', A2: '#8BC34A', B1: '#2196F3', B2: '#9C27B0', C1: '#E91E63' };
+    let cefrBadgesHTML = '';
+    if (curso.cefrLevels && curso.cefrLevels.length > 0) {
+        cefrBadgesHTML = `<div style="display:flex;gap:4px;margin-top:8px;flex-wrap:wrap;">${curso.cefrLevels.map(lvl => `<span style="padding:2px 8px;border-radius:6px;font-size:0.7rem;font-weight:700;background:${cefrColors[lvl]}18;color:${cefrColors[lvl]};border:1px solid ${cefrColors[lvl]}25;">${lvl}</span>`).join('')}</div>`;
+    }
+
+    // Placement test link for language courses
+    const placementTestLink = curso.cefrAligned
+        ? `<a href="placement-test.html" style="display:inline-flex;align-items:center;gap:4px;margin-top:6px;font-size:0.78rem;color:var(--teal);font-weight:600;text-decoration:none;" title="Determina tu nivel antes de empezar"><i class="fas fa-clipboard-check"></i> Test de Nivel Gratis</a>`
+        : '';
+
     return `
     <div class="course-card" data-curso-id="${curso.id}">
         <div class="course-banner" style="background: linear-gradient(135deg, ${curso.color}, ${curso.color}88);"></div>
@@ -283,6 +312,8 @@ function crearTarjetaCurso(curso) {
             </div>
             <h3 class="course-title">${curso.titulo}</h3>
             <p class="course-desc">${curso.descripcionCorta}</p>
+            ${cefrBadgesHTML}
+            ${placementTestLink}
             <div class="course-meta">
                 <span class="course-meta-item"><i class="fas fa-signal"></i> ${curso.nivel}</span>
                 <span class="course-meta-item"><i class="fas fa-clock"></i> ${curso.duracion}</span>
