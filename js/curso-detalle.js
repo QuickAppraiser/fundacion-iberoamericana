@@ -338,6 +338,42 @@ function renderizarCurso(curso) {
         `;
     }
 
+    // Certification alignment card
+    let certAlignHTML = '';
+    if (curso.certificacionAlineada) {
+        const cert = curso.certificacionAlineada;
+        const coberturaNum = parseInt(cert.cobertura) || 0;
+        const coberturaColor = coberturaNum >= 80 ? '#4CAF50' : coberturaNum >= 60 ? '#FF9800' : '#2196F3';
+        certAlignHTML = `
+            <div style="background:var(--card-bg);border-radius:16px;padding:20px;margin-bottom:24px;border:1px solid var(--border);">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap;">
+                    <div style="width:42px;height:42px;border-radius:12px;background:${coberturaColor}15;display:flex;align-items:center;justify-content:center;">
+                        <i class="fas fa-award" style="color:${coberturaColor};font-size:1.2rem;"></i>
+                    </div>
+                    <div style="flex:1;min-width:200px;">
+                        <h4 style="font-size:0.95rem;margin-bottom:2px;">Alineado a Certificación Profesional</h4>
+                        <p style="font-size:0.82rem;color:var(--text-light);margin:0;">${cert.nombre}</p>
+                    </div>
+                    <div style="text-align:center;padding:6px 14px;border-radius:10px;background:${coberturaColor}15;border:1px solid ${coberturaColor}30;">
+                        <div style="font-size:1.1rem;font-weight:800;color:${coberturaColor};">${cert.cobertura}</div>
+                        <div style="font-size:0.68rem;color:var(--text-muted);">Cobertura</div>
+                    </div>
+                </div>
+                <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;font-size:0.82rem;">
+                    <div><strong>Examen:</strong> <span style="color:var(--text-light);">${cert.codigoExamen}</span></div>
+                    <div><strong>Organización:</strong> <span style="color:var(--text-light);">${cert.organizacion}</span></div>
+                </div>
+                <div style="margin-bottom:14px;">
+                    <div style="font-size:0.8rem;font-weight:600;margin-bottom:8px;color:var(--text-main);">Temas Cubiertos:</div>
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                        ${(cert.temas || []).map(t => `<span style="padding:4px 10px;border-radius:8px;background:${curso.color}10;color:${curso.color};font-size:0.75rem;font-weight:600;border:1px solid ${curso.color}20;">${t}</span>`).join('')}
+                    </div>
+                </div>
+                <a href="${cert.url}" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:8px 18px;background:${coberturaColor};color:white;border-radius:10px;font-size:0.82rem;font-weight:600;text-decoration:none;"><i class="fas fa-external-link-alt"></i> Ver Certificación Oficial</a>
+            </div>
+        `;
+    }
+
     // YouTube channel link
     let youtubeHTML = '';
     if (curso.youtubeChannelUrl) {
@@ -360,6 +396,22 @@ function renderizarCurso(curso) {
         const vocabMeta = mod.vocabularioMeta ? `<div style="font-size:0.78rem;color:var(--teal);margin-top:4px;"><i class="fas fa-book-open" style="font-size:0.7rem;"></i> ${mod.vocabularioMeta}</div>` : '';
         const canDoMeta = mod.canDo ? `<div style="font-size:0.78rem;color:var(--text-light);margin-top:2px;font-style:italic;"><i class="fas fa-bullseye" style="font-size:0.65rem;color:var(--gold);"></i> ${mod.canDo}</div>` : '';
 
+        // Learning objectives, skills, tools
+        const hasExtras = mod.objetivosAprendizaje || mod.habilidades || mod.herramientas;
+        let extrasHTML = '';
+        if (hasExtras) {
+            const objHTML = (mod.objetivosAprendizaje || []).map(obj => `<li style="font-size:0.78rem;color:var(--text-light);margin-bottom:3px;"><i class="fas fa-check" style="color:${curso.color};font-size:0.65rem;margin-right:6px;"></i>${obj}</li>`).join('');
+            const skillsHTML = (mod.habilidades || []).map(s => `<span style="padding:2px 8px;border-radius:6px;background:${curso.color}10;color:${curso.color};font-size:0.7rem;font-weight:600;">${s}</span>`).join('');
+            const toolsHTML = (mod.herramientas || []).map(t => `<span style="padding:2px 8px;border-radius:6px;background:var(--border);color:var(--text-muted);font-size:0.7rem;">${t}</span>`).join('');
+            extrasHTML = `
+                <div class="module-extras" id="extras-${i}" style="display:none;margin-top:10px;padding-top:10px;border-top:1px dashed var(--border);">
+                    ${objHTML ? `<div style="margin-bottom:8px;"><div style="font-size:0.75rem;font-weight:700;margin-bottom:4px;color:var(--text-main);"><i class="fas fa-bullseye" style="color:${curso.color};font-size:0.65rem;"></i> Objetivos de Aprendizaje</div><ul style="list-style:none;padding:0;margin:0;">${objHTML}</ul></div>` : ''}
+                    ${skillsHTML ? `<div style="margin-bottom:8px;"><div style="font-size:0.75rem;font-weight:700;margin-bottom:4px;color:var(--text-main);"><i class="fas fa-tags" style="color:${curso.color};font-size:0.65rem;"></i> Habilidades</div><div style="display:flex;gap:4px;flex-wrap:wrap;">${skillsHTML}</div></div>` : ''}
+                    ${toolsHTML ? `<div><div style="font-size:0.75rem;font-weight:700;margin-bottom:4px;color:var(--text-main);"><i class="fas fa-tools" style="color:var(--text-muted);font-size:0.65rem;"></i> Herramientas</div><div style="display:flex;gap:4px;flex-wrap:wrap;">${toolsHTML}</div></div>` : ''}
+                </div>
+            `;
+        }
+
         let lessonsHTML = '';
         if (hasLessons) {
             const lessonTypeIcons = { video: 'fa-play-circle', lectura: 'fa-book', practica: 'fa-laptop-code', quiz: 'fa-clipboard-check' };
@@ -377,8 +429,10 @@ function renderizarCurso(curso) {
             `;
         }
 
+        const isExpandable = hasLessons || hasExtras;
+
         return `
-            <div class="course-module-card" ${hasLessons ? `style="cursor:pointer;" onclick="toggleLessons(${i})"` : ''}>
+            <div class="course-module-card" ${isExpandable ? `style="cursor:pointer;" onclick="toggleModule(${i})"` : ''}>
                 <div class="course-module-number" style="background:${mod.cefrLevel ? ({'A1':'#4CAF50','A2':'#8BC34A','B1':'#2196F3','B2':'#9C27B0','C1':'#E91E63'}[mod.cefrLevel] || curso.color) : curso.color};">
                     ${i + 1}
                 </div>
@@ -387,9 +441,10 @@ function renderizarCurso(curso) {
                     <span><i class="fas fa-clock"></i> ${mod.duracion}${hasLessons ? ` — ${mod.lecciones.length} lecciones` : ''}</span>
                     ${vocabMeta}
                     ${canDoMeta}
+                    ${extrasHTML}
                     ${lessonsHTML}
                 </div>
-                ${hasLessons ? '<i class="fas fa-chevron-down" style="color:var(--text-muted);font-size:0.8rem;transition:transform 0.3s;"></i>' : ''}
+                ${isExpandable ? '<i class="fas fa-chevron-down" style="color:var(--text-muted);font-size:0.8rem;transition:transform 0.3s;"></i>' : ''}
             </div>
         `;
     }).join('');
@@ -404,6 +459,7 @@ function renderizarCurso(curso) {
         ${metaHTML}
         ${descHTML}
         ${cefrBarHTML}
+        ${certAlignHTML}
         ${youtubeHTML}
 
         <h3 class="course-detail-section-title">
@@ -446,14 +502,19 @@ function renderizarCurso(curso) {
     if (typeof initCertPreview === 'function') initCertPreview();
 }
 
-// Toggle lesson visibility in module cards
-window.toggleLessons = function(index) {
-    const el = document.getElementById('lessons-' + index);
-    if (!el) return;
-    const isOpen = el.style.display !== 'none';
-    el.style.display = isOpen ? 'none' : 'block';
+// Toggle module expandable content (extras + lessons)
+window.toggleModule = function(index) {
+    const extras = document.getElementById('extras-' + index);
+    const lessons = document.getElementById('lessons-' + index);
+    const target = extras || lessons;
+    if (!target) return;
+
+    const isOpen = target.style.display !== 'none';
+    if (extras) extras.style.display = isOpen ? 'none' : 'block';
+    if (lessons) lessons.style.display = isOpen ? 'none' : 'block';
+
     // Rotate chevron
-    const card = el.closest('.course-module-card');
+    const card = target.closest('.course-module-card');
     if (card) {
         const chevron = card.querySelector('.fa-chevron-down, .fa-chevron-up');
         if (chevron) {
@@ -461,6 +522,9 @@ window.toggleLessons = function(index) {
         }
     }
 };
+
+// Keep backward compat
+window.toggleLessons = window.toggleModule;
 
 function renderizarNoEncontrado() {
     // Update title

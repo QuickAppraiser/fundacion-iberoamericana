@@ -10,234 +10,25 @@
  */
 
 // =========================
-// DATOS DE RECURSOS
+// DATOS DE RECURSOS (fallback)
 // =========================
 
-const recursosData = [
-    {
-        id: 'excel-formulas-pdf',
-        titulo: 'Guía de Fórmulas de Excel',
-        curso: 'Excel Básico a Avanzado',
-        tipo: 'pdf',
-        tipoLabel: 'PDF',
-        descripcion: 'Referencia completa de las 50 fórmulas más usadas en Excel con ejemplos prácticos.',
-        icono: 'fa-file-pdf',
-        iconoColor: '#F44336',
-        iconoBg: 'rgba(244,67,54,0.1)',
-        formato: 'PDF',
-        tamano: '2.4 MB',
-        url: '#'
-    },
-    {
-        id: 'excel-atajos-cheat',
-        titulo: 'Atajos de Teclado — Excel',
-        curso: 'Excel Básico a Avanzado',
-        tipo: 'cheatsheet',
-        tipoLabel: 'Cheat Sheet',
-        descripcion: 'Todos los atajos de teclado esenciales para ser más productivo en Excel.',
-        icono: 'fa-keyboard',
-        iconoColor: '#4CAF50',
-        iconoBg: 'rgba(76,175,80,0.1)',
-        formato: 'PDF',
-        tamano: '850 KB',
-        url: '#'
-    },
-    {
-        id: 'excel-plantilla-dashboard',
-        titulo: 'Plantilla: Dashboard de Ventas',
-        curso: 'Excel Básico a Avanzado',
-        tipo: 'plantilla',
-        tipoLabel: 'Plantilla',
-        descripcion: 'Plantilla lista para usar de un dashboard de ventas con gráficos dinámicos.',
-        icono: 'fa-file-excel',
-        iconoColor: '#4CAF50',
-        iconoBg: 'rgba(76,175,80,0.1)',
-        formato: 'XLSX',
-        tamano: '1.8 MB',
-        url: '#'
-    },
-    {
-        id: 'html-cheatsheet',
-        titulo: 'HTML5 Cheat Sheet',
-        curso: 'Desarrollo Web',
-        tipo: 'cheatsheet',
-        tipoLabel: 'Cheat Sheet',
-        descripcion: 'Referencia visual de todas las etiquetas HTML5 con ejemplos de uso.',
-        icono: 'fa-code',
-        iconoColor: '#FF5722',
-        iconoBg: 'rgba(255,87,34,0.1)',
-        formato: 'PDF',
-        tamano: '1.2 MB',
-        url: '#'
-    },
-    {
-        id: 'css-flexbox-grid',
-        titulo: 'Guía Visual: Flexbox y Grid',
-        curso: 'Desarrollo Web',
-        tipo: 'pdf',
-        tipoLabel: 'PDF',
-        descripcion: 'Guía visual completa de CSS Flexbox y Grid con diagramas interactivos.',
-        icono: 'fa-th-large',
-        iconoColor: '#2196F3',
-        iconoBg: 'rgba(33,150,243,0.1)',
-        formato: 'PDF',
-        tamano: '3.1 MB',
-        url: '#'
-    },
-    {
-        id: 'js-plantilla-proyecto',
-        titulo: 'Plantilla: Proyecto Web Starter',
-        curso: 'Desarrollo Web',
-        tipo: 'plantilla',
-        tipoLabel: 'Plantilla',
-        descripcion: 'Estructura base para iniciar un proyecto web con HTML, CSS y JS organizados.',
-        icono: 'fa-folder-tree',
-        iconoColor: '#FF5722',
-        iconoBg: 'rgba(255,87,34,0.1)',
-        formato: 'ZIP',
-        tamano: '245 KB',
-        url: '#'
-    },
-    {
-        id: 'python-sintaxis',
-        titulo: 'Python: Sintaxis Rápida',
-        curso: 'Python desde Cero',
-        tipo: 'cheatsheet',
-        tipoLabel: 'Cheat Sheet',
-        descripcion: 'Cheat sheet con sintaxis de Python: variables, listas, diccionarios, ciclos y funciones.',
-        icono: 'fab fa-python',
-        iconoColor: '#3776AB',
-        iconoBg: 'rgba(55,118,171,0.1)',
-        formato: 'PDF',
-        tamano: '950 KB',
-        url: '#'
-    },
-    {
-        id: 'sql-comandos',
-        titulo: 'SQL: Comandos Esenciales',
-        curso: 'SQL y Bases de Datos',
-        tipo: 'cheatsheet',
-        tipoLabel: 'Cheat Sheet',
-        descripcion: 'Referencia rápida de SELECT, JOIN, WHERE, GROUP BY, INSERT, UPDATE y DELETE.',
-        icono: 'fa-database',
-        iconoColor: '#2196F3',
-        iconoBg: 'rgba(33,150,243,0.1)',
-        formato: 'PDF',
-        tamano: '780 KB',
-        url: '#'
-    },
-    {
-        id: 'powerbi-guia',
-        titulo: 'Power BI: Guía de Inicio Rápido',
-        curso: 'Power BI',
-        tipo: 'pdf',
-        tipoLabel: 'PDF',
-        descripcion: 'Paso a paso para crear tu primer dashboard en Power BI Desktop.',
-        icono: 'fa-chart-pie',
-        iconoColor: '#FFB800',
-        iconoBg: 'rgba(255,184,0,0.1)',
-        formato: 'PDF',
-        tamano: '4.5 MB',
-        url: '#'
-    },
-    {
-        id: 'scrum-plantilla',
-        titulo: 'Plantilla: Sprint Board en Sheets',
-        curso: 'Gestión de Proyectos',
-        tipo: 'plantilla',
-        tipoLabel: 'Plantilla',
-        descripcion: 'Tablero Scrum con backlog, sprint actual y gráfico de burndown en Google Sheets.',
-        icono: 'fa-diagram-project',
-        iconoColor: '#FF9800',
-        iconoBg: 'rgba(255,152,0,0.1)',
-        formato: 'Google Sheets',
-        tamano: 'Online',
-        url: '#'
-    },
-    {
-        id: 'gworkspace-guia',
-        titulo: 'Google Workspace: Guía Completa',
-        curso: 'Google Workspace',
-        tipo: 'pdf',
-        tipoLabel: 'PDF',
-        descripcion: 'Guía de productividad con Docs, Sheets, Slides, Forms, Drive y Calendar.',
-        icono: 'fab fa-google',
-        iconoColor: '#4285F4',
-        iconoBg: 'rgba(66,133,244,0.1)',
-        formato: 'PDF',
-        tamano: '5.2 MB',
-        url: '#'
-    },
-    {
-        id: 'video-excel-tablas',
-        titulo: 'Video: Tablas Dinámicas en 20 min',
-        curso: 'Excel Básico a Avanzado',
-        tipo: 'video',
-        tipoLabel: 'Video',
-        descripcion: 'Tutorial en video de cómo crear y personalizar tablas dinámicas paso a paso.',
-        icono: 'fa-play-circle',
-        iconoColor: '#F44336',
-        iconoBg: 'rgba(244,67,54,0.1)',
-        formato: 'YouTube',
-        tamano: '20 min',
-        url: '#'
-    }
+const recursosFallback = [
+    { id: 'excel-formulas-pdf', titulo: 'Guía de Fórmulas de Excel', curso: 'Excel Básico a Avanzado', tipo: 'pdf', tipoLabel: 'PDF', descripcion: 'Referencia completa de las 50 fórmulas más usadas en Excel con ejemplos prácticos.', icono: 'fa-file-pdf', iconoColor: '#F44336', iconoBg: 'rgba(244,67,54,0.1)', formato: 'PDF', tamano: '2.4 MB', url: '#' },
+    { id: 'html-cheatsheet', titulo: 'HTML5 Cheat Sheet', curso: 'Desarrollo Web', tipo: 'cheatsheet', tipoLabel: 'Cheat Sheet', descripcion: 'Referencia visual de todas las etiquetas HTML5.', icono: 'fa-code', iconoColor: '#FF5722', iconoBg: 'rgba(255,87,34,0.1)', formato: 'PDF', tamano: '1.2 MB', url: '#' },
+    { id: 'python-sintaxis', titulo: 'Python: Sintaxis Rápida', curso: 'Python desde Cero', tipo: 'cheatsheet', tipoLabel: 'Cheat Sheet', descripcion: 'Cheat sheet con sintaxis de Python.', icono: 'fab fa-python', iconoColor: '#3776AB', iconoBg: 'rgba(55,118,171,0.1)', formato: 'PDF', tamano: '950 KB', url: '#' }
 ];
 
-const recursosExternos = [
-    {
-        titulo: 'Excel Jet',
-        tipo: 'Referencia Web',
-        descripcion: 'La mejor referencia online de fórmulas y funciones de Excel con ejemplos.',
-        url: 'https://exceljet.net',
-        icono: 'fa-file-excel',
-        color: '#4CAF50'
-    },
-    {
-        titulo: 'freeCodeCamp (YouTube)',
-        tipo: 'Canal de YouTube',
-        descripcion: 'Cursos completos gratuitos de programación: Python, JavaScript, SQL y más.',
-        url: 'https://www.youtube.com/@freecodecamp',
-        icono: 'fab fa-youtube',
-        color: '#F44336'
-    },
-    {
-        titulo: 'W3Schools',
-        tipo: 'Tutorial Interactivo',
-        descripcion: 'Tutoriales y referencia de HTML, CSS, JavaScript, SQL, Python con sandbox.',
-        url: 'https://www.w3schools.com',
-        icono: 'fa-graduation-cap',
-        color: '#4CAF50'
-    },
-    {
-        titulo: 'MDN Web Docs',
-        tipo: 'Documentación',
-        descripcion: 'Documentación oficial y completa de tecnologías web (HTML, CSS, JS).',
-        url: 'https://developer.mozilla.org/es/',
-        icono: 'fa-book',
-        color: '#1B2A4A'
-    },
-    {
-        titulo: 'Kaggle',
-        tipo: 'Plataforma de Datos',
-        descripcion: 'Datasets gratuitos, competencias de datos y notebooks de Python/R.',
-        url: 'https://www.kaggle.com',
-        icono: 'fa-chart-bar',
-        color: '#20BEFF'
-    },
-    {
-        titulo: 'Platzi (Blog)',
-        tipo: 'Blog Educativo',
-        descripcion: 'Artículos y guías en español sobre tecnología, programación y negocios.',
-        url: 'https://platzi.com/blog/',
-        icono: 'fa-blog',
-        color: '#98CA3F'
-    }
+const recursosExternosFallback = [
+    { titulo: 'W3Schools', tipo: 'Tutorial Interactivo', descripcion: 'Tutoriales y referencia de HTML, CSS, JavaScript, SQL, Python.', url: 'https://www.w3schools.com', icono: 'fa-graduation-cap', color: '#4CAF50' },
+    { titulo: 'freeCodeCamp', tipo: 'Canal de YouTube', descripcion: 'Cursos completos gratuitos de programación.', url: 'https://www.youtube.com/@freecodecamp', icono: 'fab fa-youtube', color: '#F44336' }
 ];
 
 // =========================
 // VARIABLES DE ESTADO
 // =========================
+let recursosData = [];
+let recursosExternos = [];
 let tipoRecursoActivo = 'all';
 let busquedaRecurso = '';
 
@@ -247,11 +38,26 @@ let busquedaRecurso = '';
 
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof inicializarI18n === 'function') inicializarI18n();
-    renderizarRecursos();
-    renderizarRecursosExternos();
+    cargarRecursos();
     inicializarBusquedaRecursos();
     inicializarHamburger();
 });
+
+async function cargarRecursos() {
+    try {
+        const response = await fetch('data/recursos.json');
+        if (!response.ok) throw new Error('Fetch failed');
+        const data = await response.json();
+        recursosData = data.recursos || recursosFallback;
+        recursosExternos = data.recursosExternos || recursosExternosFallback;
+    } catch (e) {
+        console.warn('Usando recursos de fallback:', e.message);
+        recursosData = recursosFallback;
+        recursosExternos = recursosExternosFallback;
+    }
+    renderizarRecursos();
+    renderizarRecursosExternos();
+}
 
 // =========================
 // RENDERIZADO

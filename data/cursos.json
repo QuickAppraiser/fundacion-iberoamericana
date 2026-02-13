@@ -12,6 +12,7 @@
     "icono": "fa-file-excel",
     "iconoColor": "#4CAF50",
     "color": "#4CAF50",
+    "certificacionAlineada": {"nombre":"Microsoft Office Specialist (MOS)","codigoExamen":"MO-210 (Excel Associate) / MO-211 (Excel Expert)","organizacion":"Microsoft / Certiport","url":"https://certiport.pearsonvue.com/Certifications/Microsoft/MOS/Overview","cobertura":"90%","temas":["Manage Worksheets and Workbooks","Manage Data Cells and Ranges","Manage Tables and Table Data","Perform Operations Using Formulas and Functions","Manage Charts"]},
     "descripcionCorta": "Domina hojas de cálculo, fórmulas, tablas dinámicas, macros y dashboards profesionales.",
     "descripcionCompleta": "Curso integral de Microsoft Excel que te lleva desde los fundamentos básicos hasta técnicas avanzadas de análisis de datos. Aprenderás a crear fórmulas complejas, tablas dinámicas, gráficos profesionales, automatización con macros VBA, y dashboards interactivos para reportes empresariales. Ideal para profesionales que necesitan dominar la herramienta más utilizada en el mundo corporativo.",
     "requisitos": ["Computadora con Excel 2016 o superior (o Google Sheets)", "Conocimientos básicos de computación"],
@@ -21,6 +22,13 @@
         "titulo": "Fundamentos y Navegación",
         "orden": 1,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Configurar y personalizar la interfaz de Excel para un flujo de trabajo eficiente",
+          "Aplicar formatos de número, texto y fecha adecuados a distintos tipos de datos",
+          "Navegar hojas de cálculo de forma rápida utilizando atajos de teclado"
+        ],
+        "habilidades": ["Navegación en Excel", "Formato de Datos", "Productividad con Atajos"],
+        "herramientas": ["Microsoft Excel", "Barra de Herramientas de Acceso Rápido", "Cinta de Opciones"],
         "lecciones": [
           { "titulo": "Interfaz de Excel y personalización del entorno", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Tipos de datos: texto, números, fechas y formatos", "tipo": "video", "duracion": "25 min" },
@@ -33,6 +41,13 @@
         "titulo": "Fórmulas y Funciones Esenciales",
         "orden": 2,
         "duracion": "8 horas",
+        "objetivosAprendizaje": [
+          "Crear fórmulas complejas usando BUSCARV, SI.CONJUNTO y SUMAR.SI",
+          "Aplicar funciones de texto, fecha y lógicas en escenarios reales",
+          "Depurar errores de fórmulas con herramientas de auditoría"
+        ],
+        "habilidades": ["Fórmulas Avanzadas", "Funciones Lógicas", "Auditoría de Datos"],
+        "herramientas": ["Microsoft Excel", "Barra de Fórmulas", "Auditoría de Fórmulas"],
         "lecciones": [
           { "titulo": "SUMA, PROMEDIO, CONTAR, MAX, MIN", "tipo": "video", "duracion": "35 min" },
           { "titulo": "SI, SI.CONJUNTO, Y, O — Lógica condicional", "tipo": "video", "duracion": "40 min" },
@@ -46,6 +61,13 @@
         "titulo": "Tablas Dinámicas y Gráficos",
         "orden": 3,
         "duracion": "8 horas",
+        "objetivosAprendizaje": [
+          "Crear tablas dinámicas para resumir y analizar grandes volúmenes de datos",
+          "Diseñar gráficos dinámicos que comuniquen tendencias y patrones de forma visual",
+          "Implementar segmentadores y campos calculados para análisis interactivo"
+        ],
+        "habilidades": ["Tablas Dinámicas", "Visualización de Datos", "Análisis Interactivo"],
+        "herramientas": ["Microsoft Excel", "Tablas Dinámicas", "Gráficos Dinámicos", "Segmentadores"],
         "lecciones": [
           { "titulo": "Crear y configurar tablas dinámicas desde cero", "tipo": "video", "duracion": "40 min" },
           { "titulo": "Segmentadores, filtros y campos calculados", "tipo": "video", "duracion": "35 min" },
@@ -58,6 +80,13 @@
         "titulo": "Funciones Avanzadas",
         "orden": 4,
         "duracion": "7 horas",
+        "objetivosAprendizaje": [
+          "Implementar funciones condicionales compuestas como SUMAR.SI.CONJUNTO y CONTAR.SI.CONJUNTO",
+          "Aplicar funciones de texto y fecha para manipular y transformar datos",
+          "Diseñar validaciones de datos con listas desplegables para controlar la entrada de información"
+        ],
+        "habilidades": ["Funciones Condicionales", "Manipulación de Texto", "Validación de Datos"],
+        "herramientas": ["Microsoft Excel", "Validación de Datos", "Administrador de Nombres"],
         "lecciones": [
           { "titulo": "SUMAR.SI.CONJUNTO y CONTAR.SI.CONJUNTO", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Funciones de texto: CONCATENAR, IZQUIERDA, EXTRAE", "tipo": "video", "duracion": "25 min" },
@@ -71,6 +100,13 @@
         "titulo": "Macros y Automatización VBA",
         "orden": 5,
         "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Crear macros grabadas para automatizar tareas repetitivas en Excel",
+          "Desarrollar código VBA con variables, bucles y condicionales para soluciones personalizadas",
+          "Diseñar formularios de entrada (UserForms) para captura de datos estructurada"
+        ],
+        "habilidades": ["Macros", "Programación VBA", "Automatización de Procesos"],
+        "herramientas": ["Microsoft Excel", "Editor de VBA", "Grabadora de Macros", "UserForms"],
         "lecciones": [
           { "titulo": "Grabar macros: automatiza tareas repetitivas", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Introducción a VBA: variables, bucles, condicionales", "tipo": "video", "duracion": "45 min" },
@@ -83,6 +119,13 @@
         "titulo": "Dashboards y Reportes Profesionales",
         "orden": 6,
         "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Diseñar dashboards interactivos con layout profesional, gráficos y KPIs",
+          "Implementar formato condicional avanzado con íconos, barras de datos y escalas de color",
+          "Crear gráficos avanzados como termómetro y waffle para reportes ejecutivos"
+        ],
+        "habilidades": ["Diseño de Dashboards", "Formato Condicional", "Reportes Ejecutivos"],
+        "herramientas": ["Microsoft Excel", "Formato Condicional", "Gráficos Avanzados", "Controles de Formulario"],
         "lecciones": [
           { "titulo": "Diseño de dashboards: layout, colores, tipografía", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Gráficos avanzados: termómetro, waffle, KPIs", "tipo": "video", "duracion": "35 min" },
@@ -108,6 +151,7 @@
     "icono": "fab fa-google",
     "iconoColor": "#2196F3",
     "color": "#2196F3",
+    "certificacionAlineada": {"nombre":"Google Workspace Certification","codigoExamen":"Google Workspace User","organizacion":"Google","url":"https://cloud.google.com/certification","cobertura":"75%","temas":["Google Docs: Document Creation","Google Sheets: Data Analysis","Google Slides: Presentations","Google Drive: Cloud Storage","Collaboration and Productivity"]},
     "descripcionCorta": "Docs, Sheets, Slides, Forms, Calendar y Drive para productividad personal y empresarial.",
     "descripcionCompleta": "Domina todas las herramientas de Google Workspace para trabajar de forma colaborativa y eficiente. Desde la creación de documentos profesionales en Google Docs, hojas de cálculo en Sheets, presentaciones impactantes en Slides, hasta la automatización de encuestas con Forms y la organización con Calendar y Drive.",
     "requisitos": ["Cuenta de Google (Gmail)", "Navegador web actualizado"],
@@ -117,6 +161,13 @@
         "titulo": "Google Docs — Documentos Profesionales",
         "orden": 1,
         "duracion": "4 horas",
+        "objetivosAprendizaje": [
+          "Crear documentos profesionales con formato avanzado, estilos y tabla de contenidos",
+          "Aplicar técnicas de colaboración en tiempo real con comentarios y sugerencias",
+          "Diseñar plantillas reutilizables para documentos corporativos"
+        ],
+        "habilidades": ["Redacción de Documentos", "Colaboración en Línea", "Formato Profesional"],
+        "herramientas": ["Google Docs", "Google Drive", "Plantillas de Google"],
         "lecciones": [
           { "titulo": "Crear, formatear y organizar documentos", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Colaboración en tiempo real y comentarios", "tipo": "video", "duracion": "25 min" },
@@ -128,6 +179,13 @@
         "titulo": "Google Sheets — Hojas de Cálculo",
         "orden": 2,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Crear fórmulas esenciales para cálculos automáticos en Google Sheets",
+          "Diseñar gráficos y tablas dinámicas para visualizar datos",
+          "Implementar un presupuesto personal con funciones automatizadas"
+        ],
+        "habilidades": ["Hojas de Cálculo", "Fórmulas y Funciones", "Gráficos de Datos"],
+        "herramientas": ["Google Sheets", "Explorador de Datos", "Gráficos de Google"],
         "lecciones": [
           { "titulo": "Fórmulas esenciales y formato de datos", "tipo": "video", "duracion": "35 min" },
           { "titulo": "Gráficos y tablas dinámicas en Sheets", "tipo": "video", "duracion": "30 min" },
@@ -139,6 +197,13 @@
         "titulo": "Google Slides — Presentaciones Impactantes",
         "orden": 3,
         "duracion": "3 horas",
+        "objetivosAprendizaje": [
+          "Diseñar presentaciones visualmente atractivas aplicando principios de diseño gráfico",
+          "Implementar animaciones y transiciones con propósito comunicativo",
+          "Crear un pitch deck profesional con estructura narrativa efectiva"
+        ],
+        "habilidades": ["Diseño de Presentaciones", "Comunicación Visual", "Storytelling"],
+        "herramientas": ["Google Slides", "Modo Presentador", "Plantillas de Slides"],
         "lecciones": [
           { "titulo": "Diseño de slides con principios visuales", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Animaciones, transiciones y modo presentador", "tipo": "video", "duracion": "25 min" },
@@ -150,6 +215,13 @@
         "titulo": "Google Forms — Encuestas y Evaluaciones",
         "orden": 4,
         "duracion": "3 horas",
+        "objetivosAprendizaje": [
+          "Crear formularios con lógica condicional para encuestas y evaluaciones",
+          "Configurar quizzes auto-calificables para entornos educativos",
+          "Analizar respuestas de formularios conectando datos con Google Sheets"
+        ],
+        "habilidades": ["Diseño de Encuestas", "Evaluación Digital", "Análisis de Respuestas"],
+        "herramientas": ["Google Forms", "Google Sheets", "Complementos de Forms"],
         "lecciones": [
           { "titulo": "Crear formularios con lógica condicional", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Auto-calificación para quizzes educativos", "tipo": "video", "duracion": "20 min" },
@@ -161,6 +233,13 @@
         "titulo": "Drive, Calendar y Productividad",
         "orden": 5,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Organizar archivos en Google Drive con estructura de carpetas y permisos adecuados",
+          "Gestionar agenda profesional con Google Calendar usando eventos y recordatorios",
+          "Implementar flujos de trabajo integrados entre las herramientas de Google Workspace"
+        ],
+        "habilidades": ["Gestión de Archivos", "Organización de Agenda", "Productividad Digital"],
+        "herramientas": ["Google Drive", "Google Calendar", "Google Workspace"],
         "lecciones": [
           { "titulo": "Organización de archivos y permisos en Drive", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Google Calendar: eventos, recordatorios y agenda", "tipo": "video", "duracion": "20 min" },
@@ -185,6 +264,7 @@
     "icono": "fa-chart-pie",
     "iconoColor": "#FFB800",
     "color": "#FFB800",
+    "certificacionAlineada": {"nombre":"Microsoft Power BI Data Analyst","codigoExamen":"PL-300","organizacion":"Microsoft","url":"https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/","cobertura":"85%","temas":["Prepare the Data","Model the Data","Visualize and Analyze the Data","Deploy and Maintain Assets","DAX Calculations"]},
     "descripcionCorta": "Crea dashboards interactivos y reportes de inteligencia de negocios con Power BI Desktop.",
     "descripcionCompleta": "Aprende a transformar datos crudos en visualizaciones interactivas y reportes de negocio con Microsoft Power BI. Desde la conexión a fuentes de datos, limpieza con Power Query, modelado de datos, hasta la creación de dashboards profesionales con DAX y publicación en Power BI Service.",
     "requisitos": ["Conocimientos de Excel intermedio", "Computadora con Windows (Power BI Desktop es solo Windows)", "Pensamiento analítico básico"],
@@ -194,6 +274,13 @@
         "titulo": "Introducción y Conexión de Datos",
         "orden": 1,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Configurar Power BI Desktop y conectar múltiples fuentes de datos (Excel, CSV, web)",
+          "Aplicar transformaciones de limpieza de datos con Power Query Editor",
+          "Implementar un flujo de importación y preparación de datos completo"
+        ],
+        "habilidades": ["Conexión de Datos", "Limpieza de Datos", "Power Query"],
+        "herramientas": ["Power BI Desktop", "Power Query Editor", "Conectores de Datos"],
         "lecciones": [
           { "titulo": "Instalación de Power BI Desktop y tour de la interfaz", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Conectar fuentes: Excel, CSV, bases de datos, web", "tipo": "video", "duracion": "30 min" },
@@ -206,6 +293,13 @@
         "titulo": "Modelado de Datos y Relaciones",
         "orden": 2,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Diseñar un modelo de datos estrella con tablas de hechos y dimensiones",
+          "Crear relaciones entre tablas con cardinalidad y dirección de filtro correctas",
+          "Implementar columnas calculadas y medidas básicas con DAX"
+        ],
+        "habilidades": ["Modelado de Datos", "DAX Básico", "Diseño Estrella"],
+        "herramientas": ["Power BI Desktop", "Vista de Modelo", "Editor DAX"],
         "lecciones": [
           { "titulo": "Modelo estrella: tablas de hechos y dimensiones", "tipo": "video", "duracion": "35 min" },
           { "titulo": "Crear relaciones entre tablas", "tipo": "video", "duracion": "25 min" },
@@ -218,6 +312,13 @@
         "titulo": "Visualizaciones y Dashboards",
         "orden": 3,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Crear visualizaciones efectivas seleccionando el tipo de gráfico adecuado para cada dato",
+          "Diseñar dashboards interactivos con filtros, segmentadores y KPIs",
+          "Implementar interacciones entre visuales para análisis exploratorio"
+        ],
+        "habilidades": ["Visualización de Datos", "Diseño de Dashboards", "Análisis Interactivo"],
+        "herramientas": ["Power BI Desktop", "Visualizaciones Nativas", "Segmentadores", "Formato Condicional"],
         "lecciones": [
           { "titulo": "Gráficos nativos: barras, líneas, mapas, treemaps", "tipo": "video", "duracion": "35 min" },
           { "titulo": "KPIs, tarjetas y formato condicional", "tipo": "video", "duracion": "30 min" },
@@ -230,6 +331,13 @@
         "titulo": "DAX Avanzado y Publicación",
         "orden": 4,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Crear medidas avanzadas con CALCULATE, FILTER, ALL y RELATED en DAX",
+          "Implementar funciones de inteligencia de tiempo (YTD, MTD) para análisis temporal",
+          "Publicar reportes en Power BI Service y configurar permisos de acceso"
+        ],
+        "habilidades": ["DAX Avanzado", "Inteligencia de Tiempo", "Publicación de Reportes"],
+        "herramientas": ["Power BI Desktop", "Editor DAX", "Power BI Service"],
         "lecciones": [
           { "titulo": "Funciones DAX: CALCULATE, FILTER, ALL, RELATED", "tipo": "video", "duracion": "40 min" },
           { "titulo": "Time intelligence: YTD, MTD, comparaciones", "tipo": "video", "duracion": "35 min" },
@@ -255,6 +363,7 @@
     "icono": "fa-code",
     "iconoColor": "#FF5722",
     "color": "#FF5722",
+    "certificacionAlineada": {"nombre":"Meta Front-End Developer Certificate","codigoExamen":"Meta Professional Certificate","organizacion":"Meta / W3C Standards","url":"https://www.coursera.org/professional-certificates/meta-front-end-developer","cobertura":"80%","temas":["HTML5 Semantic Structure","CSS3 Layout and Responsive Design","JavaScript ES6+ Fundamentals","DOM Manipulation","Version Control with Git"]},
     "descripcionCorta": "Crea sitios web desde cero con HTML5, CSS3 y JavaScript moderno. Tu primera página en la primera clase.",
     "descripcionCompleta": "Curso práctico de desarrollo web front-end donde construirás sitios web reales desde cero. Comenzarás con la estructura HTML5, le darás estilo con CSS3 (incluyendo Flexbox y Grid), y agregarás interactividad con JavaScript moderno. Al terminar, tendrás un portafolio web publicado en internet.",
     "requisitos": ["Computadora con navegador web moderno (Chrome o Firefox)", "Editor de código (VS Code, gratuito)", "No se requiere experiencia previa en programación"],
@@ -264,6 +373,13 @@
         "titulo": "HTML5 — Estructura y Semántica",
         "orden": 1,
         "duracion": "7 horas",
+        "objetivosAprendizaje": [
+          "Crear páginas web con estructura HTML5 semántica y accesible",
+          "Implementar formularios con validación nativa de HTML5",
+          "Aplicar etiquetas semánticas para mejorar la accesibilidad y el SEO"
+        ],
+        "habilidades": ["HTML5 Semántico", "Formularios Web", "Estructura de Páginas"],
+        "herramientas": ["Visual Studio Code", "Google Chrome DevTools", "W3C Validator"],
         "lecciones": [
           { "titulo": "Tu primera página web: estructura HTML básica", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Etiquetas semánticas: header, nav, main, footer, article", "tipo": "video", "duracion": "25 min" },
@@ -277,6 +393,13 @@
         "titulo": "CSS3 — Diseño y Layout",
         "orden": 2,
         "duracion": "8 horas",
+        "objetivosAprendizaje": [
+          "Diseñar layouts responsivos usando Flexbox y CSS Grid",
+          "Aplicar el modelo de caja y la cascada de estilos para controlar la presentación visual",
+          "Crear páginas web adaptables a móvil, tablet y escritorio con media queries"
+        ],
+        "habilidades": ["CSS3", "Diseño Responsivo", "Flexbox y Grid"],
+        "herramientas": ["Visual Studio Code", "Chrome DevTools", "Responsive Design Mode"],
         "lecciones": [
           { "titulo": "Selectores, propiedades, cascada y especificidad", "tipo": "video", "duracion": "35 min" },
           { "titulo": "Box model, margin, padding, border", "tipo": "video", "duracion": "25 min" },
@@ -291,6 +414,13 @@
         "titulo": "JavaScript — Fundamentos",
         "orden": 3,
         "duracion": "8 horas",
+        "objetivosAprendizaje": [
+          "Implementar lógica de programación con variables, condicionales y bucles en JavaScript",
+          "Crear funciones reutilizables con parámetros y arrow functions",
+          "Manipular arrays y objetos utilizando métodos esenciales de JavaScript ES6+"
+        ],
+        "habilidades": ["JavaScript ES6+", "Lógica de Programación", "Estructuras de Datos"],
+        "herramientas": ["Visual Studio Code", "Consola del Navegador", "Node.js"],
         "lecciones": [
           { "titulo": "Variables, tipos de datos y operadores", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Condicionales (if/else) y bucles (for, while)", "tipo": "video", "duracion": "35 min" },
@@ -304,6 +434,13 @@
         "titulo": "JavaScript y el DOM",
         "orden": 4,
         "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Manipular el DOM para seleccionar, crear y modificar elementos de la página",
+          "Implementar eventos interactivos (click, submit, keyup) para responder a acciones del usuario",
+          "Aplicar localStorage para persistir datos en el navegador del usuario"
+        ],
+        "habilidades": ["Manipulación del DOM", "Manejo de Eventos", "Almacenamiento Local"],
+        "herramientas": ["Visual Studio Code", "Chrome DevTools", "Web Storage API"],
         "lecciones": [
           { "titulo": "Seleccionar y modificar elementos del DOM", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Eventos: click, submit, keyup, scroll", "tipo": "video", "duracion": "30 min" },
@@ -317,6 +454,13 @@
         "titulo": "Proyecto Final y Publicación",
         "orden": 5,
         "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Consumir APIs externas usando fetch y procesar datos en formato JSON",
+          "Aplicar control de versiones con Git y GitHub para gestionar código fuente",
+          "Publicar un portafolio web profesional en GitHub Pages"
+        ],
+        "habilidades": ["Consumo de APIs", "Git y GitHub", "Despliegue Web"],
+        "herramientas": ["Visual Studio Code", "Git", "GitHub", "GitHub Pages", "Fetch API"],
         "lecciones": [
           { "titulo": "APIs: fetch, JSON, consumir datos externos", "tipo": "video", "duracion": "35 min" },
           { "titulo": "Git y GitHub: control de versiones básico", "tipo": "video", "duracion": "30 min" },
@@ -342,6 +486,7 @@
     "icono": "fab fa-python",
     "iconoColor": "#3776AB",
     "color": "#3776AB",
+    "certificacionAlineada": {"nombre":"PCEP – Certified Entry-Level Python Programmer","codigoExamen":"PCEP-30-02","organizacion":"Python Institute / OpenEDG","url":"https://pythoninstitute.org/pcep","cobertura":"85%","temas":["Fundamental Concepts: Data Types, Variables","Control Flow: Conditionals, Loops","Data Collections: Lists, Tuples, Dictionaries","Functions and Scoping","Modules, Packages, and String Operations"]},
     "descripcionCorta": "Aprende el lenguaje más demandado del mercado. Desde variables hasta automatización de tareas reales.",
     "descripcionCompleta": "Curso introductorio de Python orientado a principiantes absolutos. Aprenderás los fundamentos de la programación: variables, condicionales, bucles, funciones, listas y diccionarios. Luego aplicarás estos conocimientos en proyectos prácticos como automatización de archivos, web scraping básico y análisis de datos con pandas.",
     "requisitos": ["Computadora con acceso a internet", "No se requiere experiencia previa en programación", "Ganas de aprender y practicar"],
@@ -351,6 +496,13 @@
         "titulo": "Primeros Pasos con Python",
         "orden": 1,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Configurar el entorno de desarrollo Python con VS Code o Replit",
+          "Crear programas básicos usando print(), input() y variables",
+          "Aplicar tipos de datos y operadores para resolver cálculos simples"
+        ],
+        "habilidades": ["Configuración de Entorno", "Sintaxis Básica de Python", "Tipos de Datos"],
+        "herramientas": ["Python 3", "Visual Studio Code", "Replit", "Terminal/Consola"],
         "lecciones": [
           { "titulo": "Instalar Python y configurar VS Code (o usar Replit)", "tipo": "video", "duracion": "20 min" },
           { "titulo": "Tu primer programa: print(), input(), variables", "tipo": "video", "duracion": "30 min" },
@@ -364,6 +516,13 @@
         "titulo": "Control de Flujo",
         "orden": 2,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Implementar estructuras condicionales (if/elif/else) para toma de decisiones en código",
+          "Crear bucles for y while para automatizar tareas repetitivas",
+          "Diseñar programas interactivos que combinen entrada de usuario y control de flujo"
+        ],
+        "habilidades": ["Condicionales", "Bucles", "Lógica de Programación"],
+        "herramientas": ["Python 3", "Visual Studio Code", "Depurador de Python"],
         "lecciones": [
           { "titulo": "if, elif, else — Tomar decisiones en código", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Bucle for: iterar sobre secuencias", "tipo": "video", "duracion": "30 min" },
@@ -376,6 +535,13 @@
         "titulo": "Estructuras de Datos",
         "orden": 3,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Manipular listas, diccionarios, tuplas y sets para organizar datos en Python",
+          "Aplicar list comprehensions para escribir código pythónico y eficiente",
+          "Diseñar un sistema CRUD completo usando estructuras de datos nativas"
+        ],
+        "habilidades": ["Estructuras de Datos", "List Comprehensions", "Código Pythónico"],
+        "herramientas": ["Python 3", "Visual Studio Code", "Python REPL"],
         "lecciones": [
           { "titulo": "Listas: crear, modificar, métodos (append, sort, slice)", "tipo": "video", "duracion": "35 min" },
           { "titulo": "Diccionarios: key-value, acceso, iteración", "tipo": "video", "duracion": "30 min" },
@@ -389,6 +555,13 @@
         "titulo": "Funciones y Módulos",
         "orden": 4,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Crear funciones reutilizables con parámetros, valores de retorno y documentación",
+          "Aplicar el sistema de módulos e importaciones de Python para organizar código",
+          "Implementar lectura y escritura de archivos .txt y .csv para procesamiento de datos"
+        ],
+        "habilidades": ["Funciones", "Modularización", "Manejo de Archivos"],
+        "herramientas": ["Python 3", "Visual Studio Code", "Módulo csv", "Módulo os"],
         "lecciones": [
           { "titulo": "Definir funciones: def, parámetros, return", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Scope de variables: local vs global", "tipo": "video", "duracion": "20 min" },
@@ -402,6 +575,13 @@
         "titulo": "Proyectos Prácticos",
         "orden": 5,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Analizar datos con pandas usando DataFrames, filtros y agregaciones",
+          "Automatizar tareas cotidianas como renombrar archivos y enviar correos con Python",
+          "Implementar web scraping básico para extraer datos de páginas web"
+        ],
+        "habilidades": ["Análisis con Pandas", "Automatización", "Web Scraping"],
+        "herramientas": ["Python 3", "pandas", "requests", "BeautifulSoup", "smtplib"],
         "lecciones": [
           { "titulo": "Introducción a pandas: DataFrames y análisis", "tipo": "video", "duracion": "35 min" },
           { "titulo": "Automatización: renombrar archivos, enviar emails", "tipo": "video", "duracion": "30 min" },
@@ -427,6 +607,7 @@
     "icono": "fa-database",
     "iconoColor": "#2196F3",
     "color": "#2196F3",
+    "certificacionAlineada": {"nombre":"Oracle Database SQL Certified Associate","codigoExamen":"1Z0-071","organizacion":"Oracle","url":"https://education.oracle.com/oracle-database-sql-certified-associate/trackp_457","cobertura":"80%","temas":["Restricting and Sorting Data","Using Single-Row and Group Functions","Displaying Data from Multiple Tables (JOINs)","Using Subqueries","Manipulating Data (DML)"]},
     "descripcionCorta": "Consulta, filtra y analiza datos con SQL. La habilidad más pedida en análisis de datos.",
     "descripcionCompleta": "Aprende a consultar y manipular bases de datos relacionales con SQL. Desde SELECT básico hasta JOINs complejos, subconsultas, funciones de agregación y diseño de esquemas. Usarás MySQL/PostgreSQL en ejercicios prácticos con datasets reales de negocios.",
     "requisitos": ["Computadora con acceso a internet", "Conocimiento básico de Excel o hojas de cálculo"],
@@ -436,6 +617,13 @@
         "titulo": "Fundamentos de Bases de Datos",
         "orden": 1,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Comprender la estructura de bases de datos relacionales: tablas, filas y columnas",
+          "Escribir consultas SQL básicas con SELECT, FROM y WHERE",
+          "Configurar un entorno de trabajo con MySQL o PostgreSQL"
+        ],
+        "habilidades": ["SQL Básico", "Modelo Relacional", "Consultas SELECT"],
+        "herramientas": ["MySQL", "PostgreSQL", "DB Fiddle", "DBeaver"],
         "lecciones": [
           { "titulo": "¿Qué es una base de datos relacional? Tablas, filas, columnas", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Instalar y configurar el entorno (o usar DB online)", "tipo": "video", "duracion": "20 min" },
@@ -448,6 +636,13 @@
         "titulo": "Filtrado y Ordenamiento",
         "orden": 2,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Aplicar filtros avanzados con WHERE usando operadores AND, OR, BETWEEN, LIKE e IN",
+          "Crear consultas con funciones de agregación (COUNT, SUM, AVG) y agrupamientos GROUP BY",
+          "Implementar ordenamiento, límites y alias para presentar resultados claros"
+        ],
+        "habilidades": ["Filtrado SQL", "Funciones de Agregación", "Agrupamiento de Datos"],
+        "herramientas": ["MySQL", "PostgreSQL", "SQL Workbench"],
         "lecciones": [
           { "titulo": "WHERE con operadores: AND, OR, BETWEEN, LIKE, IN", "tipo": "video", "duracion": "30 min" },
           { "titulo": "ORDER BY, LIMIT, DISTINCT, alias", "tipo": "video", "duracion": "25 min" },
@@ -461,6 +656,13 @@
         "titulo": "JOINs — Unir Tablas",
         "orden": 3,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Combinar datos de múltiples tablas usando INNER JOIN, LEFT JOIN y RIGHT JOIN",
+          "Implementar múltiples JOINs y self-joins para consultas complejas de negocio",
+          "Crear reportes que integren información de distintas tablas relacionadas"
+        ],
+        "habilidades": ["JOINs SQL", "Relaciones entre Tablas", "Consultas Multi-tabla"],
+        "herramientas": ["MySQL", "PostgreSQL", "Diagramas ER"],
         "lecciones": [
           { "titulo": "INNER JOIN: combinar datos de dos tablas", "tipo": "video", "duracion": "30 min" },
           { "titulo": "LEFT JOIN, RIGHT JOIN, FULL JOIN", "tipo": "video", "duracion": "30 min" },
@@ -473,6 +675,13 @@
         "titulo": "Subconsultas y Funciones",
         "orden": 4,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Crear subconsultas en WHERE, FROM y SELECT para resolver problemas complejos",
+          "Aplicar funciones de ventana (ROW_NUMBER, RANK) para análisis de rankings",
+          "Implementar lógica condicional con CASE WHEN para clasificar datos dinámicamente"
+        ],
+        "habilidades": ["Subconsultas", "Window Functions", "Lógica Condicional SQL"],
+        "herramientas": ["MySQL", "PostgreSQL", "SQL Workbench"],
         "lecciones": [
           { "titulo": "Subconsultas en WHERE, FROM y SELECT", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Funciones de texto, fecha y numéricas", "tipo": "video", "duracion": "25 min" },
@@ -486,6 +695,13 @@
         "titulo": "Diseño y Manipulación de Datos",
         "orden": 5,
         "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Diseñar esquemas de base de datos normalizados con llaves primarias y foráneas",
+          "Implementar operaciones DML (INSERT, UPDATE, DELETE) para manipular datos",
+          "Crear tablas con tipos de datos apropiados y restricciones de integridad"
+        ],
+        "habilidades": ["Diseño de Bases de Datos", "Normalización", "Operaciones DML"],
+        "herramientas": ["MySQL", "PostgreSQL", "Herramientas de Diagramas ER"],
         "lecciones": [
           { "titulo": "CREATE TABLE, tipos de datos, restricciones", "tipo": "video", "duracion": "25 min" },
           { "titulo": "INSERT, UPDATE, DELETE — Manipular datos", "tipo": "video", "duracion": "25 min" },
@@ -511,12 +727,20 @@
     "icono": "fab fa-microsoft",
     "iconoColor": "#0078D4",
     "color": "#0078D4",
+    "certificacionAlineada": {"nombre":"Microsoft 365 Certified: Fundamentals","codigoExamen":"MS-900","organizacion":"Microsoft","url":"https://learn.microsoft.com/en-us/credentials/certifications/microsoft-365-fundamentals/","cobertura":"70%","temas":["Cloud Concepts","Microsoft 365 Apps and Services","Security and Compliance","Microsoft 365 Pricing and Support"]},
     "descripcionCorta": "Word, PowerPoint, Outlook y Teams para productividad profesional en la nube.",
     "descripcionCompleta": "Domina las herramientas clave de Microsoft 365: Word para documentos profesionales, PowerPoint para presentaciones impactantes, Outlook para gestión de email y calendario, y Teams para colaboración y reuniones. Aprende a trabajar en la nube con OneDrive y co-autoría en tiempo real.",
     "requisitos": ["Cuenta de Microsoft 365 (licencia educativa o empresarial)", "Computadora con Windows o macOS"],
     "modulos": [
       {
         "id": "o365-m1", "titulo": "Word — Documentos Profesionales", "orden": 1, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Crear documentos corporativos con estilos, secciones y encabezados profesionales",
+          "Implementar combinar correspondencia (mail merge) para generar documentos masivos",
+          "Diseñar informes con tablas, imágenes y diseño de página avanzado"
+        ],
+        "habilidades": ["Documentos Corporativos", "Mail Merge", "Formato Avanzado"],
+        "herramientas": ["Microsoft Word", "Combinación de Correspondencia", "Estilos de Word"],
         "lecciones": [
           { "titulo": "Formato avanzado: estilos, secciones, encabezados", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Tablas, imágenes y diseño de página", "tipo": "video", "duracion": "25 min" },
@@ -526,6 +750,13 @@
       },
       {
         "id": "o365-m2", "titulo": "PowerPoint — Presentaciones Efectivas", "orden": 2, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Diseñar presentaciones ejecutivas aplicando principios de diseño visual",
+          "Implementar animaciones y transiciones con propósito narrativo",
+          "Crear presentaciones de 15+ slides con estructura profesional para audiencias corporativas"
+        ],
+        "habilidades": ["Diseño de Presentaciones", "Comunicación Visual", "Narrativa Ejecutiva"],
+        "herramientas": ["Microsoft PowerPoint", "Diseñador de PowerPoint", "Morph Transition"],
         "lecciones": [
           { "titulo": "Principios de diseño visual para slides", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Animaciones y transiciones con propósito", "tipo": "video", "duracion": "25 min" },
@@ -534,6 +765,13 @@
       },
       {
         "id": "o365-m3", "titulo": "Outlook y Teams — Comunicación", "orden": 3, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Configurar reglas y categorías en Outlook para gestionar el correo eficientemente",
+          "Organizar proyectos en Microsoft Teams con canales, reuniones y tareas",
+          "Aplicar calendarios compartidos para coordinar equipos de trabajo"
+        ],
+        "habilidades": ["Gestión de Email", "Colaboración en Teams", "Organización de Agenda"],
+        "herramientas": ["Microsoft Outlook", "Microsoft Teams", "Calendario de Outlook"],
         "lecciones": [
           { "titulo": "Outlook: reglas, categorías, calendario compartido", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Teams: canales, reuniones, integración con Office", "tipo": "video", "duracion": "30 min" },
@@ -542,6 +780,13 @@
       },
       {
         "id": "o365-m4", "titulo": "OneDrive y Colaboración en la Nube", "orden": 4, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Gestionar archivos en OneDrive con sincronización, versionado y permisos compartidos",
+          "Implementar co-autoría en tiempo real en documentos de Word, Excel y PowerPoint",
+          "Diseñar un flujo de trabajo colaborativo completo usando el ecosistema Microsoft 365"
+        ],
+        "habilidades": ["Colaboración en la Nube", "Co-autoría", "Gestión de Versiones"],
+        "herramientas": ["Microsoft OneDrive", "Microsoft 365", "SharePoint"],
         "lecciones": [
           { "titulo": "OneDrive: sincronización, compartir, versiones", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Co-autoría en tiempo real en Word, Excel, PowerPoint", "tipo": "video", "duracion": "25 min" },
@@ -566,12 +811,20 @@
     "icono": "fa-chart-line",
     "iconoColor": "#E91E63",
     "color": "#E91E63",
+    "certificacionAlineada": {"nombre":"Google Data Analytics Professional Certificate","codigoExamen":"Google Career Certificate","organizacion":"Google","url":"https://grow.google/certificates/data-analytics/","cobertura":"80%","temas":["Foundations of Data Analysis","Ask Questions to Make Data-Driven Decisions","Process Data from Dirty to Clean","Analyze Data to Answer Questions","Share Data Through Visualization"]},
     "descripcionCorta": "Aprende a tomar decisiones basadas en datos: recolección, limpieza, análisis y visualización.",
     "descripcionCompleta": "Curso integral de análisis de datos que cubre todo el proceso analítico: desde la formulación de preguntas de negocio, recolección y limpieza de datos, hasta el análisis estadístico y la presentación de resultados con visualizaciones. Usarás Excel, Google Sheets, y herramientas de BI.",
     "requisitos": ["Excel intermedio o Google Sheets", "Pensamiento lógico y analítico"],
     "modulos": [
       {
         "id": "ad-m1", "titulo": "Fundamentos del Análisis de Datos", "orden": 1, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Identificar tipos de datos, métricas y KPIs relevantes para distintos contextos de negocio",
+          "Aplicar el proceso analítico completo desde la formulación de preguntas hasta la acción",
+          "Diseñar un marco de KPIs medibles para un caso de negocio real"
+        ],
+        "habilidades": ["Pensamiento Analítico", "Definición de KPIs", "Proceso Analítico"],
+        "herramientas": ["Microsoft Excel", "Google Sheets", "Frameworks de KPIs"],
         "lecciones": [
           { "titulo": "Tipos de datos, métricas y KPIs de negocio", "tipo": "video", "duracion": "30 min" },
           { "titulo": "El proceso analítico: pregunta → datos → análisis → acción", "tipo": "video", "duracion": "25 min" },
@@ -580,6 +833,13 @@
       },
       {
         "id": "ad-m2", "titulo": "Limpieza y Preparación de Datos", "orden": 2, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Identificar datos sucios incluyendo duplicados, valores nulos e inconsistencias",
+          "Aplicar técnicas de limpieza de datos en Excel y Google Sheets",
+          "Implementar un flujo de preparación de datos reproducible y documentado"
+        ],
+        "habilidades": ["Limpieza de Datos", "Calidad de Datos", "Preparación de Datasets"],
+        "herramientas": ["Microsoft Excel", "Google Sheets", "Quitar Duplicados", "Buscar y Reemplazar"],
         "lecciones": [
           { "titulo": "Identificar datos sucios: duplicados, nulos, inconsistencias", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Técnicas de limpieza en Excel/Sheets", "tipo": "video", "duracion": "35 min" },
@@ -588,6 +848,13 @@
       },
       {
         "id": "ad-m3", "titulo": "Análisis Exploratorio (EDA)", "orden": 3, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Calcular e interpretar medidas de estadística descriptiva (media, mediana, desviación)",
+          "Analizar distribuciones, correlaciones y detectar outliers en datasets reales",
+          "Realizar un análisis exploratorio de datos (EDA) completo con conclusiones accionables"
+        ],
+        "habilidades": ["Estadística Descriptiva", "Análisis Exploratorio", "Detección de Outliers"],
+        "herramientas": ["Microsoft Excel", "Google Sheets", "Histogramas", "Diagramas de Dispersión"],
         "lecciones": [
           { "titulo": "Estadística descriptiva: media, mediana, desviación", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Distribuciones, correlaciones y outliers", "tipo": "video", "duracion": "30 min" },
@@ -596,6 +863,13 @@
       },
       {
         "id": "ad-m4", "titulo": "Visualización de Datos", "orden": 4, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Seleccionar el tipo de gráfico adecuado según la naturaleza de los datos",
+          "Aplicar principios de storytelling con datos para construir narrativas visuales",
+          "Crear visualizaciones claras y efectivas que comuniquen hallazgos a stakeholders"
+        ],
+        "habilidades": ["Visualización de Datos", "Storytelling con Datos", "Diseño de Gráficos"],
+        "herramientas": ["Microsoft Excel", "Google Sheets", "Google Data Studio"],
         "lecciones": [
           { "titulo": "Principios de visualización: qué gráfico para qué dato", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Storytelling con datos: narrativa visual", "tipo": "video", "duracion": "25 min" },
@@ -604,6 +878,13 @@
       },
       {
         "id": "ad-m5", "titulo": "Proyecto Final: Caso de Negocio", "orden": 5, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Ejecutar un análisis de datos completo de principio a fin para un caso de negocio real",
+          "Formular recomendaciones accionables basadas en evidencia de datos",
+          "Presentar hallazgos analíticos de manera clara y persuasiva a stakeholders"
+        ],
+        "habilidades": ["Análisis End-to-End", "Recomendaciones de Negocio", "Presentación de Resultados"],
+        "herramientas": ["Microsoft Excel", "Google Sheets", "PowerPoint", "Google Slides"],
         "lecciones": [
           { "titulo": "Briefing: analizar datos de una empresa real", "tipo": "lectura", "duracion": "15 min" },
           { "titulo": "Proyecto: Análisis completo con recomendaciones", "tipo": "practica", "duracion": "120 min" },
@@ -628,12 +909,20 @@
     "icono": "fa-laptop-code",
     "iconoColor": "#009688",
     "color": "#009688",
+    "certificacionAlineada": {"nombre":"CompTIA IT Fundamentals+ (ITF+)","codigoExamen":"FC0-U71","organizacion":"CompTIA","url":"https://www.comptia.org/certifications/it-fundamentals","cobertura":"60%","temas":["IT Concepts and Terminology","Software Development","Database Fundamentals","Infrastructure","Security"]},
     "descripcionCorta": "Aprende a pensar como programador. Lógica, algoritmos y resolución de problemas para principiantes.",
     "descripcionCompleta": "Curso introductorio que enseña los conceptos universales de la programación sin atarse a un lenguaje específico. Aprenderás lógica de programación, algoritmos, diagramas de flujo, pseudocódigo y resolución de problemas paso a paso. La base perfecta antes de aprender cualquier lenguaje.",
     "requisitos": ["Ninguno — curso para principiantes absolutos", "Computadora con acceso a internet"],
     "modulos": [
       {
         "id": "fp-m1", "titulo": "Pensamiento Computacional", "orden": 1, "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Aplicar el pensamiento computacional para descomponer problemas complejos en pasos simples",
+          "Identificar patrones y abstracciones en problemas de la vida real",
+          "Resolver problemas lógicos utilizando razonamiento estructurado sin código"
+        ],
+        "habilidades": ["Pensamiento Computacional", "Resolución de Problemas", "Lógica"],
+        "herramientas": ["Papel y Lápiz", "Scratch", "Diagramas Mentales"],
         "lecciones": [
           { "titulo": "¿Qué es programar? Del problema a la solución", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Descomposición, abstracción y patrones", "tipo": "video", "duracion": "30 min" },
@@ -642,6 +931,13 @@
       },
       {
         "id": "fp-m2", "titulo": "Algoritmos y Diagramas de Flujo", "orden": 2, "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Diseñar algoritmos secuenciales, condicionales y repetitivos para resolver problemas",
+          "Crear diagramas de flujo con simbología estándar para representar lógica",
+          "Escribir pseudocódigo estructurado en español como paso previo a la programación"
+        ],
+        "habilidades": ["Diseño de Algoritmos", "Diagramas de Flujo", "Pseudocódigo"],
+        "herramientas": ["Lucidchart", "draw.io", "PSeInt"],
         "lecciones": [
           { "titulo": "Algoritmos secuenciales, condicionales y repetitivos", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Diagramas de flujo: simbología y construcción", "tipo": "video", "duracion": "25 min" },
@@ -651,6 +947,13 @@
       },
       {
         "id": "fp-m3", "titulo": "Variables, Datos y Operaciones", "orden": 3, "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Comprender y utilizar variables con distintos tipos de datos (enteros, texto, booleanos)",
+          "Aplicar operaciones aritméticas y lógicas para procesar información",
+          "Diseñar programas con entrada y salida de datos en pseudocódigo"
+        ],
+        "habilidades": ["Variables y Tipos de Datos", "Operaciones Lógicas", "Entrada/Salida"],
+        "herramientas": ["PSeInt", "Papel y Lápiz", "Calculadora Lógica"],
         "lecciones": [
           { "titulo": "Variables y tipos de datos: enteros, texto, booleanos", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Operaciones aritméticas y lógicas", "tipo": "video", "duracion": "25 min" },
@@ -660,6 +963,13 @@
       },
       {
         "id": "fp-m4", "titulo": "Tu Primer Programa Real", "orden": 4, "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Traducir pseudocódigo a código real funcional en Python o JavaScript",
+          "Aplicar técnicas de depuración para encontrar y corregir errores en el código",
+          "Crear un mini-programa funcional completo de forma independiente"
+        ],
+        "habilidades": ["Codificación Real", "Depuración", "Desarrollo de Proyectos"],
+        "herramientas": ["Python 3", "Visual Studio Code", "Replit", "Consola del Navegador"],
         "lecciones": [
           { "titulo": "De pseudocódigo a código real (Python/JavaScript)", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Depuración: encontrar y corregir errores", "tipo": "video", "duracion": "25 min" },
@@ -684,12 +994,20 @@
     "icono": "fa-briefcase",
     "iconoColor": "#673AB7",
     "color": "#673AB7",
+    "certificacionAlineada": {"nombre":"Google Business Intelligence Certificate","codigoExamen":"Google Career Certificate","organizacion":"Google","url":"https://grow.google/certificates/business-intelligence/","cobertura":"75%","temas":["Foundations of Business Intelligence","Path to Insights: Data Models and Pipelines","Decisions, Decisions: Dashboards and Reports","ETL Processes","Stakeholder Communication"]},
     "descripcionCorta": "Transforma datos en decisiones estratégicas. ETL, reportes y cultura data-driven.",
     "descripcionCompleta": "Curso de Business Intelligence enfocado en el proceso completo: desde la extracción de datos de múltiples fuentes (ETL), pasando por el modelado y almacenamiento, hasta la creación de reportes y dashboards que impulsan la toma de decisiones empresariales.",
     "requisitos": ["Excel intermedio", "Conceptos básicos de bases de datos (recomendado)"],
     "modulos": [
       {
         "id": "bi-m1", "titulo": "Fundamentos de BI", "orden": 1, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Comprender la arquitectura completa de BI: fuentes, ETL, data warehouse y reportes",
+          "Definir KPIs y métricas relevantes según la industria y objetivos de negocio",
+          "Diseñar una estrategia de Business Intelligence para una organización"
+        ],
+        "habilidades": ["Estrategia BI", "Definición de KPIs", "Arquitectura de Datos"],
+        "herramientas": ["Diagramas de Arquitectura", "Microsoft Excel", "Frameworks de BI"],
         "lecciones": [
           { "titulo": "¿Qué es BI? De datos a decisiones de negocio", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Arquitectura BI: fuentes, ETL, warehouse, reportes", "tipo": "video", "duracion": "30 min" },
@@ -699,6 +1017,13 @@
       },
       {
         "id": "bi-m2", "titulo": "ETL y Preparación de Datos", "orden": 2, "duracion": "7 horas",
+        "objetivosAprendizaje": [
+          "Implementar un proceso ETL completo: extracción, transformación y carga de datos",
+          "Aplicar técnicas de limpieza, estandarización y enriquecimiento de datos",
+          "Diseñar modelos dimensionales para data warehouses"
+        ],
+        "habilidades": ["Procesos ETL", "Transformación de Datos", "Modelado Dimensional"],
+        "herramientas": ["Microsoft Excel", "Power Query", "SQL Server"],
         "lecciones": [
           { "titulo": "Extracción de datos de múltiples fuentes", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Transformación: limpieza, estandarización, enriquecimiento", "tipo": "video", "duracion": "35 min" },
@@ -708,6 +1033,13 @@
       },
       {
         "id": "bi-m3", "titulo": "Reportes y Dashboards de BI", "orden": 3, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Diseñar reportes efectivos orientados a distintos niveles de la organización",
+          "Diferenciar y crear dashboards operativos, estratégicos y analíticos",
+          "Crear un dashboard gerencial de ventas con KPIs y drill-down"
+        ],
+        "habilidades": ["Diseño de Reportes", "Dashboards Gerenciales", "Comunicación de Datos"],
+        "herramientas": ["Power BI Desktop", "Microsoft Excel", "Google Data Studio"],
         "lecciones": [
           { "titulo": "Diseño de reportes efectivos para gerencia", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Dashboards operativos vs estratégicos vs analíticos", "tipo": "video", "duracion": "25 min" },
@@ -716,6 +1048,13 @@
       },
       {
         "id": "bi-m4", "titulo": "BI en la Práctica", "orden": 4, "duracion": "6 horas",
+        "objetivosAprendizaje": [
+          "Implementar una estrategia de self-service BI para empoderar usuarios de negocio",
+          "Diseñar un plan de adopción de cultura data-driven en una organización",
+          "Crear una solución BI completa desde la extracción hasta la presentación de datos"
+        ],
+        "habilidades": ["Self-Service BI", "Cultura Data-Driven", "Implementación BI"],
+        "herramientas": ["Power BI Desktop", "Power BI Service", "Microsoft Excel"],
         "lecciones": [
           { "titulo": "Self-service BI: empoderar usuarios de negocio", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Cultura data-driven: implementar BI en una organización", "tipo": "video", "duracion": "25 min" },
@@ -740,12 +1079,20 @@
     "icono": "fa-diagram-project",
     "iconoColor": "#FF9800",
     "color": "#FF9800",
+    "certificacionAlineada": {"nombre":"Professional Scrum Master I (PSM I)","codigoExamen":"PSM I","organizacion":"Scrum.org","url":"https://www.scrum.org/assessments/professional-scrum-master-i-certification","cobertura":"85%","temas":["Scrum Framework","Scrum Theory and Principles","Scrum Team Roles","Scrum Events","Scrum Artifacts and Commitments"]},
     "descripcionCorta": "Lidera proyectos con metodologías ágiles. Scrum, Kanban y herramientas de gestión modernas.",
     "descripcionCompleta": "Aprende a gestionar proyectos con metodologías ágiles y tradicionales. Domina Scrum (roles, eventos, artefactos), Kanban, y herramientas como Trello y Jira. Ideal para líderes de equipo, project managers y cualquier profesional que necesite organizar trabajo colaborativo de forma eficiente.",
     "requisitos": ["Experiencia laboral básica (cualquier industria)", "Ganas de mejorar cómo organizas tu trabajo"],
     "modulos": [
       {
         "id": "pm-m1", "titulo": "Fundamentos de Gestión de Proyectos", "orden": 1, "duracion": "4 horas",
+        "objetivosAprendizaje": [
+          "Comprender los fundamentos de gestión de proyectos: alcance, tiempo y costo",
+          "Analizar cuándo aplicar metodología cascada versus ágil según el contexto del proyecto",
+          "Crear un acta de constitución de proyecto con objetivos, alcance y stakeholders"
+        ],
+        "habilidades": ["Gestión de Proyectos", "Análisis de Metodologías", "Documentación de Proyectos"],
+        "herramientas": ["Microsoft Project", "Google Docs", "Plantillas de Acta de Proyecto"],
         "lecciones": [
           { "titulo": "¿Qué es un proyecto? Alcance, tiempo, costo", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Cascada vs Ágil: cuándo usar cada enfoque", "tipo": "video", "duracion": "30 min" },
@@ -754,6 +1101,13 @@
       },
       {
         "id": "pm-m2", "titulo": "Scrum: El Framework Ágil", "orden": 2, "duracion": "4 horas",
+        "objetivosAprendizaje": [
+          "Aplicar los roles de Scrum (Product Owner, Scrum Master, Dev Team) en un equipo",
+          "Implementar los eventos de Scrum: Sprint Planning, Daily, Review y Retrospectiva",
+          "Gestionar artefactos de Scrum: Product Backlog, Sprint Backlog e Incremento"
+        ],
+        "habilidades": ["Framework Scrum", "Sprint Planning", "Gestión de Backlog"],
+        "herramientas": ["Jira", "Trello", "Miro", "Guía Scrum"],
         "lecciones": [
           { "titulo": "Roles: Product Owner, Scrum Master, Dev Team", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Eventos: Sprint, Planning, Daily, Review, Retro", "tipo": "video", "duracion": "30 min" },
@@ -763,6 +1117,13 @@
       },
       {
         "id": "pm-m3", "titulo": "Kanban y Herramientas", "orden": 3, "duracion": "3 horas",
+        "objetivosAprendizaje": [
+          "Implementar un sistema Kanban con tableros, límites WIP y flujo continuo",
+          "Configurar herramientas de gestión de proyectos (Trello, Jira, Asana) para un equipo",
+          "Diseñar un tablero Kanban optimizado para visualizar el flujo de trabajo"
+        ],
+        "habilidades": ["Kanban", "Herramientas de Gestión", "Flujo de Trabajo"],
+        "herramientas": ["Trello", "Jira", "Asana"],
         "lecciones": [
           { "titulo": "Kanban: tableros, WIP limits, flujo continuo", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Herramientas: Trello, Jira, Asana — tour práctico", "tipo": "video", "duracion": "30 min" },
@@ -771,6 +1132,13 @@
       },
       {
         "id": "pm-m4", "titulo": "Liderazgo y Proyecto Final", "orden": 4, "duracion": "4 horas",
+        "objetivosAprendizaje": [
+          "Aplicar técnicas de comunicación efectiva y gestión de stakeholders en proyectos",
+          "Analizar métricas ágiles (velocity, burndown, lead time) para medir el progreso del equipo",
+          "Crear un plan de proyecto ágil completo con backlog, sprints y métricas"
+        ],
+        "habilidades": ["Comunicación con Stakeholders", "Métricas Ágiles", "Planificación Ágil"],
+        "herramientas": ["Jira", "Trello", "Gráficos Burndown", "Hojas de Cálculo"],
         "lecciones": [
           { "titulo": "Comunicación efectiva y gestión de stakeholders", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Métricas ágiles: velocity, burndown, lead time", "tipo": "video", "duracion": "20 min" },
@@ -795,12 +1163,20 @@
     "icono": "fa-robot",
     "iconoColor": "#F44336",
     "color": "#F44336",
+    "certificacionAlineada": {"nombre":"Google AI Essentials","codigoExamen":"Google Career Certificate","organizacion":"Google","url":"https://grow.google/certificates/ai-essentials/","cobertura":"75%","temas":["AI and Machine Learning Fundamentals","Supervised and Unsupervised Learning","Neural Networks and Deep Learning","Responsible AI and Ethics","AI Tools and Prompt Engineering"]},
     "descripcionCorta": "Entiende cómo funciona la IA, el machine learning y cómo aplicarlos en el mundo real.",
     "descripcionCompleta": "Curso introductorio que desmitifica la inteligencia artificial y el machine learning. Aprenderás los conceptos fundamentales: tipos de aprendizaje, algoritmos principales, redes neuronales, y aplicaciones prácticas. No requiere programación avanzada — usaremos herramientas visuales y Python básico.",
     "requisitos": ["Conocimiento básico de Python (recomendado)", "Conocimiento básico de estadística", "Curiosidad por la tecnología"],
     "modulos": [
       {
         "id": "ia-m1", "titulo": "¿Qué es la Inteligencia Artificial?", "orden": 1, "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Diferenciar entre los tipos de IA: estrecha, general y superinteligencia",
+          "Comprender el mapa completo de disciplinas: Machine Learning, Deep Learning y NLP",
+          "Identificar aplicaciones de IA en la vida cotidiana y el entorno profesional"
+        ],
+        "habilidades": ["Conceptos de IA", "Taxonomía de IA", "Pensamiento Crítico Tecnológico"],
+        "herramientas": ["ChatGPT", "Google AI Experiments", "Teachable Machine"],
         "lecciones": [
           { "titulo": "Historia y estado actual de la IA", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Tipos de IA: estrecha, general, superinteligencia", "tipo": "video", "duracion": "20 min" },
@@ -810,6 +1186,13 @@
       },
       {
         "id": "ia-m2", "titulo": "Machine Learning en Práctica", "orden": 2, "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Diferenciar entre aprendizaje supervisado (clasificación, regresión) y no supervisado (clustering)",
+          "Entrenar un modelo de predicción básico utilizando herramientas visuales",
+          "Analizar los resultados de un modelo de machine learning para evaluar su rendimiento"
+        ],
+        "habilidades": ["Aprendizaje Supervisado", "Aprendizaje No Supervisado", "Evaluación de Modelos"],
+        "herramientas": ["Teachable Machine", "Google Colab", "scikit-learn"],
         "lecciones": [
           { "titulo": "Aprendizaje supervisado: clasificación y regresión", "tipo": "video", "duracion": "35 min" },
           { "titulo": "Aprendizaje no supervisado: clustering y reducción", "tipo": "video", "duracion": "30 min" },
@@ -818,6 +1201,13 @@
       },
       {
         "id": "ia-m3", "titulo": "IA Generativa y Herramientas", "orden": 3, "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Comprender cómo funcionan los modelos de lenguaje grandes (LLMs) como ChatGPT y Claude",
+          "Aplicar técnicas de prompt engineering para obtener resultados precisos y útiles",
+          "Implementar herramientas de IA generativa para automatizar tareas profesionales"
+        ],
+        "habilidades": ["Prompt Engineering", "IA Generativa", "Automatización con IA"],
+        "herramientas": ["ChatGPT", "Claude", "Google Gemini", "DALL-E", "Midjourney"],
         "lecciones": [
           { "titulo": "ChatGPT, Claude, Gemini: cómo funcionan los LLMs", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Prompt engineering: obtener mejores resultados", "tipo": "video", "duracion": "30 min" },
@@ -827,6 +1217,13 @@
       },
       {
         "id": "ia-m4", "titulo": "Ética, Impacto y Proyecto Final", "orden": 4, "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Analizar los sesgos en IA, riesgos de privacidad y marcos regulatorios vigentes",
+          "Evaluar oportunidades y desafíos de la IA en el contexto latinoamericano",
+          "Diseñar una propuesta de solución con IA para resolver un problema real"
+        ],
+        "habilidades": ["Ética en IA", "Análisis de Impacto", "Diseño de Soluciones IA"],
+        "herramientas": ["Frameworks de Ética IA", "Google Docs", "Presentaciones"],
         "lecciones": [
           { "titulo": "Sesgos en IA, privacidad y regulación", "tipo": "video", "duracion": "25 min" },
           { "titulo": "IA en LATAM: oportunidades y desafíos", "tipo": "video", "duracion": "20 min" },
@@ -836,7 +1233,7 @@
     ],
     "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
     "kahootUrl": "https://kahoot.it/challenge/XXXXX",
-    "estado": "proximamente"
+    "estado": "activo"
   },
   {
     "id": "liderazgo-equipos",
@@ -851,12 +1248,20 @@
     "icono": "fa-users-gear",
     "iconoColor": "#795548",
     "color": "#795548",
+    "certificacionAlineada": {"nombre":"PMI Certified Associate in Project Management","codigoExamen":"CAPM","organizacion":"Project Management Institute (PMI)","url":"https://www.pmi.org/certifications/certified-associate-capm","cobertura":"50%","temas":["Project Management Fundamentals","Predictive Plan-Based Methodologies","Agile Frameworks","Business Analysis","Stakeholder Engagement"]},
     "descripcionCorta": "Desarrolla habilidades de liderazgo, comunicación y gestión de equipos de alto rendimiento.",
     "descripcionCompleta": "Curso práctico de habilidades de liderazgo para profesionales que gestionan o aspiran a gestionar equipos. Cubre estilos de liderazgo, comunicación efectiva, resolución de conflictos, motivación, delegación y gestión del cambio. Basado en casos reales del entorno corporativo LATAM.",
     "requisitos": ["Experiencia laboral mínima de 1 año", "Interés en roles de liderazgo o gestión"],
     "modulos": [
       {
         "id": "lid-m1", "titulo": "Fundamentos del Liderazgo", "orden": 1, "duracion": "4 horas",
+        "objetivosAprendizaje": [
+          "Identificar y aplicar estilos de liderazgo (situacional, transformacional, servicial) según el contexto",
+          "Evaluar tu perfil de liderazgo a través de un assessment de autoconocimiento",
+          "Practicar comunicación asertiva y escucha activa en conversaciones difíciles"
+        ],
+        "habilidades": ["Estilos de Liderazgo", "Comunicación Asertiva", "Autoconocimiento"],
+        "herramientas": ["Assessment de Liderazgo", "Modelo DISC", "Plantillas de Role-Play"],
         "lecciones": [
           { "titulo": "Estilos de liderazgo: situacional, transformacional, servicial", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Autoconocimiento: tu perfil como líder (assessment)", "tipo": "practica", "duracion": "30 min" },
@@ -866,6 +1271,13 @@
       },
       {
         "id": "lid-m2", "titulo": "Gestión de Equipos", "orden": 2, "duracion": "4 horas",
+        "objetivosAprendizaje": [
+          "Aplicar estrategias para formar y desarrollar equipos de alto rendimiento",
+          "Implementar técnicas de delegación efectiva con accountability claro",
+          "Resolver conflictos en equipos usando mediación y negociación"
+        ],
+        "habilidades": ["Formación de Equipos", "Delegación", "Resolución de Conflictos"],
+        "herramientas": ["Modelo Tuckman", "Matriz RACI", "Técnicas de Mediación"],
         "lecciones": [
           { "titulo": "Formar y desarrollar equipos de alto rendimiento", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Delegación efectiva y accountability", "tipo": "video", "duracion": "25 min" },
@@ -875,6 +1287,13 @@
       },
       {
         "id": "lid-m3", "titulo": "Liderazgo en la Práctica", "orden": 3, "duracion": "4 horas",
+        "objetivosAprendizaje": [
+          "Aplicar el modelo SBI (Situación-Comportamiento-Impacto) para dar feedback efectivo",
+          "Implementar estrategias de gestión del cambio y resiliencia organizacional",
+          "Crear un plan de liderazgo personal con objetivos medibles a 90 días"
+        ],
+        "habilidades": ["Feedback Efectivo", "Gestión del Cambio", "Planificación Personal"],
+        "herramientas": ["Modelo SBI", "Framework ADKAR", "Plantilla de Plan de Liderazgo"],
         "lecciones": [
           { "titulo": "Feedback efectivo: el modelo SBI", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Gestión del cambio y resiliencia organizacional", "tipo": "video", "duracion": "25 min" },
@@ -899,12 +1318,20 @@
     "icono": "fa-microchip",
     "iconoColor": "#00BCD4",
     "color": "#00BCD4",
+    "certificacionAlineada": {"nombre":"AWS Certified Cloud Practitioner","codigoExamen":"CLF-C02","organizacion":"Amazon Web Services","url":"https://aws.amazon.com/certification/certified-cloud-practitioner/","cobertura":"55%","temas":["Cloud Concepts","Security and Compliance","Cloud Technology and Services","Billing, Pricing, and Support","Digital Transformation Strategy"]},
     "descripcionCorta": "Lidera la transformación digital de tu organización. Estrategia, herramientas y cultura digital.",
     "descripcionCompleta": "Curso que prepara a profesionales y líderes para comprender y ejecutar procesos de transformación digital en sus organizaciones. Cubre estrategia digital, automatización de procesos, cultura de innovación, herramientas tecnológicas y gestión del cambio en el contexto latinoamericano.",
     "requisitos": ["Experiencia profesional de 2+ años", "Conocimiento básico de tecnología"],
     "modulos": [
       {
         "id": "td-m1", "titulo": "Estrategia Digital", "orden": 1, "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Evaluar el nivel de madurez digital de una organización con herramientas de diagnóstico",
+          "Diseñar un roadmap de transformación digital con iniciativas priorizadas",
+          "Analizar casos de estudio de transformación digital exitosos y fallidos"
+        ],
+        "habilidades": ["Estrategia Digital", "Diagnóstico de Madurez", "Roadmap de Transformación"],
+        "herramientas": ["Modelo de Madurez Digital", "Canvas de Transformación", "Google Docs"],
         "lecciones": [
           { "titulo": "¿Qué es la transformación digital? Más allá de la tecnología", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Madurez digital: diagnóstico de tu organización", "tipo": "video", "duracion": "30 min" },
@@ -914,6 +1341,13 @@
       },
       {
         "id": "td-m2", "titulo": "Herramientas y Automatización", "orden": 2, "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Mapear el ecosistema de herramientas digitales relevantes por área de negocio",
+          "Automatizar procesos de negocio usando herramientas no-code como Zapier y Make",
+          "Aplicar IA y análisis de datos como motores de transformación organizacional"
+        ],
+        "habilidades": ["Automatización No-Code", "Ecosistema Digital", "Integración de Herramientas"],
+        "herramientas": ["Zapier", "Make (Integromat)", "Notion", "Slack", "Herramientas de IA"],
         "lecciones": [
           { "titulo": "Ecosistema de herramientas digitales por área", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Automatización de procesos con herramientas no-code", "tipo": "video", "duracion": "30 min" },
@@ -923,6 +1357,13 @@
       },
       {
         "id": "td-m3", "titulo": "Cultura Digital y Cambio", "orden": 3, "duracion": "5 horas",
+        "objetivosAprendizaje": [
+          "Fomentar una cultura de innovación y mindset digital en equipos de trabajo",
+          "Implementar estrategias de gestión del cambio para superar la resistencia organizacional",
+          "Crear un plan de transformación digital completo para una PYME"
+        ],
+        "habilidades": ["Cultura de Innovación", "Gestión del Cambio", "Planificación Estratégica"],
+        "herramientas": ["Framework ADKAR", "Canvas de Innovación", "Google Docs", "Presentaciones"],
         "lecciones": [
           { "titulo": "Cultura de innovación y mindset digital", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Gestión del cambio: resistencia y adopción", "tipo": "video", "duracion": "25 min" },
@@ -932,7 +1373,7 @@
     ],
     "googleClassroomUrl": "https://classroom.google.com/c/XXXXX",
     "kahootUrl": "https://kahoot.it/challenge/XXXXX",
-    "estado": "proximamente"
+    "estado": "activo"
   },
   {
     "id": "ingles-general",
@@ -950,6 +1391,7 @@
     "cefrAligned": true,
     "cefrLevels": ["A1", "A2", "B1", "B2", "C1"],
     "youtubeChannelUrl": "https://www.youtube.com/@UCYXojL0jRuMYpJQk7LVhJhg",
+    "certificacionAlineada": {"nombre":"Cambridge English Qualifications (CEFR)","codigoExamen":"KET (A2) / PET (B1) / FCE (B2) / CAE (C1)","organizacion":"Cambridge Assessment English / Council of Europe","url":"https://www.cambridgeenglish.org/exams-and-tests/","cobertura":"90%","temas":["Reading and Use of English","Writing","Listening","Speaking","Grammar and Vocabulary per CEFR Level"]},
     "descripcionCorta": "Aprende inglés desde cero hasta nivel avanzado (C1) alineado al Marco Común Europeo de Referencia (MCER/CEFR). Gramática, vocabulario, conversación, comprensión auditiva y fluidez profesional.",
     "descripcionCompleta": "Programa integral de inglés alineado al Marco Común Europeo de Referencia para las Lenguas (MCER/CEFR). Te lleva desde principiante absoluto (A1) hasta nivel avanzado (C1) con 23 módulos estructurados. Cada nivel incluye gramática progresiva, vocabulario temático con metas específicas, comprensión auditiva con materiales reales, práctica de expresión oral, lectura de textos auténticos, y escritura desde mensajes simples hasta ensayos académicos. Incluye test de nivel inicial, quizzes por nivel, ejercicios interactivos y certificación por cada nivel CEFR completado. Vocabulario: de 500 palabras (A1) a 5,000+ (C1).",
     "requisitos": ["No se requiere conocimiento previo de inglés (comienza desde A1)", "Computadora con micrófono y altavoces (para ejercicios de pronunciación y listening)", "Acceso a internet para videos y ejercicios interactivos", "Recomendado: tomar primero el Test de Nivel para comenzar en el módulo adecuado"],
@@ -962,6 +1404,13 @@
         "duracion": "8 horas",
         "vocabularioMeta": "~120 palabras: saludos, números 1-100, colores, días, meses",
         "canDo": "Puede saludar, presentarse y despedirse. Puede deletrear su nombre y decir números de teléfono.",
+        "objetivosAprendizaje": [
+          "Saludar, presentarse y despedirse en inglés en contextos cotidianos",
+          "Deletrear nombres y comunicar números de teléfono y edades en inglés",
+          "Aplicar vocabulario básico de colores, días de la semana y meses del año"
+        ],
+        "habilidades": ["Saludos en Inglés", "Deletreo y Números", "Presentaciones Personales"],
+        "herramientas": ["Plataforma de Audio", "Tarjetas de Vocabulario", "Ejercicios Interactivos"],
         "lecciones": [
           { "titulo": "Greetings & Farewells — Hello, Hi, Good morning, Goodbye", "tipo": "video", "duracion": "30 min" },
           { "titulo": "The English Alphabet — Pronunciación de cada letra + deletreo", "tipo": "video", "duracion": "25 min" },
@@ -981,6 +1430,13 @@
         "duracion": "8 horas",
         "vocabularioMeta": "+80 palabras: familia, profesiones, nacionalidades",
         "canDo": "Puede describir quién es, de dónde es y cuál es su profesión. Forma oraciones simples afirmativas, negativas y preguntas con 'to be'.",
+        "objetivosAprendizaje": [
+          "Construir oraciones afirmativas, negativas e interrogativas con el verbo 'to be'",
+          "Aplicar pronombres personales, artículos y adjetivos posesivos correctamente",
+          "Describir personas, familias y profesiones usando vocabulario básico"
+        ],
+        "habilidades": ["Verbo To Be", "Pronombres y Artículos", "Descripción de Personas"],
+        "herramientas": ["Plataforma de Audio", "Ejercicios de Gramática", "Tarjetas de Vocabulario"],
         "lecciones": [
           { "titulo": "Subject Pronouns — I, you, he, she, it, we, they", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Verb To Be — Am/Is/Are: affirmative, negative, questions", "tipo": "video", "duracion": "35 min" },
@@ -1001,6 +1457,13 @@
         "duracion": "8 horas",
         "vocabularioMeta": "+100 palabras: rutinas diarias, comida, lugares",
         "canDo": "Puede hablar de rutinas diarias, gustos y hábitos simples. Usa el presente simple correctamente.",
+        "objetivosAprendizaje": [
+          "Conjugar verbos en presente simple en formas afirmativa, negativa e interrogativa",
+          "Describir rutinas diarias y hábitos usando adverbios de frecuencia",
+          "Aplicar vocabulario de comida, bebidas y lugares cotidianos en conversaciones simples"
+        ],
+        "habilidades": ["Presente Simple", "Vocabulario Cotidiano", "Descripción de Rutinas"],
+        "herramientas": ["Plataforma de Audio", "Ejercicios de Gramática", "Diálogos Interactivos"],
         "lecciones": [
           { "titulo": "Present Simple — Affirmative: I work, He works (regla de la -s)", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Present Simple — Negative & Questions: don't/doesn't, Do/Does", "tipo": "video", "duracion": "30 min" },
@@ -1021,6 +1484,13 @@
         "duracion": "8 horas",
         "vocabularioMeta": "+100 palabras: lugares, transporte, habilidades. Total A1: ~500 palabras",
         "canDo": "Puede pedir ayuda, preguntar precios, dar/recibir direcciones simples, y hablar de habilidades. Puede completar un examen de nivel A1.",
+        "objetivosAprendizaje": [
+          "Formular preguntas con question words (what, where, when, how) en situaciones cotidianas",
+          "Dar y recibir direcciones simples usando preposiciones de lugar",
+          "Expresar habilidades y permisos con can/can't en contextos prácticos"
+        ],
+        "habilidades": ["Preguntas en Inglés", "Direcciones y Ubicación", "Modal Can"],
+        "herramientas": ["Plataforma de Audio", "Mapas Interactivos", "Ejercicios de Listening"],
         "lecciones": [
           { "titulo": "Question Words — What, Where, When, Who, How, How much/many", "tipo": "video", "duracion": "25 min" },
           { "titulo": "There is / There are — Describir lugares y existencia", "tipo": "video", "duracion": "25 min" },
@@ -1041,6 +1511,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+150 palabras: verbos irregulares comunes, viajes, actividades",
         "canDo": "Puede hablar de eventos pasados, contar historias simples y describir experiencias de viaje.",
+        "objetivosAprendizaje": [
+          "Conjugar verbos regulares e irregulares en pasado simple con pronunciación correcta de -ed",
+          "Contar historias simples y describir experiencias de viaje en pasado",
+          "Aplicar las formas negativa e interrogativa del pasado simple con did"
+        ],
+        "habilidades": ["Pasado Simple", "Verbos Irregulares", "Narración Básica"],
+        "herramientas": ["Plataforma de Audio", "Lista de Verbos Irregulares", "Ejercicios de Pronunciación"],
         "lecciones": [
           { "titulo": "Past Simple (Regular Verbs) — worked, played, visited + pronunciación -ed", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Past Simple (Irregular Verbs) — went, had, saw, ate + lista esencial de 50", "tipo": "video", "duracion": "35 min" },
@@ -1060,6 +1537,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+120 palabras: ropa, clima, adjetivos descriptivos",
         "canDo": "Puede hablar de planes futuros, comparar cosas y personas, y describir el clima.",
+        "objetivosAprendizaje": [
+          "Expresar planes futuros usando 'going to' y presente continuo para arreglos",
+          "Comparar personas, objetos y lugares usando comparativos y superlativos",
+          "Describir el clima y la vestimenta usando vocabulario descriptivo"
+        ],
+        "habilidades": ["Futuro con Going To", "Comparativos y Superlativos", "Descripción del Clima"],
+        "herramientas": ["Plataforma de Audio", "Ejercicios de Gramática", "Tarjetas de Vocabulario"],
         "lecciones": [
           { "titulo": "Going to — Planes y predicciones: I'm going to travel, It's going to rain", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Present Continuous for Future — Arreglos: I'm meeting John tomorrow", "tipo": "video", "duracion": "20 min" },
@@ -1079,6 +1563,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+130 palabras: compras, salud, phrasal verbs comunes",
         "canDo": "Puede manejar situaciones en tiendas, restaurantes y consultas médicas. Conoce los phrasal verbs más comunes.",
+        "objetivosAprendizaje": [
+          "Manejar situaciones cotidianas en tiendas, restaurantes y consultas médicas en inglés",
+          "Aplicar must/mustn't y have to para expresar obligaciones y reglas",
+          "Utilizar los phrasal verbs más comunes en contextos de la vida diaria"
+        ],
+        "habilidades": ["Inglés Situacional", "Phrasal Verbs Básicos", "Modales de Obligación"],
+        "herramientas": ["Plataforma de Audio", "Role-Play Interactivo", "Tarjetas de Phrasal Verbs"],
         "lecciones": [
           { "titulo": "Shopping English — Can I try this on? How much is it? Sizes & payments", "tipo": "video", "duracion": "25 min" },
           { "titulo": "At the Restaurant — I'd like..., Can I have...?, The bill please", "tipo": "video", "duracion": "25 min" },
@@ -1098,6 +1589,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+100 palabras: tecnología, hobbies, conectores. Total A2: ~1,500 palabras",
         "canDo": "Puede escribir emails simples, conectar ideas con conjunciones, y usar gerundios/infinitivos básicos. Puede completar un examen de nivel A2.",
+        "objetivosAprendizaje": [
+          "Conectar ideas usando conjunciones (because, so, but, although) en textos escritos y orales",
+          "Aplicar gerundios e infinitivos básicos y el primer condicional correctamente",
+          "Escribir emails y mensajes simples en registro informal y semi-formal"
+        ],
+        "habilidades": ["Conjunciones y Conectores", "Escritura de Emails", "Primer Condicional"],
+        "herramientas": ["Plataforma de Audio", "Ejercicios de Escritura", "Correo Electrónico"],
         "lecciones": [
           { "titulo": "Conjunctions — Because, so, but, and, or, although: conectar ideas", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Gerunds & Infinitives (Basic) — I like swimming, I want to go", "tipo": "video", "duracion": "30 min" },
@@ -1118,6 +1616,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+150 palabras: emociones, experiencias, narración",
         "canDo": "Puede contar historias detalladas usando tiempos narrativos combinados y describir experiencias pasadas.",
+        "objetivosAprendizaje": [
+          "Combinar past simple, past continuous y past perfect para narrar historias detalladas",
+          "Aplicar used to y would para describir hábitos y costumbres del pasado",
+          "Contar anécdotas personales con conectores narrativos y vocabulario de emociones"
+        ],
+        "habilidades": ["Tiempos Narrativos", "Narración de Historias", "Vocabulario de Emociones"],
+        "herramientas": ["Plataforma de Audio", "Podcasts Adaptados", "Ejercicios de Narración"],
         "lecciones": [
           { "titulo": "Past Continuous — Was/Were + -ing: acciones en progreso en el pasado", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Past Simple vs Past Continuous — When/While: cuándo usar cada uno", "tipo": "video", "duracion": "30 min" },
@@ -1137,6 +1642,13 @@
         "duracion": "8 horas",
         "vocabularioMeta": "+130 palabras: logros, medio ambiente, probabilidad",
         "canDo": "Puede hablar de experiencias de vida, expresar probabilidad y hacer hipótesis sobre situaciones irreales.",
+        "objetivosAprendizaje": [
+          "Diferenciar el uso del present perfect y past simple en contextos comunicativos",
+          "Formular hipótesis irreales usando el segundo condicional",
+          "Expresar probabilidad y deducción con modales (may, might, could, must)"
+        ],
+        "habilidades": ["Present Perfect", "Segundo Condicional", "Modales de Probabilidad"],
+        "herramientas": ["Plataforma de Audio", "Entrevistas Adaptadas", "Ejercicios de Gramática"],
         "lecciones": [
           { "titulo": "Present Perfect — Have/Has + past participle: ever, never, just, already, yet", "tipo": "video", "duracion": "35 min" },
           { "titulo": "Present Perfect vs Past Simple — Cuándo usar cada uno", "tipo": "video", "duracion": "25 min" },
@@ -1157,6 +1669,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+120 palabras: noticias, medios, conectores del discurso",
         "canDo": "Puede reportar lo que otros dijeron, entender noticias, y usar la voz pasiva en contexto.",
+        "objetivosAprendizaje": [
+          "Transformar oraciones activas a voz pasiva en diferentes tiempos verbales",
+          "Reportar lo que otros dijeron usando reported speech con cambios de tiempo verbal",
+          "Aplicar conectores del discurso (however, moreover, on the other hand) para estructurar ideas"
+        ],
+        "habilidades": ["Voz Pasiva", "Reported Speech", "Conectores del Discurso"],
+        "herramientas": ["Plataforma de Audio", "Noticias Adaptadas", "Ejercicios de Transformación"],
         "lecciones": [
           { "titulo": "Passive Voice (Basic) — Is made, was built, has been discovered", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Reported Speech — He said that..., She told me that...", "tipo": "video", "duracion": "35 min" },
@@ -1176,6 +1695,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+100 palabras: temas actuales, opiniones, debates",
         "canDo": "Puede entender artículos sencillos, escuchar podcasts, y expresar opiniones con justificación.",
+        "objetivosAprendizaje": [
+          "Comprender artículos y textos sencillos usando técnicas de skimming y scanning",
+          "Entender podcasts y videos en inglés aplicando estrategias de listening",
+          "Expresar y defender opiniones con justificación usando expresiones formales"
+        ],
+        "habilidades": ["Comprensión Lectora", "Comprensión Auditiva", "Expresión de Opiniones"],
+        "herramientas": ["Podcasts en Inglés", "Artículos Adaptados", "Plataforma de Audio"],
         "lecciones": [
           { "titulo": "Reading Skills — Skimming, scanning y comprensión de artículos", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Listening Skills — Estrategias para podcasts y videos", "tipo": "video", "duracion": "25 min" },
@@ -1195,6 +1721,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+100 palabras: negocios básicos, oficina, procesos. Total B1: ~2,500 palabras",
         "canDo": "Puede escribir emails profesionales simples, hablar por teléfono, y describir procesos. Puede completar un examen de nivel B1.",
+        "objetivosAprendizaje": [
+          "Escribir emails profesionales con estructura, saludo y cierre en registro semi-formal",
+          "Manejar llamadas telefónicas en inglés: hacer y recibir llamadas, dejar mensajes",
+          "Describir procesos paso a paso usando conectores secuenciales (first, then, finally)"
+        ],
+        "habilidades": ["Emails Profesionales", "Inglés Telefónico", "Descripción de Procesos"],
+        "herramientas": ["Plataforma de Audio", "Plantillas de Email", "Simulador de Llamadas"],
         "lecciones": [
           { "titulo": "Business Emails (Intro) — Saludos, cuerpo, cierre: registro semi-formal", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Telephone English — Making calls, leaving messages, confirming", "tipo": "video", "duracion": "25 min" },
@@ -1213,6 +1746,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+150 palabras: arrepentimientos, predicciones, cambio",
         "canDo": "Puede expresar arrepentimientos sobre el pasado, hacer hipótesis complejas, y hablar del futuro con precisión.",
+        "objetivosAprendizaje": [
+          "Formular hipótesis complejas sobre el pasado con el tercer condicional y mixed conditionals",
+          "Expresar predicciones y planes futuros con futuro perfecto y futuro continuo",
+          "Comunicar arrepentimientos usando wish y if only con matices temporales"
+        ],
+        "habilidades": ["Condicionales Avanzados", "Tiempos Futuros", "Expresión de Arrepentimiento"],
+        "herramientas": ["Plataforma de Audio", "Entrevistas Auténticas", "Ejercicios de Gramática Avanzada"],
         "lecciones": [
           { "titulo": "Third Conditional — If I had studied, I would have passed", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Mixed Conditionals — If I had studied medicine, I would be a doctor now", "tipo": "video", "duracion": "30 min" },
@@ -1232,6 +1772,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+120 palabras: deducciones, procesos, estados",
         "canDo": "Puede hacer deducciones sofisticadas sobre el pasado, usar la pasiva en todos los tiempos, y distinguir verbos de estado.",
+        "objetivosAprendizaje": [
+          "Hacer deducciones sofisticadas sobre el pasado con modales perfectos (must have, could have)",
+          "Aplicar la voz pasiva en todos los tiempos verbales incluyendo causativa (have something done)",
+          "Distinguir y usar correctamente verbos de estado que no admiten forma continua"
+        ],
+        "habilidades": ["Modales Perfectos", "Pasiva Avanzada", "Verbos de Estado"],
+        "herramientas": ["Plataforma de Audio", "Documentales Adaptados", "Ejercicios de Transformación"],
         "lecciones": [
           { "titulo": "Modal Perfects — Must have been, could have done, should have said", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Advanced Passive — Have something done: I had my car repaired", "tipo": "video", "duracion": "25 min" },
@@ -1251,6 +1798,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+130 palabras: conectores avanzados, vocabulario académico",
         "canDo": "Puede escribir ensayos argumentativos, usar registro formal, y parafrasear ideas complejas.",
+        "objetivosAprendizaje": [
+          "Escribir ensayos argumentativos con introducción, desarrollo y conclusión estructurados",
+          "Aplicar registro formal y conectores avanzados (nevertheless, furthermore, consequently)",
+          "Parafrasear y resumir ideas complejas manteniendo el significado original"
+        ],
+        "habilidades": ["Escritura Académica", "Registro Formal", "Paráfrasis"],
+        "herramientas": ["TED Talks", "Artículos Académicos", "Plataforma de Escritura"],
         "lecciones": [
           { "titulo": "Essay Structure — Introduction, body paragraphs, conclusion", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Formal vs Informal Register — Academic writing rules", "tipo": "video", "duracion": "25 min" },
@@ -1270,6 +1824,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+120 palabras: negocios, finanzas, tecnología, marketing",
         "canDo": "Puede dar presentaciones profesionales, participar en negociaciones básicas, y usar vocabulario técnico de negocios.",
+        "objetivosAprendizaje": [
+          "Dar presentaciones profesionales en inglés con estructura clara y señalizadores",
+          "Participar en negociaciones usando lenguaje diplomático y propositivo",
+          "Aplicar vocabulario técnico de IT, finanzas, marketing y recursos humanos"
+        ],
+        "habilidades": ["Presentaciones en Inglés", "Negociación", "Vocabulario Técnico"],
+        "herramientas": ["Presentaciones Corporativas", "Plataforma de Audio", "Simulador de Reuniones"],
         "lecciones": [
           { "titulo": "Presentations in English — Opening, signposting, closing: estructura profesional", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Negotiation Language — I suggest, Would you consider, Let's compromise", "tipo": "video", "duracion": "25 min" },
@@ -1288,6 +1849,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+130 palabras: idioms, phrasal verbs avanzados, cultura. Total B2: ~3,750 palabras",
         "canDo": "Puede debatir con fluidez, usar expresiones idiomáticas, y entender referencias culturales. Puede completar un examen de nivel B2.",
+        "objetivosAprendizaje": [
+          "Utilizar expresiones idiomáticas y phrasal verbs avanzados con naturalidad",
+          "Debatir temas polémicos con estructura argumentativa (claim, evidence, counter-argument)",
+          "Comprender diferencias culturales entre inglés británico y americano"
+        ],
+        "habilidades": ["Idioms y Expresiones", "Debate Estructurado", "Conciencia Cultural"],
+        "herramientas": ["Debates Televisivos", "Podcasts de Opinión", "Plataforma de Audio"],
         "lecciones": [
           { "titulo": "Idioms & Fixed Expressions — Break the ice, piece of cake, cost an arm and a leg", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Advanced Phrasal Verbs — Come up with, put up with, look forward to, get along with", "tipo": "video", "duracion": "25 min" },
@@ -1306,6 +1874,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+150 palabras: vocabulario sofisticado, registros formales",
         "canDo": "Puede usar estructuras gramaticales avanzadas para dar énfasis y expresar matices de significado.",
+        "objetivosAprendizaje": [
+          "Aplicar inversión con adverbiales negativos (Never have I, Not only...but also) para dar énfasis",
+          "Construir cleft sentences (It was...who, What I need is...) para focalizar información",
+          "Expresar matices de arrepentimiento y deseo con formas avanzadas de wish e if only"
+        ],
+        "habilidades": ["Inversión Gramatical", "Cleft Sentences", "Énfasis y Matices"],
+        "herramientas": ["Discursos Formales", "Conferencias Académicas", "Ejercicios de Reescritura"],
         "lecciones": [
           { "titulo": "Inversion with Negative Adverbials — Never have I, Not only...but also, Seldom do we", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Cleft Sentences — It was John who..., What I need is..., The reason why...", "tipo": "video", "duracion": "30 min" },
@@ -1325,6 +1900,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+120 palabras: vocabulario académico y de investigación",
         "canDo": "Puede escribir textos académicos complejos, analizar críticamente argumentos, y citar fuentes.",
+        "objetivosAprendizaje": [
+          "Redactar textos académicos complejos con thesis statement, revisión de literatura y metodología",
+          "Analizar críticamente argumentos identificando sesgos y evaluando evidencia",
+          "Citar fuentes correctamente en formatos APA y MLA"
+        ],
+        "habilidades": ["Escritura de Investigación", "Análisis Crítico", "Citación Académica"],
+        "herramientas": ["Journals Académicos", "Estilo APA/MLA", "Plataforma de Escritura Académica"],
         "lecciones": [
           { "titulo": "Academic Writing Advanced — Thesis statements, literature review, methodology", "tipo": "video", "duracion": "30 min" },
           { "titulo": "Critical Analysis — Evaluate arguments, identify bias, assess evidence", "tipo": "video", "duracion": "30 min" },
@@ -1344,6 +1926,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+120 palabras: liderazgo, persuasión, culturas",
         "canDo": "Puede liderar reuniones en inglés, persuadir con argumentos sofisticados, y navegar diferencias culturales.",
+        "objetivosAprendizaje": [
+          "Liderar y facilitar reuniones en inglés con agenda, resúmenes y puntos de acción",
+          "Aplicar técnicas retóricas de persuasión (ethos, pathos, logos) en presentaciones",
+          "Navegar diferencias culturales en comunicación internacional con sensibilidad"
+        ],
+        "habilidades": ["Liderazgo de Reuniones", "Retórica y Persuasión", "Comunicación Intercultural"],
+        "herramientas": ["Simulador de Reuniones", "Entrevistas Empresariales", "Executive Summary Templates"],
         "lecciones": [
           { "titulo": "Leading Meetings — Chairing, facilitating, summarizing, action points", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Persuasion & Rhetoric — Ethos, pathos, logos: técnicas persuasivas", "tipo": "video", "duracion": "30 min" },
@@ -1362,6 +1951,13 @@
         "duracion": "7 horas",
         "vocabularioMeta": "+120 palabras: slang, humor, expresiones nativas",
         "canDo": "Puede entender y usar humor, ironía, sarcasmo, slang y cambiar de registro según el contexto.",
+        "objetivosAprendizaje": [
+          "Comprender y utilizar humor, ironía y sarcasmo en contextos sociales en inglés",
+          "Aplicar slang británico y americano de forma apropiada según el contexto",
+          "Cambiar de registro (formal, informal, casual) adaptando el inglés a la audiencia"
+        ],
+        "habilidades": ["Slang y Expresiones Nativas", "Cambio de Registro", "Humor en Inglés"],
+        "herramientas": ["Stand-Up Comedy", "Podcasts Informales", "Novelas Contemporáneas", "The Guardian"],
         "lecciones": [
           { "titulo": "British & American Slang — Common informal expressions by region", "tipo": "video", "duracion": "25 min" },
           { "titulo": "Humor, Irony & Sarcasm — Entender y usar humor en inglés", "tipo": "video", "duracion": "25 min" },
@@ -1381,6 +1977,13 @@
         "duracion": "8 horas",
         "vocabularioMeta": "Consolidación: 5,000+ palabras totales del programa",
         "canDo": "Puede usar el inglés con flexibilidad y eficacia para fines sociales, académicos y profesionales. Puede completar un examen de nivel C1.",
+        "objetivosAprendizaje": [
+          "Demostrar dominio integral del inglés C1 en las cuatro habilidades (reading, writing, listening, speaking)",
+          "Completar simulacros de examen Cambridge C1 Advanced con rendimiento satisfactorio",
+          "Crear y presentar un proyecto académico/profesional de 10 minutos íntegramente en inglés"
+        ],
+        "habilidades": ["Dominio C1 Integral", "Preparación Cambridge CAE", "Presentación Académica"],
+        "herramientas": ["Mock Exams Cambridge", "Plataforma de Audio", "Rúbricas de Evaluación CEFR"],
         "lecciones": [
           { "titulo": "Grammar Review — Revisión de todas las estructuras A1-C1 con ejercicios", "tipo": "video", "duracion": "35 min" },
           { "titulo": "Vocabulary Review — Técnicas de memorización y repaso espaciado", "tipo": "video", "duracion": "25 min" },

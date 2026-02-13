@@ -703,5 +703,1611 @@
         "dificultad": "dificil"
       }
     ]
+  },
+  {
+    "id": "quiz-gw-m2",
+    "cursoId": "google-workspace",
+    "moduloId": "gw-m2",
+    "titulo": "Google Sheets — Hojas de Cálculo en la Nube",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "gw-q1",
+        "pregunta": "¿Cuál es la fórmula correcta para sumar un rango de celdas en Google Sheets?",
+        "tipo": "opcion-multiple",
+        "opciones": ["=SUMA(A1:A10)", "=SUMAR(A1:A10)", "=ADD(A1:A10)", "=TOTAL(A1:A10)"],
+        "respuestaCorrecta": 0,
+        "explicacion": "En Google Sheets, la función SUMA() (o SUM() en inglés) se usa para sumar un rango de celdas. La sintaxis es =SUMA(rango).",
+        "dificultad": "facil"
+      },
+      {
+        "id": "gw-q2",
+        "pregunta": "¿Qué función de Google Sheets permite importar datos de otra hoja de cálculo?",
+        "tipo": "opcion-multiple",
+        "opciones": ["IMPORTRANGE", "VLOOKUP", "QUERY", "IMPORTDATA"],
+        "respuestaCorrecta": 0,
+        "explicacion": "IMPORTRANGE permite importar un rango de celdas de otra hoja de cálculo de Google Sheets usando su URL y el rango deseado. Requiere autorización la primera vez.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "gw-q3",
+        "pregunta": "¿Cómo se crea una tabla dinámica (pivot table) en Google Sheets?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Insertar → Tabla dinámica", "Datos → Crear filtro", "Formato → Formato condicional", "Herramientas → Macros"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Para crear una tabla dinámica en Google Sheets, selecciona los datos y ve a Insertar → Tabla dinámica. Esto permite resumir y analizar grandes conjuntos de datos de forma interactiva.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "gw-q4",
+        "pregunta": "¿Qué hace el formato condicional en Google Sheets?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Cambia el formato de las celdas automáticamente según reglas definidas", "Protege las celdas contra edición", "Convierte texto a números automáticamente", "Ordena los datos de forma ascendente"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El formato condicional aplica colores, íconos u otros formatos a celdas que cumplen condiciones específicas (por ejemplo, resaltar en rojo los valores negativos). Se configura desde Formato → Formato condicional.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "gw-q5",
+        "pregunta": "¿Cuál es la principal ventaja de la colaboración en tiempo real en Google Sheets?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Múltiples usuarios pueden editar el mismo documento simultáneamente", "Los archivos son más pequeños", "Las fórmulas se calculan más rápido", "No se necesita conexión a internet"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La colaboración en tiempo real permite que varios usuarios editen la misma hoja de cálculo al mismo tiempo, viendo los cambios de los demás al instante. Los cambios se guardan automáticamente.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "gw-q6",
+        "pregunta": "¿Qué tipo de gráfico es más adecuado para mostrar la proporción de cada categoría respecto al total?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Gráfico circular (pie chart)", "Gráfico de líneas", "Gráfico de dispersión", "Histograma"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El gráfico circular muestra la proporción de cada parte respecto al total (100%). Es ideal cuando hay pocas categorías (menos de 6). Para muchas categorías, es mejor usar un gráfico de barras.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "gw-q7",
+        "pregunta": "¿Qué función permite buscar datos en Google Sheets de manera similar a BUSCARV pero más flexible?",
+        "tipo": "opcion-multiple",
+        "opciones": ["QUERY", "FILTER", "SORT", "UNIQUE"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La función QUERY en Google Sheets usa un lenguaje similar a SQL para filtrar, ordenar y manipular datos. Es más poderosa que BUSCARV porque permite consultas complejas con SELECT, WHERE, ORDER BY, etc.",
+        "dificultad": "dificil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-gw-m5",
+    "cursoId": "google-workspace",
+    "moduloId": "gw-m5",
+    "titulo": "Productividad con Google Workspace",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "gw-q8",
+        "pregunta": "¿Cuál es la mejor práctica para organizar archivos en Google Drive?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Usar carpetas con nombres descriptivos y una estructura jerárquica clara", "Guardar todos los archivos en la raíz de Mi unidad", "Usar solo carpetas compartidas", "Nombrar archivos con fechas sin carpetas"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Organizar archivos en carpetas con nombres descriptivos y una estructura lógica (por proyecto, departamento o fecha) facilita encontrar documentos rápidamente y mejora la productividad del equipo.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "gw-q9",
+        "pregunta": "¿Qué función de Google Calendar permite reservar automáticamente tiempo libre para trabajo enfocado?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Tiempo de concentración (Focus Time)", "Evento recurrente", "Recordatorio", "Meta (Goal)"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La función 'Tiempo de concentración' bloquea automáticamente espacios en tu calendario para trabajo sin interrupciones, rechazando invitaciones automáticamente durante ese período.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "gw-q10",
+        "pregunta": "¿Cuál de estas funciones NO está disponible en Google Meet?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Edición colaborativa de documentos en tiempo real dentro de la videollamada", "Compartir pantalla", "Grabación de reuniones", "Subtítulos en tiempo real"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Google Meet permite compartir pantalla, grabar reuniones y mostrar subtítulos en tiempo real. La edición colaborativa de documentos se hace directamente en Google Docs/Sheets, no dentro de la interfaz de Meet.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "gw-q11",
+        "pregunta": "¿Qué tipo de pregunta en Google Forms permite respuestas en escala numérica (por ejemplo, del 1 al 5)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Escala lineal", "Selección múltiple", "Casillas de verificación", "Respuesta corta"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La escala lineal en Google Forms permite a los encuestados seleccionar un valor numérico dentro de un rango definido (por ejemplo, 1 a 5 o 1 a 10). Es ideal para medir satisfacción o niveles de acuerdo.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "gw-q12",
+        "pregunta": "¿Qué significa el permiso 'Puede ver' cuando compartes un archivo en Google Drive?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El usuario solo puede leer el documento, sin editarlo ni comentar", "El usuario puede editar el documento", "El usuario puede eliminar el documento", "El usuario puede compartirlo con otros"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los tres niveles de permisos en Google Drive son: 'Puede ver' (solo lectura), 'Puede comentar' (lectura + comentarios) y 'Puede editar' (acceso completo). El propietario controla quién tiene qué nivel.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "gw-q13",
+        "pregunta": "¿Cómo se puede trabajar con Google Docs sin conexión a internet?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Activando el modo sin conexión desde la configuración de Google Drive", "No es posible, siempre requiere internet", "Descargando el archivo como PDF", "Usando una extensión de terceros"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Google Drive permite activar el acceso sin conexión desde Configuración → Sin conexión. Los documentos se sincronizan automáticamente cuando vuelves a tener internet. Requiere la extensión de Google Docs sin conexión en Chrome.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "gw-q14",
+        "pregunta": "¿Qué herramienta de Google Workspace permite crear flujos de trabajo automatizados conectando diferentes aplicaciones?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Google Apps Script", "Google Keep", "Google Sites", "Google Currents"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Google Apps Script es una plataforma de scripting basada en JavaScript que permite automatizar tareas y crear integraciones entre las aplicaciones de Google Workspace como Sheets, Docs, Gmail y Calendar.",
+        "dificultad": "dificil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-pbi-m2",
+    "cursoId": "power-bi",
+    "moduloId": "pbi-m2",
+    "titulo": "Modelado de Datos en Power BI",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "pbi-q1",
+        "pregunta": "¿Qué tipo de relación es la más común en un modelo de datos de Power BI?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Uno a muchos (1:N)", "Muchos a muchos (N:N)", "Uno a uno (1:1)", "No se usan relaciones en Power BI"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La relación uno a muchos (1:N) es la más común y eficiente en Power BI. Por ejemplo, un cliente (1) puede tener muchos pedidos (N). Las relaciones muchos a muchos deben evitarse cuando sea posible.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "pbi-q2",
+        "pregunta": "¿Qué es un esquema de estrella (star schema) en modelado de datos?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un modelo con una tabla de hechos central rodeada de tablas de dimensiones", "Un modelo donde todas las tablas están conectadas entre sí", "Un modelo con una sola tabla plana", "Un tipo de gráfico de Power BI"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El esquema de estrella tiene una tabla de hechos central (con métricas numéricas) conectada a tablas de dimensiones (con atributos descriptivos). Es el patrón recomendado por Microsoft para Power BI por su rendimiento y simplicidad.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pbi-q3",
+        "pregunta": "¿Cuál es la diferencia entre una medida (measure) y una columna calculada en Power BI?",
+        "tipo": "opcion-multiple",
+        "opciones": ["La medida se calcula en tiempo de consulta; la columna calculada se calcula al refrescar los datos", "No hay diferencia, son lo mismo", "La columna calculada es más rápida siempre", "Las medidas solo funcionan con números enteros"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Las medidas se calculan dinámicamente según el contexto del filtro (son más eficientes en memoria). Las columnas calculadas se evalúan fila por fila al refrescar y se almacenan en el modelo. Usa medidas siempre que sea posible.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pbi-q4",
+        "pregunta": "¿Qué función DAX se usa para crear una medida que suma las ventas?",
+        "tipo": "opcion-multiple",
+        "opciones": ["SUM(Ventas[Monto])", "SUMA(Ventas[Monto])", "ADD(Ventas[Monto])", "TOTAL(Ventas[Monto])"],
+        "respuestaCorrecta": 0,
+        "explicacion": "En DAX, la función SUM() suma todos los valores de una columna. A diferencia de Excel, DAX siempre usa nombres en inglés (SUM, no SUMA). La referencia a columnas usa la notación Tabla[Columna].",
+        "dificultad": "facil"
+      },
+      {
+        "id": "pbi-q5",
+        "pregunta": "¿Qué hace la función CALCULATE en DAX?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Evalúa una expresión modificando el contexto de filtro", "Realiza cálculos aritméticos básicos", "Calcula el promedio de una columna", "Cuenta el número de filas"],
+        "respuestaCorrecta": 0,
+        "explicacion": "CALCULATE es la función más importante de DAX. Permite evaluar una expresión (como SUM) en un contexto de filtro modificado. Por ejemplo: CALCULATE(SUM(Ventas[Monto]), Producto[Categoría]=\"Electrónica\").",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "pbi-q6",
+        "pregunta": "¿Qué tipo de dato es más adecuado para una columna que almacena códigos postales como '00100'?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Texto", "Número entero", "Número decimal", "Fecha"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los códigos postales deben almacenarse como texto porque pueden comenzar con ceros (como '00100'). Si se almacenan como números, se perderían los ceros iniciales, causando errores en las relaciones.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pbi-q7",
+        "pregunta": "¿Para qué se usa Power Query (Editor de consultas) en Power BI?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Para transformar y limpiar datos antes de cargarlos al modelo", "Para crear visualizaciones", "Para publicar informes en la nube", "Para escribir fórmulas DAX"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Power Query es la herramienta ETL de Power BI que permite conectar, transformar y limpiar datos de múltiples fuentes antes de cargarlos al modelo. Usa el lenguaje M para las transformaciones.",
+        "dificultad": "facil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-pbi-m4",
+    "cursoId": "power-bi",
+    "moduloId": "pbi-m4",
+    "titulo": "DAX Avanzado y Publicación",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "pbi-q8",
+        "pregunta": "¿Qué hace la función ALL() en DAX?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Elimina todos los filtros de una tabla o columna", "Selecciona todos los registros", "Aplica todos los filtros disponibles", "Ordena todos los datos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "ALL() elimina los filtros aplicados a una tabla o columna, devolviendo todas las filas sin importar el contexto de filtro actual. Es fundamental para calcular porcentajes del total: DIVIDE(SUM(Ventas), CALCULATE(SUM(Ventas), ALL(Tabla))).",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "pbi-q9",
+        "pregunta": "¿Qué función DAX calcula el total acumulado del año hasta la fecha actual?",
+        "tipo": "opcion-multiple",
+        "opciones": ["TOTALYTD", "SUMX", "CALCULATE", "DATEADD"],
+        "respuestaCorrecta": 0,
+        "explicacion": "TOTALYTD (Total Year-To-Date) calcula el acumulado desde el inicio del año hasta la fecha actual. Ejemplo: TOTALYTD(SUM(Ventas[Monto]), Calendario[Fecha]). Requiere una tabla de fechas.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pbi-q10",
+        "pregunta": "¿Cuál es la diferencia entre contexto de fila y contexto de filtro en DAX?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El contexto de fila itera sobre filas individuales; el contexto de filtro restringe los datos visibles", "Son lo mismo, solo cambia el nombre", "El contexto de fila es para tablas y el de filtro para gráficos", "El contexto de filtro es más rápido"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El contexto de fila se crea con funciones iteradoras (SUMX, FILTER) y columnas calculadas, evaluando fila por fila. El contexto de filtro es generado por slicers, filtros y CALCULATE, restringiendo qué datos son visibles para el cálculo.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "pbi-q11",
+        "pregunta": "¿Qué función DAX permite comparar un valor con el mismo período del año anterior?",
+        "tipo": "opcion-multiple",
+        "opciones": ["SAMEPERIODLASTYEAR", "PREVIOUSYEAR", "LASTDATE", "DATESBETWEEN"],
+        "respuestaCorrecta": 0,
+        "explicacion": "SAMEPERIODLASTYEAR devuelve las fechas del mismo período del año anterior. Se usa dentro de CALCULATE: CALCULATE(SUM(Ventas[Monto]), SAMEPERIODLASTYEAR(Calendario[Fecha])) para comparaciones interanuales.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pbi-q12",
+        "pregunta": "¿Qué hace la función FILTER en DAX?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Devuelve una tabla filtrada según una condición", "Filtra las visualizaciones del informe", "Elimina filas duplicadas", "Ordena los datos de forma ascendente"],
+        "respuestaCorrecta": 0,
+        "explicacion": "FILTER es una función iteradora que recorre una tabla fila por fila y devuelve solo las filas que cumplen la condición. Se usa frecuentemente dentro de CALCULATE: CALCULATE(SUM(Ventas), FILTER(Producto, Producto[Precio]>100)).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pbi-q13",
+        "pregunta": "¿Cuál de estas es una buena práctica para mejorar el rendimiento de un modelo de Power BI?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Reducir la cardinalidad de las columnas y eliminar columnas innecesarias", "Agregar todas las columnas posibles al modelo", "Usar siempre columnas calculadas en vez de medidas", "Evitar las relaciones entre tablas"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Reducir la cardinalidad (cantidad de valores únicos) y eliminar columnas innecesarias disminuye el tamaño del modelo y mejora el rendimiento. Otras buenas prácticas: usar medidas en vez de columnas calculadas y evitar relaciones bidireccionales.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "pbi-q14",
+        "pregunta": "¿Qué es Power BI Service y para qué se utiliza?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Es la plataforma en la nube para publicar, compartir y programar la actualización de informes", "Es una versión de escritorio de Power BI", "Es una base de datos de Microsoft", "Es una herramienta solo para administradores"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Power BI Service (app.powerbi.com) es la plataforma en la nube donde se publican los informes creados en Power BI Desktop. Permite compartir dashboards, programar refrescos automáticos de datos, configurar alertas y crear aplicaciones.",
+        "dificultad": "facil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-sql-m2",
+    "cursoId": "sql-bases-datos",
+    "moduloId": "sql-m2",
+    "titulo": "Filtrado y Ordenamiento de Datos con SQL",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "sql-q1",
+        "pregunta": "¿Qué cláusula SQL se usa para filtrar registros según una condición?",
+        "tipo": "opcion-multiple",
+        "opciones": ["WHERE", "HAVING", "FILTER", "WHEN"],
+        "respuestaCorrecta": 0,
+        "explicacion": "WHERE filtra filas individuales antes de la agrupación. HAVING filtra después de GROUP BY. FILTER no es una cláusula estándar de SQL. WHEN se usa dentro de CASE.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "sql-q2",
+        "pregunta": "¿Cuál es el resultado de esta consulta?\nSELECT * FROM empleados WHERE salario BETWEEN 3000 AND 5000;",
+        "tipo": "opcion-multiple",
+        "opciones": ["Devuelve empleados con salario entre 3000 y 5000, incluyendo ambos valores", "Devuelve empleados con salario entre 3001 y 4999", "Devuelve un error porque BETWEEN no existe", "Devuelve solo empleados con salario exactamente 3000 o 5000"],
+        "respuestaCorrecta": 0,
+        "explicacion": "BETWEEN es inclusivo: devuelve registros donde el valor está entre el mínimo y el máximo, incluyendo ambos extremos. Es equivalente a: salario >= 3000 AND salario <= 5000.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "sql-q3",
+        "pregunta": "¿Qué comodín se usa con LIKE para representar cualquier cantidad de caracteres?",
+        "tipo": "opcion-multiple",
+        "opciones": ["%", "_", "*", "?"],
+        "respuestaCorrecta": 0,
+        "explicacion": "En SQL, '%' representa cero o más caracteres (LIKE 'A%' = empieza con A). '_' representa exactamente un carácter. '*' y '?' son comodines de otros contextos (como sistemas operativos), no de SQL estándar.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "sql-q4",
+        "pregunta": "¿Cuál es la diferencia entre AND y OR en una cláusula WHERE?",
+        "tipo": "opcion-multiple",
+        "opciones": ["AND requiere que todas las condiciones sean verdaderas; OR requiere que al menos una lo sea", "AND y OR funcionan igual", "OR es más rápido que AND", "AND se usa con números y OR con texto"],
+        "respuestaCorrecta": 0,
+        "explicacion": "AND es conjunción lógica: todas las condiciones deben cumplirse. OR es disyunción: basta con que una condición sea verdadera. Se pueden combinar usando paréntesis para controlar la precedencia.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "sql-q5",
+        "pregunta": "¿Qué operador SQL se usa para verificar si un valor está en una lista de valores?",
+        "tipo": "opcion-multiple",
+        "opciones": ["IN", "EXISTS", "BETWEEN", "LIKE"],
+        "respuestaCorrecta": 0,
+        "explicacion": "IN permite verificar si un valor coincide con cualquier valor de una lista: WHERE pais IN ('México', 'Colombia', 'Perú'). Es más limpio que usar múltiples OR.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "sql-q6",
+        "pregunta": "¿Cómo se ordenan los resultados de forma descendente en SQL?",
+        "tipo": "opcion-multiple",
+        "opciones": ["ORDER BY columna DESC", "SORT BY columna DESC", "ORDER BY columna DESCENDING", "GROUP BY columna DESC"],
+        "respuestaCorrecta": 0,
+        "explicacion": "ORDER BY columna DESC ordena los resultados de mayor a menor. ASC (ascendente) es el valor por defecto. Se pueden ordenar por múltiples columnas: ORDER BY col1 DESC, col2 ASC.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "sql-q7",
+        "pregunta": "¿Cómo se filtran registros que tienen un valor NULL en SQL?",
+        "tipo": "opcion-multiple",
+        "opciones": ["WHERE columna IS NULL", "WHERE columna = NULL", "WHERE columna == NULL", "WHERE columna EQUALS NULL"],
+        "respuestaCorrecta": 0,
+        "explicacion": "NULL no es un valor, es la ausencia de valor. Por eso no se puede comparar con = (columna = NULL siempre da FALSE). Se debe usar IS NULL o IS NOT NULL para verificar la presencia o ausencia de datos.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-sql-m3",
+    "cursoId": "sql-bases-datos",
+    "moduloId": "sql-m3",
+    "titulo": "JOINs — Combinando Tablas en SQL",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "sql-q8",
+        "pregunta": "¿Qué tipo de JOIN devuelve solo los registros que tienen coincidencias en ambas tablas?",
+        "tipo": "opcion-multiple",
+        "opciones": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+        "respuestaCorrecta": 0,
+        "explicacion": "INNER JOIN devuelve solo las filas donde hay coincidencia en ambas tablas. Si un registro de la tabla A no tiene correspondencia en la tabla B, no aparece en el resultado.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "sql-q9",
+        "pregunta": "¿Qué devuelve un LEFT JOIN cuando no hay coincidencia en la tabla derecha?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Las columnas de la tabla derecha aparecen como NULL", "El registro se omite del resultado", "Devuelve un error", "Las columnas de la tabla derecha aparecen como 0"],
+        "respuestaCorrecta": 0,
+        "explicacion": "LEFT JOIN devuelve TODOS los registros de la tabla izquierda. Cuando no hay coincidencia en la tabla derecha, las columnas de la tabla derecha se llenan con NULL. Es útil para encontrar registros sin correspondencia.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "sql-q10",
+        "pregunta": "¿Cuál es la diferencia principal entre RIGHT JOIN y LEFT JOIN?",
+        "tipo": "opcion-multiple",
+        "opciones": ["RIGHT JOIN conserva todos los registros de la tabla derecha; LEFT JOIN conserva todos los de la izquierda", "No hay diferencia", "RIGHT JOIN es más rápido", "LEFT JOIN solo funciona con números"],
+        "respuestaCorrecta": 0,
+        "explicacion": "RIGHT JOIN conserva todas las filas de la tabla derecha (la que va después de JOIN). LEFT JOIN conserva todas las filas de la tabla izquierda (la que va después de FROM). En la práctica, un RIGHT JOIN puede reescribirse como LEFT JOIN invirtiendo el orden de las tablas.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "sql-q11",
+        "pregunta": "¿Qué tipo de JOIN devuelve TODOS los registros de ambas tablas, tengan o no coincidencia?",
+        "tipo": "opcion-multiple",
+        "opciones": ["FULL OUTER JOIN", "INNER JOIN", "CROSS JOIN", "NATURAL JOIN"],
+        "respuestaCorrecta": 0,
+        "explicacion": "FULL OUTER JOIN combina LEFT y RIGHT JOIN: devuelve todas las filas de ambas tablas. Donde no hay coincidencia, aparece NULL. Es útil para encontrar registros huérfanos en cualquier tabla.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "sql-q12",
+        "pregunta": "¿Qué es un self-join en SQL?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un JOIN de una tabla consigo misma usando alias diferentes", "Un JOIN que se ejecuta automáticamente", "Un JOIN sin condición ON", "Un tipo especial de INNER JOIN"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Un self-join une una tabla consigo misma, usando alias para distinguir las dos 'copias'. Es útil para relaciones jerárquicas, como empleado-jefe: SELECT e.nombre, j.nombre AS jefe FROM empleados e JOIN empleados j ON e.jefe_id = j.id.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "sql-q13",
+        "pregunta": "¿Cómo se hace un JOIN con múltiples condiciones?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Usando AND en la cláusula ON: ON tabla1.col1 = tabla2.col1 AND tabla1.col2 = tabla2.col2", "Agregando otro JOIN", "Usando WHERE en vez de ON", "No es posible tener múltiples condiciones"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Se pueden agregar múltiples condiciones en la cláusula ON usando AND (u OR). Esto es útil cuando la relación entre tablas requiere más de una columna como clave compuesta.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "sql-q14",
+        "pregunta": "¿Cuándo es mejor usar INNER JOIN en vez de LEFT JOIN?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Cuando solo necesitas registros que existen en ambas tablas y no te interesan los que no tienen coincidencia", "Siempre, porque INNER JOIN es más rápido", "Cuando las tablas son muy grandes", "Nunca, LEFT JOIN es siempre preferible"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Usa INNER JOIN cuando solo te interesan registros con datos completos en ambas tablas (por ejemplo, pedidos CON cliente). Usa LEFT JOIN cuando necesitas incluir registros sin coincidencia (por ejemplo, todos los clientes, incluso los que no han comprado).",
+        "dificultad": "dificil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-o365-m1",
+    "cursoId": "office-365",
+    "moduloId": "o365-m1",
+    "titulo": "Microsoft Word — Documentos Profesionales",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "o365-q1",
+        "pregunta": "¿Cuál es la principal ventaja de usar estilos en Microsoft Word?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Permiten formatear el documento de manera consistente y generar tabla de contenido automáticamente", "Solo sirven para cambiar el color del texto", "Hacen el archivo más pequeño", "Son obligatorios para guardar el documento"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los estilos (Título 1, Título 2, Normal, etc.) aseguran formato consistente en todo el documento y permiten generar automáticamente la tabla de contenido, el panel de navegación y la numeración de secciones.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "o365-q2",
+        "pregunta": "¿Cómo se genera una tabla de contenido automática en Word?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Aplicar estilos de título al texto y luego ir a Referencias → Tabla de contenido", "Escribir manualmente los títulos y números de página", "Insertar → Tabla → Tabla de contenido", "Solo se puede crear en documentos PDF"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Para generar una tabla de contenido automática, primero debes aplicar los estilos Título 1, Título 2, etc. a los encabezados. Luego, ve a Referencias → Tabla de contenido y selecciona un formato. Se actualiza automáticamente con clic derecho → Actualizar campo.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "o365-q3",
+        "pregunta": "¿Qué son los encabezados y pies de página en Word?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Áreas que se repiten en la parte superior e inferior de cada página del documento", "Los títulos del primer párrafo", "Las notas al pie de página", "Los márgenes del documento"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los encabezados (header) y pies de página (footer) son áreas repetitivas en cada página. Se usan para incluir números de página, logotipos, títulos del documento o fechas. Se editan desde Insertar → Encabezado/Pie de página.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "o365-q4",
+        "pregunta": "¿Para qué sirve la función Combinar correspondencia (Mail Merge) en Word?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Para generar múltiples documentos personalizados a partir de una plantilla y una fuente de datos", "Para combinar dos documentos en uno", "Para enviar correos electrónicos", "Para comparar dos versiones de un documento"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Combinar correspondencia permite crear cartas, etiquetas o correos personalizados en masa. Se conecta una plantilla de Word con una fuente de datos (Excel, Access) y Word genera un documento para cada registro.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "o365-q5",
+        "pregunta": "¿Qué función de Word permite que varios revisores hagan cambios que el autor puede aceptar o rechazar?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Control de cambios (Track Changes)", "Comentarios", "Proteger documento", "Comparar documentos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Control de cambios registra cada modificación (inserciones, eliminaciones, formato) con el nombre del revisor y la fecha. El autor puede aceptar o rechazar cada cambio individualmente o todos a la vez desde Revisar → Aceptar/Rechazar.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "o365-q6",
+        "pregunta": "¿Qué configuración de diseño de página afecta los márgenes, orientación y tamaño del papel?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Disposición (Layout) o Diseño de página", "Inicio (Home)", "Insertar (Insert)", "Vista (View)"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La pestaña Disposición (o Diseño de página) contiene opciones para márgenes, orientación (vertical/horizontal), tamaño de papel, columnas, saltos de página y sangría. Es fundamental para la presentación profesional del documento.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "o365-q7",
+        "pregunta": "¿Cuál es la diferencia entre guardar un documento como .docx y como .pdf?",
+        "tipo": "opcion-multiple",
+        "opciones": [".docx es editable en Word; .pdf preserva el formato pero no es fácilmente editable", "No hay diferencia entre ambos formatos", ".pdf es más editable que .docx", ".docx solo funciona en Windows y .pdf en Mac"],
+        "respuestaCorrecta": 0,
+        "explicacion": "DOCX es el formato nativo de Word, editable y modificable. PDF (Portable Document Format) preserva el formato exacto sin importar el dispositivo, pero no está diseñado para ser editado. Se recomienda enviar versiones finales como PDF.",
+        "dificultad": "facil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-o365-m3",
+    "cursoId": "office-365",
+    "moduloId": "o365-m3",
+    "titulo": "Outlook, Teams y Colaboración en Office 365",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "o365-q8",
+        "pregunta": "¿Para qué sirven las reglas en Outlook?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Para automatizar la organización de correos según criterios definidos", "Para bloquear todos los correos entrantes", "Para cambiar el diseño de Outlook", "Para crear plantillas de correo"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Las reglas de Outlook permiten mover, categorizar, marcar o eliminar correos automáticamente según remitente, asunto, palabras clave u otros criterios. Se configuran desde Inicio → Reglas → Administrar reglas.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "o365-q9",
+        "pregunta": "¿Cómo se comparte un calendario en Outlook con un compañero de trabajo?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Desde Calendario → Compartir calendario → Escribir el email del compañero y definir permisos", "Enviando una captura de pantalla del calendario", "No es posible compartir calendarios en Outlook", "Solo el administrador de IT puede compartir calendarios"],
+        "respuestaCorrecta": 0,
+        "explicacion": "En Outlook, puedes compartir tu calendario con permisos específicos: solo ver disponibilidad, ver detalles limitados, ver todos los detalles o dar permisos de edición. Es fundamental para la coordinación de equipos.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "o365-q10",
+        "pregunta": "¿Cuál es la diferencia entre canales y chats en Microsoft Teams?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Los canales son conversaciones temáticas dentro de un equipo; los chats son conversaciones privadas entre personas", "No hay diferencia, son lo mismo", "Los chats son solo para texto y los canales para archivos", "Los canales son para videollamadas y los chats para mensajes"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los canales están organizados por temas dentro de un equipo (ejemplo: #marketing, #ventas) y son visibles para todos los miembros. Los chats son conversaciones privadas 1:1 o en grupo, separados de la estructura del equipo.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "o365-q11",
+        "pregunta": "¿Qué opción de Teams permite programar una reunión con participantes internos y externos?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Calendario de Teams → Nueva reunión → Agregar participantes con su email", "Solo se pueden invitar personas de la misma organización", "Hay que usar Zoom para participantes externos", "Las reuniones solo se crean desde Outlook"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Teams permite programar reuniones e invitar a participantes externos usando su email. Los externos pueden unirse desde el navegador sin instalar Teams. También se pueden crear reuniones desde Outlook con el complemento de Teams.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "o365-q12",
+        "pregunta": "¿Cuál es la diferencia principal entre OneDrive y SharePoint en Microsoft 365?",
+        "tipo": "opcion-multiple",
+        "opciones": ["OneDrive es almacenamiento personal; SharePoint es almacenamiento y colaboración de equipo/organización", "OneDrive es más rápido que SharePoint", "SharePoint es solo para administradores", "No hay diferencia, ambos almacenan archivos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "OneDrive es tu espacio personal en la nube (como 'Mis documentos'). SharePoint es una plataforma de colaboración organizacional con sitios de equipo, bibliotecas compartidas, flujos de trabajo y permisos granulares.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "o365-q13",
+        "pregunta": "¿Dónde se configura una firma automática en Outlook?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Configuración → Correo → Redactar y responder → Firma de correo electrónico", "Insertar → Firma", "Archivo → Imprimir → Firma", "No se pueden crear firmas en Outlook"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Las firmas en Outlook se configuran desde Configuración (o Archivo → Opciones → Correo → Firmas). Se pueden crear múltiples firmas y asignar una predeterminada para mensajes nuevos y otra para respuestas.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "o365-q14",
+        "pregunta": "¿Qué son las aplicaciones (apps) en Microsoft Teams?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Integraciones de herramientas externas y de Microsoft que se pueden agregar a canales y chats", "Juegos para usar durante las reuniones", "Versiones móviles de Teams", "Actualizaciones del sistema operativo"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Las apps de Teams permiten integrar herramientas como Planner, Forms, Power BI, Trello o aplicaciones personalizadas directamente en canales, chats o pestañas. Mejoran la productividad al centralizar herramientas en un solo lugar.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-ad-m2",
+    "cursoId": "analitica-datos",
+    "moduloId": "ad-m2",
+    "titulo": "Limpieza y Preparación de Datos",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "ad-q1",
+        "pregunta": "¿Cuál es la forma más común de manejar valores faltantes (missing values) en un dataset?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Depende del contexto: eliminar filas, imputar con media/mediana, o usar un valor por defecto", "Siempre eliminar todas las filas con valores faltantes", "Siempre reemplazar con cero", "Ignorarlos y continuar con el análisis"],
+        "respuestaCorrecta": 0,
+        "explicacion": "No hay una solución universal. Si faltan pocos datos, se pueden eliminar filas. Si son muchos, se pueden imputar con la media (datos simétricos) o mediana (datos con outliers). La decisión depende del porcentaje de datos faltantes y el tipo de análisis.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "ad-q2",
+        "pregunta": "¿Qué es un dato duplicado y por qué es problemático?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un registro que aparece más de una vez; distorsiona los cálculos estadísticos y los conteos", "Un dato que tiene el mismo formato que otro", "Un dato almacenado en dos tablas diferentes", "Un dato que fue modificado dos veces"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los duplicados son registros idénticos que aparecen más de una vez en el dataset. Distorsionan promedios, sumas y conteos. Se deben identificar y eliminar comparando valores clave como ID, nombre+fecha, etc.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "ad-q3",
+        "pregunta": "¿Qué es un outlier (valor atípico) en un conjunto de datos?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un valor que se desvía significativamente del resto de los datos", "Un valor que está duplicado", "Un valor que falta en el dataset", "El valor más común en el dataset"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Un outlier es un valor inusualmente alto o bajo comparado con el resto. Puede ser un error de entrada o un dato legítimo pero extremo. Se detectan con métodos como IQR (rango intercuartil), Z-score o visualmente con diagramas de caja (box plots).",
+        "dificultad": "facil"
+      },
+      {
+        "id": "ad-q4",
+        "pregunta": "¿Por qué es importante verificar los tipos de datos de cada columna antes del análisis?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Porque tipos incorrectos causan errores en cálculos; por ejemplo, números almacenados como texto no se pueden sumar", "No es importante, los programas lo detectan automáticamente", "Solo importa si se usan bases de datos", "Para que el archivo ocupe menos espacio"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Un tipo de dato incorrecto (por ejemplo, fechas como texto o números como strings) impide realizar operaciones matemáticas, comparaciones y ordenamientos correctos. Es uno de los primeros pasos en la limpieza de datos.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "ad-q5",
+        "pregunta": "¿Qué es la normalización de datos?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Transformar los datos a una escala común para que sean comparables", "Eliminar todos los valores nulos", "Convertir todos los datos a texto", "Ordenar los datos de menor a mayor"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La normalización transforma variables a una escala común (por ejemplo, 0 a 1 con Min-Max, o media=0 y desviación=1 con Z-score). Es crucial cuando las variables tienen diferentes unidades o escalas, especialmente en machine learning.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "ad-q6",
+        "pregunta": "¿Qué significan las siglas ETL?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Extract, Transform, Load (Extraer, Transformar, Cargar)", "Edit, Test, Launch", "Enter, Transfer, Link", "Evaluate, Track, Log"],
+        "respuestaCorrecta": 0,
+        "explicacion": "ETL es el proceso de Extraer datos de las fuentes, Transformarlos (limpiar, formatear, enriquecer) y Cargarlos en el destino (data warehouse, base de datos). Es un proceso fundamental en analítica de datos y BI.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "ad-q7",
+        "pregunta": "¿Qué es la validación de datos?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El proceso de verificar que los datos cumplen con reglas de negocio y formatos esperados", "Guardar una copia de seguridad de los datos", "Cifrar los datos para protegerlos", "Compartir los datos con otros departamentos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La validación verifica que los datos cumplan reglas definidas: rangos válidos (edad entre 0-120), formatos correctos (email con @), consistencia entre campos (fecha_fin > fecha_inicio) y reglas de negocio específicas.",
+        "dificultad": "facil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-ad-m5",
+    "cursoId": "analitica-datos",
+    "moduloId": "ad-m5",
+    "titulo": "Proyecto Final — Analítica de Datos",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "ad-q8",
+        "pregunta": "¿Qué es el Análisis Exploratorio de Datos (EDA)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un proceso para entender los datos mediante estadísticas descriptivas y visualizaciones antes de modelar", "Un tipo de base de datos", "Un lenguaje de programación", "Un método para eliminar datos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "EDA (Exploratory Data Analysis) es el primer paso del análisis: examinar distribuciones, encontrar patrones, detectar outliers y formular hipótesis usando herramientas visuales (histogramas, scatter plots) y estadísticas descriptivas.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "ad-q9",
+        "pregunta": "¿Cuál es la diferencia entre la media y la mediana?",
+        "tipo": "opcion-multiple",
+        "opciones": ["La media es el promedio aritmético; la mediana es el valor central cuando los datos están ordenados", "Son lo mismo, solo cambia el nombre", "La media es para datos numéricos y la mediana para datos de texto", "La mediana siempre es mayor que la media"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La media suma todos los valores y divide entre el total (sensible a outliers). La mediana es el valor central de los datos ordenados (robusta a outliers). Para datos con distribución sesgada, la mediana es más representativa.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "ad-q10",
+        "pregunta": "¿Cuál es la diferencia entre correlación y causalidad?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Correlación indica que dos variables se mueven juntas; causalidad indica que una causa la otra", "Son lo mismo", "Causalidad es más fácil de probar que correlación", "Correlación solo se aplica a datos numéricos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Correlación no implica causalidad. Que dos variables estén correlacionadas (por ejemplo, ventas de helados y ahogamientos) no significa que una cause la otra (ambas están influenciadas por el calor). La causalidad requiere diseño experimental controlado.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "ad-q11",
+        "pregunta": "¿Cuál es la mejor visualización para mostrar la evolución de una métrica en el tiempo?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Gráfico de líneas", "Gráfico circular", "Diagrama de dispersión", "Tabla de datos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El gráfico de líneas es ideal para mostrar tendencias temporales porque conecta puntos de datos cronológicos, facilitando la identificación de tendencias, estacionalidades y cambios. El eje X representa el tiempo y el Y la métrica.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "ad-q12",
+        "pregunta": "¿Qué es el storytelling con datos?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El arte de comunicar hallazgos de datos de forma clara y persuasiva usando narrativa y visualizaciones", "Escribir historias de ficción sobre análisis", "Usar solo texto para explicar los datos", "Crear animaciones con los datos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El storytelling con datos combina datos, visualizaciones y narrativa para comunicar hallazgos de forma clara y accionable. Un buen data story tiene contexto (¿por qué importa?), hallazgos clave y recomendaciones de acción.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "ad-q13",
+        "pregunta": "¿Qué es un KPI (Key Performance Indicator)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Una métrica clave que mide el progreso hacia un objetivo estratégico de negocio", "Cualquier número en un reporte", "Un tipo de gráfico en Excel", "Un lenguaje de programación para análisis"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Un KPI es una métrica estratégica vinculada a objetivos de negocio. Debe ser específico, medible y accionable. Ejemplo: tasa de conversión, ingreso mensual recurrente (MRR), satisfacción del cliente (NPS). No toda métrica es un KPI.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "ad-q14",
+        "pregunta": "¿Cuál es la principal ventaja de un dashboard interactivo frente a un reporte estático?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Permite a los usuarios explorar los datos filtrando y profundizando según sus necesidades", "Es más bonito visualmente", "Ocupa menos espacio en disco", "Solo los administradores pueden verlo"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Un dashboard interactivo permite filtrar, segmentar y hacer drill-down en los datos en tiempo real. Los usuarios pueden responder sus propias preguntas sin depender del analista, fomentando la cultura data-driven.",
+        "dificultad": "facil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-fp-m2",
+    "cursoId": "fundamentos-programacion",
+    "moduloId": "fp-m2",
+    "titulo": "Algoritmos y Diagramas de Flujo",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "fp-q1",
+        "pregunta": "¿Qué es un algoritmo?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un conjunto de pasos ordenados y finitos para resolver un problema", "Un tipo de lenguaje de programación", "Un componente del hardware", "Una base de datos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Un algoritmo es una secuencia finita de instrucciones bien definidas que resuelven un problema. Debe ser preciso (sin ambigüedad), finito (terminar en algún momento) y tener entrada y salida definidas.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "fp-q2",
+        "pregunta": "En un diagrama de flujo, ¿qué forma geométrica representa una decisión (condición)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Rombo (diamante)", "Rectángulo", "Óvalo", "Paralelogramo"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El rombo (diamante) representa una decisión con dos salidas (Sí/No o Verdadero/Falso). El rectángulo es un proceso, el óvalo es inicio/fin, y el paralelogramo es entrada/salida de datos.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "fp-q3",
+        "pregunta": "¿Qué es el pseudocódigo?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Una descripción de un algoritmo usando lenguaje natural estructurado, sin sintaxis de un lenguaje específico", "Un lenguaje de programación antiguo", "Código con errores de sintaxis", "Un tipo de comentario en el código"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El pseudocódigo describe la lógica de un algoritmo en un lenguaje intermedio entre el español y la programación. No se ejecuta directamente, pero facilita la planificación y comunicación del algoritmo antes de codificarlo.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "fp-q4",
+        "pregunta": "¿Cuáles son las tres estructuras de control básicas en programación?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Secuencial, condicional (decisión) e iterativa (repetición)", "Entrada, proceso y salida", "Variables, constantes y operadores", "Funciones, clases y objetos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Las tres estructuras básicas son: secuencial (instrucciones en orden), condicional (si-entonces-sino, para tomar decisiones) e iterativa (mientras, para, para repetir instrucciones). Todo algoritmo se construye con estas tres.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "fp-q5",
+        "pregunta": "¿Qué es una variable en programación?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un espacio en memoria que almacena un valor que puede cambiar durante la ejecución", "Un valor que nunca cambia", "Un tipo de bucle", "Una instrucción del procesador"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Una variable es un contenedor con un nombre que almacena datos en la memoria del computador. Su valor puede cambiar durante la ejecución del programa. Se debe declarar con un nombre descriptivo (ejemplo: edad, nombreCompleto).",
+        "dificultad": "facil"
+      },
+      {
+        "id": "fp-q6",
+        "pregunta": "¿Qué tipo de dato almacena valores verdadero/falso?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Booleano", "Entero", "Cadena de texto (String)", "Flotante (Float)"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El tipo booleano (boolean) solo tiene dos valores posibles: verdadero (true) o falso (false). Se usa en condiciones, comparaciones y lógica de decisiones. Su nombre honra a George Boole, padre de la lógica booleana.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "fp-q7",
+        "pregunta": "¿Qué estructura de control usarías para repetir una acción mientras se cumpla una condición?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Bucle while (mientras)", "Condicional if (si)", "Estructura secuencial", "Declaración de variable"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El bucle while repite un bloque de instrucciones mientras la condición sea verdadera. Es importante asegurarse de que la condición eventualmente se vuelva falsa para evitar un bucle infinito.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-fp-m4",
+    "cursoId": "fundamentos-programacion",
+    "moduloId": "fp-m4",
+    "titulo": "Mi Primer Programa — Depuración y Buenas Prácticas",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "fp-q8",
+        "pregunta": "¿Qué es la depuración (debugging) de un programa?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El proceso de encontrar y corregir errores (bugs) en el código", "Borrar el código fuente", "Compilar el programa", "Agregar nuevas funciones"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Debugging es el proceso sistemático de identificar, analizar y corregir errores en el código. Las herramientas de depuración permiten ejecutar el código paso a paso, inspeccionar variables y establecer puntos de interrupción (breakpoints).",
+        "dificultad": "facil"
+      },
+      {
+        "id": "fp-q9",
+        "pregunta": "¿Cuál es la diferencia entre un error de sintaxis y un error lógico?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El error de sintaxis viola las reglas del lenguaje y no permite ejecutar; el error lógico ejecuta pero da resultados incorrectos", "No hay diferencia, ambos detienen el programa", "Los errores de sintaxis son más graves", "Los errores lógicos son detectados por el compilador"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los errores de sintaxis (paréntesis faltante, punto y coma) son detectados antes de ejecutar. Los errores lógicos (usar + en vez de -, condición invertida) son más difíciles de encontrar porque el programa ejecuta sin quejarse pero produce resultados incorrectos.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "fp-q10",
+        "pregunta": "¿Qué es un test (prueba) en programación?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Una verificación automática o manual de que el código produce los resultados esperados", "Un examen para programadores", "Un tipo de variable", "Una herramienta para medir la velocidad del código"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Las pruebas verifican que el código funciona correctamente. Se definen entradas conocidas y se comparan las salidas reales con las esperadas. Los tipos incluyen pruebas unitarias (una función), de integración (varios componentes) y de sistema (todo junto).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "fp-q11",
+        "pregunta": "¿Por qué es importante escribir comentarios en el código?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Para explicar el propósito y la lógica del código, facilitando su comprensión por otros desarrolladores o por ti mismo en el futuro", "Para que el programa se ejecute más rápido", "Son obligatorios para que el código compile", "Para decorar el código"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los comentarios explican el 'por qué' del código (no el 'qué'). Un buen comentario aclara la intención, decisiones de diseño o algoritmos complejos. No se deben comentar cosas obvias. El código limpio con buenos nombres puede reducir la necesidad de comentarios.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "fp-q12",
+        "pregunta": "¿Cuál de estas es una buena práctica para nombrar variables?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Usar nombres descriptivos como 'precioTotal' o 'nombreUsuario'", "Usar nombres de una sola letra como 'x', 'y', 'z'", "Usar números como nombres: '1', '2', '3'", "Usar caracteres especiales como '@valor' o '#dato'"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los nombres descriptivos hacen el código autoexplicativo. Se recomienda camelCase (precioTotal) o snake_case (precio_total) según el lenguaje. Evitar abreviaturas confusas, nombres de una letra (excepto en bucles cortos: i, j) y nombres genéricos (dato, valor).",
+        "dificultad": "facil"
+      },
+      {
+        "id": "fp-q13",
+        "pregunta": "¿Qué son las operaciones de entrada/salida (I/O) en un programa?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Entrada es recibir datos del usuario o archivos; salida es mostrar resultados en pantalla o guardar en archivos", "Solo se refiere a la conexión a internet", "Son operaciones matemáticas", "Son un tipo de bucle"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La entrada (input) permite al programa recibir datos del usuario (teclado), archivos o sensores. La salida (output) permite mostrar resultados en pantalla, escribir en archivos o enviar datos a otros dispositivos.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "fp-q14",
+        "pregunta": "¿Cuál es la estructura básica de un programa en la mayoría de los lenguajes?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Declaraciones/importaciones, definición de datos, lógica del programa y salida de resultados", "Solo un bloque de código sin estructura", "Obligatoriamente debe tener una interfaz gráfica", "Siempre debe conectarse a una base de datos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Un programa típico tiene: importaciones/bibliotecas necesarias, declaración de variables y constantes, lógica principal (procesamiento, condiciones, bucles) y salida de resultados. En muchos lenguajes, el punto de entrada es una función main().",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-bi-m2",
+    "cursoId": "business-intelligence",
+    "moduloId": "bi-m2",
+    "titulo": "ETL y Data Warehousing",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "bi-q1",
+        "pregunta": "¿Qué significan las siglas ETL en Business Intelligence?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Extract, Transform, Load (Extraer, Transformar, Cargar)", "Evaluate, Test, Launch", "Enter, Transfer, Log", "Encrypt, Track, Link"],
+        "respuestaCorrecta": 0,
+        "explicacion": "ETL es el proceso central de BI: Extraer datos de múltiples fuentes, Transformarlos (limpiar, estandarizar, enriquecer) y Cargarlos en un data warehouse para su análisis.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "bi-q2",
+        "pregunta": "¿Cuál es la diferencia principal entre un data warehouse y una base de datos transaccional?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El data warehouse está optimizado para consultas analíticas; la base transaccional para operaciones diarias de lectura/escritura", "No hay diferencia, son lo mismo", "El data warehouse es más pequeño", "La base transaccional almacena más datos históricos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Las bases transaccionales (OLTP) están optimizadas para insertar, actualizar y consultar registros individuales rápidamente. Los data warehouses (OLAP) están optimizados para consultas analíticas sobre grandes volúmenes de datos históricos.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "bi-q3",
+        "pregunta": "¿Qué es el modelado dimensional en un data warehouse?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Una técnica que organiza datos en tablas de hechos y tablas de dimensiones para facilitar el análisis", "Un modelo 3D de los datos", "Un método para cifrar datos", "Una forma de almacenar imágenes"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El modelado dimensional organiza datos en tablas de hechos (métricas numéricas como ventas, cantidad) y tablas de dimensiones (atributos descriptivos como producto, fecha, cliente). Facilita consultas intuitivas y buen rendimiento.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "bi-q4",
+        "pregunta": "¿Cuál es la diferencia entre una tabla de hechos y una tabla de dimensiones?",
+        "tipo": "opcion-multiple",
+        "opciones": ["La tabla de hechos contiene métricas numéricas medibles; la tabla de dimensiones contiene atributos descriptivos para filtrar y agrupar", "La tabla de hechos es más grande en columnas", "No hay diferencia", "La tabla de dimensiones solo tiene fechas"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La tabla de hechos almacena eventos medibles (ventas, pedidos) con valores numéricos y claves foráneas. Las tablas de dimensiones dan contexto: ¿quién? (cliente), ¿qué? (producto), ¿cuándo? (fecha), ¿dónde? (ubicación).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "bi-q5",
+        "pregunta": "¿Qué es un data mart?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un subconjunto del data warehouse enfocado en un área de negocio específica", "Un mercado de datos en internet", "Una base de datos para e-commerce", "Un tipo de archivo de datos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Un data mart es un subconjunto del data warehouse orientado a un departamento o área de negocio (ventas, finanzas, RRHH). Permite análisis más rápidos y específicos sin acceder a todo el data warehouse.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "bi-q6",
+        "pregunta": "¿Por qué es importante la calidad de datos en un proyecto de BI?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Porque datos incorrectos producen análisis y decisiones erróneas (garbage in, garbage out)", "Solo importa para cumplir regulaciones", "No es importante si tienes muchos datos", "Solo afecta la velocidad de las consultas"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La regla 'garbage in, garbage out' significa que si los datos de entrada son de mala calidad, los análisis y decisiones basados en ellos también lo serán. La calidad de datos incluye exactitud, completitud, consistencia, actualidad y validez.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "bi-q7",
+        "pregunta": "¿Qué es un área de staging (staging area) en un proceso ETL?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un espacio temporal donde se almacenan los datos extraídos antes de transformarlos y cargarlos", "El lugar donde se muestran los reportes finales", "Un servidor de producción", "La interfaz de usuario del data warehouse"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El staging area es una zona intermedia donde se depositan los datos crudos extraídos de las fuentes. Ahí se realizan las transformaciones (limpieza, conversión, validación) antes de cargar los datos limpios al data warehouse.",
+        "dificultad": "dificil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-bi-m4",
+    "cursoId": "business-intelligence",
+    "moduloId": "bi-m4",
+    "titulo": "BI en la Práctica — Estrategia y Gobernanza",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "bi-q8",
+        "pregunta": "¿Cuál es la diferencia entre un KPI y una métrica?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un KPI es una métrica estratégica vinculada a objetivos de negocio; una métrica es cualquier medición cuantificable", "Son exactamente lo mismo", "Las métricas son más importantes que los KPIs", "Los KPIs solo se usan en ventas"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Todas las KPIs son métricas, pero no todas las métricas son KPIs. Un KPI debe estar directamente vinculado a un objetivo estratégico de negocio. Por ejemplo, 'visitas al sitio web' es una métrica; 'tasa de conversión' puede ser un KPI si está ligada a un objetivo de ventas.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "bi-q9",
+        "pregunta": "¿Qué es el Balanced Scorecard (Cuadro de Mando Integral)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un marco estratégico que mide el rendimiento desde cuatro perspectivas: financiera, cliente, procesos internos, y aprendizaje", "Un tipo de dashboard en Power BI", "Una hoja de cálculo balanceada", "Un método para calcular salarios"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El Balanced Scorecard de Kaplan y Norton mide la estrategia organizacional desde cuatro perspectivas: Financiera (¿cómo nos ven los accionistas?), Cliente (¿cómo nos ven los clientes?), Procesos Internos (¿en qué debemos ser excelentes?) y Aprendizaje/Crecimiento (¿cómo seguimos mejorando?).",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "bi-q10",
+        "pregunta": "¿Qué es el Self-Service BI?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Herramientas que permiten a los usuarios de negocio crear sus propios análisis y reportes sin depender de IT", "Un servicio de consultoría de BI", "Un tipo de base de datos", "Software que se instala automáticamente"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Self-Service BI empodera a los usuarios de negocio para explorar datos, crear visualizaciones y generar reportes sin necesitar conocimientos técnicos avanzados ni depender del departamento de TI. Power BI y Tableau son ejemplos de herramientas de Self-Service BI.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "bi-q11",
+        "pregunta": "¿Qué es la gobernanza de datos (data governance)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un conjunto de políticas, procesos y estándares para gestionar la disponibilidad, calidad y seguridad de los datos", "Un software para proteger datos", "Un departamento gubernamental", "Solo se refiere al cumplimiento legal"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La gobernanza de datos define quién puede acceder a qué datos, cómo se mantiene su calidad, quién es responsable de cada dato (data owner/steward), políticas de retención y cumplimiento regulatorio (GDPR, etc.).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "bi-q12",
+        "pregunta": "¿Qué es un modelo de madurez de BI?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un marco que evalúa el nivel de adopción y sofisticación de BI en una organización, desde reportes básicos hasta analítica predictiva", "Un modelo de datos maduro y estable", "Una certificación profesional de BI", "Un tipo de data warehouse"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los modelos de madurez de BI definen etapas de evolución: desde reportes manuales en Excel (nivel 1), pasando por dashboards centralizados (nivel 3), hasta analítica predictiva y prescriptiva con IA (nivel 5). Ayudan a planificar la hoja de ruta de BI.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "bi-q13",
+        "pregunta": "¿Cómo se mide el ROI (Retorno de Inversión) de un proyecto de BI?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Comparando los beneficios obtenidos (reducción de costos, aumento de ingresos, mejor eficiencia) contra la inversión total del proyecto", "Solo midiendo el costo de las licencias de software", "El ROI de BI no se puede medir", "Contando el número de reportes generados"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El ROI de BI incluye beneficios tangibles (ahorro de tiempo en reportes, reducción de errores, aumento de ventas por mejor segmentación) e intangibles (mejor toma de decisiones, cultura data-driven). Se calcula: (Beneficios - Costos) / Costos × 100.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "bi-q14",
+        "pregunta": "¿Cuál es un ejemplo real de cómo BI ayuda a una empresa minorista?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Analizar patrones de compra para optimizar inventario, personalizar ofertas y predecir demanda por temporada", "Solo generar facturas más rápido", "Reemplazar a todos los empleados de ventas", "Eliminar la necesidad de atención al cliente"],
+        "respuestaCorrecta": 0,
+        "explicacion": "En retail, BI permite analizar qué productos se venden juntos (market basket analysis), predecir demanda estacional, optimizar precios, segmentar clientes para marketing personalizado y detectar fraudes. Amazon y Walmart son líderes en BI aplicado a retail.",
+        "dificultad": "facil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-pm-m2",
+    "cursoId": "gestion-proyectos-scrum",
+    "moduloId": "pm-m2",
+    "titulo": "El Framework Scrum",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "pm-q1",
+        "pregunta": "¿Cuáles son los tres roles definidos en Scrum?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Product Owner, Scrum Master y Developers (Desarrolladores)", "Gerente de proyecto, Analista y Programador", "CEO, CTO y Developer", "Líder técnico, QA y Developer"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Scrum define tres roles: el Product Owner (maximiza el valor del producto y gestiona el Product Backlog), el Scrum Master (facilita el proceso y elimina impedimentos) y los Developers (crean el incremento del producto).",
+        "dificultad": "facil"
+      },
+      {
+        "id": "pm-q2",
+        "pregunta": "¿Cuáles son los cinco eventos (ceremonias) de Scrum?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Sprint, Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective", "Planificación, Ejecución, Control, Cierre y Retrospectiva", "Kickoff, Standup, Demo, Feedback y Release", "Inicio, Desarrollo, Pruebas, Despliegue y Mantenimiento"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los cinco eventos de Scrum son: Sprint (el contenedor), Sprint Planning (planificar qué se hará), Daily Scrum (sincronización diaria de 15 min), Sprint Review (demostrar el incremento) y Sprint Retrospective (mejorar el proceso).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pm-q3",
+        "pregunta": "¿Cuál es la duración recomendada de un Sprint en Scrum?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Entre 1 y 4 semanas, siendo 2 semanas lo más común", "Exactamente 1 mes siempre", "No tiene duración fija, depende del proyecto", "Mínimo 6 semanas"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los Sprints tienen duración fija de 1 a 4 semanas (la Guía Scrum dice máximo un mes). Dos semanas es lo más común porque permite feedback rápido sin ser demasiado corto. La duración se mantiene constante a lo largo del proyecto.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "pm-q4",
+        "pregunta": "¿Qué es el Sprint Goal (Objetivo del Sprint)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un objetivo único y coherente que el equipo se compromete a lograr durante el Sprint", "La lista completa de tareas del Sprint", "El número de story points a completar", "La fecha de entrega del Sprint"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El Sprint Goal es un objetivo de negocio concreto que da coherencia al Sprint. Ejemplo: 'Implementar el flujo de registro de usuarios'. Permite flexibilidad en el alcance: se pueden negociar tareas mientras se cumpla el objetivo.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pm-q5",
+        "pregunta": "¿Qué es la Definition of Done (Definición de Terminado)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un acuerdo del equipo sobre los criterios que debe cumplir un elemento para considerarse terminado", "La fecha límite del proyecto", "La aprobación del cliente", "El número de pruebas pasadas"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La Definition of Done es un checklist compartido que define cuándo un elemento del backlog está realmente terminado (ejemplo: código revisado, pruebas pasadas, documentación actualizada, desplegado en staging). Asegura calidad consistente.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pm-q6",
+        "pregunta": "¿Qué es el Product Backlog?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Una lista ordenada y priorizada de todo lo que se necesita en el producto, gestionada por el Product Owner", "Una lista de bugs del producto", "El plan del proyecto completo", "Las tareas del día actual"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El Product Backlog es una lista viva y priorizada de requisitos, funcionalidades, mejoras y correcciones del producto. El Product Owner lo ordena por valor de negocio. Los elementos más importantes y detallados están arriba (refinamiento continuo).",
+        "dificultad": "facil"
+      },
+      {
+        "id": "pm-q7",
+        "pregunta": "¿Cuál es la diferencia entre el Product Backlog y el Sprint Backlog?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El Product Backlog contiene todo lo pendiente del producto; el Sprint Backlog solo los elementos seleccionados para el Sprint actual", "Son lo mismo con diferente nombre", "El Sprint Backlog es más grande", "El Product Backlog solo tiene historias de usuario"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El Product Backlog es la lista completa de todo lo que podría hacerse en el producto (visión a largo plazo). El Sprint Backlog es un subconjunto seleccionado para el Sprint actual, más el plan de cómo lograr el Sprint Goal.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-pm-m4",
+    "cursoId": "gestion-proyectos-scrum",
+    "moduloId": "pm-m4",
+    "titulo": "Liderazgo Ágil y Gestión de Proyectos",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "pm-q8",
+        "pregunta": "¿Cuál es el principio fundamental de los límites WIP (Work In Progress) en Kanban?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Limitar el número de tareas en progreso simultáneamente para mejorar el flujo y reducir el tiempo de entrega", "Trabajar en la mayor cantidad de tareas posible al mismo tiempo", "Eliminar todas las tareas en progreso al final del día", "No tener ningún límite para maximizar la productividad"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los límites WIP evitan la sobrecarga del equipo y el cambio de contexto excesivo. Al limitar las tareas en progreso, se terminan más rápido (menos multitasking) y se identifican cuellos de botella en el proceso.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pm-q9",
+        "pregunta": "¿Qué es la gestión de riesgos en un proyecto?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El proceso de identificar, analizar y planificar respuestas a eventos inciertos que podrían afectar el proyecto", "Evitar todos los riesgos posibles", "Solo documentar los problemas después de que ocurren", "Un proceso exclusivo del gerente de proyecto"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La gestión de riesgos es proactiva: identifica amenazas y oportunidades, evalúa su probabilidad e impacto, y define estrategias de respuesta (mitigar, transferir, aceptar o evitar). Se usa una matriz de riesgos para priorizar.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pm-q10",
+        "pregunta": "¿Qué es la gestión de stakeholders (interesados)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Identificar, analizar y gestionar las expectativas y comunicación con las personas que afectan o son afectadas por el proyecto", "Solo comunicarse con el cliente", "Enviar reportes semanales a todos", "Ignorar a las personas que no están de acuerdo con el proyecto"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los stakeholders incluyen patrocinadores, clientes, equipo, usuarios finales y otros afectados. Se analizan con una matriz poder/interés para definir la estrategia de comunicación: gestionar de cerca (alto poder/alto interés), mantener informado, etc.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pm-q11",
+        "pregunta": "¿Cuál es la diferencia principal entre metodologías ágiles y cascada (waterfall)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Ágil es iterativo e incremental con entregas frecuentes; cascada es secuencial con una entrega al final", "No hay diferencia, solo cambia el nombre", "Cascada es más moderna que ágil", "Ágil no tiene planificación"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Cascada sigue fases secuenciales (requisitos → diseño → desarrollo → pruebas → entrega). Ágil divide el trabajo en iteraciones cortas con entregas incrementales, permitiendo adaptarse a cambios. Ágil es mejor para requisitos cambiantes; cascada para requisitos estables y bien definidos.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "pm-q12",
+        "pregunta": "¿Qué es un project charter (acta de constitución del proyecto)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un documento que autoriza formalmente el proyecto y define su alcance, objetivos, stakeholders y restricciones", "El contrato legal con el cliente", "El plan detallado de tareas", "El presupuesto del proyecto"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El project charter es el documento fundacional del proyecto. Define: justificación del proyecto, objetivos, alcance de alto nivel, supuestos, restricciones, stakeholders clave, hitos principales y el gerente de proyecto asignado.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "pm-q13",
+        "pregunta": "¿Qué es la gestión del cambio en el contexto de proyectos?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un proceso estructurado para evaluar, aprobar e implementar cambios al alcance, cronograma o presupuesto del proyecto", "Cambiar de metodología a mitad del proyecto", "Reemplazar al equipo del proyecto", "Modificar el código sin revisión"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La gestión del cambio asegura que los cambios se evalúen antes de implementarse. Incluye: solicitud de cambio, análisis de impacto (tiempo, costo, calidad), aprobación por el comité de cambios y actualización de los planes del proyecto.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "pm-q14",
+        "pregunta": "¿Qué es el liderazgo de servicio (servant leadership) en Scrum?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un estilo de liderazgo donde el líder sirve al equipo eliminando obstáculos y facilitando su trabajo", "El líder toma todas las decisiones por el equipo", "Un tipo de servicio al cliente", "El Scrum Master reporta al equipo de desarrollo"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El Scrum Master practica servant leadership: en lugar de dar órdenes, sirve al equipo eliminando impedimentos, facilitando eventos, protegiendo al equipo de distracciones y ayudando a la organización a adoptar Scrum. El éxito del equipo es su éxito.",
+        "dificultad": "facil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-lid-m1",
+    "cursoId": "liderazgo-equipos",
+    "moduloId": "lid-m1",
+    "titulo": "Fundamentos del Liderazgo",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "lid-q1",
+        "pregunta": "¿Qué caracteriza al liderazgo transformacional?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Inspira y motiva al equipo con una visión compartida, fomentando el desarrollo personal y la innovación", "Se enfoca exclusivamente en dar órdenes y controlar resultados", "Solo se aplica en empresas tecnológicas", "Evita cualquier tipo de cambio"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El liderazgo transformacional inspira a los seguidores a trascender sus intereses individuales por el bien del equipo. Se basa en cuatro pilares: influencia idealizada, motivación inspiracional, estimulación intelectual y consideración individualizada.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "lid-q2",
+        "pregunta": "¿Qué es la inteligencia emocional en el contexto del liderazgo?",
+        "tipo": "opcion-multiple",
+        "opciones": ["La capacidad de reconocer, entender y gestionar las emociones propias y de los demás", "Ser extremadamente lógico y no mostrar emociones", "Tener un alto coeficiente intelectual", "Estudiar psicología"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Según Daniel Goleman, la inteligencia emocional incluye: autoconciencia (conocer tus emociones), autogestión (controlarlas), conciencia social (empatía) y gestión de relaciones (influencia). Los líderes con alta IE generan mejor clima laboral.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "lid-q3",
+        "pregunta": "¿Qué es la escucha activa y por qué es importante para un líder?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Prestar atención plena al interlocutor, comprender su mensaje y responder reflexivamente, generando confianza", "Escuchar solo cuando conviene al líder", "Oír sin prestar atención", "Repetir exactamente lo que dice la otra persona"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La escucha activa implica atención plena, contacto visual, parafraseo, preguntas clarificadoras y ausencia de juicio. Genera confianza, mejora la comunicación, reduce malentendidos y hace que los miembros del equipo se sientan valorados.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "lid-q4",
+        "pregunta": "¿Cuándo es más efectivo delegar tareas según el liderazgo situacional?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Cuando el miembro del equipo tiene alta competencia y alto compromiso para la tarea", "Solo cuando el líder está de vacaciones", "Nunca, el líder debe hacer todo personalmente", "Solo con tareas poco importantes"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El liderazgo situacional (Hersey y Blanchard) adapta el estilo según la madurez del colaborador: dirigir (baja competencia), entrenar (competencia creciente), apoyar (competencia variable) y delegar (alta competencia y compromiso).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "lid-q5",
+        "pregunta": "¿Qué es el modelo SBI para dar feedback?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Situación, Comportamiento (Behavior), Impacto: describe cuándo ocurrió, qué hizo la persona y qué efecto tuvo", "Solución, Base, Implementación", "Sistema, Base de datos, Interfaz", "Selección, Beneficio, Inversión"],
+        "respuestaCorrecta": 0,
+        "explicacion": "SBI (Situation-Behavior-Impact) es un modelo de feedback estructurado: 'En la reunión de ayer (Situación), cuando interrumpiste a María tres veces (Comportamiento), ella se sintió frustrada y dejó de participar (Impacto)'. Es específico y no personal.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "lid-q6",
+        "pregunta": "¿Qué propone la pirámide de necesidades de Maslow respecto a la motivación?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Las personas satisfacen necesidades en orden jerárquico: fisiológicas, seguridad, sociales, estima y autorrealización", "Todas las necesidades son igualmente importantes", "Solo el dinero motiva a las personas", "La motivación no se puede influenciar"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Maslow propone que las necesidades se satisfacen en orden: primero las básicas (comida, seguridad) y luego las superiores (pertenencia, reconocimiento, autorrealización). Un líder debe identificar en qué nivel está cada miembro de su equipo para motivarlo efectivamente.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "lid-q7",
+        "pregunta": "¿Cuál es la diferencia entre un líder y un gerente (manager)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El líder inspira y define la dirección; el gerente planifica, organiza y controla procesos. Idealmente, se combinan ambos roles", "Son exactamente lo mismo", "El gerente es siempre superior al líder", "El líder no puede ser gerente"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Como dijo Peter Drucker: 'La gestión es hacer las cosas bien; el liderazgo es hacer las cosas correctas'. El gerente administra procesos y recursos; el líder inspira personas y define la visión. Los mejores profesionales combinan ambas habilidades.",
+        "dificultad": "facil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-lid-m3",
+    "cursoId": "liderazgo-equipos",
+    "moduloId": "lid-m3",
+    "titulo": "Liderazgo en la Práctica",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "lid-q8",
+        "pregunta": "¿Cuáles son las cinco estrategias principales para resolver conflictos según Thomas-Kilmann?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Competir, colaborar, comprometerse, evadir y acomodar", "Ignorar, gritar, rendirse, amenazar y negociar", "Mediar, arbitrar, negociar, litigar y conciliar", "Atacar, defender, retirarse, aliarse y rendirse"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El modelo Thomas-Kilmann define cinco estilos según asertividad y cooperación: Competir (ganar-perder), Colaborar (ganar-ganar), Comprometerse (ceder ambos), Evadir (evitar el conflicto) y Acomodar (ceder a los demás). Cada uno es apropiado en diferentes situaciones.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "lid-q9",
+        "pregunta": "¿Cuáles son las etapas de desarrollo de un equipo según Tuckman?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Forming (formación), Storming (conflicto), Norming (normalización), Performing (desempeño) y Adjourning (disolución)", "Inicio, desarrollo, madurez y cierre", "Creación, prueba, producción y retiro", "Reclutamiento, capacitación, evaluación y despido"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Tuckman identificó cinco etapas: Forming (los miembros se conocen), Storming (surgen conflictos de roles y estilos), Norming (se establecen normas), Performing (el equipo funciona de forma autónoma y productiva) y Adjourning (el equipo se disuelve).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "lid-q10",
+        "pregunta": "¿Cuál es la diferencia entre coaching y mentoring?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El coaching se enfoca en desarrollar habilidades específicas a corto plazo; el mentoring es una relación de guía profesional a largo plazo", "Son lo mismo con diferente nombre", "El coaching es solo para deportes", "El mentoring es solo para nuevos empleados"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El coaching se centra en mejorar habilidades o competencias específicas mediante preguntas y reflexión (el coach no da respuestas). El mentoring es una relación donde un profesional experimentado guía el desarrollo de carrera de alguien con menos experiencia.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "lid-q11",
+        "pregunta": "¿Qué elementos debe incluir una evaluación de desempeño efectiva?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Objetivos medibles, retroalimentación específica, plan de desarrollo y reconocimiento de logros", "Solo una calificación numérica del 1 al 10", "Únicamente los errores cometidos", "Solo la opinión del jefe directo"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Una evaluación efectiva incluye: objetivos claros y medibles (SMART), retroalimentación específica con ejemplos, autoevaluación del colaborador, feedback 360° cuando sea posible, plan de desarrollo con acciones concretas y reconocimiento de logros.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "lid-q12",
+        "pregunta": "¿Cuál es el mayor desafío de liderar equipos remotos?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Mantener la comunicación efectiva, la confianza y el sentido de pertenencia sin interacción presencial", "La tecnología no funciona", "Los empleados remotos no trabajan", "Es imposible liderar equipos remotos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El liderazgo remoto requiere comunicación intencional y frecuente, confianza basada en resultados (no en presencia), herramientas de colaboración, reuniones virtuales efectivas, atención al bienestar emocional y espacios para conexión social del equipo.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "lid-q13",
+        "pregunta": "¿Qué es el liderazgo intercultural (cross-cultural)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["La habilidad de liderar efectivamente equipos con miembros de diferentes culturas, adaptando el estilo de liderazgo", "Liderar solo en tu propia cultura", "Imponer tu cultura a los demás", "Solo hablar varios idiomas"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El liderazgo intercultural requiere conciencia de las diferencias culturales (comunicación directa vs indirecta, jerarquía vs igualdad, individualismo vs colectivismo), respeto por la diversidad y la capacidad de adaptar el estilo de liderazgo al contexto cultural.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "lid-q14",
+        "pregunta": "¿Qué papel juega el líder en la gestión del cambio organizacional?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Comunicar la visión, inspirar compromiso, apoyar al equipo durante la transición y modelar el cambio con el ejemplo", "Solo anunciar el cambio y esperar que se implemente solo", "Delegar todo el cambio al departamento de RRHH", "Implementar el cambio sin informar al equipo"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El líder es clave en el cambio: comunica el 'por qué' del cambio, crea urgencia, forma coaliciones de apoyo, celebra victorias tempranas, aborda resistencias con empatía y sostiene el cambio hasta que se consolide (modelo de Kotter).",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-ia-m2",
+    "cursoId": "ia-machine-learning",
+    "moduloId": "ia-m2",
+    "titulo": "Machine Learning en la Práctica",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "ia-q1",
+        "pregunta": "¿Cuál es la diferencia entre aprendizaje supervisado y no supervisado?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El supervisado aprende de datos etiquetados (con respuesta conocida); el no supervisado encuentra patrones en datos sin etiquetas", "El supervisado necesita un humano vigilando; el no supervisado funciona solo", "El supervisado es más moderno que el no supervisado", "No hay diferencia práctica entre ambos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "En aprendizaje supervisado, el modelo aprende de ejemplos con la respuesta correcta (etiquetas). Ejemplo: predecir precio de casas con datos históricos. En no supervisado, el modelo descubre patrones ocultos sin etiquetas. Ejemplo: segmentar clientes por comportamiento similar.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "ia-q2",
+        "pregunta": "¿Cuál es la diferencia entre clasificación y regresión?",
+        "tipo": "opcion-multiple",
+        "opciones": ["La clasificación predice categorías (spam/no spam); la regresión predice valores numéricos continuos (precio, temperatura)", "La clasificación es más difícil que la regresión", "La regresión solo funciona con datos grandes", "Son lo mismo pero con diferente nombre"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La clasificación asigna una categoría o etiqueta a cada observación (email es spam o no spam, imagen es gato o perro). La regresión predice un valor numérico continuo (precio de una casa, temperatura de mañana, ventas del próximo mes).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "ia-q3",
+        "pregunta": "¿Por qué se dividen los datos en conjuntos de entrenamiento y prueba (train/test)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Para evaluar cómo el modelo se comporta con datos que nunca ha visto, midiendo su capacidad de generalización", "Para hacer el proceso más lento y cuidadoso", "Porque no todos los datos caben en memoria", "Solo es una convención, no tiene beneficio real"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La división train/test (típicamente 80/20 o 70/30) permite evaluar la capacidad de generalización del modelo. Si solo evaluamos con datos de entrenamiento, no sabemos si el modelo memorizó los datos (overfitting) o realmente aprendió patrones generalizables.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "ia-q4",
+        "pregunta": "¿Qué es el overfitting (sobreajuste)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Cuando el modelo memoriza los datos de entrenamiento pero falla con datos nuevos porque es demasiado complejo", "Cuando el modelo es demasiado simple", "Cuando faltan datos de entrenamiento", "Cuando el modelo predice perfectamente"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El overfitting ocurre cuando el modelo es tan complejo que memoriza el ruido de los datos de entrenamiento en vez de aprender patrones generales. Señal: excelente precisión en entrenamiento pero mala en prueba. Soluciones: más datos, regularización, modelos más simples, validación cruzada.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "ia-q5",
+        "pregunta": "¿Qué algoritmo de machine learning se usa comúnmente para predecir un valor numérico basándose en una relación lineal?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Regresión lineal", "K-means", "Árboles de decisión", "Redes neuronales"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La regresión lineal modela la relación entre variables como una línea recta (y = mx + b). Es el algoritmo más básico de regresión, fácil de interpretar y un buen punto de partida. K-means es para clustering (no supervisado).",
+        "dificultad": "facil"
+      },
+      {
+        "id": "ia-q6",
+        "pregunta": "¿Qué métrica se usa comúnmente para evaluar un modelo de clasificación?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Exactitud (accuracy), precisión, recall y F1-score", "Solo el número de predicciones correctas", "El tiempo de entrenamiento", "El tamaño del dataset"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La accuracy mide el porcentaje total de aciertos, pero puede ser engañosa con datos desbalanceados. La precisión mide cuántos positivos predichos son correctos. El recall mide cuántos positivos reales se detectaron. El F1-score es la media armónica de precisión y recall.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "ia-q7",
+        "pregunta": "¿Qué es la ingeniería de características (feature engineering)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El proceso de crear, seleccionar y transformar variables para mejorar el rendimiento del modelo de ML", "Diseñar la interfaz de usuario del modelo", "Comprar mejores computadoras", "Programar el algoritmo desde cero"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Feature engineering transforma datos crudos en características útiles para el modelo. Incluye: crear nuevas variables (edad a partir de fecha de nacimiento), codificar categorías (one-hot encoding), normalizar escalas, y seleccionar las variables más relevantes.",
+        "dificultad": "medio"
+      }
+    ]
+  },
+  {
+    "id": "quiz-ia-m4",
+    "cursoId": "ia-machine-learning",
+    "moduloId": "ia-m4",
+    "titulo": "Ética de la IA y Proyecto Final",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "ia-q8",
+        "pregunta": "¿Qué es el sesgo (bias) en inteligencia artificial?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Cuando un modelo de IA produce resultados sistemáticamente injustos o discriminatorios debido a datos o diseño sesgados", "Un error de programación común", "Una característica deseable del modelo", "Solo ocurre con datos pequeños"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El sesgo en IA ocurre cuando los datos de entrenamiento reflejan prejuicios históricos o sociales (ejemplo: un sistema de contratación que discrimina por género porque los datos históricos tenían ese sesgo). Se combate con datos diversos, auditorías de equidad y equipos diversos.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "ia-q9",
+        "pregunta": "¿Qué es la IA generativa y cuáles son ejemplos populares?",
+        "tipo": "opcion-multiple",
+        "opciones": ["IA que crea contenido nuevo (texto, imágenes, código) a partir de patrones aprendidos; ejemplos: GPT, DALL-E, Midjourney", "IA que solo clasifica datos existentes", "IA que genera electricidad", "Robots que se construyen a sí mismos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La IA generativa usa modelos como transformers y difusión para crear contenido nuevo. GPT genera texto, DALL-E y Midjourney generan imágenes, Copilot genera código, y Sora genera video. Se entrenan con enormes cantidades de datos para aprender patrones de creación.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "ia-q10",
+        "pregunta": "¿Qué es el prompt engineering?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El arte de diseñar instrucciones efectivas para obtener mejores respuestas de modelos de IA generativa", "Programar un modelo de IA desde cero", "Construir el hardware para IA", "Un tipo de ingeniería civil"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El prompt engineering consiste en formular instrucciones claras, específicas y contextualizadas para modelos como GPT. Técnicas incluyen: dar contexto, ser específico, usar ejemplos (few-shot), asignar un rol, y iterar sobre el prompt para mejorar resultados.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "ia-q11",
+        "pregunta": "¿Cuáles son los principios fundamentales de la IA responsable?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Equidad, transparencia, privacidad, seguridad, inclusión y rendición de cuentas", "Solo velocidad y precisión", "Maximizar las ganancias a cualquier costo", "No existen principios establecidos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La IA responsable se basa en: equidad (sin discriminación), transparencia (explicabilidad), privacidad (protección de datos), seguridad (robustez), inclusión (accesible para todos) y rendición de cuentas (humanos responsables de las decisiones de la IA).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "ia-q12",
+        "pregunta": "¿Qué regulaciones importantes existen sobre inteligencia artificial?",
+        "tipo": "opcion-multiple",
+        "opciones": ["El AI Act de la Unión Europea clasifica los sistemas de IA por nivel de riesgo y establece requisitos proporcionados", "No existe ninguna regulación de IA en el mundo", "Solo Estados Unidos tiene regulación de IA", "La IA no necesita regulación"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El AI Act de la UE (2024) es la primera regulación integral de IA, clasificando sistemas por riesgo: inaceptable (prohibido), alto (regulado estrictamente), limitado (requisitos de transparencia) y mínimo (sin restricciones). Otros países están desarrollando marcos similares.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "ia-q13",
+        "pregunta": "¿Cómo puede la IA beneficiar a las empresas?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Automatizando tareas repetitivas, mejorando la toma de decisiones con datos, personalizando la experiencia del cliente y optimizando procesos", "Solo reemplazando empleados", "Solo funciona para empresas tecnológicas grandes", "No tiene aplicaciones prácticas actualmente"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La IA aporta valor en: atención al cliente (chatbots), marketing (personalización), operaciones (optimización de cadena de suministro), finanzas (detección de fraude), RRHH (filtrado de candidatos) y producción (mantenimiento predictivo).",
+        "dificultad": "facil"
+      },
+      {
+        "id": "ia-q14",
+        "pregunta": "¿Cuál es uno de los mayores desafíos del futuro de la IA?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Equilibrar la innovación tecnológica con la ética, la privacidad, el impacto laboral y la equidad social", "Hacer las computadoras más grandes", "Solo mejorar la velocidad de procesamiento", "La IA ya alcanzó su máximo potencial"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los desafíos del futuro de la IA incluyen: impacto en el empleo (automatización vs nuevos trabajos), desinformación (deepfakes), privacidad (vigilancia masiva), concentración de poder (pocas empresas dominan la IA), consumo energético y la carrera por la IA general (AGI).",
+        "dificultad": "dificil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-td-m1",
+    "cursoId": "transformacion-digital",
+    "moduloId": "td-m1",
+    "titulo": "Estrategia de Transformación Digital",
+    "modo": "practica",
+    "tiempoLimite": null,
+    "preguntas": [
+      {
+        "id": "td-q1",
+        "pregunta": "¿Cuáles son los pilares fundamentales de la transformación digital?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Tecnología, procesos, personas y cultura organizacional", "Solo comprar nueva tecnología", "Crear una página web y redes sociales", "Digitalizar documentos en papel"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La transformación digital no es solo tecnología. Requiere rediseñar procesos de negocio, desarrollar competencias digitales en las personas, evolucionar la cultura organizacional hacia la innovación y adoptar tecnología como habilitador del cambio.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "td-q2",
+        "pregunta": "¿Cuál es la diferencia entre IaaS, PaaS y SaaS en cloud computing?",
+        "tipo": "opcion-multiple",
+        "opciones": ["IaaS provee infraestructura (servidores); PaaS provee plataforma de desarrollo; SaaS provee software listo para usar", "Son lo mismo con diferente precio", "Solo las empresas grandes usan cloud computing", "Cloud computing es solo almacenamiento en la nube"],
+        "respuestaCorrecta": 0,
+        "explicacion": "IaaS (AWS EC2, Azure VMs): tú gestionas el sistema operativo y aplicaciones. PaaS (Heroku, App Engine): tú solo gestionas tu código. SaaS (Gmail, Salesforce, Office 365): todo está gestionado, solo usas el software. Cada nivel abstrae más responsabilidad.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "td-q3",
+        "pregunta": "¿Qué es un modelo de madurez digital?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un marco que evalúa el nivel de adopción digital de una organización, desde iniciada hasta optimizada", "Una métrica de la edad de la empresa", "Un modelo de negocio exclusivamente digital", "Un tipo de software empresarial"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los modelos de madurez digital evalúan en qué etapa está la organización: Inicial (procesos manuales), Emergente (digitalización parcial), Definida (estrategia digital clara), Gestionada (datos guían decisiones), Optimizada (innovación continua con IA y automatización).",
+        "dificultad": "medio"
+      },
+      {
+        "id": "td-q4",
+        "pregunta": "¿Por qué es importante la gestión del cambio en un proyecto de transformación digital?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Porque la resistencia de las personas al cambio es la principal causa de fracaso en proyectos de transformación digital", "No es importante si la tecnología es buena", "Solo importa para el departamento de TI", "El cambio ocurre naturalmente sin gestión"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Según McKinsey, el 70% de las transformaciones digitales fracasan, principalmente por resistencia al cambio y falta de apoyo de la dirección. La gestión del cambio incluye comunicación, capacitación, participación de los empleados y liderazgo visible.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "td-q5",
+        "pregunta": "¿Qué es la experiencia del cliente (Customer Experience - CX) en el contexto digital?",
+        "tipo": "opcion-multiple",
+        "opciones": ["La percepción total del cliente en todas sus interacciones digitales con la empresa, desde la web hasta el servicio postventa", "Solo el diseño de la página web", "La experiencia de compra en tienda física", "Un departamento dentro de la empresa"],
+        "respuestaCorrecta": 0,
+        "explicacion": "CX digital abarca todos los puntos de contacto: sitio web, app, redes sociales, email, chatbot, proceso de compra online y soporte. La transformación digital debe centrarse en mejorar cada interacción del customer journey para aumentar la satisfacción y fidelización.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "td-q6",
+        "pregunta": "¿Qué significa tomar decisiones basadas en datos (data-driven)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Usar análisis de datos y evidencia para fundamentar decisiones de negocio en lugar de solo la intuición", "Almacenar todos los datos posibles sin analizarlos", "Dejar que una IA tome todas las decisiones", "Solo usar Excel para hacer reportes"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Una cultura data-driven combina datos cuantitativos con experiencia y juicio para tomar decisiones informadas. Requiere acceso a datos de calidad, herramientas de análisis, alfabetización de datos en toda la organización y liderazgo que valore la evidencia.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "td-q7",
+        "pregunta": "¿Qué es la Industria 4.0?",
+        "tipo": "opcion-multiple",
+        "opciones": ["La cuarta revolución industrial, caracterizada por IoT, IA, automatización, big data y sistemas ciberfísicos en la manufactura", "La cuarta empresa más grande del mundo", "Un software industrial", "Una norma de calidad ISO"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La Industria 4.0 integra tecnologías como IoT (sensores conectados), IA (mantenimiento predictivo), robótica avanzada, gemelos digitales, impresión 3D y big data para crear fábricas inteligentes con producción autónoma, personalizada y eficiente.",
+        "dificultad": "dificil"
+      }
+    ]
+  },
+  {
+    "id": "quiz-td-m3",
+    "cursoId": "transformacion-digital",
+    "moduloId": "td-m3",
+    "titulo": "Cultura Digital y Mejora Continua",
+    "modo": "examen",
+    "tiempoLimite": 900,
+    "preguntas": [
+      {
+        "id": "td-q8",
+        "pregunta": "¿Qué es la cultura digital en una organización?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Un conjunto de valores, comportamientos y prácticas que fomentan la innovación, agilidad y uso estratégico de la tecnología", "Que todos los empleados tengan computadora", "Tener presencia en redes sociales", "Solo usar email en vez de papel"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La cultura digital va más allá de la tecnología: incluye mentalidad de experimentación (está bien fallar rápido y aprender), colaboración abierta, orientación al cliente, toma de decisiones basada en datos, aprendizaje continuo y agilidad organizacional.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "td-q9",
+        "pregunta": "¿Cómo se relaciona el mindset ágil con la transformación digital?",
+        "tipo": "opcion-multiple",
+        "opciones": ["La mentalidad ágil permite adaptarse rápidamente al cambio, iterar sobre soluciones y entregar valor de forma incremental", "Son conceptos totalmente diferentes y no se relacionan", "Ágil solo se aplica al desarrollo de software", "La transformación digital no requiere cambio de mentalidad"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El mindset ágil es esencial para la transformación digital: iteraciones cortas permiten validar hipótesis rápidamente, el feedback continuo permite ajustar la dirección, y la entrega incremental genera valor desde el inicio en vez de esperar años para un 'big bang'.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "td-q10",
+        "pregunta": "¿Qué es el Design Thinking y cómo se aplica a la innovación digital?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Una metodología centrada en el usuario con fases de empatizar, definir, idear, prototipar y testear", "Una herramienta de diseño gráfico", "Un software para crear prototipos", "Un curso universitario de diseño"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Design Thinking pone al usuario en el centro: Empatizar (entender necesidades reales), Definir (enfocar el problema), Idear (generar múltiples soluciones creativas), Prototipar (crear versiones rápidas) y Testear (validar con usuarios reales). Es iterativo y no lineal.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "td-q11",
+        "pregunta": "¿Cuáles son las amenazas de ciberseguridad más comunes que enfrentan las organizaciones?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Phishing, ransomware, malware, ingeniería social y vulnerabilidades de software no actualizado", "Solo los virus informáticos", "La ciberseguridad solo es problema de grandes empresas", "Solo los hackers externos son una amenaza"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Las principales amenazas incluyen: phishing (correos fraudulentos), ransomware (secuestro de datos), malware (software malicioso), ingeniería social (manipulación psicológica), amenazas internas (empleados) y vulnerabilidades en software desactualizado. La formación del personal es la primera línea de defensa.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "td-q12",
+        "pregunta": "¿Qué es la brecha de habilidades digitales (digital skills gap)?",
+        "tipo": "opcion-multiple",
+        "opciones": ["La diferencia entre las competencias digitales que necesita la organización y las que tiene su fuerza laboral actual", "La diferencia de velocidad entre internet y el computador", "Una brecha en la seguridad de datos", "La distancia entre centros de datos"],
+        "respuestaCorrecta": 0,
+        "explicacion": "La brecha digital es uno de los mayores obstáculos para la transformación. Se aborda con: programas de upskilling (mejorar habilidades actuales) y reskilling (aprender habilidades nuevas), cultura de aprendizaje continuo, contratación estratégica y alianzas con instituciones educativas.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "td-q13",
+        "pregunta": "¿Cómo se mide el ROI de la transformación digital?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Combinando métricas financieras (reducción de costos, aumento de ingresos) con métricas de experiencia del cliente y eficiencia operativa", "Solo midiendo el gasto en tecnología", "No se puede medir el ROI de la transformación digital", "Solo contando el número de herramientas implementadas"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El ROI de la transformación digital se mide con: métricas financieras (ingresos digitales, ahorro en procesos), métricas de cliente (NPS, conversión, retención), métricas operativas (tiempo de ciclo, automatización) y métricas de innovación (time-to-market, nuevos productos).",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "td-q14",
+        "pregunta": "¿Qué es la mejora continua (Kaizen) en el contexto de la transformación digital?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Una filosofía de hacer mejoras incrementales constantes en procesos, productos y servicios usando datos y feedback", "Hacer un cambio grande una vez al año", "Solo se aplica a la manufactura japonesa", "Comprar la tecnología más nueva constantemente"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Kaizen (改善) significa 'cambio para mejor' y promueve mejoras pequeñas pero constantes. En transformación digital: usar datos para identificar oportunidades, experimentar con cambios pequeños, medir resultados y escalar lo que funciona. Es un ciclo PDCA (Plan-Do-Check-Act) continuo.",
+        "dificultad": "dificil"
+      }
+    ]
   }
 ]

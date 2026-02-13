@@ -65,7 +65,18 @@ const cursoNombres = {
     "excel-basico-avanzado": "Excel Básico a Avanzado",
     "desarrollo-web": "Desarrollo Web",
     "python-basico": "Python desde Cero",
-    "sql-bases-datos": "SQL y Bases de Datos"
+    "sql-bases-datos": "SQL y Bases de Datos",
+    "google-workspace": "Google Workspace Completo",
+    "power-bi": "Power BI — Visualización de Datos",
+    "office-365": "Microsoft Office 365",
+    "analitica-datos": "Analítica de Datos",
+    "fundamentos-programacion": "Fundamentos de Programación",
+    "business-intelligence": "Business Intelligence",
+    "gestion-proyectos-scrum": "Gestión de Proyectos / Scrum",
+    "liderazgo-habilidades-blandas": "Liderazgo y Habilidades Blandas",
+    "ia-machine-learning": "IA y Machine Learning",
+    "transformacion-digital": "Transformación Digital",
+    "ingles-general": "Inglés General (A1-C1)"
 };
 
 // =========================
