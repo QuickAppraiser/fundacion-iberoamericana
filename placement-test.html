@@ -6,6 +6,14 @@
     <title>Test de Nivel CEFR | Fundación Iberoamericana</title>
     <meta name="description" content="Descubre tu nivel de inglés con nuestro test de nivel alineado al Marco Común Europeo (CEFR). Resultados inmediatos A1-C1.">
     <meta name="theme-color" content="#00BFA6">
+    <link rel="canonical" href="https://quickappraiser.github.io/fundacion-iberoamericana/placement-test.html">
+    <meta property="og:title" content="Test de Nivel CEFR | Fundación Iberoamericana">
+    <meta property="og:description" content="Descubre tu nivel de inglés con nuestro test de nivel alineado al Marco Común Europeo (CEFR). Resultados inmediatos A1-C1.">
+    <meta property="og:url" content="https://quickappraiser.github.io/fundacion-iberoamericana/placement-test.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://quickappraiser.github.io/fundacion-iberoamericana/icons/icon-512.svg">
+    <meta name="twitter:card" content="summary">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
     <link rel="apple-touch-icon" href="icons/icon-192.svg">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -468,6 +476,36 @@
 
 </div>
 
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="index.html" class="logo" style="margin-bottom:16px;">
+                <div class="logo-icon">FI</div>
+                <div class="logo-text">Fundación <span>Iberoamericana</span></div>
+            </a>
+            <p>Plataforma de formación técnica y profesional.</p>
+        </div>
+        <div>
+            <h4>Plataforma</h4>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="dashboard.html">Mi Aula</a>
+            <a href="quizzes.html">Quizzes</a>
+            <a href="labs.html">Labs</a>
+        </div>
+        <div>
+            <h4>Más</h4>
+            <a href="recursos.html">Recursos</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="certificados.html">Certificados</a>
+            <a href="privacidad.html">Privacidad</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Fundación Iberoamericana. Todos los derechos reservados.
+        <br><small style="opacity:0.7;">Coordinación Académica: Dr. Mauricio Rodríguez, PhD Education</small>
+    </div>
+</footer>
+
 <!-- Shared JS (dark mode, hamburger, language) -->
 <script src="js/main.js"></script>
 <script>
@@ -901,7 +939,7 @@
                 <div class="pt-breakdown">${breakdownHTML}</div>
 
                 <div class="pt-actions">
-                    <a href="curso.html?id=ingles-general" class="pt-action-btn primary">
+                    <a href="cursos/curso.html?id=ingles-general" class="pt-action-btn primary">
                         <i class="fas fa-book-open"></i> Ir al Curso de Inglés ${level}
                     </a>
                     <button class="pt-action-btn secondary" onclick="location.reload()">
@@ -926,7 +964,7 @@
     /* ---------- DARK MODE & HAMBURGER COMPAT ---------- */
     document.addEventListener('DOMContentLoaded', () => {
         // Re-apply dark mode if set
-        if (localStorage.getItem('fi_darkMode') === 'true') {
+        if (localStorage.getItem('theme') === 'dark') {
             document.documentElement.setAttribute('data-theme', 'dark');
             const btn = document.getElementById('darkModeToggle');
             if (btn) btn.innerHTML = '<i class="fas fa-sun"></i>';

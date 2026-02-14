@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /teacher.html
+Disallow: /guides/
+Sitemap: https://quickappraiser.github.io/fundacion-iberoamericana/sitemap.xml

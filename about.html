@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Fundacion Iberoamericana</title>
+    <meta name="description" content="Conoce la mision, vision y equipo de Fundacion Iberoamericana. Educacion tecnica de calidad accesible para profesionales de America Latina.">
+    <meta property="og:title" content="Sobre Nosotros - Fundacion Iberoamericana">
+    <meta property="og:description" content="Educacion tecnica de calidad accesible para profesionales de America Latina. Cursos practicos, certificaciones y desarrollo profesional.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://quickappraiser.github.io/fundacion-iberoamericana/icons/icon-512.svg">
+    <meta property="og:url" content="https://quickappraiser.github.io/fundacion-iberoamericana/about.html">
+    <link rel="canonical" href="https://quickappraiser.github.io/fundacion-iberoamericana/about.html">
+    <meta name="theme-color" content="#00BFA6">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+    <link rel="apple-touch-icon" href="icons/icon-192.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/extras.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">FI</div>
+            <div class="logo-text">Fundacion <span>Iberoamericana</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#cursos">Cursos</a></li>
+            <li><a href="dashboard.html">Mi Aula</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="labs.html">Labs</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><button id="darkModeToggle" onclick="toggleDarkMode()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:1rem;" title="Modo oscuro"><i class="fas fa-moon"></i></button></li>
+            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
+        </ul>
+        <button class="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<!-- HERO BANNER -->
+<section class="page-hero">
+    <div class="page-hero-content">
+        <div class="hero-badge"><i class="fas fa-university"></i> Nuestra Historia</div>
+        <h1><i class="fas fa-heart"></i> Sobre Nosotros</h1>
+        <p>Comprometidos con la educacion tecnica de calidad y el desarrollo profesional accesible para toda America Latina.</p>
+    </div>
+</section>
+
+<!-- MISION Y VISION -->
+<section class="section">
+    <div style="max-width:1060px;margin:0 auto;">
+
+        <!-- Mision y Vision Cards -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:24px;margin-bottom:60px;">
+            <!-- Mision -->
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:36px;position:relative;overflow:hidden;">
+                <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg, var(--teal), var(--teal-dark));"></div>
+                <div style="width:56px;height:56px;border-radius:16px;background:rgba(0,191,166,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                    <i class="fas fa-bullseye" style="font-size:1.5rem;color:var(--teal);"></i>
+                </div>
+                <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.4rem;font-weight:800;color:var(--navy);margin-bottom:12px;">Nuestra Mision</h2>
+                <p style="color:var(--text-light);line-height:1.8;font-size:1rem;">
+                    Hacer accesible la educacion tecnica de calidad para profesionales de toda America Latina, ofreciendo programas formativos practicos, actualizados y alineados con las demandas del mercado laboral. Creemos que el conocimiento no debe tener barreras geograficas ni economicas.
+                </p>
+            </div>
+            <!-- Vision -->
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:36px;position:relative;overflow:hidden;">
+                <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg, var(--gold), var(--gold-light));"></div>
+                <div style="width:56px;height:56px;border-radius:16px;background:rgba(255,184,0,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                    <i class="fas fa-eye" style="font-size:1.5rem;color:var(--gold);"></i>
+                </div>
+                <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.4rem;font-weight:800;color:var(--navy);margin-bottom:12px;">Nuestra Vision</h2>
+                <p style="color:var(--text-light);line-height:1.8;font-size:1rem;">
+                    Ser la plataforma lider de formacion tecnica y desarrollo profesional en Iberoamerica, empoderando a miles de profesionales a traves de certificaciones reconocidas, habilidades practicas y aprendizaje basado en proyectos reales. Aspiramos a transformar carreras y vidas.
+                </p>
+            </div>
+        </div>
+
+        <!-- Estadisticas clave -->
+        <div style="text-align:center;margin-bottom:60px;">
+            <div style="display:inline-flex;align-items:center;gap:8px;background:var(--teal-glow);color:var(--teal-dark);padding:8px 18px;border-radius:20px;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:16px;">
+                <i class="fas fa-chart-bar"></i> Nuestros Numeros
+            </div>
+            <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:2rem;font-weight:800;color:var(--navy);margin-bottom:8px;">Impacto en Cifras</h2>
+            <p style="color:var(--text-light);font-size:1.05rem;margin-bottom:40px;max-width:600px;margin-left:auto;margin-right:auto;">
+                Numeros que reflejan nuestro compromiso con la educacion de calidad.
+            </p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:20px;max-width:900px;margin:0 auto;">
+                <!-- Stat 1 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px 20px;text-align:center;transition:all 0.3s;">
+                    <div style="width:52px;height:52px;border-radius:14px;background:rgba(0,191,166,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                        <i class="fas fa-book-open" style="font-size:1.3rem;color:var(--teal);"></i>
+                    </div>
+                    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:2.2rem;font-weight:800;color:var(--teal);margin-bottom:4px;">15</div>
+                    <div style="font-size:0.9rem;font-weight:600;color:var(--navy);">Cursos Profesionales</div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">Excel, SQL, Python, Power BI y mas</div>
+                </div>
+                <!-- Stat 2 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px 20px;text-align:center;transition:all 0.3s;">
+                    <div style="width:52px;height:52px;border-radius:14px;background:rgba(255,184,0,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                        <i class="fas fa-clock" style="font-size:1.3rem;color:var(--gold);"></i>
+                    </div>
+                    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:2.2rem;font-weight:800;color:var(--gold);margin-bottom:4px;">486+</div>
+                    <div style="font-size:0.9rem;font-weight:600;color:var(--navy);">Horas de Contenido</div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">Material didactico integral</div>
+                </div>
+                <!-- Stat 3 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px 20px;text-align:center;transition:all 0.3s;">
+                    <div style="width:52px;height:52px;border-radius:14px;background:rgba(0,191,166,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                        <i class="fas fa-award" style="font-size:1.3rem;color:var(--teal);"></i>
+                    </div>
+                    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:2.2rem;font-weight:800;color:var(--teal);margin-bottom:4px;">15</div>
+                    <div style="font-size:0.9rem;font-weight:600;color:var(--navy);">Certificaciones Profesionales</div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">Reconocimiento de competencias</div>
+                </div>
+                <!-- Stat 4 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px 20px;text-align:center;transition:all 0.3s;">
+                    <div style="width:52px;height:52px;border-radius:14px;background:rgba(255,184,0,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+                        <i class="fas fa-language" style="font-size:1.3rem;color:var(--gold);"></i>
+                    </div>
+                    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:2.2rem;font-weight:800;color:var(--gold);margin-bottom:4px;">5</div>
+                    <div style="font-size:0.9rem;font-weight:600;color:var(--navy);">Niveles CEFR</div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">A1 a C1 en Ingles General</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nuestro Enfoque -->
+        <div style="margin-bottom:60px;">
+            <div style="text-align:center;margin-bottom:40px;">
+                <div style="display:inline-flex;align-items:center;gap:8px;background:var(--teal-glow);color:var(--teal-dark);padding:8px 18px;border-radius:20px;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:16px;">
+                    <i class="fas fa-lightbulb"></i> Metodologia
+                </div>
+                <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:2rem;font-weight:800;color:var(--navy);margin-bottom:8px;">Nuestro Enfoque</h2>
+                <p style="color:var(--text-light);font-size:1.05rem;max-width:600px;margin:0 auto;">
+                    Aprendizaje practico, basado en proyectos y alineado con certificaciones de la industria.
+                </p>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:20px;">
+                <!-- Enfoque 1 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;">
+                    <div style="width:48px;height:48px;border-radius:14px;background:rgba(0,191,166,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+                        <i class="fas fa-project-diagram" style="font-size:1.2rem;color:var(--teal);"></i>
+                    </div>
+                    <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Aprendizaje Basado en Proyectos</h3>
+                    <p style="color:var(--text-light);font-size:0.92rem;line-height:1.7;">
+                        Cada curso incluye proyectos practicos que simulan escenarios reales del mundo laboral, permitiendo aplicar conocimientos de manera inmediata.
+                    </p>
+                </div>
+                <!-- Enfoque 2 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;">
+                    <div style="width:48px;height:48px;border-radius:14px;background:rgba(255,184,0,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+                        <i class="fas fa-certificate" style="font-size:1.2rem;color:var(--gold);"></i>
+                    </div>
+                    <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Alineacion con Certificaciones</h3>
+                    <p style="color:var(--text-light);font-size:0.92rem;line-height:1.7;">
+                        Nuestros cursos estan disenados para prepararte para certificaciones reconocidas de la industria como MOS, PMP, PCEP y CEFR.
+                    </p>
+                </div>
+                <!-- Enfoque 3 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;">
+                    <div style="width:48px;height:48px;border-radius:14px;background:rgba(0,191,166,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+                        <i class="fas fa-flask" style="font-size:1.2rem;color:var(--teal);"></i>
+                    </div>
+                    <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Laboratorios Interactivos</h3>
+                    <p style="color:var(--text-light);font-size:0.92rem;line-height:1.7;">
+                        Labs en vivo con entornos de ejecucion integrados permiten practicar codigo, consultas SQL y formulas directamente en el navegador.
+                    </p>
+                </div>
+                <!-- Enfoque 4 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;">
+                    <div style="width:48px;height:48px;border-radius:14px;background:rgba(255,184,0,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+                        <i class="fas fa-gamepad" style="font-size:1.2rem;color:var(--gold);"></i>
+                    </div>
+                    <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Gamificacion Motivacional</h3>
+                    <p style="color:var(--text-light);font-size:0.92rem;line-height:1.7;">
+                        Sistema de puntos de experiencia, rachas de estudio, niveles y logros que hacen del aprendizaje una experiencia motivadora y adictiva.
+                    </p>
+                </div>
+                <!-- Enfoque 5 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;">
+                    <div style="width:48px;height:48px;border-radius:14px;background:rgba(0,191,166,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+                        <i class="fas fa-brain" style="font-size:1.2rem;color:var(--teal);"></i>
+                    </div>
+                    <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Evaluacion Continua</h3>
+                    <p style="color:var(--text-light);font-size:0.92rem;line-height:1.7;">
+                        Quizzes al final de cada modulo aseguran la comprension y retencion del material, ofreciendo retroalimentacion inmediata al estudiante.
+                    </p>
+                </div>
+                <!-- Enfoque 6 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;">
+                    <div style="width:48px;height:48px;border-radius:14px;background:rgba(255,184,0,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+                        <i class="fas fa-road" style="font-size:1.2rem;color:var(--gold);"></i>
+                    </div>
+                    <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Rutas de Aprendizaje</h3>
+                    <p style="color:var(--text-light);font-size:0.92rem;line-height:1.7;">
+                        Itinerarios formativos estructurados que guian al estudiante paso a paso, desde nivel basico hasta avanzado, en cada area de conocimiento.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coordinador Academico -->
+        <div style="margin-bottom:60px;">
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:40px;position:relative;overflow:hidden;">
+                <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg, var(--teal), var(--gold), var(--teal));"></div>
+                <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+                    <!-- Avatar -->
+                    <div style="flex-shrink:0;">
+                        <div style="width:100px;height:100px;border-radius:24px;background:linear-gradient(135deg, var(--navy), var(--navy-light));display:flex;align-items:center;justify-content:center;font-size:2.2rem;color:white;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;box-shadow:0 8px 24px rgba(27,42,74,0.25);">MR</div>
+                    </div>
+                    <!-- Info -->
+                    <div style="flex:1;min-width:260px;">
+                        <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:6px;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;background:rgba(0,191,166,0.1);color:var(--teal);margin-bottom:12px;">
+                            <i class="fas fa-star"></i> Coordinador Academico
+                        </div>
+                        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.6rem;font-weight:800;color:var(--navy);margin-bottom:4px;">Dr. Mauricio Rodriguez</h3>
+                        <p style="color:var(--teal);font-weight:600;font-size:0.95rem;margin-bottom:16px;">PhD Education</p>
+                        <p style="color:var(--text-light);line-height:1.8;font-size:0.95rem;">
+                            Con amplia experiencia en educacion superior y formacion tecnica, el Dr. Rodriguez lidera el diseno curricular e innovacion pedagogica de todos nuestros programas. Su enfoque combina rigor academico con aplicabilidad practica para garantizar que cada curso genere impacto real en la carrera de nuestros estudiantes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Caracteristicas de la Plataforma -->
+        <div style="margin-bottom:60px;">
+            <div style="text-align:center;margin-bottom:40px;">
+                <div style="display:inline-flex;align-items:center;gap:8px;background:var(--teal-glow);color:var(--teal-dark);padding:8px 18px;border-radius:20px;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:16px;">
+                    <i class="fas fa-rocket"></i> Tecnologia
+                </div>
+                <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:2rem;font-weight:800;color:var(--navy);margin-bottom:8px;">Caracteristicas de la Plataforma</h2>
+                <p style="color:var(--text-light);font-size:1.05rem;max-width:600px;margin:0 auto;">
+                    Tecnologia de punta para una experiencia de aprendizaje moderna y accesible.
+                </p>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:16px;">
+                <!-- Feature 1 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;align-items:flex-start;gap:16px;">
+                    <div style="width:44px;height:44px;border-radius:12px;background:rgba(0,191,166,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <i class="fas fa-mobile-alt" style="color:var(--teal);font-size:1.1rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:4px;">PWA (Progressive Web App)</h4>
+                        <p style="font-size:0.85rem;color:var(--text-light);line-height:1.6;">Instala la plataforma en tu dispositivo y estudia offline como una app nativa.</p>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;align-items:flex-start;gap:16px;">
+                    <div style="width:44px;height:44px;border-radius:12px;background:rgba(255,184,0,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <i class="fas fa-globe" style="color:var(--gold);font-size:1.1rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:4px;">Plataforma Bilingue</h4>
+                        <p style="font-size:0.85rem;color:var(--text-light);line-height:1.6;">Interfaz disponible en Espanol e Ingles con cambio instantaneo de idioma.</p>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;align-items:flex-start;gap:16px;">
+                    <div style="width:44px;height:44px;border-radius:12px;background:rgba(0,191,166,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <i class="fas fa-trophy" style="color:var(--teal);font-size:1.1rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:4px;">Gamificacion</h4>
+                        <p style="font-size:0.85rem;color:var(--text-light);line-height:1.6;">XP, rachas, niveles y logros que mantienen la motivacion al maximo.</p>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;align-items:flex-start;gap:16px;">
+                    <div style="width:44px;height:44px;border-radius:12px;background:rgba(255,184,0,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <i class="fas fa-language" style="color:var(--gold);font-size:1.1rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:4px;">Alineacion CEFR</h4>
+                        <p style="font-size:0.85rem;color:var(--text-light);line-height:1.6;">Curso de ingles alineado con el Marco Comun Europeo de Referencia (A1-C1).</p>
+                    </div>
+                </div>
+                <!-- Feature 5 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;align-items:flex-start;gap:16px;">
+                    <div style="width:44px;height:44px;border-radius:12px;background:rgba(0,191,166,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <i class="fas fa-moon" style="color:var(--teal);font-size:1.1rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:4px;">Modo Oscuro</h4>
+                        <p style="font-size:0.85rem;color:var(--text-light);line-height:1.6;">Interfaz adaptable con modo claro y oscuro para estudiar en cualquier entorno.</p>
+                    </div>
+                </div>
+                <!-- Feature 6 -->
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;align-items:flex-start;gap:16px;">
+                    <div style="width:44px;height:44px;border-radius:12px;background:rgba(255,184,0,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <i class="fas fa-stopwatch" style="color:var(--gold);font-size:1.1rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:4px;">Pomodoro Timer</h4>
+                        <p style="font-size:0.85rem;color:var(--text-light);line-height:1.6;">Temporizador integrado para gestionar sesiones de estudio con la tecnica Pomodoro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div style="background:linear-gradient(135deg, var(--navy), var(--navy-light));border-radius:var(--radius);padding:48px 36px;text-align:center;position:relative;overflow:hidden;">
+            <div style="position:absolute;width:300px;height:300px;background:radial-gradient(circle, rgba(0,191,166,0.15) 0%, transparent 70%);top:-100px;right:-50px;border-radius:50%;"></div>
+            <div style="position:absolute;width:200px;height:200px;background:radial-gradient(circle, rgba(255,184,0,0.1) 0%, transparent 70%);bottom:-80px;left:-30px;border-radius:50%;"></div>
+            <div style="position:relative;z-index:2;">
+                <div style="width:64px;height:64px;border-radius:18px;background:rgba(0,191,166,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+                    <i class="fas fa-graduation-cap" style="font-size:1.6rem;color:var(--teal);"></i>
+                </div>
+                <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.8rem;font-weight:800;color:white;margin-bottom:12px;">Comienza tu Formacion Hoy</h2>
+                <p style="color:rgba(255,255,255,0.7);font-size:1.05rem;line-height:1.7;max-width:500px;margin:0 auto 28px;">
+                    Explora nuestro catalogo de cursos y da el primer paso hacia tu desarrollo profesional. La educacion de calidad esta a tu alcance.
+                </p>
+                <a href="index.html#cursos" style="display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--teal);color:white;border-radius:12px;text-decoration:none;font-weight:700;font-size:1rem;transition:all 0.3s;box-shadow:0 4px 16px rgba(0,191,166,0.3);">
+                    <i class="fas fa-arrow-right"></i> Ver Cursos Disponibles
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="index.html" class="logo" style="margin-bottom:16px;">
+                <div class="logo-icon">FI</div>
+                <div class="logo-text">Fundacion <span>Iberoamericana</span></div>
+            </a>
+            <p>Plataforma de formacion tecnica y profesional.</p>
+        </div>
+        <div>
+            <h4>Plataforma</h4>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="dashboard.html">Mi Aula</a>
+            <a href="quizzes.html">Quizzes</a>
+            <a href="labs.html">Labs</a>
+        </div>
+        <div>
+            <h4>Mas</h4>
+            <a href="recursos.html">Recursos</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="certificados.html">Certificados</a>
+            <a href="about.html">Sobre Nosotros</a>
+        </div>
+        <div>
+            <h4>Legal</h4>
+            <a href="privacidad.html">Politica de Privacidad</a>
+            <a href="terminos.html">Terminos de Servicio</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Fundacion Iberoamericana. Todos los derechos reservados.
+        <br><small style="opacity:0.7;">Coordinacion Academica: Dr. Mauricio Rodriguez, PhD Education</small>
+    </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

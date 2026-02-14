@@ -115,6 +115,42 @@
         "respuestaCorrecta": 1,
         "explicacion": "Los segmentadores son botones visuales que permiten filtrar tablas dinámicas de forma interactiva. Son más intuitivos que los filtros del menú desplegable y mejoran la experiencia del usuario en dashboards.",
         "dificultad": "medio"
+      },
+      {
+        "id": "excel-q12",
+        "pregunta": "¿Qué es un campo calculado en una tabla dinámica?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Una columna que ya existe en los datos originales", "Una fórmula personalizada que crea una nueva métrica dentro de la tabla dinámica", "Un campo que se calcula automáticamente sin intervención del usuario", "Un tipo de formato condicional"],
+        "respuestaCorrecta": 1,
+        "explicacion": "Un campo calculado permite crear nuevas métricas directamente en la tabla dinámica usando fórmulas basadas en otros campos. Por ejemplo, puedes crear un campo 'Margen' = Ventas - Costos sin modificar los datos originales.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "excel-q13",
+        "pregunta": "¿Qué tipo de gráfico es más adecuado para mostrar la tendencia de ventas mensuales a lo largo de un año?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Gráfico circular (pie chart)", "Gráfico de líneas", "Gráfico de dispersión (scatter)", "Gráfico de área apilada"],
+        "respuestaCorrecta": 1,
+        "explicacion": "El gráfico de líneas es ideal para mostrar tendencias en el tiempo, ya que conecta puntos de datos cronológicos y permite visualizar fácilmente si las ventas suben, bajan o se mantienen estables mes a mes.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "excel-q14",
+        "pregunta": "En una tabla dinámica, ¿qué sucede si arrastras un campo de fecha al área de Filas?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Excel muestra cada fecha individual sin agrupar", "Excel agrupa automáticamente las fechas por años, trimestres y meses", "La tabla dinámica genera un error", "El campo se convierte en un filtro automáticamente"],
+        "respuestaCorrecta": 1,
+        "explicacion": "Excel agrupa automáticamente los campos de fecha por años, trimestres y meses en las tablas dinámicas. Esto facilita el análisis temporal sin necesidad de crear columnas auxiliares. Puedes desagrupar manualmente si necesitas ver fechas individuales.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "excel-q15",
+        "pregunta": "¿Cuál es la diferencia entre un gráfico dinámico (PivotChart) y un gráfico estándar en Excel?",
+        "tipo": "opcion-multiple",
+        "opciones": ["No hay diferencia, son iguales", "El gráfico dinámico está vinculado a una tabla dinámica y se actualiza al cambiar filtros; el estándar es independiente", "El gráfico estándar tiene más tipos de visualización", "El gráfico dinámico solo muestra datos numéricos"],
+        "respuestaCorrecta": 1,
+        "explicacion": "Un gráfico dinámico (PivotChart) está vinculado directamente a una tabla dinámica. Al cambiar filtros, segmentadores o reorganizar campos en la tabla, el gráfico se actualiza automáticamente. Un gráfico estándar está vinculado a un rango fijo de celdas.",
+        "dificultad": "dificil"
       }
     ]
   },
@@ -180,6 +216,24 @@
         "respuestaCorrecta": 0,
         "explicacion": "La etiqueta <img> usa 'src' para la ruta de la imagen y 'alt' para el texto alternativo (importante para accesibilidad y SEO). 'title' muestra un tooltip pero no reemplaza al 'alt'.",
         "dificultad": "facil"
+      },
+      {
+        "id": "web-q17",
+        "pregunta": "¿Cuál es la diferencia entre los elementos <ol> y <ul> en HTML?",
+        "tipo": "opcion-multiple",
+        "opciones": ["<ol> crea una lista ordenada (numerada) y <ul> crea una lista desordenada (con viñetas)", "<ol> es para texto y <ul> es para imágenes", "No hay diferencia, ambos crean listas iguales", "<ul> crea listas numeradas y <ol> crea listas con viñetas"],
+        "respuestaCorrecta": 0,
+        "explicacion": "<ol> (Ordered List) crea una lista numerada (1, 2, 3...) para elementos con un orden específico. <ul> (Unordered List) crea una lista con viñetas para elementos sin orden particular. Ambos usan <li> para cada elemento de la lista.",
+        "dificultad": "facil"
+      },
+      {
+        "id": "web-q18",
+        "pregunta": "¿Qué tipo de input de HTML5 permite al usuario seleccionar una fecha con un calendario nativo del navegador?",
+        "tipo": "opcion-multiple",
+        "opciones": ["<input type=\"date\">", "<input type=\"calendar\">", "<input type=\"datetime\">", "<input type=\"picker\">"],
+        "respuestaCorrecta": 0,
+        "explicacion": "El tipo 'date' de HTML5 muestra un selector de fecha nativo del navegador sin necesidad de JavaScript. Otros tipos útiles de HTML5 incluyen: 'email' (valida formato de correo), 'number' (solo números), 'tel' (teléfono) y 'url' (dirección web).",
+        "dificultad": "medio"
       }
     ]
   },
@@ -226,6 +280,33 @@
         "respuestaCorrecta": 1,
         "explicacion": "filter() crea un nuevo array con todos los elementos que pasan la condición. map() transforma cada elemento. find() devuelve solo el primer elemento que cumple la condición (no un array). reduce() acumula valores en un resultado.",
         "dificultad": "medio"
+      },
+      {
+        "id": "web-q21",
+        "pregunta": "¿Qué imprime este código?\n\nconsole.log(0.1 + 0.2 === 0.3);",
+        "tipo": "opcion-multiple",
+        "opciones": ["true", "false", "0.3", "Error"],
+        "respuestaCorrecta": 1,
+        "explicacion": "En JavaScript (y en la mayoría de los lenguajes), los números de punto flotante no se representan con precisión exacta. 0.1 + 0.2 da 0.30000000000000004, por lo que la comparación estricta con 0.3 devuelve false. Para comparar decimales, se usa una tolerancia: Math.abs((0.1+0.2) - 0.3) < 0.0001.",
+        "dificultad": "dificil"
+      },
+      {
+        "id": "web-q22",
+        "pregunta": "¿Cuál es la diferencia entre == y === en JavaScript?",
+        "tipo": "opcion-multiple",
+        "opciones": ["No hay diferencia", "== compara solo valor (con conversión de tipo); === compara valor y tipo (sin conversión)", "=== es más lento que ==", "== es para números y === es para texto"],
+        "respuestaCorrecta": 1,
+        "explicacion": "== (igualdad débil) convierte los tipos antes de comparar: '5' == 5 es true. === (igualdad estricta) compara sin conversión: '5' === 5 es false. Se recomienda usar siempre === para evitar bugs por conversiones implícitas.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "web-q23",
+        "pregunta": "¿Qué devuelve este código?\n\nconst frutas = ['manzana', 'banana', 'cereza'];\nconsole.log(frutas.length);",
+        "tipo": "opcion-multiple",
+        "opciones": ["2", "3", "undefined", "Error"],
+        "respuestaCorrecta": 1,
+        "explicacion": "La propiedad .length devuelve la cantidad de elementos en un array. El array tiene 3 elementos ('manzana', 'banana', 'cereza'), por lo que frutas.length es 3. Nota: .length es una propiedad, no un método, por eso no lleva paréntesis.",
+        "dificultad": "facil"
       }
     ]
   },
@@ -290,6 +371,15 @@
         "respuestaCorrecta": 1,
         "explicacion": "range(3) genera los números 0, 1, 2 (empieza en 0 y excluye el 3). El parámetro end=\" \" hace que print use un espacio en lugar de salto de línea.",
         "dificultad": "medio"
+      },
+      {
+        "id": "py-q27",
+        "pregunta": "¿Qué resultado da esta expresión en Python?\n\n\"Hola\" * 3",
+        "tipo": "opcion-multiple",
+        "opciones": ["Error: no se puede multiplicar texto", "\"HolaHolaHola\"", "\"Hola 3\"", "\"Hola*3\""],
+        "respuestaCorrecta": 1,
+        "explicacion": "En Python, el operador * con un string y un entero repite el string esa cantidad de veces. 'Hola' * 3 devuelve 'HolaHolaHola'. Es una operación válida y útil, por ejemplo, para crear separadores: '-' * 50 crea una línea de 50 guiones.",
+        "dificultad": "facil"
       }
     ]
   },
@@ -336,6 +426,33 @@
         "respuestaCorrecta": 1,
         "explicacion": "En Python, los diccionarios se acceden con la clave entre corchetes: persona[\"pais\"]. También funciona persona.get(\"pais\"). La opción A usaría índice numérico (que es para listas). La opción C es sintaxis de JavaScript y D de PHP/C++.",
         "dificultad": "facil"
+      },
+      {
+        "id": "py-q31",
+        "pregunta": "¿Cuál es la principal diferencia entre un set y una lista en Python?",
+        "tipo": "opcion-multiple",
+        "opciones": ["Los sets no permiten elementos duplicados y no tienen orden; las listas sí permiten duplicados y mantienen el orden", "No hay diferencia, son lo mismo", "Los sets son más lentos que las listas para todo", "Las listas no permiten duplicados"],
+        "respuestaCorrecta": 0,
+        "explicacion": "Los sets ({1, 2, 3}) no permiten duplicados y no mantienen orden de inserción, pero son muy rápidos para verificar si un elemento existe (operación 'in'). Las listas ([1, 2, 3]) permiten duplicados, mantienen el orden y permiten acceso por índice.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "py-q32",
+        "pregunta": "¿Qué hace el método .get() en un diccionario de Python?\n\nnotas = {\"Ana\": 95, \"Luis\": 80}\nprint(notas.get(\"Carlos\", 0))",
+        "tipo": "opcion-multiple",
+        "opciones": ["Devuelve un error porque \"Carlos\" no existe", "Devuelve 0 porque \"Carlos\" no existe y 0 es el valor por defecto", "Agrega \"Carlos\" al diccionario con valor 0", "Devuelve None"],
+        "respuestaCorrecta": 1,
+        "explicacion": "El método .get(clave, valor_por_defecto) busca la clave en el diccionario. Si la encuentra, devuelve su valor. Si no existe, devuelve el valor por defecto (en este caso, 0) sin causar un error. Es más seguro que notas[\"Carlos\"], que lanzaría un KeyError.",
+        "dificultad": "medio"
+      },
+      {
+        "id": "py-q33",
+        "pregunta": "¿Qué resultado produce este código?\n\nnumeros = [3, 1, 4, 1, 5, 9]\nnumeros.sort()\nprint(numeros[0], numeros[-1])",
+        "tipo": "opcion-multiple",
+        "opciones": ["3 9", "1 9", "9 1", "Error"],
+        "respuestaCorrecta": 1,
+        "explicacion": "El método .sort() ordena la lista en su lugar de menor a mayor: [1, 1, 3, 4, 5, 9]. Luego numeros[0] es el primer elemento (1) y numeros[-1] es el último (9). Nota: .sort() modifica la lista original; sorted() crea una nueva lista ordenada sin modificar la original.",
+        "dificultad": "medio"
       }
     ]
   },

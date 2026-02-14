@@ -513,8 +513,8 @@
         {
             "id": "liderazgo-comunicacion-pdf",
             "titulo": "Comunicación Efectiva para Líderes",
-            "cursoId": "liderazgo-habilidades-blandas",
-            "curso": "Liderazgo y Habilidades Blandas",
+            "cursoId": "liderazgo-equipos",
+            "curso": "Liderazgo y Gestión de Equipos",
             "tipo": "pdf",
             "tipoLabel": "PDF",
             "descripcion": "Guía práctica de técnicas de comunicación asertiva, escucha activa, feedback constructivo y manejo de conflictos.",
@@ -528,8 +528,8 @@
         {
             "id": "liderazgo-estilos-cheat",
             "titulo": "Estilos de Liderazgo: Guía de Referencia",
-            "cursoId": "liderazgo-habilidades-blandas",
-            "curso": "Liderazgo y Habilidades Blandas",
+            "cursoId": "liderazgo-equipos",
+            "curso": "Liderazgo y Gestión de Equipos",
             "tipo": "cheatsheet",
             "tipoLabel": "Cheat Sheet",
             "descripcion": "Resumen visual de los principales estilos de liderazgo (transformacional, situacional, servant leadership) con cuándo aplicar cada uno.",
@@ -543,8 +543,8 @@
         {
             "id": "liderazgo-plantilla-1on1",
             "titulo": "Plantilla: Reuniones 1-on-1 con tu Equipo",
-            "cursoId": "liderazgo-habilidades-blandas",
-            "curso": "Liderazgo y Habilidades Blandas",
+            "cursoId": "liderazgo-equipos",
+            "curso": "Liderazgo y Gestión de Equipos",
             "tipo": "plantilla",
             "tipoLabel": "Plantilla",
             "descripcion": "Plantilla estructurada para reuniones individuales: agenda, seguimiento de objetivos, feedback y planes de acción.",

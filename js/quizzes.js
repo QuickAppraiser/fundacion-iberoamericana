@@ -73,7 +73,7 @@ const cursoNombres = {
     "fundamentos-programacion": "Fundamentos de Programación",
     "business-intelligence": "Business Intelligence",
     "gestion-proyectos-scrum": "Gestión de Proyectos / Scrum",
-    "liderazgo-habilidades-blandas": "Liderazgo y Habilidades Blandas",
+    "liderazgo-equipos": "Liderazgo y Gestión de Equipos",
     "ia-machine-learning": "IA y Machine Learning",
     "transformacion-digital": "Transformación Digital",
     "ingles-general": "Inglés General (A1-C1)"
