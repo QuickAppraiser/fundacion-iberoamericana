@@ -31,12 +31,12 @@
             <div class="logo-text">Fundación <span>Iberoamericana</span></div>
         </a>
         <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#cursos">Cursos</a></li>
-            <li><a href="dashboard.html">Mi Aula</a></li>
+            <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="index.html#cursos" data-i18n="nav.cursos">Cursos</a></li>
+            <li><a href="dashboard.html" data-i18n="nav.miAula">Mi Aula</a></li>
             <li><a href="quizzes.html">Quizzes</a></li>
             <li><a href="labs.html">Labs</a></li>
-            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="recursos.html" data-i18n="nav.recursos">Recursos</a></li>
             <li><button id="darkModeToggle" onclick="toggleDarkMode()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:1rem;" title="Modo oscuro"><i class="fas fa-moon"></i></button></li>
             <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
         </ul>
@@ -56,32 +56,32 @@
                     <i class="fas fa-language"></i> CEFR Aligned
                 </span>
             </div>
-            <h1>Test de Nivel de <span>Inglés</span></h1>
-            <p>Descubre tu nivel según el Marco Común Europeo de Referencia (CEFR). 25 preguntas adaptativas que ajustan la dificultad según tus respuestas.</p>
+            <h1 data-i18n="pt.titulo">Test de Nivel de <span>Inglés</span></h1>
+            <p data-i18n="pt.subtitulo">Descubre tu nivel según el Marco Común Europeo de Referencia (CEFR). 25 preguntas adaptativas que ajustan la dificultad según tus respuestas.</p>
         </div>
 
         <div class="pt-info-grid">
             <div class="pt-info-card">
                 <i class="fas fa-clock"></i>
                 <h4>~10 minutos</h4>
-                <p>Duración estimada</p>
+                <p data-i18n="pt.duracion">Duración estimada</p>
             </div>
             <div class="pt-info-card">
                 <i class="fas fa-brain"></i>
-                <h4>Adaptativo</h4>
-                <p>Ajusta la dificultad</p>
+                <h4 data-i18n="pt.adaptativo">Adaptativo</h4>
+                <p data-i18n="pt.ajustaDificultad">Ajusta la dificultad</p>
             </div>
             <div class="pt-info-card">
                 <i class="fas fa-certificate"></i>
                 <h4>A1 — C1</h4>
-                <p>Niveles evaluados</p>
+                <p data-i18n="pt.nivelesEvaluados">Niveles evaluados</p>
             </div>
         </div>
 
         <!-- CEFR levels explanation -->
         <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:32px;">
             <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--text);margin-bottom:16px;">
-                <i class="fas fa-layer-group" style="color:var(--teal);margin-right:8px;"></i>Niveles CEFR
+                <i class="fas fa-layer-group" style="color:var(--teal);margin-right:8px;"></i><span data-i18n="pt.nivelesCEFR">Niveles CEFR</span>
             </h3>
             <div style="display:flex;flex-wrap:wrap;gap:10px;">
                 <span class="pt-level-badge" style="background:#4CAF50;">A1 — Principiante</span>
@@ -93,7 +93,7 @@
         </div>
 
         <button class="pt-start-btn" onclick="startTest()">
-            <i class="fas fa-play"></i> Comenzar Test
+            <i class="fas fa-play"></i> <span data-i18n="pt.comenzar">Comenzar Test</span>
         </button>
     </div>
 
@@ -144,6 +144,7 @@
             <a href="calendario.html">Calendario</a>
             <a href="certificados.html">Certificados</a>
             <a href="about.html">Nosotros</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
             <a href="privacidad.html">Privacidad</a>
         </div>
     </div>

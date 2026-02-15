@@ -58,21 +58,42 @@ document.addEventListener('DOMContentLoaded', () => {
 // AUTENTICACIÓN
 // =========================
 
+// SHA-256 hash utility (Web Crypto API)
+async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+// Pre-computed SHA-256 hash — password is never stored in plaintext
+const EXPECTED_HASH = '6051fc84a7a0d74c225fb18a496b09952da5642e60723ecae543298edd7d82d6';
+
 function verificarAuth() {
     if (localStorage.getItem('teacher_auth') === 'true') {
         mostrarPanel();
     }
 }
 
-window.autenticarProfesor = function() {
+window.autenticarProfesor = async function() {
     const pass = document.getElementById('passInput')?.value;
-    if (pass === 'admin2026') {
-        localStorage.setItem('teacher_auth', 'true');
-        mostrarPanel();
-    } else {
-        const error = document.getElementById('passError');
-        if (error) error.style.display = 'block';
-        document.getElementById('passInput').style.borderColor = '#F44336';
+    if (!pass) return;
+
+    try {
+        const inputHash = await hashPassword(pass);
+
+        // Compare hashed input against pre-computed expected hash (no plaintext comparison)
+        if (inputHash === EXPECTED_HASH) {
+            localStorage.setItem('teacher_auth', 'true');
+            mostrarPanel();
+        } else {
+            const error = document.getElementById('passError');
+            if (error) error.style.display = 'block';
+            document.getElementById('passInput').style.borderColor = '#F44336';
+        }
+    } catch(e) {
+        // Fallback for environments without crypto.subtle
+        console.error('Crypto API not available:', e);
     }
 };
 

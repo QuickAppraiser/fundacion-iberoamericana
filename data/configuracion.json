@@ -37,5 +37,5 @@
     "fondo": "#F5F6FA",
     "texto": "#2D3436"
   },
-  "profesorPassword": "admin2026"
+  "profesorPasswordHash": "6051fc84a7a0d74c225fb18a496b09952da5642e60723ecae543298edd7d82d6"
 }

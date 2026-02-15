@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes | Fundación Iberoamericana</title>
+    <meta name="description" content="Preguntas frecuentes sobre la plataforma educativa Fundación Iberoamericana. Encuentra respuestas sobre cursos, quizzes, certificados, gamificación y soporte técnico.">
+    <meta property="og:title" content="Preguntas Frecuentes | Fundación Iberoamericana">
+    <meta property="og:description" content="Centro de ayuda con respuestas a las preguntas más frecuentes sobre cursos, evaluaciones, certificados y funcionalidades de la plataforma.">
+    <meta property="og:url" content="https://quickappraiser.github.io/fundacion-iberoamericana/faq.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://quickappraiser.github.io/fundacion-iberoamericana/icons/icon-512.svg">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://quickappraiser.github.io/fundacion-iberoamericana/faq.html">
+    <meta name="theme-color" content="#00BFA6">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+    <link rel="apple-touch-icon" href="icons/icon-192.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <style>
+        .faq-container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .faq-category {
+            margin-bottom: 32px;
+        }
+        .faq-category-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--navy);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .faq-category-title .faq-cat-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 8px;
+            overflow: hidden;
+            background: var(--bg-card);
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            border-color: var(--teal);
+        }
+        .faq-question {
+            padding: 18px 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 0.98rem;
+            color: var(--text);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: transparent;
+            border: none;
+            width: 100%;
+            text-align: left;
+            transition: background 0.2s;
+            gap: 16px;
+        }
+        .faq-question:hover {
+            background: rgba(0, 191, 166, 0.04);
+        }
+        .faq-chevron {
+            transition: transform 0.3s ease;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease;
+            padding: 0 24px;
+        }
+        .faq-answer p {
+            color: var(--text-light);
+            font-size: 0.94rem;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+            padding: 0 24px 18px;
+        }
+        .faq-item.open .faq-chevron {
+            transform: rotate(180deg);
+        }
+        .faq-item.open {
+            border-color: var(--teal);
+            box-shadow: 0 2px 12px rgba(0, 191, 166, 0.08);
+        }
+        .faq-item.open .faq-question {
+            color: var(--teal);
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">FI</div>
+            <div class="logo-text">Fundación <span>Iberoamericana</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="index.html#cursos" data-i18n="nav.cursos">Cursos</a></li>
+            <li><a href="dashboard.html" data-i18n="nav.miAula">Mi Aula</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="labs.html">Labs</a></li>
+            <li><a href="recursos.html" data-i18n="nav.recursos">Recursos</a></li>
+            <li><button id="darkModeToggle" onclick="toggleDarkMode()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:1rem;" title="Modo oscuro"><i class="fas fa-moon"></i></button></li>
+            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
+        </ul>
+        <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<!-- HERO BANNER -->
+<section class="page-hero">
+    <div class="page-hero-content">
+        <div class="hero-badge" data-i18n="faq.badge"><i class="fas fa-life-ring"></i> Ayuda</div>
+        <h1 data-i18n="faq.titulo"><i class="fas fa-question-circle"></i> Preguntas Frecuentes</h1>
+        <p data-i18n="faq.subtitulo">Encuentra respuestas rápidas sobre nuestra plataforma, cursos, evaluaciones, certificados y funcionalidades.</p>
+    </div>
+</section>
+
+<!-- CONTENIDO PRINCIPAL -->
+<section class="section">
+    <div class="faq-container">
+
+        <!-- ===================== PLATAFORMA GENERAL ===================== -->
+        <div class="faq-category">
+            <h3 class="faq-category-title" data-i18n="faq.gen.title">
+                <span class="faq-cat-icon" style="background:rgba(0,191,166,0.1);color:var(--teal);"><i class="fas fa-globe"></i></span>
+                Plataforma General
+            </h3>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.gen.q1">
+                    <span>¿Qué es la Fundación Iberoamericana?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.gen.a1">La Fundación Iberoamericana es una plataforma educativa en línea dedicada a la formación técnica y profesional para América Latina. Ofrecemos cursos prácticos en áreas como Excel, Python, SQL, Power BI, Desarrollo Web, Scrum e Inglés (CEFR A1-C1), todos diseñados para impulsar tu carrera profesional con habilidades demandadas por el mercado laboral.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.gen.q2">
+                    <span>¿Los cursos son gratuitos?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.gen.a2">Sí, todos los cursos y recursos de la plataforma están disponibles de forma completamente gratuita. Nuestra misión es hacer accesible la educación técnica de calidad sin barreras económicas, incluyendo quizzes, laboratorios prácticos y certificados de finalización.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.gen.q3">
+                    <span>¿Necesito crear una cuenta para acceder?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.gen.a3">No necesitas registrarte ni crear una cuenta formal. Tu progreso se guarda automáticamente en el navegador mediante localStorage. Solo necesitas ingresar tu nombre en el dashboard para personalizar tu experiencia y generar certificados con tu nombre.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.gen.q4">
+                    <span>¿La plataforma funciona en dispositivos móviles?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.gen.a4">Sí, la plataforma es completamente responsive y está optimizada para celulares, tabletas y computadoras de escritorio. Además, es una Progressive Web App (PWA), lo que significa que puedes instalarla en tu dispositivo desde el navegador y usarla como una aplicación nativa.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== CURSOS Y CONTENIDO ===================== -->
+        <div class="faq-category">
+            <h3 class="faq-category-title" data-i18n="faq.cursos.title">
+                <span class="faq-cat-icon" style="background:rgba(255,184,0,0.1);color:var(--gold);"><i class="fas fa-book-open"></i></span>
+                Cursos y Contenido
+            </h3>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.cursos.q1">
+                    <span>¿Cuántos cursos hay disponibles?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.cursos.a1">Actualmente ofrecemos más de 15 cursos profesionales que cubren áreas como Excel (Básico a Avanzado), Python, SQL, Desarrollo Web (HTML/CSS/JS), Power BI, Scrum/Agile, e Inglés General (niveles A1 a C1 del CEFR). Continuamente agregamos nuevo contenido y actualizamos los cursos existentes.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.cursos.q2">
+                    <span>¿Los cursos tienen certificación?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.cursos.a2">Sí, al completar cada curso recibes un certificado digital personalizado con tu nombre, la fecha de finalización y los temas cubiertos. Puedes descargarlo en formato PDF desde la sección de Certificados y compartirlo en tu perfil profesional o currículum.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.cursos.q3">
+                    <span>¿Cómo me inscribo en un curso?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.cursos.a3">No necesitas inscripción formal. Simplemente navega al catálogo de cursos desde la página de inicio, selecciona el curso que te interese y comienza a estudiar inmediatamente. Tu progreso se guardará automáticamente en tu navegador para que puedas retomar donde lo dejaste.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.cursos.q4">
+                    <span>¿Cuánto dura cada curso?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.cursos.a4">La duración varía según el curso. Los cursos introductorios pueden completarse en 10-20 horas, mientras que los cursos avanzados requieren entre 30 y 50 horas de estudio. Cada curso indica su duración estimada y número de módulos en su página de descripción, y puedes avanzar a tu propio ritmo.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.cursos.q5">
+                    <span>¿Los cursos están alineados con certificaciones profesionales?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.cursos.a5">Sí, nuestros cursos están diseñados para prepararte para certificaciones reconocidas de la industria. Por ejemplo, los cursos de Excel se alinean con Microsoft Office Specialist (MOS), Python con PCEP, Scrum con PSM I, e Inglés con los niveles CEFR del Marco Común Europeo de Referencia.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== EVALUACIÓN Y QUIZZES ===================== -->
+        <div class="faq-category">
+            <h3 class="faq-category-title" data-i18n="faq.quiz.title">
+                <span class="faq-cat-icon" style="background:rgba(0,191,166,0.1);color:var(--teal);"><i class="fas fa-clipboard-check"></i></span>
+                Evaluación y Quizzes
+            </h3>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.quiz.q1">
+                    <span>¿Cómo funcionan los quizzes?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.quiz.a1">Los quizzes son evaluaciones interactivas de opción múltiple disponibles para cada módulo de cada curso. Puedes acceder a ellos desde el Centro de Quizzes o directamente desde la página de cada curso. Al finalizar, recibes tu puntuación con retroalimentación inmediata sobre las respuestas correctas e incorrectas.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.quiz.q2">
+                    <span>¿Cuál es la diferencia entre modo práctica y modo examen?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.quiz.a2">En el modo práctica puedes ver las respuestas correctas después de cada pregunta y repetir el quiz las veces que quieras sin presión de tiempo. El modo examen simula una evaluación real con temporizador, sin mostrar respuestas hasta el final, y registra tu puntuación oficial para el certificado.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.quiz.q3">
+                    <span>¿Puedo repetir un quiz?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.quiz.a3">Sí, puedes repetir cualquier quiz tantas veces como desees, tanto en modo práctica como en modo examen. La plataforma guarda tu mejor puntuación obtenida. Repetir quizzes es una excelente forma de reforzar conocimientos y mejorar tu desempeño antes de solicitar tu certificado.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.quiz.q4">
+                    <span>¿Cómo funciona el test de nivel de inglés (CEFR)?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.quiz.a4">El Placement Test evalúa tus habilidades en gramática, vocabulario y comprensión para determinar tu nivel según el Marco Común Europeo de Referencia (A1-C1). Al finalizarlo, recibes tu nivel estimado y una recomendación personalizada del módulo de inglés donde deberías comenzar tu estudio.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== DASHBOARD Y PROGRESO ===================== -->
+        <div class="faq-category">
+            <h3 class="faq-category-title" data-i18n="faq.dash.title">
+                <span class="faq-cat-icon" style="background:rgba(255,184,0,0.1);color:var(--gold);"><i class="fas fa-chart-line"></i></span>
+                Dashboard y Progreso
+            </h3>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.dash.q1">
+                    <span>¿Cómo funciona el sistema de XP y niveles?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.dash.a1">Ganas puntos de experiencia (XP) al completar módulos, aprobar quizzes, terminar laboratorios y mantener tu racha de estudio diaria. A medida que acumulas XP, subes de nivel dentro de la plataforma. Este sistema de gamificación está diseñado para mantenerte motivado y hacer que el aprendizaje sea una experiencia más dinámica.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.dash.q2">
+                    <span>¿Qué son las rachas de estudio?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.dash.a2">Las rachas registran cuántos días consecutivos has estudiado en la plataforma. Cada día que completas al menos una actividad (un módulo, un quiz o un lab), tu racha aumenta en uno. Mantener una racha activa te otorga XP adicional como bonificación y fomenta el hábito de estudio constante.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.dash.q3">
+                    <span>¿Puedo descargar mi certificado?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.dash.a3">Sí, una vez que completes todos los módulos y quizzes de un curso, puedes generar y descargar tu certificado en formato PDF desde la sección de Certificados. Asegúrate de haber ingresado tu nombre en el dashboard para que aparezca correctamente en el documento.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.dash.q4">
+                    <span>¿Cómo uso el temporizador Pomodoro?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.dash.a4">El temporizador Pomodoro está integrado en el dashboard y te ayuda a gestionar sesiones de estudio enfocadas. Configúralo con intervalos de 25 minutos de estudio seguidos de 5 minutos de descanso (o personaliza los tiempos). Al completar cada sesión Pomodoro, recibes XP adicional como recompensa por tu dedicación.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== SOPORTE TÉCNICO ===================== -->
+        <div class="faq-category">
+            <h3 class="faq-category-title" data-i18n="faq.tech.title">
+                <span class="faq-cat-icon" style="background:rgba(0,191,166,0.1);color:var(--teal);"><i class="fas fa-headset"></i></span>
+                Soporte Técnico
+            </h3>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.tech.q1">
+                    <span>¿La plataforma funciona sin internet?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.tech.a1">Sí, gracias a la tecnología PWA (Progressive Web App) y el Service Worker, la plataforma almacena en caché los archivos necesarios para funcionar sin conexión. Una vez que hayas visitado la plataforma con internet, podrás acceder al contenido previamente cargado incluso estando offline.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.tech.q2">
+                    <span>¿Cómo activo el modo oscuro?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.tech.a2">Haz clic en el ícono de luna (<i class="fas fa-moon" style="color:var(--teal);"></i>) ubicado en la barra de navegación superior. El modo oscuro se activará inmediatamente y tu preferencia se guardará automáticamente para futuras visitas. Puedes alternar entre modo claro y oscuro en cualquier momento.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.tech.q3">
+                    <span>¿Cómo cambio el idioma a inglés?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.tech.a3">Haz clic en el botón "EN" ubicado en la barra de navegación superior para cambiar la interfaz al inglés. Para volver al español, haz clic en "ES". La plataforma es completamente bilingüe y tu preferencia de idioma se guardará automáticamente en tu navegador.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="faq.tech.q4">
+                    <span>¿A quién contacto si tengo problemas?</span>
+                    <i class="fas fa-chevron-down faq-chevron"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.tech.a4">Si experimentas problemas técnicos o tienes consultas que no se resuelven en esta sección de ayuda, puedes contactarnos a través del correo electrónico en nuestra página de Sobre Nosotros. También puedes comunicarte con tu profesor a través de Google Classroom si estás inscrito en un grupo de clase.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== CTA - CONTACTO ===================== -->
+        <div style="background:linear-gradient(135deg, var(--navy), var(--navy-light));border-radius:var(--radius);padding:48px 36px;text-align:center;position:relative;overflow:hidden;margin-top:40px;">
+            <div style="position:absolute;width:300px;height:300px;background:radial-gradient(circle, rgba(0,191,166,0.15) 0%, transparent 70%);top:-100px;right:-50px;border-radius:50%;"></div>
+            <div style="position:absolute;width:200px;height:200px;background:radial-gradient(circle, rgba(255,184,0,0.1) 0%, transparent 70%);bottom:-80px;left:-30px;border-radius:50%;"></div>
+            <div style="position:relative;z-index:2;">
+                <div style="width:64px;height:64px;border-radius:18px;background:rgba(0,191,166,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+                    <i class="fas fa-envelope-open-text" style="font-size:1.6rem;color:var(--teal);"></i>
+                </div>
+                <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.8rem;font-weight:800;color:white;margin-bottom:12px;" data-i18n="faq.cta.titulo">¿No encontraste tu respuesta?</h2>
+                <p style="color:rgba(255,255,255,0.7);font-size:1.05rem;line-height:1.7;max-width:500px;margin:0 auto 28px;" data-i18n="faq.cta.texto">Si tienes una pregunta que no aparece aquí, no dudes en contactarnos. Nuestro equipo estará encantado de ayudarte con cualquier consulta sobre la plataforma.</p>
+                <a href="about.html" style="display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--teal);color:white;border-radius:12px;text-decoration:none;font-weight:700;font-size:1rem;transition:all 0.3s;box-shadow:0 4px 16px rgba(0,191,166,0.3);">
+                    <i class="fas fa-arrow-right"></i> <span data-i18n="faq.cta.boton">Contáctanos</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="index.html" class="logo" style="margin-bottom:16px;">
+                <div class="logo-icon">FI</div>
+                <div class="logo-text">Fundación <span>Iberoamericana</span></div>
+            </a>
+            <p>Plataforma de formación técnica y profesional.</p>
+        </div>
+        <div>
+            <h4>Plataforma</h4>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="dashboard.html">Mi Aula</a>
+            <a href="quizzes.html">Quizzes</a>
+            <a href="labs.html">Labs</a>
+        </div>
+        <div>
+            <h4>Más</h4>
+            <a href="recursos.html">Recursos</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="certificados.html">Certificados</a>
+            <a href="about.html">Nosotros</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
+        </div>
+        <div>
+            <h4>Legal</h4>
+            <a href="privacidad.html">Política de Privacidad</a>
+            <a href="terminos.html">Términos de Servicio</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Fundación Iberoamericana. Todos los derechos reservados.
+        <br><small style="opacity:0.7;">Coordinación Académica: Dr. Mauricio Rodríguez, PhD Education</small>
+    </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/animations.js"></script>
+<script>
+/* FAQ Accordion */
+document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const wasOpen = item.classList.contains('open');
+        /* Close all in same category */
+        item.parentElement.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+    });
+});
+</script>
+</body>
+</html>

@@ -136,7 +136,117 @@ const traducciones = {
         "onboard.titulo": "¡Bienvenido a la plataforma!",
         "onboard.nombre": "¿Cómo te llamas?",
         "onboard.placeholder": "Tu nombre completo",
-        "onboard.comenzar": "Comenzar"
+        "onboard.comenzar": "Comenzar",
+
+        // Nav (extended)
+        "nav.inicio": "Inicio",
+        "nav.miAula": "Mi Aula",
+        "nav.labs": "Labs",
+        "nav.recursos": "Recursos",
+        "nav.calendario": "Calendario",
+        "nav.certificados": "Certificados",
+
+        // Labs page
+        "labs.badge": "Hands-On",
+        "labs.titulo": "Laboratorios Prácticos",
+        "labs.subtitulo": "Practica en entornos reales sin instalar nada. Código, hojas de cálculo y ejercicios interactivos directamente en tu navegador.",
+        "labs.todos": "Todos",
+        "labs.codigo": "Código",
+        "labs.excel": "Excel / Sheets",
+        "labs.datos": "Datos & SQL",
+        "labs.diseno": "Diseño",
+        "labs.externas": "Herramientas Externas",
+        "labs.externasDesc": "Accede a plataformas de práctica gratuitas recomendadas por tus instructores.",
+        "labs.volver": "Volver a Labs",
+        "labs.iniciar": "Iniciar Lab",
+
+        // Recursos page
+        "recursos.badge": "Biblioteca",
+        "recursos.titulo": "Biblioteca de Recursos",
+        "recursos.subtitulo": "Material de apoyo organizado por curso: PDFs, presentaciones, plantillas, cheat sheets y recursos externos recomendados.",
+        "recursos.buscar": "Buscar recurso por nombre o curso...",
+        "recursos.todos": "Todos",
+        "recursos.pdfs": "PDFs",
+        "recursos.plantillas": "Plantillas",
+        "recursos.cheatsheets": "Cheat Sheets",
+        "recursos.videos": "Videos",
+        "recursos.externos": "Externos",
+        "recursos.extRecomendados": "Recursos Externos Recomendados",
+        "recursos.extRecomendadosDesc": "Canales de YouTube, cursos gratuitos y sitios web que complementan tu formación.",
+
+        // Calendario page
+        "cal.badge": "Organización",
+        "cal.titulo": "Calendario y Horarios",
+        "cal.subtitulo": "Mantente al día con clases en vivo, fechas de entrega, exámenes y eventos de la academia.",
+        "cal.hoy": "Hoy",
+        "cal.dom": "Dom",
+        "cal.lun": "Lun",
+        "cal.mar": "Mar",
+        "cal.mie": "Mié",
+        "cal.jue": "Jue",
+        "cal.vie": "Vie",
+        "cal.sab": "Sáb",
+        "cal.claseVivo": "Clase en vivo",
+        "cal.entrega": "Fecha de entrega",
+        "cal.examen": "Examen",
+        "cal.eventoEspecial": "Evento especial",
+        "cal.proximosEventos": "Próximos Eventos",
+        "cal.agregarCalendario": "Agregar a mi calendario",
+        "cal.googleCalDesc": "Sincroniza todas las fechas con tu calendario personal.",
+
+        // Certificados page
+        "cert.titulo": "Generador de Certificados",
+        "cert.subtitulo": "Completa los datos del estudiante para generar un certificado profesional de finalización de curso.",
+        "cert.datosCert": "Datos del Certificado",
+        "cert.nombre": "Nombre completo del estudiante *",
+        "cert.curso": "Curso completado *",
+        "cert.seleccionar": "— Seleccionar curso —",
+        "cert.fecha": "Fecha de emisión",
+        "cert.calificacion": "Calificación final (0-100) *",
+        "cert.instructor": "Nombre del instructor",
+        "cert.vistaPrevia": "Vista Previa",
+        "cert.descargarPDF": "Descargar PDF",
+        "cert.certFinalizacion": "Certificado de Finalización",
+        "cert.seOtorga": "Se otorga el presente certificado a",
+        "cert.porCompletar": "Por haber completado satisfactoriamente el curso",
+
+        // About page
+        "about.badge": "Nuestra Historia",
+        "about.titulo": "Sobre Nosotros",
+        "about.subtitulo": "Comprometidos con la educación técnica de calidad y el desarrollo profesional accesible para toda América Latina.",
+        "about.mision": "Nuestra Misión",
+        "about.vision": "Nuestra Visión",
+        "about.numeros": "Nuestros Números",
+        "about.impacto": "Impacto en Cifras",
+        "about.metodologia": "Metodología",
+        "about.enfoque": "Nuestro Enfoque",
+        "about.tecnologia": "Tecnología",
+        "about.caracteristicas": "Características de la Plataforma",
+        "about.comenzar": "Comienza tu Formación Hoy",
+        "about.verCursos": "Ver Cursos Disponibles",
+
+        // Placement test page
+        "pt.titulo": "Test de Nivel de Inglés",
+        "pt.subtitulo": "Descubre tu nivel según el Marco Común Europeo de Referencia (CEFR). 25 preguntas adaptativas que ajustan la dificultad según tus respuestas.",
+        "pt.duracion": "Duración estimada",
+        "pt.adaptativo": "Adaptativo",
+        "pt.ajustaDificultad": "Ajusta la dificultad",
+        "pt.nivelesEvaluados": "Niveles evaluados",
+        "pt.nivelesCEFR": "Niveles CEFR",
+        "pt.comenzar": "Comenzar Test",
+
+        // FAQ page
+        "faq.badge": "Ayuda",
+        "faq.titulo": "Preguntas Frecuentes",
+        "faq.subtitulo": "Encuentra respuestas a las preguntas más comunes sobre la plataforma, cursos y funcionalidades.",
+        "faq.contacto": "¿No encontraste lo que buscabas?",
+        "faq.contactoDesc": "Estamos aquí para ayudarte. Contáctanos y resolveremos tus dudas.",
+        "faq.contactoBtn": "Contactar Soporte",
+
+        // 404 page
+        "error.titulo": "Página no encontrada",
+        "error.desc": "Lo sentimos, la página que buscas no existe o fue movida. Prueba navegar desde el inicio.",
+        "error.popularTitle": "Páginas populares"
     },
     en: {
         // Navbar
@@ -267,7 +377,117 @@ const traducciones = {
         "onboard.titulo": "Welcome to the platform!",
         "onboard.nombre": "What's your name?",
         "onboard.placeholder": "Your full name",
-        "onboard.comenzar": "Get Started"
+        "onboard.comenzar": "Get Started",
+
+        // Nav (extended)
+        "nav.inicio": "Home",
+        "nav.miAula": "My Classroom",
+        "nav.labs": "Labs",
+        "nav.recursos": "Resources",
+        "nav.calendario": "Calendar",
+        "nav.certificados": "Certificates",
+
+        // Labs page
+        "labs.badge": "Hands-On",
+        "labs.titulo": "Hands-On Labs",
+        "labs.subtitulo": "Practice in real environments without installing anything. Code, spreadsheets, and interactive exercises directly in your browser.",
+        "labs.todos": "All",
+        "labs.codigo": "Code",
+        "labs.excel": "Excel / Sheets",
+        "labs.datos": "Data & SQL",
+        "labs.diseno": "Design",
+        "labs.externas": "External Tools",
+        "labs.externasDesc": "Access free practice platforms recommended by your instructors.",
+        "labs.volver": "Back to Labs",
+        "labs.iniciar": "Start Lab",
+
+        // Recursos page
+        "recursos.badge": "Library",
+        "recursos.titulo": "Resource Library",
+        "recursos.subtitulo": "Support materials organized by course: PDFs, presentations, templates, cheat sheets, and recommended external resources.",
+        "recursos.buscar": "Search resource by name or course...",
+        "recursos.todos": "All",
+        "recursos.pdfs": "PDFs",
+        "recursos.plantillas": "Templates",
+        "recursos.cheatsheets": "Cheat Sheets",
+        "recursos.videos": "Videos",
+        "recursos.externos": "External",
+        "recursos.extRecomendados": "Recommended External Resources",
+        "recursos.extRecomendadosDesc": "YouTube channels, free courses, and websites that complement your training.",
+
+        // Calendario page
+        "cal.badge": "Organization",
+        "cal.titulo": "Calendar & Schedule",
+        "cal.subtitulo": "Stay up to date with live classes, deadlines, exams, and academy events.",
+        "cal.hoy": "Today",
+        "cal.dom": "Sun",
+        "cal.lun": "Mon",
+        "cal.mar": "Tue",
+        "cal.mie": "Wed",
+        "cal.jue": "Thu",
+        "cal.vie": "Fri",
+        "cal.sab": "Sat",
+        "cal.claseVivo": "Live class",
+        "cal.entrega": "Deadline",
+        "cal.examen": "Exam",
+        "cal.eventoEspecial": "Special event",
+        "cal.proximosEventos": "Upcoming Events",
+        "cal.agregarCalendario": "Add to my calendar",
+        "cal.googleCalDesc": "Sync all dates with your personal calendar.",
+
+        // Certificados page
+        "cert.titulo": "Certificate Generator",
+        "cert.subtitulo": "Fill in the student details to generate a professional course completion certificate.",
+        "cert.datosCert": "Certificate Details",
+        "cert.nombre": "Student full name *",
+        "cert.curso": "Completed course *",
+        "cert.seleccionar": "— Select course —",
+        "cert.fecha": "Issue date",
+        "cert.calificacion": "Final grade (0-100) *",
+        "cert.instructor": "Instructor name",
+        "cert.vistaPrevia": "Preview",
+        "cert.descargarPDF": "Download PDF",
+        "cert.certFinalizacion": "Certificate of Completion",
+        "cert.seOtorga": "This certificate is awarded to",
+        "cert.porCompletar": "For successfully completing the course",
+
+        // About page
+        "about.badge": "Our Story",
+        "about.titulo": "About Us",
+        "about.subtitulo": "Committed to quality technical education and accessible professional development for all of Latin America.",
+        "about.mision": "Our Mission",
+        "about.vision": "Our Vision",
+        "about.numeros": "Our Numbers",
+        "about.impacto": "Impact in Numbers",
+        "about.metodologia": "Methodology",
+        "about.enfoque": "Our Approach",
+        "about.tecnologia": "Technology",
+        "about.caracteristicas": "Platform Features",
+        "about.comenzar": "Start Your Training Today",
+        "about.verCursos": "View Available Courses",
+
+        // Placement test page
+        "pt.titulo": "English Level Test",
+        "pt.subtitulo": "Discover your level according to the Common European Framework of Reference (CEFR). 25 adaptive questions that adjust difficulty based on your answers.",
+        "pt.duracion": "Estimated duration",
+        "pt.adaptativo": "Adaptive",
+        "pt.ajustaDificultad": "Adjusts difficulty",
+        "pt.nivelesEvaluados": "Levels assessed",
+        "pt.nivelesCEFR": "CEFR Levels",
+        "pt.comenzar": "Start Test",
+
+        // FAQ page
+        "faq.badge": "Help",
+        "faq.titulo": "Frequently Asked Questions",
+        "faq.subtitulo": "Find answers to the most common questions about the platform, courses, and features.",
+        "faq.contacto": "Didn't find what you were looking for?",
+        "faq.contactoDesc": "We're here to help. Contact us and we'll resolve your questions.",
+        "faq.contactoBtn": "Contact Support",
+
+        // 404 page
+        "error.titulo": "Page not found",
+        "error.desc": "Sorry, the page you're looking for doesn't exist or has been moved. Try navigating from the homepage.",
+        "error.popularTitle": "Popular pages"
     }
 };
 

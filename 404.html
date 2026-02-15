@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada | Fundación Iberoamericana</title>
+    <meta name="description" content="La página que buscas no existe. Vuelve al inicio de la Fundación Iberoamericana.">
+    <meta name="theme-color" content="#00BFA6">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg">
+    <link rel="apple-touch-icon" href="icons/icon-192.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">FI</div>
+            <div class="logo-text">Fundación <span>Iberoamericana</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="index.html#cursos" data-i18n="nav.cursos">Cursos</a></li>
+            <li><a href="dashboard.html" data-i18n="nav.miAula">Mi Aula</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="labs.html">Labs</a></li>
+            <li><a href="recursos.html" data-i18n="nav.recursos">Recursos</a></li>
+            <li><button id="darkModeToggle" onclick="toggleDarkMode()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:1rem;" title="Modo oscuro"><i class="fas fa-moon"></i></button></li>
+            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
+        </ul>
+        <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<!-- 404 CONTENT -->
+<section style="min-height:80vh;display:flex;align-items:center;justify-content:center;padding:120px 2rem 60px;text-align:center;">
+    <div style="max-width:520px;">
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:8rem;font-weight:800;line-height:1;color:var(--teal);margin-bottom:16px;opacity:0.15;">404</div>
+        <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:2rem;font-weight:800;color:var(--navy);margin-bottom:12px;margin-top:-40px;" data-i18n="error.titulo">Página no encontrada</h1>
+        <p style="color:var(--text-light);font-size:1.05rem;line-height:1.7;margin-bottom:32px;" data-i18n="error.desc">Lo sentimos, la página que buscas no existe o fue movida. Prueba navegar desde el inicio.</p>
+
+        <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:48px;">
+            <a href="index.html" class="btn btn-primary"><i class="fas fa-home"></i> <span data-i18n="nav.inicio">Inicio</span></a>
+            <a href="index.html#cursos" class="btn btn-secondary" style="border:1px solid var(--border);color:var(--text);"><i class="fas fa-book"></i> <span data-i18n="nav.cursos">Cursos</span></a>
+            <a href="dashboard.html" class="btn btn-secondary" style="border:1px solid var(--border);color:var(--text);"><i class="fas fa-th-large"></i> <span data-i18n="nav.miAula">Mi Aula</span></a>
+        </div>
+
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
+            <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:16px;" data-i18n="error.popularTitle">Páginas populares</h3>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:left;">
+                <a href="quizzes.html" style="display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:var(--radius-sm);color:var(--text);text-decoration:none;transition:all 0.2s;font-size:0.9rem;"><i class="fas fa-clipboard-check" style="color:var(--teal);width:18px;"></i> Quizzes</a>
+                <a href="labs.html" style="display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:var(--radius-sm);color:var(--text);text-decoration:none;transition:all 0.2s;font-size:0.9rem;"><i class="fas fa-flask" style="color:var(--teal);width:18px;"></i> Labs</a>
+                <a href="recursos.html" style="display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:var(--radius-sm);color:var(--text);text-decoration:none;transition:all 0.2s;font-size:0.9rem;"><i class="fas fa-folder-open" style="color:var(--teal);width:18px;"></i> <span data-i18n="nav.recursos">Recursos</span></a>
+                <a href="calendario.html" style="display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:var(--radius-sm);color:var(--text);text-decoration:none;transition:all 0.2s;font-size:0.9rem;"><i class="fas fa-calendar" style="color:var(--teal);width:18px;"></i> <span data-i18n="nav.calendario">Calendario</span></a>
+                <a href="certificados.html" style="display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:var(--radius-sm);color:var(--text);text-decoration:none;transition:all 0.2s;font-size:0.9rem;"><i class="fas fa-certificate" style="color:var(--gold);width:18px;"></i> <span data-i18n="nav.certificados">Certificados</span></a>
+                <a href="placement-test.html" style="display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:var(--radius-sm);color:var(--text);text-decoration:none;transition:all 0.2s;font-size:0.9rem;"><i class="fas fa-language" style="color:var(--gold);width:18px;"></i> Test CEFR</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="index.html" class="logo" style="margin-bottom:16px;">
+                <div class="logo-icon">FI</div>
+                <div class="logo-text">Fundación <span>Iberoamericana</span></div>
+            </a>
+            <p>Plataforma de formación técnica y profesional.</p>
+        </div>
+        <div>
+            <h4>Plataforma</h4>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="dashboard.html">Mi Aula</a>
+            <a href="quizzes.html">Quizzes</a>
+            <a href="labs.html">Labs</a>
+        </div>
+        <div>
+            <h4>Más</h4>
+            <a href="recursos.html">Recursos</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="certificados.html">Certificados</a>
+            <a href="about.html">Nosotros</a>
+            <a href="privacidad.html">Privacidad</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Fundación Iberoamericana. Todos los derechos reservados.
+        <br><small style="opacity:0.7;">Coordinación Académica: Dr. Mauricio Rodríguez, PhD Education</small>
+    </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

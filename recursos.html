@@ -32,12 +32,12 @@
             <div class="logo-text">Fundación <span>Iberoamericana</span></div>
         </a>
         <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#cursos">Cursos</a></li>
-            <li><a href="dashboard.html">Mi Aula</a></li>
+            <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="index.html#cursos" data-i18n="nav.cursos">Cursos</a></li>
+            <li><a href="dashboard.html" data-i18n="nav.miAula">Mi Aula</a></li>
             <li><a href="quizzes.html">Quizzes</a></li>
             <li><a href="labs.html">Labs</a></li>
-            <li><a href="recursos.html" class="active">Recursos</a></li>
+            <li><a href="recursos.html" class="active" data-i18n="nav.recursos">Recursos</a></li>
             <li><button id="darkModeToggle" onclick="toggleDarkMode()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:1rem;" title="Modo oscuro"><i class="fas fa-moon"></i></button></li>
             <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
         </ul>
@@ -48,9 +48,9 @@
 <!-- HERO BANNER -->
 <section class="page-hero">
     <div class="page-hero-content">
-        <div class="hero-badge"><i class="fas fa-book-open"></i> Biblioteca</div>
-        <h1><i class="fas fa-folder-open"></i> Biblioteca de Recursos</h1>
-        <p>Material de apoyo organizado por curso: PDFs, presentaciones, plantillas, cheat sheets y recursos externos recomendados.</p>
+        <div class="hero-badge"><i class="fas fa-book-open"></i> <span data-i18n="recursos.badge">Biblioteca</span></div>
+        <h1><i class="fas fa-folder-open"></i> <span data-i18n="recursos.titulo">Biblioteca de Recursos</span></h1>
+        <p data-i18n="recursos.subtitulo">Material de apoyo organizado por curso: PDFs, presentaciones, plantillas, cheat sheets y recursos externos recomendados.</p>
     </div>
 </section>
 
@@ -60,17 +60,17 @@
     <!-- Búsqueda -->
     <div class="search-container" style="max-width:500px;margin-bottom:24px;">
         <i class="fas fa-search"></i>
-        <input type="text" id="searchRecursos" placeholder="Buscar recurso por nombre o curso...">
+        <input type="text" id="searchRecursos" placeholder="Buscar recurso por nombre o curso..." data-i18n="recursos.buscar" data-i18n-attr="placeholder">
     </div>
 
     <!-- Filtros por categoría -->
     <div class="tab-nav" id="recursosTabs">
-        <button class="tab-btn active" onclick="filterRecursos('all', event)">Todos</button>
-        <button class="tab-btn" onclick="filterRecursos('pdf', event)"><i class="fas fa-file-pdf"></i> PDFs</button>
-        <button class="tab-btn" onclick="filterRecursos('plantilla', event)"><i class="fas fa-file-alt"></i> Plantillas</button>
-        <button class="tab-btn" onclick="filterRecursos('cheatsheet', event)"><i class="fas fa-clipboard-list"></i> Cheat Sheets</button>
-        <button class="tab-btn" onclick="filterRecursos('video', event)"><i class="fas fa-video"></i> Videos</button>
-        <button class="tab-btn" onclick="filterRecursos('externo', event)"><i class="fas fa-external-link-alt"></i> Externos</button>
+        <button class="tab-btn active" onclick="filterRecursos('all', event)" data-i18n="recursos.todos">Todos</button>
+        <button class="tab-btn" onclick="filterRecursos('pdf', event)"><i class="fas fa-file-pdf"></i> <span data-i18n="recursos.pdfs">PDFs</span></button>
+        <button class="tab-btn" onclick="filterRecursos('plantilla', event)"><i class="fas fa-file-alt"></i> <span data-i18n="recursos.plantillas">Plantillas</span></button>
+        <button class="tab-btn" onclick="filterRecursos('cheatsheet', event)"><i class="fas fa-clipboard-list"></i> <span data-i18n="recursos.cheatsheets">Cheat Sheets</span></button>
+        <button class="tab-btn" onclick="filterRecursos('video', event)"><i class="fas fa-video"></i> <span data-i18n="recursos.videos">Videos</span></button>
+        <button class="tab-btn" onclick="filterRecursos('externo', event)"><i class="fas fa-external-link-alt"></i> <span data-i18n="recursos.externos">Externos</span></button>
     </div>
 
     <!-- Grid de Recursos -->
@@ -80,8 +80,8 @@
 
     <!-- Sección: Recursos Externos Recomendados -->
     <div style="margin-top:60px;">
-        <h2 class="section-title" style="font-size:1.5rem;"><i class="fas fa-star" style="color:var(--gold);"></i> Recursos Externos Recomendados</h2>
-        <p class="section-subtitle">Canales de YouTube, cursos gratuitos y sitios web que complementan tu formación.</p>
+        <h2 class="section-title" style="font-size:1.5rem;"><i class="fas fa-star" style="color:var(--gold);"></i> <span data-i18n="recursos.extRecomendados">Recursos Externos Recomendados</span></h2>
+        <p class="section-subtitle" data-i18n="recursos.extRecomendadosDesc">Canales de YouTube, cursos gratuitos y sitios web que complementan tu formación.</p>
 
         <div class="recursos-ext-grid" id="recursosExternos">
             <!-- Generado por JS -->
@@ -113,6 +113,7 @@
             <a href="calendario.html">Calendario</a>
             <a href="certificados.html">Certificados</a>
             <a href="about.html">Nosotros</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
             <a href="privacidad.html">Privacidad</a>
         </div>
     </div>

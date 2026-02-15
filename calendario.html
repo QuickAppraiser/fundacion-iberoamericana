@@ -32,12 +32,12 @@
             <div class="logo-text">Fundación <span>Iberoamericana</span></div>
         </a>
         <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#cursos">Cursos</a></li>
-            <li><a href="dashboard.html">Mi Aula</a></li>
+            <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="index.html#cursos" data-i18n="nav.cursos">Cursos</a></li>
+            <li><a href="dashboard.html" data-i18n="nav.miAula">Mi Aula</a></li>
             <li><a href="quizzes.html">Quizzes</a></li>
             <li><a href="labs.html">Labs</a></li>
-            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="recursos.html" data-i18n="nav.recursos">Recursos</a></li>
             <li><a href="calendario.html" class="active">Calendario</a></li>
             <li><button id="darkModeToggle" onclick="toggleDarkMode()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:1rem;" title="Modo oscuro"><i class="fas fa-moon"></i></button></li>
             <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
@@ -49,9 +49,9 @@
 <!-- HERO BANNER -->
 <section class="page-hero">
     <div class="page-hero-content">
-        <div class="hero-badge"><i class="fas fa-calendar-alt"></i> Organización</div>
-        <h1><i class="fas fa-calendar-days"></i> Calendario y Horarios</h1>
-        <p>Mantente al día con clases en vivo, fechas de entrega, exámenes y eventos de la academia.</p>
+        <div class="hero-badge"><i class="fas fa-calendar-alt"></i> <span data-i18n="cal.badge">Organización</span></div>
+        <h1><i class="fas fa-calendar-days"></i> <span data-i18n="cal.titulo">Calendario y Horarios</span></h1>
+        <p data-i18n="cal.subtitulo">Mantente al día con clases en vivo, fechas de entrega, exámenes y eventos de la academia.</p>
     </div>
 </section>
 
@@ -69,20 +69,20 @@
                 <h2 class="cal-month-title" id="calMonthTitle">Febrero 2026</h2>
                 <button class="cal-nav-btn" onclick="mesSiguiente()"><i class="fas fa-chevron-right"></i></button>
                 <button class="btn btn-outline" onclick="irAHoy()" style="margin-left:auto;padding:8px 16px;font-size:0.85rem;">
-                    <i class="fas fa-crosshairs"></i> Hoy
+                    <i class="fas fa-crosshairs"></i> <span data-i18n="cal.hoy">Hoy</span>
                 </button>
             </div>
 
             <!-- Grid del Calendario -->
             <div class="cal-grid">
                 <div class="cal-header-row">
-                    <div class="cal-day-header">Dom</div>
-                    <div class="cal-day-header">Lun</div>
-                    <div class="cal-day-header">Mar</div>
-                    <div class="cal-day-header">Mié</div>
-                    <div class="cal-day-header">Jue</div>
-                    <div class="cal-day-header">Vie</div>
-                    <div class="cal-day-header">Sáb</div>
+                    <div class="cal-day-header" data-i18n="cal.dom">Dom</div>
+                    <div class="cal-day-header" data-i18n="cal.lun">Lun</div>
+                    <div class="cal-day-header" data-i18n="cal.mar">Mar</div>
+                    <div class="cal-day-header" data-i18n="cal.mie">Mié</div>
+                    <div class="cal-day-header" data-i18n="cal.jue">Jue</div>
+                    <div class="cal-day-header" data-i18n="cal.vie">Vie</div>
+                    <div class="cal-day-header" data-i18n="cal.sab">Sáb</div>
                 </div>
                 <div class="cal-body" id="calBody">
                     <!-- Generado por JS -->
@@ -91,16 +91,16 @@
 
             <!-- Leyenda -->
             <div class="cal-legend">
-                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--teal);"></span> Clase en vivo</div>
-                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:#F44336;"></span> Fecha de entrega</div>
-                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--gold);"></span> Examen</div>
-                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:#9C27B0;"></span> Evento especial</div>
+                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--teal);"></span> <span data-i18n="cal.claseVivo">Clase en vivo</span></div>
+                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:#F44336;"></span> <span data-i18n="cal.entrega">Fecha de entrega</span></div>
+                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--gold);"></span> <span data-i18n="cal.examen">Examen</span></div>
+                <div class="cal-legend-item"><span class="cal-legend-dot" style="background:#9C27B0;"></span> <span data-i18n="cal.eventoEspecial">Evento especial</span></div>
             </div>
         </div>
 
         <!-- COLUMNA DERECHA: Próximos eventos -->
         <div class="calendario-sidebar">
-            <h3><i class="fas fa-clock" style="color:var(--teal);"></i> Próximos Eventos</h3>
+            <h3><i class="fas fa-clock" style="color:var(--teal);"></i> <span data-i18n="cal.proximosEventos">Próximos Eventos</span></h3>
             <div class="events-list" id="eventsList">
                 <!-- Generado por JS -->
             </div>
@@ -111,9 +111,9 @@
                     <i class="fab fa-google" style="color:#4285F4;font-size:24px;"></i>
                 </div>
                 <h4>Google Calendar</h4>
-                <p>Sincroniza todas las fechas con tu calendario personal.</p>
+                <p data-i18n="cal.googleCalDesc">Sincroniza todas las fechas con tu calendario personal.</p>
                 <a href="https://calendar.google.com/calendar/render?cid=fundacioniberoamericana" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;padding:10px 16px;font-size:0.85rem;">
-                    <i class="fas fa-plus"></i> Agregar a mi calendario
+                    <i class="fas fa-plus"></i> <span data-i18n="cal.agregarCalendario">Agregar a mi calendario</span>
                 </a>
             </div>
         </div>
@@ -145,6 +145,7 @@
             <a href="calendario.html">Calendario</a>
             <a href="certificados.html">Certificados</a>
             <a href="about.html">Nosotros</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
             <a href="privacidad.html">Privacidad</a>
         </div>
     </div>

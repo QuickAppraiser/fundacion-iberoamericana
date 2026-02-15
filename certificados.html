@@ -32,12 +32,12 @@
             <div class="logo-text">Fundación <span>Iberoamericana</span></div>
         </a>
         <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#cursos">Cursos</a></li>
-            <li><a href="dashboard.html">Mi Aula</a></li>
+            <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="index.html#cursos" data-i18n="nav.cursos">Cursos</a></li>
+            <li><a href="dashboard.html" data-i18n="nav.miAula">Mi Aula</a></li>
             <li><a href="quizzes.html">Quizzes</a></li>
             <li><a href="labs.html">Labs</a></li>
-            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="recursos.html" data-i18n="nav.recursos">Recursos</a></li>
             <li><button id="darkModeToggle" onclick="toggleDarkMode()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:1rem;" title="Modo oscuro"><i class="fas fa-moon"></i></button></li>
             <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
         </ul>
@@ -50,23 +50,23 @@
     <div style="max-width:900px;margin:0 auto;padding:0 24px;">
 
         <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:2rem;font-weight:800;color:var(--navy);margin-bottom:8px;">
-            <i class="fas fa-certificate" style="color:var(--gold);"></i> Generador de Certificados
+            <i class="fas fa-certificate" style="color:var(--gold);"></i> <span data-i18n="cert.titulo">Generador de Certificados</span>
         </h1>
-        <p style="color:var(--text-light);margin-bottom:32px;">Completa los datos del estudiante para generar un certificado profesional de finalización de curso.</p>
+        <p style="color:var(--text-light);margin-bottom:32px;" data-i18n="cert.subtitulo">Completa los datos del estudiante para generar un certificado profesional de finalización de curso.</p>
 
         <!-- FORMULARIO -->
         <div class="cert-form-card">
-            <h2><i class="fas fa-edit"></i> Datos del Certificado</h2>
+            <h2><i class="fas fa-edit"></i> <span data-i18n="cert.datosCert">Datos del Certificado</span></h2>
 
             <div class="form-group">
-                <label for="certNombre">Nombre completo del estudiante *</label>
+                <label for="certNombre" data-i18n="cert.nombre">Nombre completo del estudiante *</label>
                 <input type="text" id="certNombre" placeholder="Ej: María García López">
             </div>
 
             <div class="form-group">
-                <label for="certCurso">Curso completado *</label>
+                <label for="certCurso" data-i18n="cert.curso">Curso completado *</label>
                 <select id="certCurso">
-                    <option value="">— Seleccionar curso —</option>
+                    <option value="" data-i18n="cert.seleccionar">— Seleccionar curso —</option>
                     <option value="Excel Básico a Avanzado">Excel Básico a Avanzado</option>
                     <option value="Google Workspace para Profesionales">Google Workspace para Profesionales</option>
                     <option value="Power BI: Visualización de Datos">Power BI: Visualización de Datos</option>
@@ -79,32 +79,34 @@
                     <option value="Business Intelligence Empresarial">Business Intelligence Empresarial</option>
                     <option value="Gestión de Proyectos con Scrum">Gestión de Proyectos con Scrum</option>
                     <option value="Liderazgo y Gestión de Equipos">Liderazgo y Gestión de Equipos</option>
+                    <option value="Inglés General A1-C1">Inglés General A1-C1</option>
                     <option value="Transformación Digital para Empresas">Transformación Digital para Empresas</option>
+                    <option value="IA y Machine Learning">IA y Machine Learning</option>
                 </select>
             </div>
 
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
                 <div class="form-group">
-                    <label for="certFecha">Fecha de emisión</label>
+                    <label for="certFecha" data-i18n="cert.fecha">Fecha de emisión</label>
                     <input type="date" id="certFecha">
                 </div>
                 <div class="form-group">
-                    <label for="certCalificacion">Calificación final (0-100) *</label>
+                    <label for="certCalificacion" data-i18n="cert.calificacion">Calificación final (0-100) *</label>
                     <input type="number" id="certCalificacion" min="0" max="100" placeholder="Ej: 92">
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="certInstructor">Nombre del instructor</label>
+                <label for="certInstructor" data-i18n="cert.instructor">Nombre del instructor</label>
                 <input type="text" id="certInstructor" placeholder="Dr. Mauricio Rodríguez, PhD" value="Dr. Mauricio Rodríguez, PhD">
             </div>
 
             <div class="form-actions">
                 <button class="btn btn-primary" onclick="vistaPrevia()">
-                    <i class="fas fa-eye"></i> Vista Previa
+                    <i class="fas fa-eye"></i> <span data-i18n="cert.vistaPrevia">Vista Previa</span>
                 </button>
                 <button class="btn btn-primary" onclick="descargarCertificado()" style="background:var(--gold);color:var(--navy);">
-                    <i class="fas fa-download"></i> Descargar PDF
+                    <i class="fas fa-download"></i> <span data-i18n="cert.descargarPDF">Descargar PDF</span>
                 </button>
             </div>
         </div>
@@ -116,10 +118,10 @@
 
         <div id="certificado">
             <div class="cert-logo">FI</div>
-            <div class="cert-title">Certificado de Finalización</div>
-            <div class="cert-to">Se otorga el presente certificado a</div>
+            <div class="cert-title" data-i18n="cert.certFinalizacion">Certificado de Finalización</div>
+            <div class="cert-to" data-i18n="cert.seOtorga">Se otorga el presente certificado a</div>
             <div class="cert-name" id="certPreviewNombre">Nombre del Estudiante</div>
-            <div class="cert-course-label">Por haber completado satisfactoriamente el curso</div>
+            <div class="cert-course-label" data-i18n="cert.porCompletar">Por haber completado satisfactoriamente el curso</div>
             <div class="cert-course" id="certPreviewCurso">Nombre del Curso</div>
             <div class="cert-score" id="certPreviewCalif">0%</div>
             <div class="cert-footer">
@@ -161,6 +163,7 @@
             <a href="calendario.html">Calendario</a>
             <a href="certificados.html">Certificados</a>
             <a href="about.html">Nosotros</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
             <a href="privacidad.html">Privacidad</a>
         </div>
     </div>
