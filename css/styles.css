@@ -1386,6 +1386,7 @@ h1, h2, h3, h4, h5 {
     .hamburger { display: flex; }
     .nav-utility { gap: 6px; }
     .nav-utility .nav-auth-item { display: none; }
+    .nav-links .nav-mobile-auth { display: flex; flex-direction: column; gap: 10px; padding-top: 16px; margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); }
     .nav-links.open {
         display: flex;
         flex-direction: column;

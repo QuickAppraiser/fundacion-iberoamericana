@@ -179,6 +179,14 @@
                             '<input type="email" id="loginEmail" placeholder="tu@email.com" required>' +
                             '<span class="field-error" data-i18n="auth.emailError">Correo no registrado</span>' +
                         '</div>' +
+                        '<div class="auth-field" id="loginPasswordField">' +
+                            '<label for="loginPassword" data-i18n="auth.password">Contraseña</label>' +
+                            '<div style="position:relative;">' +
+                                '<input type="password" id="loginPassword" placeholder="Tu contraseña" required>' +
+                                '<button type="button" class="auth-toggle-pw" onclick="togglePasswordVisibility(\'loginPassword\', this)" aria-label="Mostrar contraseña"><i class="fas fa-eye"></i></button>' +
+                            '</div>' +
+                            '<span class="field-error" data-i18n="auth.passwordWrong">Contraseña incorrecta</span>' +
+                        '</div>' +
                         '<button type="submit" class="auth-submit auth-submit-login">' +
                             '<i class="fas fa-sign-in-alt"></i> <span data-i18n="auth.loginBtn">Iniciar Sesión</span>' +
                         '</button>' +
@@ -197,6 +205,14 @@
                             '<label for="regEmail" data-i18n="auth.emailLabel">Correo electrónico *</label>' +
                             '<input type="email" id="regEmail" placeholder="tu@email.com" required>' +
                             '<span class="field-error" data-i18n="auth.emailExists">Este correo ya está registrado</span>' +
+                        '</div>' +
+                        '<div class="auth-field" id="regPasswordField">' +
+                            '<label for="regPassword" data-i18n="auth.createPassword">Contraseña *</label>' +
+                            '<div style="position:relative;">' +
+                                '<input type="password" id="regPassword" placeholder="Mínimo 6 caracteres" required minlength="6">' +
+                                '<button type="button" class="auth-toggle-pw" onclick="togglePasswordVisibility(\'regPassword\', this)" aria-label="Mostrar contraseña"><i class="fas fa-eye"></i></button>' +
+                            '</div>' +
+                            '<span class="field-error" data-i18n="auth.passwordShort">La contraseña debe tener al menos 6 caracteres</span>' +
                         '</div>' +
                         '<div class="auth-field" id="regPhoneField">' +
                             '<label for="regPhone" data-i18n="auth.phone">Teléfono / WhatsApp</label>' +
@@ -244,13 +260,14 @@
         if (!container) return;
 
         // Remove existing auth elements
-        var existing = document.querySelectorAll('.nav-auth-item');
+        var existing = document.querySelectorAll('.nav-auth-item, .nav-mobile-auth');
         for (var i = 0; i < existing.length; i++) {
             existing[i].remove();
         }
 
         var user = getUser();
         var isUtility = container.id === 'navUtility';
+        var navLinks = document.getElementById('navLinks');
 
         if (user) {
             // Logged in: show user info + dropdown
@@ -279,6 +296,21 @@
                 container.insertBefore(el, container.firstChild);
             }
 
+            // Mobile menu: show user + logout
+            if (navLinks && isUtility) {
+                var mobileAuth = document.createElement('li');
+                mobileAuth.className = 'nav-mobile-auth';
+                mobileAuth.innerHTML =
+                    '<div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.9);font-size:0.92rem;padding:4px 0;">' +
+                        '<div class="nav-user-avatar">' + getInitials(user.name) + '</div>' +
+                        '<span>' + user.name.split(' ')[0] + '</span>' +
+                    '</div>' +
+                    '<button class="nav-auth-btn nav-auth-login" onclick="logoutUser()" style="width:100%;justify-content:center;">' +
+                        '<i class="fas fa-sign-out-alt"></i> Cerrar Sesión' +
+                    '</button>';
+                navLinks.appendChild(mobileAuth);
+            }
+
             // Update dashboard sidebar if present
             updateDashboardUser(user);
         } else {
@@ -299,6 +331,20 @@
             } else {
                 container.insertBefore(loginEl, container.firstChild);
                 loginEl.after(registerEl);
+            }
+
+            // Mobile menu: add auth buttons at bottom of hamburger
+            if (navLinks && isUtility) {
+                var mobileAuth = document.createElement('li');
+                mobileAuth.className = 'nav-mobile-auth';
+                mobileAuth.innerHTML =
+                    '<button class="nav-auth-btn nav-auth-register" onclick="openAuthModal(\'register\')" style="width:100%;justify-content:center;">' +
+                        '<i class="fas fa-user-plus"></i> <span data-i18n="auth.register">Registrarse</span>' +
+                    '</button>' +
+                    '<button class="nav-auth-btn nav-auth-login" onclick="openAuthModal(\'login\')" style="width:100%;justify-content:center;">' +
+                        '<i class="fas fa-sign-in-alt"></i> <span data-i18n="auth.login">Iniciar Sesión</span>' +
+                    '</button>';
+                navLinks.appendChild(mobileAuth);
             }
         }
 
@@ -403,13 +449,26 @@
         }
     };
 
+    window.togglePasswordVisibility = function(inputId, btn) {
+        var input = document.getElementById(inputId);
+        if (!input) return;
+        var isPassword = input.type === 'password';
+        input.type = isPassword ? 'text' : 'password';
+        btn.innerHTML = isPassword ? '<i class="fas fa-eye-slash"></i>' : '<i class="fas fa-eye"></i>';
+    };
+
     window.handleLogin = function(e) {
         e.preventDefault();
         var email = document.getElementById('loginEmail').value.trim().toLowerCase();
-        var field = document.getElementById('loginEmailField');
+        var password = document.getElementById('loginPassword').value;
+        var emailField = document.getElementById('loginEmailField');
+        var passwordField = document.getElementById('loginPasswordField');
+
+        emailField.classList.remove('error');
+        passwordField.classList.remove('error');
 
         if (!email) {
-            field.classList.add('error');
+            emailField.classList.add('error');
             return;
         }
 
@@ -423,23 +482,30 @@
             }
         }
 
-        if (found) {
-            field.classList.remove('error');
-            saveUser(found);
-            closeAuthModal();
-            if (typeof showToast === 'function') {
-                showToast('¡Bienvenido de vuelta, ' + found.name.split(' ')[0] + '!', 'success');
-            }
-            setTimeout(function() { window.location.reload(); }, 800);
-        } else {
-            field.classList.add('error');
+        if (!found) {
+            emailField.classList.add('error');
+            return;
         }
+
+        // Verify password
+        if (found.password && found.password !== password) {
+            passwordField.classList.add('error');
+            return;
+        }
+
+        saveUser(found);
+        closeAuthModal();
+        if (typeof showToast === 'function') {
+            showToast('¡Bienvenido de vuelta, ' + found.name.split(' ')[0] + '!', 'success');
+        }
+        setTimeout(function() { window.location.reload(); }, 800);
     };
 
     window.handleRegister = function(e) {
         e.preventDefault();
         var name = document.getElementById('regName').value.trim();
         var email = document.getElementById('regEmail').value.trim().toLowerCase();
+        var password = document.getElementById('regPassword').value;
         var phone = document.getElementById('regPhone').value.trim();
         var course = document.getElementById('regCourse').value;
 
@@ -472,12 +538,21 @@
             }
         }
 
+        // Validate password
+        if (!password || password.length < 6) {
+            document.getElementById('regPasswordField').classList.add('error');
+            valid = false;
+        } else {
+            document.getElementById('regPasswordField').classList.remove('error');
+        }
+
         if (!valid) return;
 
         // Create user
         var user = {
             name: name,
             email: email,
+            password: password,
             phone: phone,
             courseInterest: course,
             registeredAt: new Date().toISOString(),
@@ -562,6 +637,18 @@
     // INITIALIZATION
     // ========================
 
+    function createWhatsAppFab() {
+        // Don't add on teacher page
+        if (window.location.pathname.indexOf('teacher.html') !== -1) return;
+        var fab = document.createElement('a');
+        fab.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent('Hola, tengo una consulta sobre los cursos de la Fundación Iberoamericana.');
+        fab.target = '_blank';
+        fab.className = 'wa-fab';
+        fab.setAttribute('aria-label', 'Contactar por WhatsApp');
+        fab.innerHTML = '<i class="fab fa-whatsapp"></i>';
+        document.body.appendChild(fab);
+    }
+
     function init() {
         // Render auth buttons in navbar
         renderNavAuth();
@@ -570,6 +657,9 @@
         if (isProtectedPage() && !isLoggedIn()) {
             showContentGate();
         }
+
+        // Floating WhatsApp button
+        createWhatsAppFab();
 
         // Close dropdown on outside click
         document.addEventListener('click', function(e) {
