@@ -263,26 +263,31 @@ window.chatOption = function(action) {
 
     const responses = {
         inscribir: `
-            <div class="chat-bubble">Para inscribirte:</div>
+            <div class="chat-bubble">Para inscribirte, tienes dos opciones:</div>
             <div class="chat-bubble">
-                1. Elige un curso en nuestra <a href="#cursos" style="color:var(--teal);font-weight:600;">sección de cursos</a><br>
-                2. Haz clic en "Inscribirme en Google Classroom"<br>
-                3. Inicia sesión con tu cuenta de Google<br><br>
-                <strong>Es gratis y toma menos de 2 minutos.</strong>
+                <strong>Opción 1: Registro en la plataforma</strong><br>
+                Haz clic en <a href="#" onclick="openAuthModal('register');toggleChatbot();" style="color:var(--teal);font-weight:600;">Registrarse</a> y crea tu cuenta gratis.<br><br>
+                <strong>Opción 2: Inscripción por WhatsApp</strong><br>
+                <a href="https://wa.me/573188383917?text=${encodeURIComponent('Hola, quiero inscribirme en los cursos de la Fundación Iberoamericana.\n\nMi nombre es: \nCurso de interés: \n\n¿Podrían ayudarme con el proceso de registro?')}" target="_blank" style="color:#25D366;font-weight:600;">
+                    <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+                </a> y te guiamos en el proceso.
             </div>
         `,
         nosaber: `
             <div class="chat-bubble">No te preocupes, es normal. Te recomiendo:</div>
             <div class="chat-bubble">
-                Toma nuestro <a href="#quiz-finder" style="color:var(--teal);font-weight:600;" onclick="toggleChatbot()">Quiz "¿Qué curso es para ti?"</a> — son 4 preguntas rápidas y te damos una recomendación personalizada.
+                Toma nuestro <a href="#quiz-finder" style="color:var(--teal);font-weight:600;" onclick="toggleChatbot()">Quiz "¿Qué curso es para ti?"</a> — son 4 preguntas rápidas y te damos una recomendación personalizada.<br><br>
+                O cuéntanos tus intereses por <a href="https://wa.me/573188383917?text=${encodeURIComponent('Hola, no sé qué curso es mejor para mí. ¿Podrían orientarme?\n\nMe interesa: \nMi experiencia actual: ')}" target="_blank" style="color:#25D366;font-weight:600;">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a> y te asesoramos.
             </div>
         `,
         duda: `
             <div class="chat-bubble">Puedes contactarnos por:</div>
             <div class="chat-bubble">
-                <i class="fab fa-whatsapp" style="color:#25D366;"></i> <strong>WhatsApp</strong> — Respuesta rápida<br>
+                <i class="fab fa-whatsapp" style="color:#25D366;"></i> <strong><a href="https://wa.me/573188383917?text=${encodeURIComponent('Hola, tengo una consulta sobre los cursos de la Fundación Iberoamericana.')}" target="_blank" style="color:#25D366;font-weight:600;">WhatsApp</a></strong> — Respuesta rápida<br>
                 <i class="fab fa-facebook" style="color:#1877F2;"></i> <strong>Facebook</strong> — <a href="https://www.facebook.com/fundacioniberoamericana" target="_blank" style="color:var(--teal);font-weight:600;">Fundación Iberoamericana</a><br>
-                <i class="fas fa-envelope" style="color:var(--gold);"></i> <strong>Classroom</strong> — Mensaje directo a tu profesor
+                <i class="fas fa-envelope" style="color:var(--gold);"></i> <strong>Email</strong> — contacto@fundacioniberoamericana.com
             </div>
         `,
         profesor: `

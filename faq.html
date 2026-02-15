@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/auth.css">
 
     <style>
         .faq-container {
@@ -396,7 +397,7 @@
                     <i class="fas fa-chevron-down faq-chevron"></i>
                 </div>
                 <div class="faq-answer">
-                    <p data-i18n="faq.tech.a4">Si experimentas problemas técnicos o tienes consultas que no se resuelven en esta sección de ayuda, puedes contactarnos a través del correo electrónico en nuestra página de Sobre Nosotros. También puedes comunicarte con tu profesor a través de Google Classroom si estás inscrito en un grupo de clase.</p>
+                    <p data-i18n="faq.tech.a4">Si experimentas problemas técnicos o tienes consultas, puedes escribirnos por <a href="https://wa.me/573188383917?text=Hola%2C%20necesito%20ayuda%20con%20la%20plataforma." target="_blank" style="color:var(--teal);font-weight:600;">WhatsApp</a>, enviarnos un correo a contacto@fundacioniberoamericana.com, o comunicarte con tu profesor a través de Google Classroom si estás inscrito en un grupo de clase.</p>
                 </div>
             </div>
         </div>
@@ -411,9 +412,14 @@
                 </div>
                 <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.8rem;font-weight:800;color:white;margin-bottom:12px;" data-i18n="faq.cta.titulo">¿No encontraste tu respuesta?</h2>
                 <p style="color:rgba(255,255,255,0.7);font-size:1.05rem;line-height:1.7;max-width:500px;margin:0 auto 28px;" data-i18n="faq.cta.texto">Si tienes una pregunta que no aparece aquí, no dudes en contactarnos. Nuestro equipo estará encantado de ayudarte con cualquier consulta sobre la plataforma.</p>
-                <a href="about.html" style="display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--teal);color:white;border-radius:12px;text-decoration:none;font-weight:700;font-size:1rem;transition:all 0.3s;box-shadow:0 4px 16px rgba(0,191,166,0.3);">
-                    <i class="fas fa-arrow-right"></i> <span data-i18n="faq.cta.boton">Contáctanos</span>
-                </a>
+                <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                    <a href="https://wa.me/573188383917?text=Hola%2C%20tengo%20una%20consulta%20que%20no%20encontr%C3%A9%20en%20las%20preguntas%20frecuentes." target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:#25D366;color:white;border-radius:12px;text-decoration:none;font-weight:700;font-size:1rem;transition:all 0.3s;box-shadow:0 4px 16px rgba(37,211,102,0.3);">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="about.html" style="display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--teal);color:white;border-radius:12px;text-decoration:none;font-weight:700;font-size:1rem;transition:all 0.3s;box-shadow:0 4px 16px rgba(0,191,166,0.3);">
+                        <i class="fas fa-arrow-right"></i> <span data-i18n="faq.cta.boton">Contáctanos</span>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -471,5 +477,6 @@ document.querySelectorAll('.faq-question').forEach(q => {
     });
 });
 </script>
+<script src="js/auth.js"></script>
 </body>
 </html>

@@ -476,10 +476,15 @@ function renderizarCurso(curso) {
 
         <div class="course-cta-section">
             <h3>¿Listo para comenzar?</h3>
-            <p>Inscríbete en Google Classroom y empieza tu formación hoy mismo.</p>
-            <a href="${curso.googleClassroomUrl || '#'}" target="_blank" class="btn btn-primary">
-                <i class="fas fa-graduation-cap"></i> Inscribirme en Google Classroom
-            </a>
+            <p>Inscríbete y empieza tu formación hoy mismo.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                <a href="${curso.googleClassroomUrl || '#'}" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-graduation-cap"></i> Inscribirme en Classroom
+                </a>
+                <a href="https://wa.me/573188383917?text=${encodeURIComponent('Hola, quiero inscribirme en el curso: *' + curso.titulo + '*\n\nDe la Fundación Iberoamericana.\n¿Podrían indicarme los pasos para completar mi inscripción?\n\nGracias.')}" target="_blank" class="auth-whatsapp-btn" style="flex:1;min-width:200px;">
+                    <i class="fab fa-whatsapp"></i> Inscribirme por WhatsApp
+                </a>
+            </div>
         </div>
 
         <div class="cert-preview-section">

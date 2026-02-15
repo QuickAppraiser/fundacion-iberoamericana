@@ -246,7 +246,39 @@ const traducciones = {
         // 404 page
         "error.titulo": "Página no encontrada",
         "error.desc": "Lo sentimos, la página que buscas no existe o fue movida. Prueba navegar desde el inicio.",
-        "error.popularTitle": "Páginas populares"
+        "error.popularTitle": "Páginas populares",
+
+        // Authentication
+        "auth.welcome": "Bienvenido",
+        "auth.welcomeDesc": "Accede a todo el contenido de la plataforma",
+        "auth.login": "Iniciar Sesión",
+        "auth.register": "Registrarse",
+        "auth.email": "Correo electrónico",
+        "auth.emailError": "Correo no registrado. ¿Quieres registrarte?",
+        "auth.fullName": "Nombre completo *",
+        "auth.emailLabel": "Correo electrónico *",
+        "auth.phone": "Teléfono / WhatsApp",
+        "auth.phoneHint": "Para recibir información sobre tus cursos",
+        "auth.courseInterest": "Curso de interés",
+        "auth.nameError": "Ingresa tu nombre completo",
+        "auth.emailExists": "Este correo ya está registrado. Inicia sesión.",
+        "auth.loginBtn": "Iniciar Sesión",
+        "auth.registerBtn": "Crear Cuenta Gratis",
+        "auth.registerWhatsApp": "Registrarme por WhatsApp",
+        "auth.noAccount": "¿No tienes cuenta?",
+        "auth.registerHere": "Regístrate aquí",
+        "auth.hasAccount": "¿Ya tienes cuenta?",
+        "auth.loginHere": "Inicia sesión",
+        "auth.gateTitle": "Contenido Exclusivo para Estudiantes",
+        "auth.gateDesc": "Regístrate gratis para acceder a quizzes, laboratorios, recursos y más.",
+        "auth.benefit1": "Quizzes interactivos con retroalimentación",
+        "auth.benefit2": "Laboratorios prácticos hands-on",
+        "auth.benefit3": "Dashboard de progreso y gamificación",
+        "auth.benefit4": "Certificados digitales verificables",
+        "auth.benefit5": "Recursos y materiales de estudio",
+        "auth.registerFree": "Registrarse Gratis",
+        "auth.loginExisting": "Ya tengo cuenta",
+        "auth.contactWhatsApp": "Consultar por WhatsApp"
     },
     en: {
         // Navbar
@@ -487,7 +519,39 @@ const traducciones = {
         // 404 page
         "error.titulo": "Page not found",
         "error.desc": "Sorry, the page you're looking for doesn't exist or has been moved. Try navigating from the homepage.",
-        "error.popularTitle": "Popular pages"
+        "error.popularTitle": "Popular pages",
+
+        // Authentication
+        "auth.welcome": "Welcome",
+        "auth.welcomeDesc": "Access all platform content",
+        "auth.login": "Log In",
+        "auth.register": "Sign Up",
+        "auth.email": "Email address",
+        "auth.emailError": "Email not registered. Want to sign up?",
+        "auth.fullName": "Full name *",
+        "auth.emailLabel": "Email address *",
+        "auth.phone": "Phone / WhatsApp",
+        "auth.phoneHint": "To receive information about your courses",
+        "auth.courseInterest": "Course of interest",
+        "auth.nameError": "Please enter your full name",
+        "auth.emailExists": "This email is already registered. Please log in.",
+        "auth.loginBtn": "Log In",
+        "auth.registerBtn": "Create Free Account",
+        "auth.registerWhatsApp": "Register via WhatsApp",
+        "auth.noAccount": "Don't have an account?",
+        "auth.registerHere": "Sign up here",
+        "auth.hasAccount": "Already have an account?",
+        "auth.loginHere": "Log in",
+        "auth.gateTitle": "Exclusive Student Content",
+        "auth.gateDesc": "Sign up for free to access quizzes, labs, resources and more.",
+        "auth.benefit1": "Interactive quizzes with feedback",
+        "auth.benefit2": "Hands-on practical labs",
+        "auth.benefit3": "Progress dashboard & gamification",
+        "auth.benefit4": "Verifiable digital certificates",
+        "auth.benefit5": "Study resources & materials",
+        "auth.registerFree": "Sign Up Free",
+        "auth.loginExisting": "I have an account",
+        "auth.contactWhatsApp": "Ask on WhatsApp"
     }
 };
 

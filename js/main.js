@@ -432,13 +432,18 @@ window.abrirModal = function(cursoId) {
                 ${requisitosHTML}
             </ul>
         </div>
-        <div class="modal-footer">
-            <a href="${curso.googleClassroomUrl || '#'}" target="_blank" class="btn btn-primary" style="flex:1;justify-content:center;">
-                <i class="fas fa-graduation-cap"></i> Inscribirme en Google Classroom
+        <div class="modal-footer" style="flex-direction:column;gap:10px;">
+            <div style="display:flex;gap:10px;width:100%;">
+                <a href="${curso.googleClassroomUrl || '#'}" target="_blank" class="btn btn-primary" style="flex:1;justify-content:center;">
+                    <i class="fas fa-graduation-cap"></i> Inscribirme en Classroom
+                </a>
+                <button class="btn btn-outline" onclick="cerrarModal()" style="flex:0;">
+                    Cerrar
+                </button>
+            </div>
+            <a href="https://wa.me/573188383917?text=${encodeURIComponent('Hola, quiero inscribirme en el curso: *' + curso.titulo + '*\n\nDe la Fundación Iberoamericana.\n¿Podrían indicarme los pasos para completar mi inscripción?\n\nGracias.')}" target="_blank" class="auth-whatsapp-btn" style="width:100%;">
+                <i class="fab fa-whatsapp"></i> Inscribirme por WhatsApp
             </a>
-            <button class="btn btn-outline" onclick="cerrarModal()" style="flex:0;">
-                Cerrar
-            </button>
         </div>
     `;
 
