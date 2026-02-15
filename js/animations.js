@@ -236,16 +236,11 @@ function initInputFocusEffects() {
 // =========================
 
 function initHamburgerAnimation() {
-    const hamburger = document.querySelector('.hamburger');
-    if (!hamburger) return;
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-    });
+    // Handled by initMobileMenu — kept for compatibility
 }
 
 // =========================
-// MOBILE MENU BACKDROP
+// MOBILE MENU (CONSOLIDATED)
 // =========================
 
 function initMobileMenu() {
@@ -267,8 +262,10 @@ function initMobileMenu() {
     });
 
     hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('open');
         const isOpen = navLinks.classList.contains('open');
-        backdrop.classList.toggle('active', !isOpen);
+        backdrop.classList.toggle('active', isOpen);
     });
 }
 

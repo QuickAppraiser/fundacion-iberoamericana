@@ -1,0 +1,348 @@
+/* ====== PLACEMENT TEST STYLES ====== */
+.pt-container {
+    padding-top: 100px;
+    max-width: 780px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+
+.pt-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.pt-hero h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+.pt-hero h1 span { color: var(--teal); }
+.pt-hero p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Info cards */
+.pt-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+.pt-info-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 20px 16px;
+    text-align: center;
+}
+.pt-info-card i {
+    font-size: 1.5rem;
+    color: var(--teal);
+    margin-bottom: 8px;
+}
+.pt-info-card h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    color: var(--text);
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+.pt-info-card p {
+    color: var(--text-light);
+    font-size: 0.82rem;
+}
+
+/* Start button */
+.pt-start-btn {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 16px 32px;
+    background: var(--teal);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.pt-start-btn:hover {
+    background: var(--teal-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0,137,123,0.25);
+}
+
+/* Progress bar */
+.pt-progress {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.pt-progress-bar {
+    flex: 1;
+    height: 8px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.pt-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--teal), #4DD0E1);
+    border-radius: 4px;
+    transition: width 0.4s ease;
+}
+.pt-progress-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-light);
+    white-space: nowrap;
+}
+.pt-level-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white;
+}
+
+/* Question card */
+.pt-question-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow);
+    animation: fadeInUp 0.4s ease;
+}
+.pt-question-num {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--teal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+.pt-question-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+/* Options */
+.pt-options { display: flex; flex-direction: column; gap: 12px; }
+.pt-option {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--text);
+}
+.pt-option:hover {
+    border-color: var(--teal);
+    background: rgba(0,137,123,0.05);
+}
+.pt-option.selected {
+    border-color: var(--teal);
+    background: rgba(0,137,123,0.08);
+}
+.pt-option-letter {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-light);
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+.pt-option.selected .pt-option-letter {
+    background: var(--teal);
+    color: white;
+}
+
+/* Next button */
+.pt-next-btn {
+    margin-top: 24px;
+    padding: 12px 32px;
+    background: var(--teal);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    float: right;
+}
+.pt-next-btn:hover { background: var(--teal-dark); }
+.pt-next-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Results */
+.pt-results {
+    text-align: center;
+    animation: fadeInUp 0.5s ease;
+}
+.pt-result-badge {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    position: relative;
+}
+.pt-result-badge::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 3px dashed rgba(255,255,255,0.3);
+    animation: spin 20s linear infinite;
+}
+.pt-result-level {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.pt-result-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+.pt-result-desc {
+    color: var(--text-light);
+    font-size: 1rem;
+    max-width: 480px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+}
+
+/* Score breakdown */
+.pt-breakdown {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-bottom: 32px;
+}
+.pt-bd-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 8px;
+    text-align: center;
+}
+.pt-bd-level {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+.pt-bd-score {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+.pt-bd-item.highlight {
+    border-color: var(--teal);
+    background: rgba(0,137,123,0.06);
+}
+
+/* Action buttons */
+.pt-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pt-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: var(--radius-sm);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+    border: none;
+}
+.pt-action-btn.primary {
+    background: var(--teal);
+    color: white;
+}
+.pt-action-btn.primary:hover {
+    background: var(--teal-dark);
+    transform: translateY(-1px);
+}
+.pt-action-btn.secondary {
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+.pt-action-btn.secondary:hover {
+    border-color: var(--teal);
+}
+
+/* Timer */
+.pt-timer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+.pt-timer i { color: var(--teal); }
+
+/* Responsive */
+@media (max-width: 600px) {
+    .pt-info-grid { grid-template-columns: 1fr; }
+    .pt-breakdown { grid-template-columns: repeat(3, 1fr); }
+    .pt-hero h1 { font-size: 1.6rem; }
+    .pt-question-card { padding: 20px; }
+    .pt-question-text { font-size: 1.05rem; }
+    .pt-result-badge { width: 120px; height: 120px; }
+    .pt-result-level { font-size: 2.2rem; }
+}

@@ -87,11 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof inicializarI18n === 'function') inicializarI18n();
     cargarQuizzes();
 
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.getElementById('navLinks');
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
-    }
+    // Hamburger handled by animations.js
 });
 
 async function cargarQuizzes() {

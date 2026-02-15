@@ -359,14 +359,5 @@ window.cerrarLab = function() {
     document.getElementById('labIframe').src = '';
 };
 
-// =========================
-// HAMBURGER
-// =========================
-
-function inicializarHamburger() {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.getElementById('navLinks');
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
-    }
-}
+// Hamburger handled by animations.js (initMobileMenu)
+function inicializarHamburger() { /* no-op */ }

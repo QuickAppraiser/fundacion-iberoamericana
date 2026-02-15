@@ -34,12 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     generarIdCertificado();
     actualizarVistaPrevia();
 
-    // Hamburger
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.getElementById('navLinks');
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
-    }
+    // Hamburger handled by animations.js
 });
 
 // =========================

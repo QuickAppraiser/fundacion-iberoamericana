@@ -43,11 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof inicializarI18n === 'function') inicializarI18n();
     verificarAuth();
 
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.getElementById('navLinks');
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
-    }
+    // Hamburger handled by animations.js
 
     // Enter para login
     const passInput = document.getElementById('passInput');

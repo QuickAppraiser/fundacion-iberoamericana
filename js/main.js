@@ -459,19 +459,18 @@ window.cerrarModal = function() {
 // =========================
 
 function inicializarNavegacion() {
-    // Menú hamburguesa
-    const hamburger = document.querySelector('.hamburger');
+    // Hamburger handled by animations.js (initMobileMenu)
     const navLinks = document.getElementById('navLinks');
 
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-        });
-
+    if (navLinks) {
         // Cerrar menú al hacer clic en un enlace (móvil)
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('open');
+                const hb = document.querySelector('.hamburger');
+                const bd = document.querySelector('.nav-backdrop');
+                if (hb) hb.classList.remove('active');
+                if (bd) bd.classList.remove('active');
             });
         });
     }
