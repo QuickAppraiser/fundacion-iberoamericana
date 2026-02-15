@@ -618,12 +618,33 @@
     // USER REGISTRY (multi-user localStorage)
     // ========================
 
+    var ADMIN_ACCOUNT = {
+        name: 'Administrador',
+        email: 'admin',
+        password: 'admin',
+        phone: '3188383917',
+        courseInterest: '',
+        registeredAt: '2026-01-01T00:00:00.000Z',
+        id: 'fi-admin',
+        role: 'admin'
+    };
+
     function getAllUsers() {
         try {
             var data = localStorage.getItem('fi_users_registry');
-            return data ? JSON.parse(data) : [];
+            var users = data ? JSON.parse(data) : [];
+            // Ensure admin always exists
+            var hasAdmin = false;
+            for (var i = 0; i < users.length; i++) {
+                if (users[i].id === 'fi-admin') { hasAdmin = true; break; }
+            }
+            if (!hasAdmin) {
+                users.unshift(ADMIN_ACCOUNT);
+                localStorage.setItem('fi_users_registry', JSON.stringify(users));
+            }
+            return users;
         } catch(e) {
-            return [];
+            return [ADMIN_ACCOUNT];
         }
     }
 
