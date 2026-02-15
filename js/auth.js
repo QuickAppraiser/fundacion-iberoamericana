@@ -239,22 +239,24 @@
     // ========================
 
     function renderNavAuth() {
-        var navLinks = document.getElementById('navLinks');
-        if (!navLinks) return;
+        // Try new nav-utility first, fallback to navLinks
+        var container = document.getElementById('navUtility') || document.getElementById('navLinks');
+        if (!container) return;
 
         // Remove existing auth elements
-        var existing = navLinks.querySelectorAll('.nav-auth-item');
+        var existing = document.querySelectorAll('.nav-auth-item');
         for (var i = 0; i < existing.length; i++) {
             existing[i].remove();
         }
 
         var user = getUser();
+        var isUtility = container.id === 'navUtility';
 
         if (user) {
             // Logged in: show user info + dropdown
-            var li = document.createElement('li');
-            li.className = 'nav-auth-item';
-            li.innerHTML =
+            var el = document.createElement(isUtility ? 'div' : 'li');
+            el.className = 'nav-auth-item';
+            el.innerHTML =
                 '<div class="nav-user-info" onclick="toggleUserDropdown(event)">' +
                     '<div class="nav-user-avatar">' + getInitials(user.name) + '</div>' +
                     '<span class="nav-user-name">' + (user.name.split(' ')[0]) + '</span>' +
@@ -269,34 +271,34 @@
                     '</div>' +
                 '</div>';
 
-            // Insert before dark mode toggle
-            var darkBtn = navLinks.querySelector('#darkModeToggle');
-            if (darkBtn && darkBtn.parentElement) {
-                navLinks.insertBefore(li, darkBtn.parentElement);
+            // Insert at the beginning of utility area (before dark mode toggle)
+            var darkBtn = container.querySelector('#darkModeToggle');
+            if (darkBtn) {
+                container.insertBefore(el, darkBtn);
             } else {
-                navLinks.appendChild(li);
+                container.insertBefore(el, container.firstChild);
             }
 
             // Update dashboard sidebar if present
             updateDashboardUser(user);
         } else {
             // Not logged in: show login + register buttons
-            var loginLi = document.createElement('li');
-            loginLi.className = 'nav-auth-item';
-            loginLi.innerHTML = '<button class="nav-auth-btn nav-auth-login" onclick="openAuthModal(\'login\')"><i class="fas fa-sign-in-alt"></i> <span data-i18n="auth.login">Iniciar Sesión</span></button>';
+            var loginEl = document.createElement(isUtility ? 'div' : 'li');
+            loginEl.className = 'nav-auth-item';
+            loginEl.innerHTML = '<button class="nav-auth-btn nav-auth-login" onclick="openAuthModal(\'login\')"><i class="fas fa-sign-in-alt"></i> <span data-i18n="auth.login">Iniciar Sesión</span></button>';
 
-            var registerLi = document.createElement('li');
-            registerLi.className = 'nav-auth-item';
-            registerLi.innerHTML = '<button class="nav-auth-btn nav-auth-register" onclick="openAuthModal(\'register\')"><i class="fas fa-user-plus"></i> <span data-i18n="auth.register">Registrarse</span></button>';
+            var registerEl = document.createElement(isUtility ? 'div' : 'li');
+            registerEl.className = 'nav-auth-item';
+            registerEl.innerHTML = '<button class="nav-auth-btn nav-auth-register" onclick="openAuthModal(\'register\')"><i class="fas fa-user-plus"></i> <span data-i18n="auth.register">Registrarse</span></button>';
 
-            // Insert before dark mode toggle
-            var darkBtn = navLinks.querySelector('#darkModeToggle');
-            if (darkBtn && darkBtn.parentElement) {
-                navLinks.insertBefore(loginLi, darkBtn.parentElement);
-                navLinks.insertBefore(registerLi, darkBtn.parentElement);
+            // Insert at the beginning of utility area
+            var darkBtn = container.querySelector('#darkModeToggle');
+            if (darkBtn) {
+                container.insertBefore(registerEl, darkBtn);
+                container.insertBefore(loginEl, registerEl);
             } else {
-                navLinks.appendChild(loginLi);
-                navLinks.appendChild(registerLi);
+                container.insertBefore(loginEl, container.firstChild);
+                loginEl.after(registerEl);
             }
         }
 

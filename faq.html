@@ -126,16 +126,26 @@
             <div class="logo-text">Fundación <span>Iberoamericana</span></div>
         </a>
         <ul class="nav-links" id="navLinks">
-            <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="index.html" class="active" data-i18n="nav.inicio">Inicio</a></li>
             <li><a href="index.html#cursos" data-i18n="nav.cursos">Cursos</a></li>
             <li><a href="dashboard.html" data-i18n="nav.miAula">Mi Aula</a></li>
             <li><a href="quizzes.html">Quizzes</a></li>
             <li><a href="labs.html">Labs</a></li>
             <li><a href="recursos.html" data-i18n="nav.recursos">Recursos</a></li>
-            <li><button id="darkModeToggle" onclick="toggleDarkMode()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:1rem;" title="Modo oscuro"><i class="fas fa-moon"></i></button></li>
-            <li><button id="langToggle" onclick="toggleIdioma()" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">EN</button></li>
         </ul>
-        <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+        <div class="nav-utility" id="navUtility">
+            <button id="darkModeToggle" class="nav-utility-btn" onclick="toggleDarkMode()" title="Modo oscuro" aria-label="Modo oscuro">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="lang-toggle" id="langToggle">
+                <button class="lang-option active" data-lang="es" onclick="setIdioma('es')">ES</button>
+                <span class="lang-divider"></span>
+                <button class="lang-option" data-lang="en" onclick="setIdioma('en')">EN</button>
+            </div>
+        </div>
+        <button class="hamburger" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 </nav>
 

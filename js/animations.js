@@ -53,6 +53,8 @@ function updateDarkModeToggle() {
         ? '<i class="fas fa-sun"></i>'
         : '<i class="fas fa-moon"></i>';
     btn.title = isDark ? 'Modo claro' : 'Modo oscuro';
+    btn.setAttribute('aria-label', isDark ? 'Modo claro' : 'Modo oscuro');
+    btn.classList.toggle('active', isDark);
 }
 
 window.toggleDarkMode = toggleDarkMode;

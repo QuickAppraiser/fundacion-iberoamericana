@@ -608,11 +608,26 @@ function aplicarTraducciones() {
 
 /**
  * Actualizar el botón de idioma en el navbar
+ * Supports both new pill toggle (.lang-toggle) and legacy single button
  */
 function actualizarBotonIdioma() {
+    const idioma = getIdioma();
+
+    // New pill toggle
+    const langOptions = document.querySelectorAll('.lang-option');
+    if (langOptions.length) {
+        langOptions.forEach(function(opt) {
+            if (opt.getAttribute('data-lang') === idioma) {
+                opt.classList.add('active');
+            } else {
+                opt.classList.remove('active');
+            }
+        });
+    }
+
+    // Legacy single button fallback
     const btn = document.getElementById('langToggle');
-    if (btn) {
-        const idioma = getIdioma();
+    if (btn && btn.tagName === 'BUTTON') {
         btn.textContent = idioma === 'es' ? 'EN' : 'ES';
         btn.title = idioma === 'es' ? 'Switch to English' : 'Cambiar a Español';
     }
