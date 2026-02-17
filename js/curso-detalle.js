@@ -333,7 +333,11 @@ function renderizarCurso(curso) {
                     `).join('')}
                 </div>
                 ${cefrLevels.map(lvl => `<div style="font-size:0.82rem;color:var(--text-light);margin-bottom:4px;"><strong style="color:${cefrColors[lvl]};">${lvl}:</strong> ${cefrDescriptions[lvl]}</div>`).join('')}
-                ${!userCefrLevel ? `<a href="../placement-test.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:8px 18px;background:${curso.color};color:white;border-radius:10px;font-size:0.85rem;font-weight:600;text-decoration:none;"><i class="fas fa-clipboard-check"></i> Tomar Test de Nivel Gratis</a>` : `<div style="margin-top:10px;padding:8px 14px;background:${cefrColors[userCefrLevel]}15;color:${cefrColors[userCefrLevel]};border-radius:10px;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-award"></i> Tu nivel actual: ${userCefrLevel} — ${cefrDescriptions[userCefrLevel]?.split(' — ')[0]}</div>`}
+                ${!userCefrLevel ? `<a href="../placement-test.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:8px 18px;background:${curso.color};color:white;border-radius:10px;font-size:0.85rem;font-weight:600;text-decoration:none;"><i class="fas fa-clipboard-check"></i> Tomar Test de Nivel Gratis</a>` : `
+                <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:10px;">
+                    <div style="padding:8px 14px;background:${cefrColors[userCefrLevel]}15;color:${cefrColors[userCefrLevel]};border-radius:10px;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-award"></i> Tu nivel actual: ${userCefrLevel} — ${cefrDescriptions[userCefrLevel]?.split(' — ')[0]}</div>
+                    <a href="../placement-test.html" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--bg);border:1px solid var(--border);color:var(--text-light);border-radius:10px;font-size:0.82rem;font-weight:600;text-decoration:none;transition:all 0.2s ease;" onmouseover="this.style.borderColor='${curso.color}';this.style.color='${curso.color}';" onmouseout="this.style.borderColor='';this.style.color='';"><i class="fas fa-redo"></i> Repetir Test</a>
+                </div>`}
             </div>
         `;
     }
