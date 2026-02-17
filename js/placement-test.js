@@ -222,9 +222,21 @@
         const pct = Math.round((totalCorrect / 25) * 100);
 
         try {
+            var prevLevel = localStorage.getItem('fi_cefr_level');
             localStorage.setItem('fi_cefr_level', level);
             localStorage.setItem('fi_cefr_score', JSON.stringify(scores));
             localStorage.setItem('fi_cefr_date', new Date().toISOString());
+            // Save history for progress tracking
+            var history = [];
+            try { history = JSON.parse(localStorage.getItem('fi_cefr_history') || '[]'); } catch(e2) {}
+            history.push({
+                level: level,
+                prevLevel: prevLevel || null,
+                scores: Object.assign({}, scores),
+                pct: pct,
+                date: new Date().toISOString()
+            });
+            localStorage.setItem('fi_cefr_history', JSON.stringify(history));
         } catch (e) { /* silent */ }
 
         const breakdownHTML = LEVELS.map(function(lv) {

@@ -166,7 +166,7 @@ const cursosFallbackDetalle = [
         duracion: "160 horas", modulosTotales: 23, quizzesTotales: 46,
         icono: "fa-language", iconoColor: "#E91E63", color: "#E91E63",
         cefrAligned: true, cefrLevels: ["A1", "A2", "B1", "B2", "C1"],
-        youtubeChannelUrl: "https://www.youtube.com/@UCYXojL0jRuMYpJQk7LVhJhg",
+        youtubeChannelUrl: "https://www.youtube.com/channel/UCYXojL0jRuMYpJQk7LVhJhg",
         descripcionCorta: "Aprende inglés desde cero hasta nivel avanzado (C1) alineado al Marco Común Europeo de Referencia (MCER/CEFR).",
         descripcionCompleta: "Programa integral de inglés alineado al Marco Común Europeo de Referencia para las Lenguas (MCER/CEFR). Te lleva desde principiante absoluto (A1) hasta nivel avanzado (C1) con 23 módulos estructurados. Incluye test de nivel inicial, quizzes por nivel, y certificación por cada nivel CEFR completado.",
         requisitos: ["No se requiere conocimiento previo de inglés", "Computadora con micrófono y altavoces", "Acceso a internet", "Recomendado: tomar el Test de Nivel para comenzar en el módulo adecuado"],
@@ -322,6 +322,35 @@ function renderizarCurso(curso) {
             C1: 'Advanced — Puede usar el idioma de forma flexible y eficaz'
         };
         const userCefrLevel = localStorage.getItem('fi_cefr_level');
+        const cefrDate = localStorage.getItem('fi_cefr_date');
+        let cefrHistory = [];
+        try { cefrHistory = JSON.parse(localStorage.getItem('fi_cefr_history') || '[]'); } catch(e) {}
+
+        // Build progress indicator if there's history
+        let progressHTML = '';
+        if (userCefrLevel && cefrHistory.length > 1) {
+            const first = cefrHistory[0];
+            const latest = cefrHistory[cefrHistory.length - 1];
+            const firstIdx = cefrLevels.indexOf(first.level);
+            const latestIdx = cefrLevels.indexOf(latest.level);
+            const diff = latestIdx - firstIdx;
+            if (diff > 0) {
+                progressHTML = `<div style="display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:rgba(76,175,80,0.1);color:#4CAF50;border-radius:8px;font-size:0.8rem;font-weight:600;"><i class="fas fa-arrow-up"></i> +${diff} nivel${diff > 1 ? 'es' : ''} desde ${first.level} <i class="fas fa-long-arrow-alt-right" style="opacity:0.5;"></i> ${latest.level}</div>`;
+            } else if (diff === 0) {
+                progressHTML = `<div style="display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:rgba(33,150,243,0.1);color:#2196F3;border-radius:8px;font-size:0.8rem;font-weight:600;"><i class="fas fa-equals"></i> Nivel estable: ${latest.level} (${cefrHistory.length} intentos)</div>`;
+            } else {
+                progressHTML = `<div style="display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:rgba(255,152,0,0.1);color:#FF9800;border-radius:8px;font-size:0.8rem;font-weight:600;"><i class="fas fa-arrow-down"></i> ${first.level} <i class="fas fa-long-arrow-alt-right" style="opacity:0.5;"></i> ${latest.level} — ¡Sigue practicando!</div>`;
+            }
+        }
+
+        // Format date
+        let dateHTML = '';
+        if (cefrDate) {
+            const d = new Date(cefrDate);
+            const dateStr = d.toLocaleDateString('es-CO', { day: 'numeric', month: 'short', year: 'numeric' });
+            dateHTML = `<span style="font-size:0.75rem;color:var(--text-muted);margin-left:4px;"><i class="fas fa-calendar-alt"></i> ${dateStr}</span>`;
+        }
+
         cefrBarHTML = `
             <div style="background:var(--card-bg);border-radius:16px;padding:20px;margin-bottom:24px;border:1px solid var(--border);">
                 <h4 style="margin-bottom:12px;font-size:0.95rem;"><i class="fas fa-layer-group" style="color:${curso.color};"></i> Niveles CEFR del Programa</h4>
@@ -333,11 +362,18 @@ function renderizarCurso(curso) {
                     `).join('')}
                 </div>
                 ${cefrLevels.map(lvl => `<div style="font-size:0.82rem;color:var(--text-light);margin-bottom:4px;"><strong style="color:${cefrColors[lvl]};">${lvl}:</strong> ${cefrDescriptions[lvl]}</div>`).join('')}
-                ${!userCefrLevel ? `<a href="../placement-test.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:8px 18px;background:${curso.color};color:white;border-radius:10px;font-size:0.85rem;font-weight:600;text-decoration:none;"><i class="fas fa-clipboard-check"></i> Tomar Test de Nivel Gratis</a>` : `
-                <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:10px;">
-                    <div style="padding:8px 14px;background:${cefrColors[userCefrLevel]}15;color:${cefrColors[userCefrLevel]};border-radius:10px;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-award"></i> Tu nivel actual: ${userCefrLevel} — ${cefrDescriptions[userCefrLevel]?.split(' — ')[0]}</div>
-                    <a href="../placement-test.html" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--bg);border:1px solid var(--border);color:var(--text-light);border-radius:10px;font-size:0.82rem;font-weight:600;text-decoration:none;transition:all 0.2s ease;" onmouseover="this.style.borderColor='${curso.color}';this.style.color='${curso.color}';" onmouseout="this.style.borderColor='';this.style.color='';"><i class="fas fa-redo"></i> Repetir Test</a>
-                </div>`}
+                ${!userCefrLevel ? `
+                    <a href="../placement-test.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:14px;padding:10px 20px;background:${curso.color};color:white;border-radius:10px;font-size:0.88rem;font-weight:600;text-decoration:none;"><i class="fas fa-clipboard-check"></i> Tomar Test de Nivel Gratis</a>
+                ` : `
+                    <div style="margin-top:14px;padding:14px;background:var(--bg);border-radius:12px;border:1px solid var(--border);">
+                        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:${progressHTML ? '10px' : '0'};">
+                            <div style="padding:8px 14px;background:${cefrColors[userCefrLevel]}15;color:${cefrColors[userCefrLevel]};border-radius:10px;font-size:0.85rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-award"></i> Tu nivel: ${userCefrLevel} — ${cefrDescriptions[userCefrLevel]?.split(' — ')[0]}</div>
+                            ${dateHTML}
+                        </div>
+                        ${progressHTML ? '<div style="margin-bottom:10px;">' + progressHTML + '</div>' : ''}
+                        <a href="../placement-test.html" style="display:inline-flex;align-items:center;gap:6px;padding:8px 18px;background:${curso.color};color:white;border-radius:10px;font-size:0.84rem;font-weight:600;text-decoration:none;transition:all 0.2s ease;"><i class="fas fa-redo"></i> Repetir Test de Nivel</a>
+                    </div>
+                `}
             </div>
         `;
     }

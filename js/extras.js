@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initQuizFinder();
     initChatbot();
     initCertPreview();
+    initTestimonialsCarousel();
 });
 
 // =========================
@@ -334,4 +335,100 @@ function initCertPreview() {
         const name = e.target.value.trim();
         nameEl.textContent = name || 'Tu Nombre Aquí';
     });
+}
+
+// =========================
+// TESTIMONIALS CAROUSEL
+// =========================
+
+function initTestimonialsCarousel() {
+    const track = document.getElementById('testimonialsTrack');
+    const dotsContainer = document.getElementById('testimonialDots');
+    if (!track || !dotsContainer) return;
+
+    const cards = track.querySelectorAll('.testimonial-card');
+    if (!cards.length) return;
+
+    const prevBtn = track.parentElement.querySelector('.testimonial-prev');
+    const nextBtn = track.parentElement.querySelector('.testimonial-next');
+
+    let currentIndex = 0;
+    let autoPlayTimer = null;
+    const autoPlayDelay = 5000;
+
+    // Calculate how many cards fit in view
+    function getVisibleCount() {
+        const containerWidth = track.parentElement.offsetWidth - 84; // minus nav buttons
+        const cardWidth = cards[0].offsetWidth + 20; // card + gap
+        return Math.max(1, Math.floor(containerWidth / cardWidth));
+    }
+
+    function getMaxIndex() {
+        return Math.max(0, cards.length - getVisibleCount());
+    }
+
+    // Build dots
+    function buildDots() {
+        dotsContainer.innerHTML = '';
+        const max = getMaxIndex();
+        for (let i = 0; i <= max; i++) {
+            const dot = document.createElement('button');
+            dot.className = 'testimonial-dot' + (i === currentIndex ? ' active' : '');
+            dot.setAttribute('aria-label', 'Reseña ' + (i + 1));
+            dot.addEventListener('click', () => goTo(i));
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    function updateDots() {
+        const dots = dotsContainer.querySelectorAll('.testimonial-dot');
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentIndex);
+        });
+    }
+
+    function goTo(index) {
+        const max = getMaxIndex();
+        currentIndex = Math.max(0, Math.min(index, max));
+        const cardWidth = cards[0].offsetWidth + 20;
+        track.style.transform = 'translateX(-' + (currentIndex * cardWidth) + 'px)';
+        updateDots();
+    }
+
+    function next() {
+        const max = getMaxIndex();
+        goTo(currentIndex >= max ? 0 : currentIndex + 1);
+    }
+
+    function prev() {
+        const max = getMaxIndex();
+        goTo(currentIndex <= 0 ? max : currentIndex - 1);
+    }
+
+    // Auto-play
+    function startAutoPlay() {
+        stopAutoPlay();
+        autoPlayTimer = setInterval(next, autoPlayDelay);
+    }
+
+    function stopAutoPlay() {
+        if (autoPlayTimer) clearInterval(autoPlayTimer);
+    }
+
+    // Events
+    if (prevBtn) prevBtn.addEventListener('click', () => { prev(); startAutoPlay(); });
+    if (nextBtn) nextBtn.addEventListener('click', () => { next(); startAutoPlay(); });
+
+    // Pause on hover
+    track.parentElement.addEventListener('mouseenter', stopAutoPlay);
+    track.parentElement.addEventListener('mouseleave', startAutoPlay);
+
+    // Rebuild on resize
+    window.addEventListener('resize', () => {
+        buildDots();
+        goTo(Math.min(currentIndex, getMaxIndex()));
+    });
+
+    buildDots();
+    startAutoPlay();
 }
