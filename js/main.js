@@ -36,7 +36,7 @@ const cursosFallback = [
             { titulo: "Macros y Automatización VBA", duracion: "6 horas" },
             { titulo: "Dashboards y Reportes Profesionales", duracion: "6 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
+        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
         estado: "activo"
     },
     {
@@ -55,7 +55,7 @@ const cursosFallback = [
             { titulo: "Google Forms — Encuestas y Evaluaciones", duracion: "3 horas" },
             { titulo: "Drive, Calendar y Productividad", duracion: "5 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
+        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
         estado: "activo"
     },
     {
@@ -73,7 +73,7 @@ const cursosFallback = [
             { titulo: "Visualizaciones y Dashboards", duracion: "5 horas" },
             { titulo: "DAX Avanzado y Publicación", duracion: "5 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
+        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
         estado: "activo"
     },
     {
@@ -92,7 +92,7 @@ const cursosFallback = [
             { titulo: "JavaScript y el DOM", duracion: "6 horas" },
             { titulo: "Proyecto Final y Publicación", duracion: "6 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
+        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
         estado: "activo"
     },
     {
@@ -111,7 +111,7 @@ const cursosFallback = [
             { titulo: "Funciones y Módulos", duracion: "5 horas" },
             { titulo: "Proyectos Prácticos", duracion: "5 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
+        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
         estado: "activo"
     },
     {
@@ -130,7 +130,7 @@ const cursosFallback = [
             { titulo: "Subconsultas y Funciones", duracion: "5 horas" },
             { titulo: "Diseño y Manipulación de Datos", duracion: "5 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
+        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
         estado: "activo"
     },
     {
@@ -148,7 +148,7 @@ const cursosFallback = [
             { titulo: "Kanban y Herramientas", duracion: "3 horas" },
             { titulo: "Liderazgo y Proyecto Final", duracion: "4 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
+        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
         estado: "activo"
     },
     {
@@ -167,7 +167,7 @@ const cursosFallback = [
             { titulo: "Visualización de Datos", duracion: "6 horas" },
             { titulo: "Proyecto Final: Caso de Negocio", duracion: "6 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
+        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
         estado: "activo"
     },
     {
@@ -205,8 +205,8 @@ const cursosFallback = [
             { titulo: "C1.4 — Nivel Nativo", duracion: "7 horas" },
             { titulo: "C1.5 — Mock Exams y Certificación", duracion: "8 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/XXXXX",
-        kahootUrl: "https://kahoot.it/challenge/XXXXX",
+        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
+        kahootUrl: "https://create.kahoot.it/profile/MoEnglishClasses",
         estado: "activo"
     }
 ];
