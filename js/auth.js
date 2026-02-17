@@ -175,9 +175,9 @@
                     '<!-- LOGIN FORM -->' +
                     '<form class="auth-form active" id="loginForm" onsubmit="handleLogin(event)">' +
                         '<div class="auth-field" id="loginEmailField">' +
-                            '<label for="loginEmail" data-i18n="auth.email">Correo electrónico</label>' +
-                            '<input type="email" id="loginEmail" placeholder="tu@email.com" required>' +
-                            '<span class="field-error" data-i18n="auth.emailError">Correo no registrado</span>' +
+                            '<label for="loginEmail" data-i18n="auth.emailOrUser">Correo o usuario</label>' +
+                            '<input type="text" id="loginEmail" placeholder="tu@email.com o usuario" required>' +
+                            '<span class="field-error" data-i18n="auth.emailError">Cuenta no encontrada</span>' +
                         '</div>' +
                         '<div class="auth-field" id="loginPasswordField">' +
                             '<label for="loginPassword" data-i18n="auth.password">Contraseña</label>' +

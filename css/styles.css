@@ -178,6 +178,8 @@ h1, h2, h3, h4, h5 {
     flex-shrink: 0;
 }
 
+.nav-mobile-auth { display: none; }
+
 .nav-utility-btn {
     width: 38px;
     height: 38px;
