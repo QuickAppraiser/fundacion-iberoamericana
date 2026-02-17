@@ -615,6 +615,31 @@
     };
 
     // ========================
+    // NEWSLETTER
+    // ========================
+
+    window.handleNewsletter = function(e) {
+        e.preventDefault();
+        var emailInput = document.getElementById('newsletterEmail');
+        if (!emailInput) return;
+        var email = emailInput.value.trim().toLowerCase();
+        if (!email) return;
+
+        // Save to localStorage
+        var subs = [];
+        try { subs = JSON.parse(localStorage.getItem('fi_newsletter') || '[]'); } catch(ex) {}
+        if (subs.indexOf(email) === -1) {
+            subs.push(email);
+            localStorage.setItem('fi_newsletter', JSON.stringify(subs));
+        }
+
+        emailInput.value = '';
+        if (typeof showToast === 'function') {
+            showToast('¡Suscrito! Te enviaremos novedades y cursos gratis.', 'success', 4000);
+        }
+    };
+
+    // ========================
     // USER REGISTRY (multi-user localStorage)
     // ========================
 
