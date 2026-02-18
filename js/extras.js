@@ -25,8 +25,8 @@ function initCountdown() {
     const container = document.getElementById('countdownTimer');
     if (!container) return;
 
-    // Next enrollment: March 3, 2026
-    const targetDate = new Date('2026-03-03T09:00:00');
+    // Next enrollment: June 1, 2026
+    const targetDate = new Date('2026-06-01T09:00:00');
 
     function update() {
         const now = new Date();

@@ -23,7 +23,7 @@ const cursosFallback = [
         id: "excel-basico-avanzado", titulo: "Excel Básico a Avanzado",
         categoria: "office", categoriaLabel: "Office & Productividad",
         nivel: "Básico → Avanzado", nivelClase: "basico",
-        duracion: "40 horas", modulosTotales: 6, quizzesTotales: 12,
+        duracion: "40 horas", modulosTotales: 6, quizzesTotales: 2,
         icono: "fa-file-excel", iconoColor: "#4CAF50", color: "#4CAF50",
         descripcionCorta: "Domina hojas de cálculo, fórmulas, tablas dinámicas, macros y dashboards profesionales.",
         descripcionCompleta: "Curso integral de Microsoft Excel que te lleva desde los fundamentos básicos hasta técnicas avanzadas de análisis de datos. Aprenderás a crear fórmulas complejas, tablas dinámicas, gráficos profesionales, automatización con macros VBA, y dashboards interactivos para reportes empresariales.",
@@ -36,14 +36,14 @@ const cursosFallback = [
             { titulo: "Macros y Automatización VBA", duracion: "6 horas" },
             { titulo: "Dashboards y Reportes Profesionales", duracion: "6 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
-        estado: "activo"
+        googleClassroomUrl: "https://classroom.google.com/c/ODQ1MTU1MDg0Njcw?cjc=4ydvjja3",
+        estado: "proximamente"
     },
     {
         id: "google-workspace", titulo: "Google Workspace Completo",
         categoria: "office", categoriaLabel: "Office & Productividad",
         nivel: "Básico", nivelClase: "basico",
-        duracion: "20 horas", modulosTotales: 5, quizzesTotales: 8,
+        duracion: "20 horas", modulosTotales: 5, quizzesTotales: 2,
         icono: "fab fa-google", iconoColor: "#2196F3", color: "#2196F3",
         descripcionCorta: "Docs, Sheets, Slides, Forms, Calendar y Drive para productividad personal y empresarial.",
         descripcionCompleta: "Domina todas las herramientas de Google Workspace para trabajar de forma colaborativa y eficiente.",
@@ -55,14 +55,14 @@ const cursosFallback = [
             { titulo: "Google Forms — Encuestas y Evaluaciones", duracion: "3 horas" },
             { titulo: "Drive, Calendar y Productividad", duracion: "5 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
-        estado: "activo"
+        googleClassroomUrl: "https://classroom.google.com/c/ODQ1MTU1MDg0Njcw?cjc=4ydvjja3",
+        estado: "proximamente"
     },
     {
         id: "power-bi", titulo: "Power BI — Visualización de Datos",
         categoria: "datos", categoriaLabel: "Datos & BI",
         nivel: "Intermedio", nivelClase: "intermedio",
-        duracion: "20 horas", modulosTotales: 4, quizzesTotales: 8,
+        duracion: "20 horas", modulosTotales: 4, quizzesTotales: 2,
         icono: "fa-chart-pie", iconoColor: "#FFB800", color: "#FFB800",
         descripcionCorta: "Crea dashboards interactivos y reportes de inteligencia de negocios con Power BI Desktop.",
         descripcionCompleta: "Aprende a transformar datos crudos en visualizaciones interactivas y reportes de negocio con Microsoft Power BI.",
@@ -73,14 +73,14 @@ const cursosFallback = [
             { titulo: "Visualizaciones y Dashboards", duracion: "5 horas" },
             { titulo: "DAX Avanzado y Publicación", duracion: "5 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
-        estado: "activo"
+        googleClassroomUrl: "https://classroom.google.com/c/ODQ1MTU1MDg0Njcw?cjc=4ydvjja3",
+        estado: "proximamente"
     },
     {
         id: "desarrollo-web", titulo: "Desarrollo Web (HTML, CSS, JS)",
         categoria: "programacion", categoriaLabel: "Programación",
         nivel: "Básico → Intermedio", nivelClase: "basico",
-        duracion: "35 horas", modulosTotales: 5, quizzesTotales: 10,
+        duracion: "35 horas", modulosTotales: 5, quizzesTotales: 2,
         icono: "fa-code", iconoColor: "#FF5722", color: "#FF5722",
         descripcionCorta: "Crea sitios web desde cero con HTML5, CSS3 y JavaScript moderno.",
         descripcionCompleta: "Curso práctico de desarrollo web front-end donde construirás sitios web reales desde cero.",
@@ -92,14 +92,14 @@ const cursosFallback = [
             { titulo: "JavaScript y el DOM", duracion: "6 horas" },
             { titulo: "Proyecto Final y Publicación", duracion: "6 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
-        estado: "activo"
+        googleClassroomUrl: "https://classroom.google.com/c/ODQ1MTU1MDg0Njcw?cjc=4ydvjja3",
+        estado: "proximamente"
     },
     {
         id: "python-basico", titulo: "Python desde Cero",
         categoria: "programacion", categoriaLabel: "Programación",
         nivel: "Básico", nivelClase: "basico",
-        duracion: "25 horas", modulosTotales: 5, quizzesTotales: 10,
+        duracion: "25 horas", modulosTotales: 5, quizzesTotales: 2,
         icono: "fab fa-python", iconoColor: "#3776AB", color: "#3776AB",
         descripcionCorta: "Aprende el lenguaje más demandado del mercado. Desde variables hasta automatización.",
         descripcionCompleta: "Curso introductorio de Python orientado a principiantes absolutos.",
@@ -111,14 +111,14 @@ const cursosFallback = [
             { titulo: "Funciones y Módulos", duracion: "5 horas" },
             { titulo: "Proyectos Prácticos", duracion: "5 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
-        estado: "activo"
+        googleClassroomUrl: "https://classroom.google.com/c/ODQ1MTU1MDg0Njcw?cjc=4ydvjja3",
+        estado: "proximamente"
     },
     {
         id: "sql-bases-datos", titulo: "SQL y Bases de Datos",
         categoria: "programacion", categoriaLabel: "Programación",
         nivel: "Básico → Intermedio", nivelClase: "basico",
-        duracion: "25 horas", modulosTotales: 5, quizzesTotales: 10,
+        duracion: "25 horas", modulosTotales: 5, quizzesTotales: 2,
         icono: "fa-database", iconoColor: "#2196F3", color: "#2196F3",
         descripcionCorta: "Consulta, filtra y analiza datos con SQL. La habilidad más pedida en análisis de datos.",
         descripcionCompleta: "Aprende a consultar y manipular bases de datos relacionales con SQL.",
@@ -130,14 +130,14 @@ const cursosFallback = [
             { titulo: "Subconsultas y Funciones", duracion: "5 horas" },
             { titulo: "Diseño y Manipulación de Datos", duracion: "5 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
-        estado: "activo"
+        googleClassroomUrl: "https://classroom.google.com/c/ODQ1MTU1MDg0Njcw?cjc=4ydvjja3",
+        estado: "proximamente"
     },
     {
         id: "gestion-proyectos-scrum", titulo: "Gestión de Proyectos / Scrum",
         categoria: "gestion", categoriaLabel: "Gestión & PM",
         nivel: "Básico → Intermedio", nivelClase: "basico",
-        duracion: "15 horas", modulosTotales: 4, quizzesTotales: 8,
+        duracion: "15 horas", modulosTotales: 4, quizzesTotales: 2,
         icono: "fa-diagram-project", iconoColor: "#FF9800", color: "#FF9800",
         descripcionCorta: "Lidera proyectos con metodologías ágiles. Scrum, Kanban y herramientas modernas.",
         descripcionCompleta: "Aprende a gestionar proyectos con metodologías ágiles y tradicionales.",
@@ -148,14 +148,14 @@ const cursosFallback = [
             { titulo: "Kanban y Herramientas", duracion: "3 horas" },
             { titulo: "Liderazgo y Proyecto Final", duracion: "4 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
-        estado: "activo"
+        googleClassroomUrl: "https://classroom.google.com/c/ODQ1MTU1MDg0Njcw?cjc=4ydvjja3",
+        estado: "proximamente"
     },
     {
         id: "analitica-datos", titulo: "Analítica de Datos",
         categoria: "datos", categoriaLabel: "Datos & BI",
         nivel: "Intermedio", nivelClase: "intermedio",
-        duracion: "30 horas", modulosTotales: 5, quizzesTotales: 10,
+        duracion: "30 horas", modulosTotales: 5, quizzesTotales: 2,
         icono: "fa-chart-line", iconoColor: "#E91E63", color: "#E91E63",
         descripcionCorta: "Aprende a tomar decisiones basadas en datos: recolección, limpieza, análisis y visualización.",
         descripcionCompleta: "Curso integral de análisis de datos que cubre todo el proceso analítico.",
@@ -167,14 +167,14 @@ const cursosFallback = [
             { titulo: "Visualización de Datos", duracion: "6 horas" },
             { titulo: "Proyecto Final: Caso de Negocio", duracion: "6 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
-        estado: "activo"
+        googleClassroomUrl: "https://classroom.google.com/c/ODQ1MTU1MDg0Njcw?cjc=4ydvjja3",
+        estado: "proximamente"
     },
     {
         id: "ingles-general", titulo: "Inglés General (A1-C1) — Marco Común Europeo",
         categoria: "idiomas", categoriaLabel: "Idiomas",
         nivel: "Básico → Avanzado (MCER A1-C1)", nivelClase: "basico",
-        duracion: "160 horas", modulosTotales: 23, quizzesTotales: 46,
+        duracion: "160 horas", modulosTotales: 23, quizzesTotales: 2,
         icono: "fa-language", iconoColor: "#E91E63", color: "#E91E63",
         cefrAligned: true, cefrLevels: ["A1", "A2", "B1", "B2", "C1"],
         descripcionCorta: "Aprende inglés desde cero hasta nivel avanzado (C1) alineado al Marco Común Europeo de Referencia (MCER/CEFR). 23 módulos, 5 niveles, test de ubicación incluido.",
@@ -205,8 +205,8 @@ const cursosFallback = [
             { titulo: "C1.4 — Nivel Nativo", duracion: "7 horas" },
             { titulo: "C1.5 — Mock Exams y Certificación", duracion: "8 horas" }
         ],
-        googleClassroomUrl: "https://classroom.google.com/c/t4ydvjja3",
-        kahootUrl: "https://create.kahoot.it/profile/MoEnglishClasses",
+        googleClassroomUrl: "https://classroom.google.com/c/ODQ1MTU1MDg0Njcw?cjc=4ydvjja3",
+        kahootUrl: "https://create.kahoot.it/profiles/7807feba-df36-4252-a5af-8e17dda82335",
         estado: "activo"
     }
 ];

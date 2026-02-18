@@ -11,14 +11,14 @@
     "coordinadorRol": "Coordinador Académico"
   },
   "estadisticas": {
-    "cursosActivos": 15,
+    "cursosActivos": 1,
     "estudiantes": 500,
     "satisfaccion": 95,
     "certificadosEmitidos": 200
   },
   "herramientas": {
-    "googleClassroom": "https://classroom.google.com",
-    "kahoot": "https://kahoot.com",
+    "googleClassroom": "https://classroom.google.com/c/ODQ1MTU1MDg0Njcw?cjc=4ydvjja3",
+    "kahoot": "https://create.kahoot.it/profiles/7807feba-df36-4252-a5af-8e17dda82335",
     "kahootCreator": "https://create.kahoot.it",
     "googleForms": "https://forms.google.com",
     "edpuzzle": "https://edpuzzle.com",

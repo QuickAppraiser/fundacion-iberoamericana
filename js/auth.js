@@ -41,7 +41,7 @@
         { id: 'fundamentos-programacion', name: 'Fundamentos de Programación' },
         { id: 'business-intelligence', name: 'Business Intelligence Empresarial' },
         { id: 'gestion-proyectos-scrum', name: 'Gestión de Proyectos con Scrum' },
-        { id: 'liderazgo-gestion', name: 'Liderazgo y Gestión de Equipos' },
+        { id: 'liderazgo-equipos', name: 'Liderazgo y Gestión de Equipos' },
         { id: 'ingles-general', name: 'Inglés General A1-C1' },
         { id: 'transformacion-digital', name: 'Transformación Digital para Empresas' },
         { id: 'ia-machine-learning', name: 'IA y Machine Learning' }
@@ -70,6 +70,17 @@
 
     function logout() {
         localStorage.removeItem(STORAGE_KEY);
+        // Also clear dashboard keys for full logout
+        localStorage.removeItem('fi_studentName');
+        localStorage.removeItem('estudiante_nombre');
+        localStorage.removeItem('cursos_inscritos');
+        localStorage.removeItem('progreso');
+        localStorage.removeItem('quiz_resultados');
+        localStorage.removeItem('logros');
+        localStorage.removeItem('fi_xp');
+        localStorage.removeItem('fi_streak');
+        localStorage.removeItem('fi_last_activity');
+        localStorage.removeItem('fi_last_login');
         window.location.reload();
     }
 
@@ -371,9 +382,12 @@
         var onboarding = document.getElementById('onboarding');
         if (onboarding) onboarding.style.display = 'none';
 
-        // Store name for dashboard.js compatibility
+        // Store name for dashboard.js compatibility (both keys)
         if (!localStorage.getItem('fi_studentName')) {
             localStorage.setItem('fi_studentName', user.name);
+        }
+        if (!localStorage.getItem('estudiante_nombre')) {
+            localStorage.setItem('estudiante_nombre', user.name);
         }
     }
 
@@ -565,8 +579,9 @@
         // Save to users registry
         addToUserRegistry(user);
 
-        // Also set dashboard compatibility
+        // Set dashboard compatibility (both keys)
         localStorage.setItem('fi_studentName', name);
+        localStorage.setItem('estudiante_nombre', name);
 
         closeAuthModal();
 

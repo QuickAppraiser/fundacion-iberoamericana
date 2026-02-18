@@ -43,7 +43,14 @@ const cursoCatalogo = {
     "desarrollo-web": { titulo: "Desarrollo Web (HTML, CSS, JS)", icono: "fas fa-code", color: "#FF5722", modulosTotales: 5 },
     "google-workspace": { titulo: "Google Workspace", icono: "fab fa-google", color: "#2196F3", modulosTotales: 5 },
     "gestion-proyectos-scrum": { titulo: "Gestión de Proyectos / Scrum", icono: "fas fa-diagram-project", color: "#FF9800", modulosTotales: 4 },
-    "analitica-datos": { titulo: "Analítica de Datos", icono: "fas fa-chart-line", color: "#E91E63", modulosTotales: 5 }
+    "analitica-datos": { titulo: "Analítica de Datos", icono: "fas fa-chart-line", color: "#E91E63", modulosTotales: 5 },
+    "office-365": { titulo: "Microsoft Office 365", icono: "fab fa-microsoft", color: "#0078D4", modulosTotales: 4 },
+    "fundamentos-programacion": { titulo: "Fundamentos de Programación", icono: "fas fa-laptop-code", color: "#009688", modulosTotales: 4 },
+    "business-intelligence": { titulo: "Business Intelligence", icono: "fas fa-briefcase", color: "#673AB7", modulosTotales: 4 },
+    "liderazgo-equipos": { titulo: "Liderazgo y Gestión de Equipos", icono: "fas fa-users-gear", color: "#795548", modulosTotales: 3 },
+    "ia-machine-learning": { titulo: "IA y Machine Learning", icono: "fas fa-robot", color: "#F44336", modulosTotales: 4 },
+    "transformacion-digital": { titulo: "Transformación Digital", icono: "fas fa-microchip", color: "#00BCD4", modulosTotales: 3 },
+    "ingles-general": { titulo: "Inglés General (A1-C1)", icono: "fas fa-language", color: "#E91E63", modulosTotales: 23 }
 };
 
 // Logros posibles (los que aún no se obtienen)
@@ -73,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // =========================
 
 function verificarOnboarding() {
-    const nombre = localStorage.getItem('estudiante_nombre');
+    const nombre = localStorage.getItem('estudiante_nombre') || localStorage.getItem('fi_studentName');
     const overlay = document.getElementById('onboarding');
     if (!nombre && overlay) {
         overlay.style.display = 'flex';
@@ -97,7 +104,9 @@ window.completarOnboarding = function() {
         return;
     }
     localStorage.setItem('estudiante_nombre', nombre);
-    document.getElementById('onboarding').style.display = 'none';
+    localStorage.setItem('fi_studentName', nombre);
+    const overlay = document.getElementById('onboarding');
+    if (overlay) overlay.style.display = 'none';
     renderizarDashboard();
 };
 
@@ -107,6 +116,8 @@ window.completarOnboarding = function() {
 
 window.cerrarSesionEstudiante = function() {
     localStorage.removeItem('estudiante_nombre');
+    localStorage.removeItem('fi_studentName');
+    localStorage.removeItem('fi_user');
     localStorage.removeItem('cursos_inscritos');
     localStorage.removeItem('progreso');
     localStorage.removeItem('quiz_resultados');
@@ -135,7 +146,8 @@ window.cargarDatosDemo = function() {
     localStorage.setItem('fi_last_activity', new Date().toDateString());
     localStorage.setItem('fi_last_login', new Date().toDateString());
 
-    document.getElementById('onboarding').style.display = 'none';
+    const onboardingEl = document.getElementById('onboarding');
+    if (onboardingEl) onboardingEl.style.display = 'none';
     renderizarDashboard();
 
     // Re-render gamification widgets
@@ -168,7 +180,7 @@ window.cambiarSeccion = function(seccionId, elemento, e) {
 // =========================
 
 function renderizarDashboard() {
-    const nombre = localStorage.getItem('estudiante_nombre') || 'Estudiante';
+    const nombre = localStorage.getItem('estudiante_nombre') || localStorage.getItem('fi_studentName') || 'Estudiante';
     const cursosInscritos = JSON.parse(localStorage.getItem('cursos_inscritos') || '[]');
     const progreso = JSON.parse(localStorage.getItem('progreso') || '{}');
     const quizResultados = JSON.parse(localStorage.getItem('quiz_resultados') || '[]');
