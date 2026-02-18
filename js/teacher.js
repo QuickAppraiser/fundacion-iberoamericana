@@ -22,7 +22,10 @@ const estudiantesDemo = [
     { nombre: "Andrés Rojas Delgado", email: "andres.rd@email.com", curso: "Web", promedio: 38, acceso: "2026-01-20", estado: "riesgo" },
     { nombre: "Isabella Herrera Cruz", email: "isa.hc@email.com", curso: "Power BI", promedio: 76, acceso: "2026-02-05", estado: "activo" },
     { nombre: "Mateo Cordero Silva", email: "mateo.cs@email.com", curso: "SQL", promedio: 55, acceso: "2026-02-01", estado: "riesgo" },
-    { nombre: "Gabriela Muñoz Ríos", email: "gabi.mr@email.com", curso: "Scrum", promedio: 84, acceso: "2026-02-06", estado: "activo" }
+    { nombre: "Gabriela Muñoz Ríos", email: "gabi.mr@email.com", curso: "Scrum", promedio: 84, acceso: "2026-02-06", estado: "activo" },
+    { nombre: "Daniela López Vargas", email: "dani.lv@email.com", curso: "Inglés", promedio: 88, acceso: "2026-02-07", estado: "activo" },
+    { nombre: "Fernando Reyes Mejía", email: "fer.rm@email.com", curso: "Inglés", promedio: 72, acceso: "2026-02-06", estado: "activo" },
+    { nombre: "Natalia Pineda Soto", email: "nata.ps@email.com", curso: "Inglés", promedio: 94, acceso: "2026-02-07", estado: "activo" }
 ];
 
 const plantillas = {
@@ -66,8 +69,8 @@ async function hashPassword(password) {
     return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
-// Pre-computed SHA-256 hash — password is never stored in plaintext
-const EXPECTED_HASH = '6051fc84a7a0d74c225fb18a496b09952da5642e60723ecae543298edd7d82d6';
+// Pre-computed SHA-256 hash of "admin" — password is never stored in plaintext
+const EXPECTED_HASH = '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918';
 
 function verificarAuth() {
     if (localStorage.getItem('teacher_auth') === 'true') {
@@ -102,6 +105,7 @@ function mostrarPanel() {
     document.getElementById('teacherLayout').style.display = 'flex';
     renderizarResumen();
     renderizarTabla();
+    renderizarUsuarios();
 }
 
 window.cerrarSesionProfesor = function() {
@@ -126,31 +130,39 @@ window.cambiarSeccionT = function(id, el, e) {
 // =========================
 
 function renderizarResumen() {
+    // Count registered users from localStorage
+    let totalRegistrados = 0;
+    try {
+        const reg = localStorage.getItem('fi_users_registry');
+        if (reg) totalRegistrados = JSON.parse(reg).length;
+    } catch(e) {}
+
     // Stats
     document.getElementById('teacherStats').innerHTML = `
         <div class="stat-card">
             <div class="stat-card-icon" style="background:rgba(0,191,166,0.1);color:#00BFA6;"><i class="fas fa-users"></i></div>
-            <div class="stat-card-number" style="color:#00BFA6;">127</div>
-            <div class="stat-card-label">Total Estudiantes</div>
+            <div class="stat-card-number" style="color:#00BFA6;">${totalRegistrados}</div>
+            <div class="stat-card-label">Usuarios Registrados</div>
         </div>
         <div class="stat-card">
             <div class="stat-card-icon" style="background:rgba(33,150,243,0.1);color:#2196F3;"><i class="fas fa-book"></i></div>
-            <div class="stat-card-number" style="color:#2196F3;">12</div>
-            <div class="stat-card-label">Cursos Activos</div>
+            <div class="stat-card-number" style="color:#2196F3;">1</div>
+            <div class="stat-card-label">Curso Activo</div>
         </div>
         <div class="stat-card">
-            <div class="stat-card-icon" style="background:rgba(255,184,0,0.1);color:#FFB800;"><i class="fas fa-trophy"></i></div>
-            <div class="stat-card-number" style="color:#FFB800;">78%</div>
-            <div class="stat-card-label">Promedio General</div>
+            <div class="stat-card-icon" style="background:rgba(255,184,0,0.1);color:#FFB800;"><i class="fas fa-clock"></i></div>
+            <div class="stat-card-number" style="color:#FFB800;">14</div>
+            <div class="stat-card-label">Cursos Próximamente</div>
         </div>
         <div class="stat-card">
-            <div class="stat-card-icon" style="background:rgba(156,39,176,0.1);color:#9C27B0;"><i class="fas fa-certificate"></i></div>
-            <div class="stat-card-number" style="color:#9C27B0;">43</div>
-            <div class="stat-card-label">Certificados Emitidos</div>
+            <div class="stat-card-icon" style="background:rgba(156,39,176,0.1);color:#9C27B0;"><i class="fas fa-trophy"></i></div>
+            <div class="stat-card-number" style="color:#9C27B0;">15</div>
+            <div class="stat-card-label">Total Cursos</div>
         </div>`;
 
     // Gráfica de barras
     const cursos = [
+        { nombre: "Inglés", prom: 85, color: "#E91E63" },
         { nombre: "Excel", prom: 82, color: "#4CAF50" },
         { nombre: "SQL", prom: 75, color: "#2196F3" },
         { nombre: "Power BI", prom: 71, color: "#FFB800" },
@@ -270,6 +282,66 @@ window.copiarMensaje = function() {
                 success.style.display = 'inline';
                 setTimeout(() => { success.style.display = 'none'; }, 2000);
             }
+        }).catch(() => {
+            // Fallback: select textarea content for manual copy
+            textarea.select();
+            document.execCommand('copy');
         });
     }
+};
+
+// =========================
+// USUARIOS REGISTRADOS
+// =========================
+
+function renderizarUsuarios() {
+    const tbody = document.getElementById('tablaUsuariosBody');
+    if (!tbody) return;
+
+    let usuarios = [];
+    try {
+        const data = localStorage.getItem('fi_users_registry');
+        if (data) usuarios = JSON.parse(data);
+    } catch(e) {}
+
+    if (usuarios.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-light);padding:32px;">No hay usuarios registrados aún.</td></tr>';
+        return;
+    }
+
+    const roleLabels = { student: 'Estudiante', admin: 'Administrador' };
+
+    tbody.innerHTML = usuarios.map(u => `
+        <tr>
+            <td><strong>${u.name || '—'}</strong></td>
+            <td>${u.email || '—'}</td>
+            <td>${u.phone || '—'}</td>
+            <td>${u.courseInterest || '—'}</td>
+            <td>${u.registeredAt ? new Date(u.registeredAt).toLocaleDateString('es-ES') : '—'}</td>
+            <td><span class="status-badge ${u.role === 'admin' ? 'completado' : 'activo'}">${roleLabels[u.role] || u.role || 'Estudiante'}</span></td>
+        </tr>`).join('');
+}
+
+window.exportarUsuariosCSV = function() {
+    let usuarios = [];
+    try {
+        const data = localStorage.getItem('fi_users_registry');
+        if (data) usuarios = JSON.parse(data);
+    } catch(e) {}
+
+    if (usuarios.length === 0) return;
+
+    const header = 'Nombre,Email,Teléfono,Curso de Interés,Fecha Registro,Rol\n';
+    const rows = usuarios.map(u =>
+        `"${u.name || ''}","${u.email || ''}","${u.phone || ''}","${u.courseInterest || ''}","${u.registeredAt || ''}","${u.role || 'student'}"`
+    ).join('\n');
+
+    const csv = header + rows;
+    const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `usuarios_registrados_${new Date().toISOString().split('T')[0]}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
 };

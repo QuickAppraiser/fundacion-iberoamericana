@@ -75,6 +75,7 @@
             <li><a href="#" class="active" onclick="cambiarSeccionT('resumen',this,event)"><i class="fas fa-chart-pie"></i> <span class="menu-text">Resumen</span></a></li>
             <li><a href="#" onclick="cambiarSeccionT('estudiantes',this,event)"><i class="fas fa-users"></i> <span class="menu-text">Estudiantes</span></a></li>
             <li><a href="#" onclick="cambiarSeccionT('comunicacion',this,event)"><i class="fas fa-bullhorn"></i> <span class="menu-text">Comunicación</span></a></li>
+            <li><a href="#" onclick="cambiarSeccionT('usuarios',this,event)"><i class="fas fa-user-check"></i> <span class="menu-text">Usuarios</span></a></li>
             <li><a href="#" onclick="cambiarSeccionT('accesos',this,event)"><i class="fas fa-grid-2"></i> <span class="menu-text">Herramientas</span></a></li>
         </ul>
         <div class="sidebar-spacer"></div>
@@ -108,6 +109,7 @@
                     <option value="Python">Python</option>
                     <option value="Web">Desarrollo Web</option>
                     <option value="Scrum">Scrum</option>
+                    <option value="Inglés">Inglés</option>
                 </select>
                 <button class="btn btn-primary" onclick="exportarCSV()" style="padding:10px 20px;font-size:0.85rem;">
                     <i class="fas fa-download"></i> Exportar CSV
@@ -152,15 +154,39 @@
             </div>
         </div>
 
+        <!-- USUARIOS REGISTRADOS -->
+        <div class="dash-section" id="seccion-usuarios">
+            <h2 class="section-title" style="font-size:1.6rem;margin-bottom:24px;">Usuarios Registrados</h2>
+            <p style="color:var(--text-light);margin-bottom:16px;font-size:0.88rem;">Usuarios que se han registrado en la plataforma (almacenados en localStorage del navegador).</p>
+            <div class="responsive-table-wrapper">
+                <table class="data-table" id="tablaUsuarios">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email / Usuario</th>
+                            <th>Teléfono</th>
+                            <th>Curso de Interés</th>
+                            <th>Fecha Registro</th>
+                            <th>Rol</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaUsuariosBody"></tbody>
+                </table>
+            </div>
+            <button class="btn btn-primary" onclick="exportarUsuariosCSV()" style="margin-top:16px;padding:10px 20px;font-size:0.85rem;">
+                <i class="fas fa-download"></i> Exportar Usuarios CSV
+            </button>
+        </div>
+
         <!-- ACCESOS RÁPIDOS -->
         <div class="dash-section" id="seccion-accesos">
             <h2 class="section-title" style="font-size:1.6rem;margin-bottom:24px;">Herramientas y Accesos Rápidos</h2>
             <div class="quick-access-grid">
-                <a href="https://classroom.google.com" target="_blank" class="quick-access-btn">
+                <a href="https://classroom.google.com/c/ODQ1MTU1MDg0Njcw?cjc=4ydvjja3" target="_blank" class="quick-access-btn">
                     <div class="qa-icon" style="background:rgba(76,175,80,0.1);color:#4CAF50;"><i class="fas fa-chalkboard"></i></div>
                     <h4>Google Classroom</h4><p>Gestionar cursos</p>
                 </a>
-                <a href="https://create.kahoot.it" target="_blank" class="quick-access-btn">
+                <a href="https://create.kahoot.it/profiles/7807feba-df36-4252-a5af-8e17dda82335" target="_blank" class="quick-access-btn">
                     <div class="qa-icon" style="background:rgba(156,39,176,0.1);color:#9C27B0;"><i class="fas fa-gamepad"></i></div>
                     <h4>Kahoot Creator</h4><p>Crear quizzes</p>
                 </a>
@@ -172,7 +198,7 @@
                     <div class="qa-icon" style="background:rgba(255,87,34,0.1);color:#FF5722;"><i class="fas fa-play-circle"></i></div>
                     <h4>Edpuzzle</h4><p>Video interactivo</p>
                 </a>
-                <a href="https://studio.youtube.com" target="_blank" class="quick-access-btn">
+                <a href="https://studio.youtube.com/channel/UCYXojL0jRuMYpJQk7LVhJhg" target="_blank" class="quick-access-btn">
                     <div class="qa-icon" style="background:rgba(244,67,54,0.1);color:#F44336;"><i class="fab fa-youtube"></i></div>
                     <h4>YouTube Studio</h4><p>Subir videos</p>
                 </a>
